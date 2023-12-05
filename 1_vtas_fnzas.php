@@ -47,6 +47,7 @@ include_once('header.php');
                 </label>
             </div>
         </div>
+
         <!-- PREGUNTA 2 -->
         <div class="p-5" style="background-color:antiquewhite">
 
@@ -83,8 +84,9 @@ include_once('header.php');
                 </label>
             </div>
         </div>
-        <!-- PREGUNTA  -->
-        <div class="p-5" style="background-color:aliceblue">
+
+        <!-- PREGUNTA 3 -->
+        <div class="p-5" style="background-color:#b6fac8">
 
             <h4 class="mb-3 ">Gestión de venta</h4>
 
@@ -120,6 +122,227 @@ include_once('header.php');
             </div>
         </div>
 
+        <!-- PREGUTA 4 -->
+        <div class="p-5" style="background-color:aliceblue">
+
+            <h4 class="mb-3 ">Redes Sociales</h4>
+
+            <div class="form-check mx-4">
+                <input class="form-check-input" type="radio" name="" id="">
+                <label class="form-check-label" for="">
+                No se cuenta con redes sociales.
+                </label>
+            </div>
+            <div class="form-check mx-4">
+                <input class="form-check-input" type="radio" name="" id="">
+                <label class="form-check-label" for="">
+                Se cuenta con Facebook (Solo se postea o sube contenido aislado sin estrategia).
+                </label>
+            </div>
+            <div class="form-check mx-4">
+                <input class="form-check-input" type="radio" name="" id="">
+                <label class="form-check-label" for="">
+                Se cuenta con Facebook / Instagram.
+                </label>
+            </div>
+            <div class="form-check mx-4">
+                <input class="form-check-input" type="radio" name="" id="">
+                <label class="form-check-label" for="">
+                Se cuenta con Facebook / Instagram / Tik-Tok y tienen estrategia de contenido.
+                </label>
+            </div>
+            <div class="form-check mx-4">
+                <input class="form-check-input" type="radio" name="" id="">
+                <label class="form-check-label" for="">
+                Se tiene y ejecuta una estrategia efectiva y rentable que genera venta y utilidad incremental.
+                </label>
+            </div>
+        </div>
+
+        <!-- PREGUNTA 5 -->
+        <div class="p-5" style="background-color:antiquewhite">
+
+            <h4 Class="mb-3 ">Poder de marca</h4>
+
+            <div class="form-check mx-4">
+                <input class="form-check-input" type="radio" name="" id="">
+                <label class="form-check-label" for="">
+                    No se cuenta con una marca.
+                </label>
+            </div>
+            <div class="form-check mx-4">
+                <input class="form-check-input" type="radio" name="" id="">
+                <label class="form-check-label" for="">
+                Se cuenta con una marca básica y con oportunidades para comunicación.
+                </label>
+            </div>
+            <div class="form-check mx-4">
+                <input class="form-check-input" type="radio" name="" id="">
+                <label class="form-check-label" for="">
+                Se tiene una marca bien definida pero poco conocida.
+                </label>
+            </div>
+            <div class="form-check mx-4">
+                <input class="form-check-input" type="radio" name="" id="">
+                <label class="form-check-label" for="">
+                Se cuenta con una buena marca, muy reconocida pero no se  explotada para generar venta incremental.
+                </label>
+            </div>
+            <div class="form-check mx-4">
+                <input class="form-check-input" type="radio" name="" id="">
+                <label class="form-check-label" for="">
+                Se cuenta con una marca muy reconocida y explotada en una medida generando venta orgánica sin necesidad de pago en comunicación.
+                </label>
+            </div>
+        </div>
+
+        <!-- PREGUNTA 6 -->
+        <div class="p-5" style="background-color:#b6fac8">
+
+            <h4 class="mb-3 ">Página WEB del negocio</h4>
+
+            <div class="form-check mx-4">
+                <input class="form-check-input" type="radio" name="" id="">
+                <label class="form-check-label" for="">
+                No cuenta con web.
+                </label>
+            </div>
+            <div class="form-check mx-4">
+                <input class="form-check-input" type="radio" name="" id="">
+                <label class="form-check-label" for="">
+                Se tiene una pagina WEB muy básica y sin actualización.
+                </label>
+            </div>
+            <div class="form-check mx-4">
+                <input class="form-check-input" type="radio" name="" id="">
+                <label class="form-check-label" for="">
+                Tiene un web funcional pero muy básica.
+                </label>
+            </div>
+            <div class="form-check mx-4">
+                <input class="form-check-input" type="radio" name="" id="">
+                <label class="form-check-label" for="">
+                Se cuenta con una pagina WEB, funcional y atractiva.
+                </label>
+            </div>
+            <div class="form-check mx-4">
+                <input class="form-check-input" type="radio" name="" id="">
+                <label class="form-check-label" for="">
+                Se cuenta con una pagina WEB, funcional, atractiva y muy efectiva para conectar con los clientes y generar venta incremental.
+                </label>
+            </div>
+        </div>
+
+        <!-- PREGUTA 7 -->
+        <div class="p-5" style="background-color:aliceblue">
+
+            <h4 class="mb-3 ">Publicidad en medios tradicionales </h4>
+
+            <div class="form-check mx-4">
+                <input class="form-check-input" type="radio" name="" id="">
+                <label class="form-check-label" for="">
+                No cuenta con publicidad en medios tradicionales.
+                </label>
+            </div>
+            <div class="form-check mx-4">
+                <input class="form-check-input" type="radio" name="" id="">
+                <label class="form-check-label" for="">
+                Se cuenta con publicidad básica en revista y volantes de la zona.
+                </label>
+            </div>
+            <div class="form-check mx-4">
+                <input class="form-check-input" type="radio" name="" id="">
+                <label class="form-check-label" for="">
+                Se cuenta con publicidad en periódicos, revistas y volantes con una efectividad aceptable.
+                </label>
+            </div>
+            <div class="form-check mx-4">
+                <input class="form-check-input" type="radio" name="" id="">
+                <label class="form-check-label" for="">
+                Se cuenta con publicidad tradicional efectiva y rentable además de radio.
+                </label>
+            </div>
+            <div class="form-check mx-4">
+                <input class="form-check-input" type="radio" name="" id="">
+                <label class="form-check-label" for="">
+                Publicaciones efectivas en medios impresos, radio y televisión que impactan directamente en venta incremental.
+                </label>
+            </div>
+        </div>
+
+        <!-- PREGUNTA 8 -->
+        <div class="p-5" style="background-color:antiquewhite">
+
+            <h4 Class="mb-3 ">Plan de Lealtad e incentivos con pacientes frecuentes</h4>
+
+            <div class="form-check mx-4">
+                <input class="form-check-input" type="radio" name="" id="">
+                <label class="form-check-label" for="">
+                No se cuenta con un plan de incentivos.
+                </label>
+            </div>
+            <div class="form-check mx-4">
+                <input class="form-check-input" type="radio" name="" id="">
+                <label class="form-check-label" for="">
+                Se tienen incentivos ocasionales para clientes frecuentes.
+                </label>
+            </div>
+            <div class="form-check mx-4">
+                <input class="form-check-input" type="radio" name="" id="">
+                <label class="form-check-label" for="">
+                Se cuenta con un programa de lealtad integral y de incentivos pero manual.
+                </label>
+            </div>
+            <div class="form-check mx-4">
+                <input class="form-check-input" type="radio" name="" id="">
+                <label class="form-check-label" for="">
+                Se cuenta con un programa integral de Lealtad y programa de incentivos que generan venta y utilidad incremental al activarlo.
+                </label>
+            </div>
+            <div class="form-check mx-4">
+                <input class="form-check-input" type="radio" name="" id="">
+                <label class="form-check-label" for="">
+                Tienen un sistema automatizado de lealtad con alto aprovechamiento de parte de los clientes.
+                </label>
+            </div>
+        </div>
+
+        <!-- PREGUNTA 9 -->
+        <div class="p-5" style="background-color:#b6fac8">
+
+            <h4 class="mb-3 ">Soporte para comunicación y mercadotecnia (Agencia o profesionales)</h4>
+
+            <div class="form-check mx-4">
+                <input class="form-check-input" type="radio" name="" id="">
+                <label class="form-check-label" for="">
+                No se cuenta con equipo externo ni interno para impulsar una estrategia de comunicación y mercadotecnia.
+                </label>
+            </div>
+            <div class="form-check mx-4">
+                <input class="form-check-input" type="radio" name="" id="">
+                <label class="form-check-label" for="">
+                Existe una persona que internamente hace labores de marketing de manera parcial.
+                </label>
+            </div>
+            <div class="form-check mx-4">
+                <input class="form-check-input" type="radio" name="" id="">
+                <label class="form-check-label" for="">
+                Existe un recurso interno y también se cuenta con apoyo externo con alcance limitado.
+                </label>
+            </div>
+            <div class="form-check mx-4">
+                <input class="form-check-input" type="radio" name="" id="">
+                <label class="form-check-label" for="">
+                Se cuenta con apoyo externo, experto y efectivo en el diseño y ejecución de contenidos.
+                </label>
+            </div>
+            <div class="form-check mx-4">
+                <input class="form-check-input" type="radio" name="" id="">
+                <label class="form-check-label" for="">
+                Se cuenta con apoyo externo, experto y efectivo en el diseño y ejecución de contenidos, además de recurso interno.
+                </label>
+            </div>
+        </div>
 
         <!-- <div class="row border_preguntas">
 
