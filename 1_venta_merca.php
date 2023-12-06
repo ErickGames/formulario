@@ -2,6 +2,9 @@
 include_once('header.php');
 ?>
 
+<!DOCTYPE html>
+<html lang="en">
+
 <body>
 
     <div class="mx-5 mt-5">
@@ -355,8 +358,14 @@ include_once('header.php');
             </div>
         </div>
 
+        <script>
+            document.getElementById('miBoton').addEventListener('click', function() {
+                 window.location.href = '2_Recep_Citas.php';
+            });
+        </script>
+
         <div style="text-align:center">
-            <button class="cssbuttons-io-button">
+            <button id="miBoton" class="cssbuttons-io-button">
                 Siguiente
                 <div class="icon">
                     <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -368,11 +377,13 @@ include_once('header.php');
             </button>
         </div>
 
-
+        
 
     </form>
 
 </body>
+
+</html>
 
 <?php
 include('footer.php');
