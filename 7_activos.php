@@ -9,7 +9,7 @@ include_once('header.php');
         <h1>ACTIVOS</h1>
     </div>
 
-    <form action="" class="m-5">
+    <form action="8_RH.php" method="POST" class="m-5">
 
         <!-- PREGUNTA 1 -->
         <div class="p-5" style="background-color:rgba(25, 47, 89, 0.1)">
@@ -19,31 +19,31 @@ include_once('header.php');
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                No tengo.
+                    No tengo.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                Llevo los activos escritos en papel.
+                    Llevo los activos escritos en papel.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                Se lleva el registro en un Excel.
+                    Se lleva el registro en un Excel.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                Tengo un sistema de activos pero no se ajustan cada mes.
+                    Tengo un sistema de activos pero no se ajustan cada mes.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                Tengo un sistema de activos y se ajustan cada mes.
+                    Tengo un sistema de activos y se ajustan cada mes.
                 </label>
             </div>
         </div>
@@ -56,31 +56,31 @@ include_once('header.php');
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                No se tiene equipos.
+                    No se tiene equipos.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                Se cuenta con equipo básico, no diferenciado o de alto valor.
+                    Se cuenta con equipo básico, no diferenciado o de alto valor.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                Se cuenta con 1 o 2 equipos si son referencia en el mercado.
+                    Se cuenta con 1 o 2 equipos si son referencia en el mercado.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                La clínica o consultorio cuenta con equipo de primer nivel.
+                    La clínica o consultorio cuenta con equipo de primer nivel.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                La clínica o consultorio cuenta con equipo de primer nivel y es reconocido en el mercado por eso.
+                    La clínica o consultorio cuenta con equipo de primer nivel y es reconocido en el mercado por eso.
                 </label>
             </div>
         </div>
@@ -94,31 +94,34 @@ include_once('header.php');
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                No se lleva.
+                    No se lleva.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                Solo se lleva con algunos activos.
+                    Solo se lleva con algunos activos.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                Se lleva de manera manual o en Excel de todos lo activos.
+                    Se lleva de manera manual o en Excel de todos lo activos.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                Se cuenta con un sistema contable que permite la automatización y sistematización del registro y su depreciación.
+                    Se cuenta con un sistema contable que permite la automatización y sistematización del registro y su
+                    depreciación.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                Se cuenta con un sistema contable integral que conecta estados financieros, tanto el estado de perdidas y ganancias incluyendo el registro de depreciación, como la actualización de activos y su depreciación  acumulada en el balance general.
+                    Se cuenta con un sistema contable integral que conecta estados financieros, tanto el estado de
+                    perdidas y ganancias incluyendo el registro de depreciación, como la actualización de activos y su
+                    depreciación acumulada en el balance general.
                 </label>
             </div>
         </div>
@@ -131,31 +134,34 @@ include_once('header.php');
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                No se tiene un proceso de cotizaciones y cuando se compra no se evalúan diferentes opciones posibles.
+                    No se tiene un proceso de cotizaciones y cuando se compra no se evalúan diferentes opciones
+                    posibles.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                No se tiene un proceso pero si se evalúan al menos 3 opciones posibles.
+                    No se tiene un proceso pero si se evalúan al menos 3 opciones posibles.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                Se tiene un proceso de cotización y de comparación financiera para determinar la mejor opción.
+                    Se tiene un proceso de cotización y de comparación financiera para determinar la mejor opción.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                Se tiene un proceso de cotización y se selecciona la mejor opción aunque el financiamiento no necesariamente es el optimo entre efectivo, deuda #pendiente.
+                    Se tiene un proceso de cotización y se selecciona la mejor opción aunque el financiamiento no
+                    necesariamente es el optimo entre efectivo, deuda #pendiente.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                Se tiene un proceso de cotización y se selecciona la mejor opción, tanto de proveedor como sistema de financiamiento, con la mejor mezcla entre contado y deuda.
+                    Se tiene un proceso de cotización y se selecciona la mejor opción, tanto de proveedor como sistema
+                    de financiamiento, con la mejor mezcla entre contado y deuda.
                 </label>
             </div>
         </div>
@@ -168,31 +174,34 @@ include_once('header.php');
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                No se conoce.
+                    No se conoce.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                Se cuenta con estrategia básica de 30 días de pago a proveedores.
+                    Se cuenta con estrategia básica de 30 días de pago a proveedores.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                Se cuenta con inventarios en consignación y herramientas financieras como el crédito revolvente .
+                    Se cuenta con inventarios en consignación y herramientas financieras como el crédito revolvente .
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                Se tiene un buen balance entre el manejo y aprovechamiento del efectivo, el acceso a deuda con bajo interés.
+                    Se tiene un buen balance entre el manejo y aprovechamiento del efectivo, el acceso a deuda con bajo
+                    interés.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                El modelo de financiamiento y apalancamiento es el optimo para seguir creciendo, generando expansión en una combinación optima entre recursos propios y financiamiento con proveedores e instituciones bancarias.
+                    El modelo de financiamiento y apalancamiento es el optimo para seguir creciendo, generando expansión
+                    en una combinación optima entre recursos propios y financiamiento con proveedores e instituciones
+                    bancarias.
                 </label>
             </div>
         </div>
@@ -205,31 +214,36 @@ include_once('header.php');
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                No se conoce el costo de equipo en cada servicio.
+                    No se conoce el costo de equipo en cada servicio.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                Se tiene una idea vaga pero no se refleja en el costeo de los servicios.
+                    Se tiene una idea vaga pero no se refleja en el costeo de los servicios.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                Se sabe un aproximado del costo de 1 hora de uso de un equipo y este monto es considerado en el costeo de cada servicio.
+                    Se sabe un aproximado del costo de 1 hora de uso de un equipo y este monto es considerado en el
+                    costeo de cada servicio.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                Se conoce el costo de los equipos al realizar cada servicio, y este costo se refleja en el costeo del servicio con el fin de lograr utilidad después de pagar el costo de uso del equipo además de los consumibles.
+                    Se conoce el costo de los equipos al realizar cada servicio, y este costo se refleja en el costeo
+                    del servicio con el fin de lograr utilidad después de pagar el costo de uso del equipo además de los
+                    consumibles.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                Se conoce el costo de cada equipo por servicio, incluye en la fijación de precios y en la determinación de promociones con el objetivo de generar afluencia y la inversión en el equipo termine de pagarse.
+                    Se conoce el costo de cada equipo por servicio, incluye en la fijación de precios y en la
+                    determinación de promociones con el objetivo de generar afluencia y la inversión en el equipo
+                    termine de pagarse.
                 </label>
             </div>
         </div>
@@ -242,38 +256,38 @@ include_once('header.php');
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                No se tiene registro preciso pero la utilización es muy baja, menor al 10%.
+                    No se tiene registro preciso pero la utilización es muy baja, menor al 10%.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                El nivel de utilización de un equipo ronda entre el 10 y 40%.
+                    El nivel de utilización de un equipo ronda entre el 10 y 40%.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                El nivel de utilización de un equipo ronda entre el 40 y 60%.
+                    El nivel de utilización de un equipo ronda entre el 40 y 60%.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                El % de la utilización de los equipos esta entre un 70 y 90%.
+                    El % de la utilización de los equipos esta entre un 70 y 90%.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                El Nivel de utilización de los equipos es prácticamente del 100% y ya estamos pensando en comprar nuevos para crecer la capacidad.
+                    El Nivel de utilización de los equipos es prácticamente del 100% y ya estamos pensando en comprar
+                    nuevos para crecer la capacidad.
                 </label>
             </div>
         </div>
 
-
         <div style="text-align:center">
-            <button class="cssbuttons-io-button">
+            <button id="miBoton" class="cssbuttons-io-button" type="submit">
                 Siguiente
                 <div class="icon">
                     <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -284,9 +298,6 @@ include_once('header.php');
                 </div>
             </button>
         </div>
-
-
-
     </form>
 
 </body>

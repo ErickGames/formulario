@@ -9,7 +9,7 @@ include_once('header.php');
         <h1>ADMINISTRACIÓN</h1>
     </div>
 
-    <form action="" class="m-5">
+    <form action="4_plan_estrategia.php" method="POST" class="m-5">
 
         <!-- PREGUNTA 1 -->
         <div class="p-5" style="background-color:rgba(25, 47, 89, 0.1)">
@@ -134,31 +134,32 @@ include_once('header.php');
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                No lleva ninguno.
+                    No lleva ninguno.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                Lleva en una libreta ingresos.
+                    Lleva en una libreta ingresos.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                Se lleva en archivos de Excel y un nivel básico de ventas, costos y gastos.
+                    Se lleva en archivos de Excel y un nivel básico de ventas, costos y gastos.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                Se cuenta con un sistema contable funcional e integral .
+                    Se cuenta con un sistema contable funcional e integral .
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                Su departamento de contabilidad con el apoyo de un sistema integral lleva un proceso de ingreso y egresos.
+                    Su departamento de contabilidad con el apoyo de un sistema integral lleva un proceso de ingreso y
+                    egresos.
                 </label>
             </div>
         </div>
@@ -171,31 +172,31 @@ include_once('header.php');
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                No cuenta con ninguna estadística.
+                    No cuenta con ninguna estadística.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                Sabe cuales son los pacientes que le deben.
+                    Sabe cuales son los pacientes que le deben.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                Lleva un registro a mano de los pacientes que le deben y cuanto le deben.
+                    Lleva un registro a mano de los pacientes que le deben y cuanto le deben.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                Lleva un registro en Excel de sus clientes y cuentas por cobrar.
+                    Lleva un registro en Excel de sus clientes y cuentas por cobrar.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                Lleva un registro automatizado de sus pacientes morosos y de las cuentas por cobrar.
+                    Lleva un registro automatizado de sus pacientes morosos y de las cuentas por cobrar.
                 </label>
             </div>
         </div>
@@ -208,31 +209,31 @@ include_once('header.php');
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                No cuenta con registro.
+                    No cuenta con registro.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                Lo hace a mano y no de manera consistente.
+                    Lo hace a mano y no de manera consistente.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                Lo hace a mano de manera consistente.
+                    Lo hace a mano de manera consistente.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                Lo lleva en Excel de manera consistente.
+                    Lo lleva en Excel de manera consistente.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                Lo llega en un sistema de contabilidad integrador.
+                    Lo llega en un sistema de contabilidad integrador.
                 </label>
             </div>
         </div>
@@ -245,13 +246,13 @@ include_once('header.php');
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                No tiene.
+                    No tiene.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                Lo hace a mano y no de manera consistente.
+                    Lo hace a mano y no de manera consistente.
                 </label>
             </div>
             <div class="form-check mx-4">
@@ -263,13 +264,13 @@ include_once('header.php');
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                Lo lleva en Excel de manera consistente.
+                    Lo lleva en Excel de manera consistente.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                Lo llena y lo saca en un sistema de contabilidad integrador.
+                    Lo llena y lo saca en un sistema de contabilidad integrador.
                 </label>
             </div>
         </div>
@@ -282,31 +283,32 @@ include_once('header.php');
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                No tengo contador.
+                    No tengo contador.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                Tengo un contador externo de manera parcial pero con inconsistencias.
+                    Tengo un contador externo de manera parcial pero con inconsistencias.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                Tengo un contador interno o externo de tiempo parcial con consistencia.
+                    Tengo un contador interno o externo de tiempo parcial con consistencia.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                Tengo un contador interno y apoyo de un contador externo.
+                    Tengo un contador interno y apoyo de un contador externo.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                Tengo un equipo de contabilidad interno de 3 personas o mas, y apoyo de un contador o despacho externo.
+                    Tengo un equipo de contabilidad interno de 3 personas o mas, y apoyo de un contador o despacho
+                    externo.
                 </label>
             </div>
         </div>
@@ -320,37 +322,38 @@ include_once('header.php');
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                No tengo alianzas.
+                    No tengo alianzas.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                No tengo nada formal pero si me otorgan descuentos de cliente diferenciado .
+                    No tengo nada formal pero si me otorgan descuentos de cliente diferenciado .
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                Cuento con una alianza informal o formal que me da acceso a descuentos permanentes .
+                    Cuento con una alianza informal o formal que me da acceso a descuentos permanentes .
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                Cuenta con  una alianza o contrato formal que incluye descuentos y plan de crecimiento anual .
+                    Cuenta con una alianza o contrato formal que incluye descuentos y plan de crecimiento anual .
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="" id="">
                 <label class="form-check-label" for="">
-                Cuenta con  una alianza o contrato formal que incluye descuentos y plan de crecimiento anual y 30 o mas días de crédito o inventario en consignación .
+                    Cuenta con una alianza o contrato formal que incluye descuentos y plan de crecimiento anual y 30 o
+                    mas días de crédito o inventario en consignación .
                 </label>
             </div>
         </div>
 
         <div style="text-align:center">
-            <button class="cssbuttons-io-button">
+            <button id="miBoton" class="cssbuttons-io-button" type="submit">
                 Siguiente
                 <div class="icon">
                     <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -361,9 +364,6 @@ include_once('header.php');
                 </div>
             </button>
         </div>
-
-
-
     </form>
 
 </body>
