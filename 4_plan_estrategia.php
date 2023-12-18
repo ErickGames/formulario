@@ -1,5 +1,23 @@
 <?php
 include_once('header.php');
+
+session_start();
+
+// Verifica si se ha enviado el formulario
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Guarda la respuesta de la pregunta 1, sección 1 en una variable de sesión
+    $_SESSION['respuesta_s3p1'] = $_POST['s3p1'];
+    $_SESSION['respuesta_s3p2'] = $_POST['s3p2'];
+    $_SESSION['respuesta_s3p3'] = $_POST['s3p3'];
+    $_SESSION['respuesta_s3p4'] = $_POST['s3p4'];
+    $_SESSION['respuesta_s3p5'] = $_POST['s3p5'];
+    $_SESSION['respuesta_s3p6'] = $_POST['s3p6'];
+    $_SESSION['respuesta_s3p7'] = $_POST['s3p7'];
+    $_SESSION['respuesta_s3p8'] = $_POST['s3p8'];
+    $_SESSION['respuesta_s3p9'] = $_POST['s3p9'];
+
+    // Puedes hacer lo mismo para otras preguntas y secciones
+}
 ?>
 
 <body>
@@ -9,6 +27,32 @@ include_once('header.php');
         <h1>PLANEACIÓN Y ESTRATEGIA</h1>
     </div>
 
+    <?php
+    echo $_SESSION['respuesta_s1p1'] . "<br>";
+    echo $_SESSION['respuesta_s1p2'] . "<br>";
+    echo $_SESSION['respuesta_s1p3'] . "<br>";
+    echo $_SESSION['respuesta_s1p4'] . "<br>";
+    echo $_SESSION['respuesta_s1p5'] . "<br>";
+    echo $_SESSION['respuesta_s1p6'] . "<br>";
+    echo $_SESSION['respuesta_s1p7'] . "<br>";
+    echo $_SESSION['respuesta_s1p8'] . "<br>";
+    echo $_SESSION['respuesta_s1p9'] . "<br>SECCION 2: <br>";
+    echo $_SESSION['respuesta_s2p1'] . "<br>";
+    echo $_SESSION['respuesta_s2p2'] . "<br>";
+    echo $_SESSION['respuesta_s2p3'] . "<br>";
+    echo $_SESSION['respuesta_s2p4'] . "<br>SECCION 3: <br>";
+    echo $_SESSION['respuesta_s3p1'] . "<br>";
+    echo $_SESSION['respuesta_s3p2'] . "<br>";
+    echo $_SESSION['respuesta_s3p3'] . "<br>";
+    echo $_SESSION['respuesta_s3p4'] . "<br>";
+    echo $_SESSION['respuesta_s3p5'] . "<br>";
+    echo $_SESSION['respuesta_s3p6'] . "<br>";
+    echo $_SESSION['respuesta_s3p7'] . "<br>";
+    echo $_SESSION['respuesta_s3p8'] . "<br>";
+    echo $_SESSION['respuesta_s3p9'] . "<br>";
+
+    ?>
+
     <form action="5_plan_Estrategia.php" method="POST" class="m-5">
 
         <!-- PREGUNTA 1 -->
@@ -17,34 +61,34 @@ include_once('header.php');
             <h4 class="mb-3 ">Visión y Estrategia de la empresa</h4>
 
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="" id="">
-                <label class="form-check-label" for="">
+                <input class="form-check-input" type="radio" name="s4p1" value="s4p1r1">
+                <label class="form-check-label">
                     No se tiene definida una visión clara de a donde vamos.
                 </label>
             </div>
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="" id="">
-                <label class="form-check-label" for="">
+                <input class="form-check-input" type="radio" name="s4p1" value="s4p1r2">
+                <label class="form-check-label">
                     Se tiene una idea de la visión de la empresa pero no se tiene claridad de como se va a lograr.
                 </label>
             </div>
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="" id="">
-                <label class="form-check-label" for="">
+                <input class="form-check-input" type="radio" name="s4p1" value="s4p1r3">
+                <label class="form-check-label">
                     Se tiene una muy buena idea de a donde vamos pero las estrategias definidas no son suficientes para
                     lograr la visión.
                 </label>
             </div>
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="" id="">
-                <label class="form-check-label" for="">
+                <input class="form-check-input" type="radio" name="s4p1" value="s4p1r4">
+                <label class="form-check-label">
                     Se tiene una visión clara y las diferentes estrategias para lograrlas pero no se tiene una ejecución
                     y seguimiento rigurosos.
                 </label>
             </div>
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="" id="">
-                <label class="form-check-label" for="">
+                <input class="form-check-input" type="radio" name="s4p1" value="s4p1r5">
+                <label class="form-check-label">
                     Se cuenta con una visión clara, estrategias generales y especificas, y un monitoreo y seguimiento de
                     indicadores para medir los avances.
                 </label>
@@ -57,32 +101,32 @@ include_once('header.php');
             <h4 Class="mb-3 ">Conocimiento de la competencia</h4>
 
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="" id="">
-                <label class="form-check-label" for="">
+                <input class="form-check-input" type="radio" name="s4p2" value="s4p2r1">
+                <label class="form-check-label">
                     No se tiene.
                 </label>
             </div>
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="" id="">
-                <label class="form-check-label" for="">
+                <input class="form-check-input" type="radio" name="s4p2" value="s4p2r2">
+                <label class="form-check-label">
                     Se tiene una idea vaga de la competencia y de sus servicios y precios.
                 </label>
             </div>
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="" id="">
-                <label class="form-check-label" for="">
+                <input class="form-check-input" type="radio" name="s4p2" value="s4p2r3">
+                <label class="form-check-label">
                     Se ha hecho un censo de servicios y precios pero no sea actualiza regularmente.
                 </label>
             </div>
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="" id="">
-                <label class="form-check-label" for="">
+                <input class="form-check-input" type="radio" name="s4p2" value="s4p2r4">
+                <label class="form-check-label">
                     Se cuenta con un monitorio permanente de la competencia, sus servicios y precios.
                 </label>
             </div>
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="" id="">
-                <label class="form-check-label" for="">
+                <input class="form-check-input" type="radio" name="s4p2" value="s4p2r5">
+                <label class="form-check-label">
                     Se cuenta con monitorio permanente de la competencia (sus servicios y precios) y esto se toma en
                     cuanta para la definición de los precios propios y para la generación de promociones.
                 </label>
@@ -96,33 +140,33 @@ include_once('header.php');
             <h4 class="mb-3 ">Planeación anual / Presupuestos</h4>
 
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="" id="">
-                <label class="form-check-label" for="">
+                <input class="form-check-input" type="radio" name="s4p3" value="s4p3r1">
+                <label class="form-check-label">
                     No se tiene.
                 </label>
             </div>
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="" id="">
-                <label class="form-check-label" for="">
+                <input class="form-check-input" type="radio" name="s4p3" value="s4p3r2">
+                <label class="form-check-label">
                     Se tiene idea de los números o metas de venta anual de manera general.
                 </label>
             </div>
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="" id="">
-                <label class="form-check-label" for="">
+                <input class="form-check-input" type="radio" name="s4p3" value="s4p3r3">
+                <label class="form-check-label">
                     Se cuenta con objetivos de venta y rentabilidad pero no se tienen objetivos mensuales.
                 </label>
             </div>
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="" id="">
-                <label class="form-check-label" for="">
+                <input class="form-check-input" type="radio" name="s4p3" value="s4p3r4">
+                <label class="form-check-label">
                     Se cuenta con un proceso para la definición de metas de ventas, gastos y utilidades por mes pero es
                     difícil cumplirlo.
                 </label>
             </div>
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="" id="">
-                <label class="form-check-label" for="">
+                <input class="form-check-input" type="radio" name="s4p3" value="s4p3r5">
+                <label class="form-check-label">
                     Se cuenta con un proceso para la definición de metas de ventas, gastos y utilidades, se le da
                     seguimiento, se cumple y/o se adecua conforme avanza el año.
                 </label>
@@ -135,32 +179,32 @@ include_once('header.php');
             <h4 class="mb-3 ">Competitividad en el mercado</h4>
 
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="" id="">
-                <label class="form-check-label" for="">
+                <input class="form-check-input" type="radio" name="s4p4" value="s4p4r1">
+                <label class="form-check-label">
                     No se es competitivo en el mercado, ni por precio mi por calidad.
                 </label>
             </div>
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="" id="">
-                <label class="form-check-label" for="">
+                <input class="form-check-input" type="radio" name="s4p4" value="s4p4r2">
+                <label class="form-check-label">
                     Se cuenta con servicios y precios promedio y no se sobresale en el mercado.
                 </label>
             </div>
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="" id="">
-                <label class="form-check-label" for="">
+                <input class="form-check-input" type="radio" name="s4p4" value="s4p4r3">
+                <label class="form-check-label">
                     Se tiene una buena competitividad, por precio o por calidad y servicio.
                 </label>
             </div>
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="" id="">
-                <label class="form-check-label" for="">
+                <input class="form-check-input" type="radio" name="s4p4" value="s4p4r4">
+                <label class="form-check-label">
                     Se es muy competitivo en el mercado, ya gente nos busca ya sea por precio o por calidad y servicio.
                 </label>
             </div>
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="" id="">
-                <label class="form-check-label" for="">
+                <input class="form-check-input" type="radio" name="s4p4" value="s4p4r5">
+                <label class="form-check-label">
                     Somos una referencia en el mercado, las personas nos buscan porque estamos posicionados con una
                     ecuación atractiva precio-calidad.
                 </label>
@@ -173,33 +217,33 @@ include_once('header.php');
             <h4 class="mb-3 ">Optimización de servicios (Generación y eliminación)</h4>
 
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="" id="">
-                <label class="form-check-label" for="">
+                <input class="form-check-input" type="radio" name="s4p5" value="s4p5r1">
+                <label class="form-check-label">
                     No se cuenta con un proceso para esto.
                 </label>
             </div>
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="" id="">
-                <label class="form-check-label" for="">
+                <input class="form-check-input" type="radio" name="s4p5" value="s4p5r2">
+                <label class="form-check-label">
                     Se generan y eliminan servicios pero de manera ocasional y no basados en metodologías integrales.
                 </label>
             </div>
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="" id="">
-                <label class="form-check-label" for="">
+                <input class="form-check-input" type="radio" name="s4p5" value="s4p5r3">
+                <label class="form-check-label">
                     Se cuenta con una revisión anual de depuración y creación de servicios.
                 </label>
             </div>
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="" id="">
-                <label class="form-check-label" for="">
+                <input class="form-check-input" type="radio" name="s4p5" value="s4p5r4">
+                <label class="form-check-label">
                     Se cuenta con un monitorio permanente de servicios, sus venta y rentabilidad así como de la
                     competencia para...
                 </label>
             </div>
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="" id="">
-                <label class="form-check-label" for="">
+                <input class="form-check-input" type="radio" name="s4p5" value="s4p5r5">
+                <label class="form-check-label">
                     Se mantiene un portafolio de servicios y productos vigentes y atractivos, eliminando lo que
                     desenfoca y generando atención a las nuevas tendencias y a los servicios donde mayor valor agrega el
                     doctor, otro servicios se eliminan o se delegan.
@@ -213,35 +257,35 @@ include_once('header.php');
             <h4 Class="mb-3 ">Costeo y rentabilidad de Servicios</h4>
 
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="" id="">
-                <label class="form-check-label" for="">
+                <input class="form-check-input" type="radio" name="s4p6" value="s4p6r1">
+                <label class="form-check-label">
                     No se tiene.
                 </label>
             </div>
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="" id="">
-                <label class="form-check-label" for="">
+                <input class="form-check-input" type="radio" name="s4p6" value="s4p6r2">
+                <label class="form-check-label">
                     Se tiene una idea del costo por servicio y producto pero no se usa para la determinación del precio
                     y no se tiene la rentabilidad.
                 </label>
             </div>
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="" id="">
-                <label class="form-check-label" for="">
+                <input class="form-check-input" type="radio" name="s4p6" value="s4p6r3">
+                <label class="form-check-label">
                     Se tiene el costo preciso por servicio y producto pero la rentabilidad no se tiene clara en los
                     servicios.
                 </label>
             </div>
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="" id="">
-                <label class="form-check-label" for="">
+                <input class="form-check-input" type="radio" name="s4p6" value="s4p6r4">
+                <label class="form-check-label">
                     Tengo una revisión de costos anual de costos, precios y rentabilidad pero hace falta un seguimiento
                     mas frecuente.
                 </label>
             </div>
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="" id="">
-                <label class="form-check-label" for="">
+                <input class="form-check-input" type="radio" name="s4p6" value="s4p6r5">
+                <label class="form-check-label">
                     Se mantiene un sistema de calculo y seguimiento de costeo y rentabilidad por servicio y producto.
                     Esto también ayuda en el proceso de ajuste de precio.
                 </label>
@@ -255,35 +299,35 @@ include_once('header.php');
             <h4 class="mb-3 ">Fijación de precios</h4>
 
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="" id="">
-                <label class="form-check-label" for="">
+                <input class="form-check-input" type="radio" name="s4p7" value="s4p7r1">
+                <label class="form-check-label">
                     No se tiene un proceso para esto, solo una revisión anual basada en los incrementos de los
                     proveedores o del mercado en el que se compite.
                 </label>
             </div>
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="" id="">
-                <label class="form-check-label" for="">
+                <input class="form-check-input" type="radio" name="s4p7" value="s4p7r2">
+                <label class="form-check-label">
                     Para la definición de precios se cuenta con un proceso básico de costo mas un margen deseado.
                 </label>
             </div>
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="" id="">
-                <label class="form-check-label" for="">
+                <input class="form-check-input" type="radio" name="s4p7" value="s4p7r3">
+                <label class="form-check-label">
                     En la fijación de precios se ocupa tanto el incremento en insumos como también los precios de la
                     competencia.
                 </label>
             </div>
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="" id="">
-                <label class="form-check-label" for="">
+                <input class="form-check-input" type="radio" name="s4p7" value="s4p7r4">
+                <label class="form-check-label">
                     Se cuenta con un proceso que considera el incremento en insumos, los precios de la competencia y la
                     estrategia deseada internamente para provocar mas o menos ventas de cada producto o servicio.
                 </label>
             </div>
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="" id="">
-                <label class="form-check-label" for="">
+                <input class="form-check-input" type="radio" name="s4p7" value="s4p7r5">
+                <label class="form-check-label">
                     Se cuenta con un proceso integral tomando en cuenta inflación de insumos, precios del mercado,
                     estrategia interna. Este plan se sigue y monitorea todo el año, al mismo tiempo que se evalúan
                     ajustes por eventos imprevistos.

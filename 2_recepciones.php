@@ -48,33 +48,33 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <h4 class="mb-3 ">Sistema para admón. de citas</h4>
 
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="" id="">
-                <label class="form-check-label" for="">
+                <input class="form-check-input" type="radio" name="s2p1" value="s2p1r1">
+                <label class="form-check-label">
                     No se cuenta con un sistema y el registro se lleva manual pero con inconsistencias y sin
                     confirmaciones.
                 </label>
             </div>
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="" id="">
-                <label class="form-check-label" for="">
+                <input class="form-check-input" type="radio" name="s2p1" value="s2p1r2">
+                <label class="form-check-label">
                     Se lleva registro a mano y es eficiente en la medida de lo posible.
                 </label>
             </div>
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="" id="">
-                <label class="form-check-label" for="">
+                <input class="form-check-input" type="radio" name="s2p1" value="s2p1r3">
+                <label class="form-check-label">
                     Se lleva restiro electrónico en Excel.
                 </label>
             </div>
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="" id="">
-                <label class="form-check-label" for="">
+                <input class="form-check-input" type="radio" name="s2p1" value="s2p1r4">
+                <label class="form-check-label">
                     Sistema de calendarización de citas comercial.
                 </label>
             </div>
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="" id="">
-                <label class="form-check-label" for="">
+                <input class="form-check-input" type="radio" name="s2p1" value="s2p1r5">
+                <label class="form-check-label">
                     Cuenta con un sistema integral de citas integrada con agenda y otros sistemas internos.
                 </label>
             </div>
@@ -86,32 +86,32 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <h4 Class="mb-3 ">Area de recepción</h4>
 
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="" id="">
-                <label class="form-check-label" for="">
+                <input class="form-check-input" type="radio" name="s2p2" value="s2p2r1">
+                <label class="form-check-label">
                     Comparte recepción con mas doctores.
                 </label>
             </div>
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="" id="">
-                <label class="form-check-label" for="">
+                <input class="form-check-input" type="radio" name="s2p2" value="s2p2r2">
+                <label class="form-check-label">
                     Se cuenta con un espacio pequeño.
                 </label>
             </div>
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="" id="">
-                <label class="form-check-label" for="">
+                <input class="form-check-input" type="radio" name="s2p2" value="s2p2r3">
+                <label class="form-check-label">
                     Cuenta con un área especial de recepción.
                 </label>
             </div>
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="" id="">
-                <label class="form-check-label" for="">
+                <input class="form-check-input" type="radio" name="s2p2" value="s2p2r4">
+                <label class="form-check-label">
                     Su recepción es amplia y con amenidades.
                 </label>
             </div>
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="" id="">
-                <label class="form-check-label" for="">
+                <input class="form-check-input" type="radio" name="s2p2" value="s2p2r5">
+                <label class="form-check-label">
                     Además de recepción tiene área VIP para pacientes oro.
                 </label>
             </div>
@@ -124,32 +124,32 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <h4 class="mb-3 ">Persona dedicada a recepción</h4>
 
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="" id="">
-                <label class="form-check-label" for="">
+                <input class="form-check-input" type="radio" name="s2p3" value="s2p3r1">
+                <label class="form-check-label">
                     No cuenta con personal dedicado a esta área y este rol lo hacen diferentes personas.
                 </label>
             </div>
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="" id="">
-                <label class="form-check-label" for="">
+                <input class="form-check-input" type="radio" name="s2p3" value="s2p3r2">
+                <label class="form-check-label">
                     Cuenta con una recepcionista compartida.
                 </label>
             </div>
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="" id="">
-                <label class="form-check-label" for="">
+                <input class="form-check-input" type="radio" name="s2p3" value="s2p3r3">
+                <label class="form-check-label">
                     Cuenta con un persona dedicada a recepción y otras tareas.
                 </label>
             </div>
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="" id="">
-                <label class="form-check-label" for="">
+                <input class="form-check-input" type="radio" name="s2p3" value="s2p3r4">
+                <label class="form-check-label">
                     Cuenta con equipo y turnos dedicados a recepción.
                 </label>
             </div>
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="" id="">
-                <label class="form-check-label" for="">
+                <input class="form-check-input" type="radio" name="s2p3" value="s2p3r5">
+                <label class="form-check-label">
                     Cuenta con un equipo y turnos de recepción que además de tener un nivel de servicio superior,
                     también impulsan la venta.
                 </label>
@@ -162,32 +162,32 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <h4 class="mb-3 ">Administración de Expedientes</h4>
 
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="" id="">
-                <label class="form-check-label" for="">
+                <input class="form-check-input" type="radio" name="s2p4" value="s2p4r1">
+                <label class="form-check-label">
                     No tiene expedientes.
                 </label>
             </div>
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="" id="">
-                <label class="form-check-label" for="">
+                <input class="form-check-input" type="radio" name="s2p4" value="s2p4r2">
+                <label class="form-check-label">
                     Tiene expedientes de papel.
                 </label>
             </div>
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="" id="">
-                <label class="form-check-label" for="">
+                <input class="form-check-input" type="radio" name="s2p4" value="s2p4r3">
+                <label class="form-check-label">
                     Cuenta con un Excel o Word de expedientes.
                 </label>
             </div>
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="" id="">
-                <label class="form-check-label" for="">
+                <input class="form-check-input" type="radio" name="s2p4" value="s2p4r4">
+                <label class="form-check-label">
                     Cuenta con expediente clínico digital.
                 </label>
             </div>
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="" id="">
-                <label class="form-check-label" for="">
+                <input class="form-check-input" type="radio" name="s2p4" value="s2p4r5">
+                <label class="form-check-label">
                     Cuenta con un sistema integral, electrónico en la nube.
                 </label>
             </div>
