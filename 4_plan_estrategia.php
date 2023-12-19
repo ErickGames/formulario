@@ -27,32 +27,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <h1>PLANEACIÓN Y ESTRATEGIA</h1>
     </div>
 
-    <?php
-    echo $_SESSION['respuesta_s1p1'] . "<br>";
-    echo $_SESSION['respuesta_s1p2'] . "<br>";
-    echo $_SESSION['respuesta_s1p3'] . "<br>";
-    echo $_SESSION['respuesta_s1p4'] . "<br>";
-    echo $_SESSION['respuesta_s1p5'] . "<br>";
-    echo $_SESSION['respuesta_s1p6'] . "<br>";
-    echo $_SESSION['respuesta_s1p7'] . "<br>";
-    echo $_SESSION['respuesta_s1p8'] . "<br>";
-    echo $_SESSION['respuesta_s1p9'] . "<br>SECCION 2: <br>";
-    echo $_SESSION['respuesta_s2p1'] . "<br>";
-    echo $_SESSION['respuesta_s2p2'] . "<br>";
-    echo $_SESSION['respuesta_s2p3'] . "<br>";
-    echo $_SESSION['respuesta_s2p4'] . "<br>SECCION 3: <br>";
-    echo $_SESSION['respuesta_s3p1'] . "<br>";
-    echo $_SESSION['respuesta_s3p2'] . "<br>";
-    echo $_SESSION['respuesta_s3p3'] . "<br>";
-    echo $_SESSION['respuesta_s3p4'] . "<br>";
-    echo $_SESSION['respuesta_s3p5'] . "<br>";
-    echo $_SESSION['respuesta_s3p6'] . "<br>";
-    echo $_SESSION['respuesta_s3p7'] . "<br>";
-    echo $_SESSION['respuesta_s3p8'] . "<br>";
-    echo $_SESSION['respuesta_s3p9'] . "<br>";
-
-    ?>
-
     <form action="5_farmacia.php" method="POST" class="m-5">
 
         <!-- PREGUNTA 1 -->

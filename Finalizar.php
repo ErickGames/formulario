@@ -3,18 +3,18 @@ include_once('header.php');
 
 session_start();
 
-$_SESSION['respuesta_S10p1'] = $_POST['S10p1'];
-$_SESSION['respuesta_S10p2'] = $_POST['S10p2'];
-$_SESSION['respuesta_S10p3'] = $_POST['S10p3'];
-$_SESSION['respuesta_S10p4'] = $_POST['S10p4'];
-$_SESSION['respuesta_S10p5'] = $_POST['S10p5'];
-$_SESSION['respuesta_S10p6'] = $_POST['S10p6'];
-$_SESSION['respuesta_S10p7'] = $_POST['S10p7'];
-$_SESSION['respuesta_S10p8'] = $_POST['S10p8'];
-$_SESSION['respuesta_S10p9'] = $_POST['S10p9'];
-$_SESSION['respuesta_S10p10'] = $_POST['S10p10'];
-$_SESSION['respuesta_S10p11'] = $_POST['S10p11'];
-$_SESSION['respuesta_S10p12'] = $_POST['S10p12'];
+$_SESSION['respuesta_s10p1'] = $_POST['s10p1'];
+$_SESSION['respuesta_s10p2'] = $_POST['s10p2'];
+$_SESSION['respuesta_s10p3'] = $_POST['s10p3'];
+$_SESSION['respuesta_s10p4'] = $_POST['s10p4'];
+$_SESSION['respuesta_s10p5'] = $_POST['s10p5'];
+$_SESSION['respuesta_s10p6'] = $_POST['s10p6'];
+$_SESSION['respuesta_s10p7'] = $_POST['s10p7'];
+$_SESSION['respuesta_s10p8'] = $_POST['s10p8'];
+$_SESSION['respuesta_s10p9'] = $_POST['s10p9'];
+$_SESSION['respuesta_s10p10'] = $_POST['s10p10'];
+$_SESSION['respuesta_s10p11'] = $_POST['s10p11'];
+$_SESSION['respuesta_s10p12'] = $_POST['s10p12'];
 
 ?>
 

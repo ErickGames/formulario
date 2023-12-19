@@ -21,14 +21,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <h1>FISCAL Y LEGAL</h1>
     </div>
 
-    <?php
-    "SECCION 5: <br>";
-    echo $_SESSION['respuesta_s5p1'] . "<br>";
-    echo $_SESSION['respuesta_s5p2'] . "<br>";
-    echo $_SESSION['respuesta_s5p3'] . "<br>";
-
-    ?>
-
     <form action="7_activos.php" method="POST" class="m-5">
 
         <!-- PREGUNTA 1 -->

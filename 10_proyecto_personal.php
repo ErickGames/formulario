@@ -23,16 +23,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <h1>PROYECTO PERSONAL / ESTATUS DEL NEGOCIO</h1>
     </div>
 
-    <?php
-    "SECCION 8: <br>";
-    echo $_SESSION['respuesta_s9p1'] . "<br>";
-    echo $_SESSION['respuesta_s9p2'] . "<br>";
-    echo $_SESSION['respuesta_s9p3'] . "<br>";
-    echo $_SESSION['respuesta_s9p4'] . "<br>";
-    echo $_SESSION['respuesta_s9p5'] . "<br>";
-
-    ?>
-
     <form action="Finalizar.php" class="m-5">
 
         <!-- PREGUNTA 1 -->

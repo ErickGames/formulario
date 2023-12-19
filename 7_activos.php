@@ -23,16 +23,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <h1>ACTIVOS</h1>
     </div>
 
-    <?php
-    "SECCION 6: <br>";
-    echo $_SESSION['respuesta_s6p1'] . "<br>";
-    echo $_SESSION['respuesta_s6p2'] . "<br>";
-    echo $_SESSION['respuesta_s6p3'] . "<br>";
-    echo $_SESSION['respuesta_s6p4'] . "<br>";
-    echo $_SESSION['respuesta_s6p5'] . "<br>";
-
-    ?>
-
     <form action="8_RH.php" method="POST" class="m-5">
 
         <!-- PREGUNTA 1 -->

@@ -28,18 +28,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <h1>RECEPCIÓN / CITAS / EXPEDIENTES</h1>
     </div>
 
-    <?php
-    echo $_SESSION['respuesta_s1p1'] . "<br>";
-    echo $_SESSION['respuesta_s1p2'] . "<br>";
-    echo $_SESSION['respuesta_s1p3'] . "<br>";
-    echo $_SESSION['respuesta_s1p4'] . "<br>";
-    echo $_SESSION['respuesta_s1p5'] . "<br>";
-    echo $_SESSION['respuesta_s1p6'] . "<br>";
-    echo $_SESSION['respuesta_s1p7'] . "<br>";
-    echo $_SESSION['respuesta_s1p8'] . "<br>";
-    echo $_SESSION['respuesta_s1p9'] . "<br>";
-    ?>
-
     <form action="3_administracion.php" method="POST" class="m-5">
 
         <!-- PREGUNTA 1 -->
