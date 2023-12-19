@@ -25,6 +25,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <h1>RECURSOS HUMANOS</h1>
     </div>
 
+    <?php
+    "SECCION 7: <br>";
+    echo $_SESSION['respuesta_s7p1'] . "<br>";
+    echo $_SESSION['respuesta_s7p2'] . "<br>";
+    echo $_SESSION['respuesta_s7p3'] . "<br>";
+    echo $_SESSION['respuesta_s7p4'] . "<br>";
+    echo $_SESSION['respuesta_s7p5'] . "<br>";
+    echo $_SESSION['respuesta_s7p6'] . "<br>";
+    echo $_SESSION['respuesta_s7p7'] . "<br>";
+
+    ?>
+
     <form action="9_instalaciones.php" method="POST" class="m-5">
 
         <!-- PREGUNTA 1 -->

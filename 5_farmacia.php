@@ -25,6 +25,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <h1>FARMACIA</h1>
     </div>
 
+    <?php
+    echo $_SESSION['respuesta_s3p9'] . "<br>SECCION 4: <br>";
+    echo $_SESSION['respuesta_s4p1'] . "<br>";
+    echo $_SESSION['respuesta_s4p2'] . "<br>";
+    echo $_SESSION['respuesta_s4p3'] . "<br>";
+    echo $_SESSION['respuesta_s4p4'] . "<br>";
+    echo $_SESSION['respuesta_s4p5'] . "<br>";
+    echo $_SESSION['respuesta_s4p6'] . "<br>";
+    echo $_SESSION['respuesta_s4p7'] . "<br>";
+
+    ?>
+
     <form action="6_fiscal_legal.php" method="POST" class="m-5">
 
         <!-- PREGUNTA 1 -->

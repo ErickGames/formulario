@@ -53,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     ?>
 
-    <form action="5_plan_Estrategia.php" method="POST" class="m-5">
+    <form action="5_farmacia.php" method="POST" class="m-5">
 
         <!-- PREGUNTA 1 -->
         <div class="p-5" style="background-color:rgba(25, 47, 89, 0.1)">

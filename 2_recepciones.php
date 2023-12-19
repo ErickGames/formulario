@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo $_SESSION['respuesta_s1p9'] . "<br>";
     ?>
 
-    <form action="3_recepciones.php" method="POST" class="m-5">
+    <form action="3_administracion.php" method="POST" class="m-5">
 
         <!-- PREGUNTA 1 -->
         <div class="p-5" style="background-color:rgba(25, 47, 89, 0.1)">

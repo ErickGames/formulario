@@ -21,6 +21,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <h1>FISCAL Y LEGAL</h1>
     </div>
 
+    <?php
+    "SECCION 5: <br>";
+    echo $_SESSION['respuesta_s5p1'] . "<br>";
+    echo $_SESSION['respuesta_s5p2'] . "<br>";
+    echo $_SESSION['respuesta_s5p3'] . "<br>";
+
+    ?>
+
     <form action="7_activos.php" method="POST" class="m-5">
 
         <!-- PREGUNTA 1 -->
@@ -31,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s6p1" value="s6p1r1">
                 <label class="form-check-label">
-                    soy persona física con actividad empresaria y profesional.
+                    Soy persona física con actividad empresaria y profesional.
                 </label>
             </div>
             <div class="form-check mx-4">

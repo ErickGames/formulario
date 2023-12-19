@@ -33,6 +33,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <h1>INSTALACIONES</h1>
     </div>
 
+    <?php
+    "SECCION 8: <br>";
+    echo $_SESSION['respuesta_s8p1'] . "<br>";
+    echo $_SESSION['respuesta_s8p2'] . "<br>";
+    echo $_SESSION['respuesta_s8p3'] . "<br>";
+    echo $_SESSION['respuesta_s8p4'] . "<br>";
+    echo $_SESSION['respuesta_s8p5'] . "<br>";
+    echo $_SESSION['respuesta_s8p6'] . "<br>";
+    echo $_SESSION['respuesta_s8p7'] . "<br>";
+    echo $_SESSION['respuesta_s8p8'] . "<br>";
+    echo $_SESSION['respuesta_s8p9'] . "<br>";
+    echo $_SESSION['respuesta_s8p10'] . "<br>";
+    echo $_SESSION['respuesta_s8p11'] . "<br>";
+    echo $_SESSION['respuesta_s8p12'] . "<br>";
+    echo $_SESSION['respuesta_s8p13'] . "<br>";
+    echo $_SESSION['respuesta_s8p14'] . "<br>";
+
+    ?>
+
     <form action="10_proyecto_personal.php" method="POST" class="m-5">
 
         <!-- PREGUNTA 1 -->
