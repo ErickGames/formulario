@@ -10,15 +10,21 @@ session_start();
 
 <body>
 
-    <div class="mx-5 mt-5">
-        <h4>SECCION 1</h4>
-        <h1>VENTAS Y MERCADOTECNIA</h1>
+    <div class="row mx-5 mt-5">
+        <div class="col-8">
+            <h4>SECCIÓN 1</h4>
+            <h1>VENTAS Y MERCADOTECNIA</h1>
+        </div>
+
+        <div class="col-4"> 
+            <img src="img/logo-01.png" alt="" style="display:block; margin:auto; width:40%">
+        </div>
     </div>
 
-    <form action="2_recepciones.php" method="POST" class="m-5">
+    <form action="2_recepciones.php" method="POST" class="m-4 bordesito">
 
         <!-- PREGUNTA 1 -->
-        <div class="p-5" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
             <h4 class="mb-3 ">Gestión de venta</h4>
 
@@ -56,7 +62,7 @@ session_start();
         </div>
 
         <!-- PREGUNTA 2 -->
-        <div class="p-5" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
             <h4 Class="mb-3 ">Actividad Promocional</h4>
 
@@ -94,7 +100,7 @@ session_start();
         </div>
 
         <!-- PREGUNTA 3 -->
-        <div class="p-5" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
 
             <h4 class="mb-3 ">Gestión de venta</h4>
@@ -133,7 +139,7 @@ session_start();
         </div>
 
         <!-- PREGUNTA 4 -->
-        <div class="p-5" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
             <h4 class="mb-3 ">Redes Sociales</h4>
 
@@ -170,7 +176,7 @@ session_start();
         </div>
 
         <!-- PREGUNTA 5 -->
-        <div class="p-5" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
             <h4 Class="mb-3 ">Poder de marca</h4>
 
@@ -208,7 +214,7 @@ session_start();
         </div>
 
         <!-- PREGUNTA 6 -->
-        <div class="p-5" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
             <h4 class="mb-3 ">Página WEB del negocio</h4>
 
@@ -246,7 +252,7 @@ session_start();
         </div>
 
         <!-- PREGUNTA 7 -->
-        <div class="p-5" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
             <h4 class="mb-3 ">Publicidad en medios tradicionales </h4>
 
@@ -284,7 +290,7 @@ session_start();
         </div>
 
         <!-- PREGUNTA 8 -->
-        <div class="p-5" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
             <h4 Class="mb-3 ">Plan de Lealtad e incentivos con pacientes frecuentes</h4>
 
@@ -322,7 +328,7 @@ session_start();
         </div>
 
         <!-- PREGUNTA 9 -->
-        <div class="p-5" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
 
             <h4 class="mb-3 ">Soporte para comunicación y mercadotecnia (Agencia o profesionales)</h4>

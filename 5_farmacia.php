@@ -14,21 +14,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $_SESSION['respuesta_s4p6'] = $_POST['s4p6'];
     $_SESSION['respuesta_s4p7'] = $_POST['s4p7'];
 
-    // Puedes hacer lo mismo para otras preguntas y secciones
+    // Puedes hacer lo mismo para otras preguntas y SECCIÓNes
 }
 ?>
 
 <body>
 
-    <div class="mx-5 mt-5">
-        <h4>SECCION 5</h4>
-        <h1>FARMACIA</h1>
+    <div class=" row mx-5 mt-5">
+        <div class="col-8">
+            <h4>SECCIÓN 5</h4>
+            <h1>FARMACIA</h1>
+        </div>
+
+        <div class="col-4">
+            <img src="img/logo-01.png" alt="" style="display:block; margin:auto; width:40%">
+        </div>
     </div>
 
-    <form action="6_fiscal_legal.php" method="POST" class="m-5">
+    <form action="6_fiscal_legal.php" method="POST" class="m-4 bordesito">
 
         <!-- PREGUNTA 1 -->
-        <div class="p-5" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
             <h4 class="mb-3 ">Cuento con farmacia</h4>
 
@@ -65,7 +71,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 2 -->
-        <div class="p-5" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
             <h4 Class="mb-3 ">Administración de Farmacia </h4>
 
@@ -104,7 +110,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 3 -->
-        <div class="p-5" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
 
             <h4 class="mb-3 ">Manejo Inventarios y faltantes</h4>

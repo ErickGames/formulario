@@ -1,7 +1,8 @@
 <?php
+session_start();
+
 include_once('header.php');
 
-session_start();
 
 // Verifica si se ha enviado el formulario
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -11,22 +12,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $_SESSION['respuesta_s9p3'] = $_POST['s9p3'];
     $_SESSION['respuesta_s9p4'] = $_POST['s9p4'];
     $_SESSION['respuesta_s9p5'] = $_POST['s9p5'];
-
-    // Puedes hacer lo mismo para otras preguntas y secciones
 }
 ?>
 
 <body>
+    <div class=" row mx-5 mt-5">
+        <div class="col-8">
+            <h4>SECCIÓN 10</h4>
+            <h1>PROYECTO PERSONAL / ESTATUS DEL NEGOCIO</h1>
+        </div>
 
-    <div class="mx-5 mt-5">
-        <h4>SECCION 10</h4>
-        <h1>PROYECTO PERSONAL / ESTATUS DEL NEGOCIO</h1>
+        <div class="col-4">
+            <img src="img/logo-01.png" alt="" style="display:block; margin:auto; width:40%">
+        </div>
     </div>
 
-    <form action="Finalizar.php" class="m-5">
+    <form action="Finalizar.php" method="POST" class="m-4 bordesito">
 
         <!-- PREGUNTA 1 -->
-        <div class="p-5" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
             <h4 class="mb-3 ">Tiempo dedicado a la clínica / consultorio propio</h4>
 
@@ -63,7 +67,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 2 -->
-        <div class="p-5" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
             <h4 Class="mb-3 ">% de agenda llena / en los días asignados a su propio consultorio</h4>
 
@@ -100,7 +104,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 3 -->
-        <div class="p-5" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
             <h4 class="mb-3 ">Madurez del negocio</h4>
 
@@ -138,7 +142,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 4 -->
-        <div class="p-5" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
             <h4 class="mb-3 ">Conformidad profesional</h4>
 
@@ -176,7 +180,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 5 -->
-        <div class="p-5" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
             <h4 Class="mb-3 ">Conformidad personal</h4>
 
@@ -217,7 +221,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 6 -->
-        <div class="p-5" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
             <h4 class="mb-3 ">Balance Vida-Trabajo</h4>
 
@@ -258,7 +262,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 7 -->
-        <div class="p-5" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
             <h4 Class="mb-3 ">Pasión</h4>
 
@@ -295,7 +299,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 8 -->
-        <div class="p-5" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
             <h4 Class="mb-3 ">Creatividad</h4>
 
@@ -337,7 +341,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 9 -->
-        <div class="p-5" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
             <h4 Class="mb-3 ">Persistencia</h4>
 
@@ -378,7 +382,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 10 -->
-        <div class="p-5" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
             <h4 Class="mb-3 ">Autonomía</h4>
 
@@ -419,7 +423,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 11 -->
-        <div class="p-5" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
             <h4 Class="mb-3 ">Autoestima</h4>
 
@@ -461,7 +465,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 12 -->
-        <div class="p-5" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
             <h4 Class="mb-3 ">Es oportuno</h4>
 

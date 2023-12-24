@@ -11,22 +11,28 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $_SESSION['respuesta_s2p3'] = $_POST['s2p3'];
     $_SESSION['respuesta_s2p4'] = $_POST['s2p4'];
 
-    // Puedes hacer lo mismo para otras preguntas y secciones
+    // Puedes hacer lo mismo para otras preguntas y SECCIÓNes
 }
 
 ?>
 
 <body>
 
-    <div class="mx-5 mt-5">
-        <h4>SECCION 3</h4>
-        <h1>ADMINISTRACIÓN</h1>
+    <div class=" row mx-5 mt-5">
+        <div class="col-8">
+            <h4>SECCIÓN 3</h4>
+            <h1>ADMINISTRACIÓN</h1>
+        </div>
+
+        <div class="col-4">
+            <img src="img/logo-01.png" alt="" style="display:block; margin:auto; width:40%">
+        </div>
     </div>
 
-    <form action="4_plan_estrategia.php" method="POST" class="m-5">
+    <form action="4_plan_estrategia.php" method="POST" class="m-4 bordesito">
 
         <!-- PREGUNTA 1 -->
-        <div class="p-5" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
             <h4 class="mb-3 ">Registro contable</h4>
 
@@ -64,7 +70,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 2 -->
-        <div class="p-5" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
             <h4 Class="mb-3 ">Estados financieros</h4>
 
@@ -101,7 +107,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 3 -->
-        <div class="p-5" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
 
             <h4 class="mb-3 ">Generación de utilidades</h4>
@@ -141,7 +147,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 4 -->
-        <div class="p-5" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
             <h4 class="mb-3 ">Registro de transacciones por evento y operación </h4>
 
@@ -179,7 +185,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 5 -->
-        <div class="p-5" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
             <h4 Class="mb-3 ">Clientes y cuentas por cobrar</h4>
 
@@ -216,7 +222,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 6 -->
-        <div class="p-5" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
             <h4 class="mb-3 ">Proveedores y cuentas por pagar</h4>
 
@@ -253,7 +259,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 7 -->
-        <div class="p-5" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
             <h4 class="mb-3 ">Reportes se desempeño y seguimiento </h4>
 
@@ -290,7 +296,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 8 -->
-        <div class="p-5" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
             <h4 Class="mb-3 ">Soporte de un Contador interno/externo</h4>
 
@@ -328,7 +334,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 9 -->
-        <div class="p-5" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
 
             <h4 class="mb-3 ">Negociación y alianzas con proveedores</h4>

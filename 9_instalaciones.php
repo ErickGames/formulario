@@ -22,21 +22,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $_SESSION['respuesta_s8p14'] = $_POST['s8p14'];
 
 
-    // Puedes hacer lo mismo para otras preguntas y secciones
+    // Puedes hacer lo mismo para otras preguntas y SECCIÓNes
 }
 ?>
 
 <body>
+    <div class=" row mx-5 mt-5">
+        <div class="col-8">
+            <h4>SECCIÓN 9</h4>
+            <h1>INSTALACIONES</h1>
+        </div>
 
-    <div class="mx-5 mt-5">
-        <h4>SECCION 9</h4>
-        <h1>INSTALACIONES</h1>
+        <div class="col-4">
+            <img src="img/logo-01.png" alt="" style="display:block; margin:auto; width:40%">
+        </div>
     </div>
 
-    <form action="10_proyecto_personal.php" method="POST" class="m-5">
+    <form action="10_proyecto_personal.php" method="POST" class="m-4 bordesito">
 
         <!-- PREGUNTA 1 -->
-        <div class="p-5" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
             <h4 class="mb-3 ">Inventario de activos</h4>
 
@@ -73,7 +78,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 2 -->
-        <div class="p-5" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
             <h4 Class="mb-3 ">Nivel de Inversión en equipos</h4>
 
@@ -110,7 +115,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 3 -->
-        <div class="p-5" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
 
             <h4 class="mb-3 ">Registro de depreciación de activos</h4>
@@ -151,7 +156,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 4 -->
-        <div class="p-5" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
             <h4 class="mb-3 ">Cotizaciones, evaluación de proveedores y opciones de financiamiento</h4>
 
@@ -191,7 +196,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 5 -->
-        <div class="p-5" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
             <h4 Class="mb-3 ">Nivel de apalancamiento con proveedores</h4>
 

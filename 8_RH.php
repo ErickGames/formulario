@@ -14,21 +14,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $_SESSION['respuesta_s7p6'] = $_POST['s7p6'];
     $_SESSION['respuesta_s7p7'] = $_POST['s7p7'];
 
-    // Puedes hacer lo mismo para otras preguntas y secciones
+    // Puedes hacer lo mismo para otras preguntas y SECCIÓNes
 }
 ?>
 
 <body>
+    <div class=" row mx-5 mt-5">
+        <div class="col-8">
+            <h4>SECCIÓN 8</h4>
+            <h1>RECURSOS HUMANOS</h1>
+        </div>
 
-    <div class="mx-5 mt-5">
-        <h4>SECCION 8</h4>
-        <h1>RECURSOS HUMANOS</h1>
+        <div class="col-4">
+            <img src="img/logo-01.png" alt="" style="display:block; margin:auto; width:40%">
+        </div>
     </div>
 
-    <form action="9_instalaciones.php" method="POST" class="m-5">
+    <form action="9_instalaciones.php" method="POST" class="m-4 bordesito">
 
         <!-- PREGUNTA 1 -->
-        <div class="p-5" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
             <h4 class="mb-3 ">Personal en general</h4>
 
@@ -65,7 +70,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 2 -->
-        <div class="p-5" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
             <h4 Class="mb-3 ">Equipo de personas suficiente y asignado a labores especificas</h4>
 
@@ -102,7 +107,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 3 -->
-        <div class="p-5" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
 
             <h4 class="mb-3 ">Administración de nomina</h4>
@@ -140,7 +145,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 4 -->
-        <div class="p-5" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
             <h4 class="mb-3 ">Perfiles de puestos / Descripción de responsabilidades</h4>
 
@@ -178,7 +183,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 5 -->
-        <div class="p-5" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
             <h4 Class="mb-3 ">Metas y objetivos claros por persona</h4>
 
@@ -216,7 +221,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 6 -->
-        <div class="p-5" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
             <h4 class="mb-3 ">Incentivos / Bonos y Comisiones</h4>
 
@@ -253,7 +258,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 7 -->
-        <div class="p-5" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
             <h4 Class="mb-3 ">Competitividad laboral</h4>
 
@@ -293,7 +298,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 8 -->
-        <div class="p-5" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
 
             <h4 class="mb-3 ">Rotación</h4>
@@ -331,7 +336,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 9 -->
-        <div class="p-5" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
             <h4 class="mb-3 ">Reclutamiento</h4>
 
@@ -369,44 +374,43 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 10 -->
-        <div class="p-5" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="p-4" style="background-color:rgba(61, 177, 102, 0.1)
+            <h4 Class=" mb-3 ">Comunicación y alineación</h4>
 
-            <h4 Class="mb-3 ">Comunicación y alineación</h4>
-
-            <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="s8p10" value="s8p10r1">
-                <label class="form-check-label">
-                    Nunca me reúno con mi equipo.
-                </label>
-            </div>
-            <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="s8p10" value="s8p10r2">
-                <label class="form-check-label">
-                    reuniones solo si hay problemas.
-                </label>
-            </div>
-            <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="s8p10" value="s8p10r3">
-                <label class="form-check-label">
-                    Reuniones semanales.
-                </label>
-            </div>
-            <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="s8p10" value="s8p10r4">
-                <label class="form-check-label">
-                    Reuniones mensuales.
-                </label>
-            </div>
-            <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="s8p10" value="s8p10r5">
-                <label class="form-check-label">
-                    Reuniones mensuales y reuniones de consejo con lideres trimestrales.
-                </label>
-            </div>
+            <div class=" form-check mx-4">
+            <input class="form-check-input" type="radio" name="s8p10" value="s8p10r1">
+            <label class="form-check-label">
+                Nunca me reúno con mi equipo.
+            </label>
+        </div>
+        <div class="form-check mx-4">
+            <input class="form-check-input" type="radio" name="s8p10" value="s8p10r2">
+            <label class="form-check-label">
+                reuniones solo si hay problemas.
+            </label>
+        </div>
+        <div class="form-check mx-4">
+            <input class="form-check-input" type="radio" name="s8p10" value="s8p10r3">
+            <label class="form-check-label">
+                Reuniones semanales.
+            </label>
+        </div>
+        <div class="form-check mx-4">
+            <input class="form-check-input" type="radio" name="s8p10" value="s8p10r4">
+            <label class="form-check-label">
+                Reuniones mensuales.
+            </label>
+        </div>
+        <div class="form-check mx-4">
+            <input class="form-check-input" type="radio" name="s8p10" value="s8p10r5">
+            <label class="form-check-label">
+                Reuniones mensuales y reuniones de consejo con lideres trimestrales.
+            </label>
+        </div>
         </div>
 
         <!-- PREGUNTA 11 -->
-        <div class="p-5" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
             <h4 Class="mb-3 ">Gestión de doctores y enfermeras</h4>
 
@@ -445,7 +449,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 12 -->
-        <div class="p-5" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
 
             <h4 class="mb-3 ">Reconocimiento / Premios</h4>
@@ -483,7 +487,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 13 -->
-        <div class="p-5" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
             <h4 class="mb-3 ">Liderazgo y desarrollo de otros</h4>
 
@@ -520,7 +524,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 14 -->
-        <div class="p-5" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
             <h4 Class="mb-3 ">Capacitación y Entrenamiento</h4>
 

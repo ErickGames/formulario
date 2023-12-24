@@ -16,22 +16,28 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $_SESSION['respuesta_s1p8'] = $_POST['s1p8'];
     $_SESSION['respuesta_s1p9'] = $_POST['s1p9'];
 
-    // Puedes hacer lo mismo para otras preguntas y secciones
+    // Puedes hacer lo mismo para otras preguntas y SECCIÓNes
 }
 
 ?>
 
 <body>
 
-    <div class="mx-5 mt-5">
-        <h4>SECCION 2</h4>
-        <h1>RECEPCIÓN / CITAS / EXPEDIENTES</h1>
+    <div class="row mx-5 mt-5">
+        <div class="col-8">
+            <h4>SECCIÓN 2</h4>
+            <h1>RECEPCIÓN / CITAS / EXPEDIENTES</h1>
+        </div>
+
+        <div class="col-4">
+            <img src="img/logo-01.png" alt="" style="display:block; margin:auto; width:40%">
+        </div>
     </div>
 
-    <form action="3_administracion.php" method="POST" class="m-5">
+    <form action="3_administracion.php" method="POST" class="m-4 bordesito">
 
         <!-- PREGUNTA 1 -->
-        <div class="p-5" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
             <h4 class="mb-3 ">Sistema para admón. de citas</h4>
 
@@ -69,7 +75,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 2 -->
-        <div class="p-5" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
             <h4 Class="mb-3 ">Area de recepción</h4>
 
@@ -106,7 +112,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 3 -->
-        <div class="p-5" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
 
             <h4 class="mb-3 ">Persona dedicada a recepción</h4>
@@ -145,7 +151,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 4 -->
-        <div class="p-5" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
             <h4 class="mb-3 ">Administración de Expedientes</h4>
 

@@ -1,5 +1,7 @@
 <?php
 // Genera y descarga el PDF
+session_start();
+
 require('fpdf/fpdf.php');
 
 class PDF extends FPDF
@@ -10,7 +12,7 @@ class PDF extends FPDF
         $this->Image('img/logo-01.png', 10, 8, 33);
         
         $this->SetFont('Arial', 'B', 12);
-        $this->Cell(0, 10, 'Respuestas del Usuario', 0, 1, 'C');
+        $this->Cell(0, 10, utf8_decode('Respuestas del Usuario'), 0, 1, 'C');
     }
 
     function chapterTitle($num, $label)
