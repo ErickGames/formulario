@@ -16,12 +16,12 @@ session_start();
             <h1>VENTAS Y MERCADOTECNIA</h1>
         </div>
 
-        <div class="col-4"> 
+        <div class="col-4">
             <img src="img/logo-01.png" alt="" style="display:block; margin:auto; width:40%">
         </div>
     </div>
 
-    <form action="2_recepciones.php" method="POST" class="m-4 bordesito">
+    <form action="2_recepciones.php" method="POST" class="m-4 bordesito" id="form1">
 
         <!-- PREGUNTA 1 -->
         <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
@@ -366,20 +366,45 @@ session_start();
                 </label>
             </div>
         </div>
-
-        <div style="text-align:center">
-            <button id="miBoton" class="cssbuttons-io-button" type="submit">
-                Siguiente
-                <div class="icon">
-                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 0h24v24H0z" fill="none"></path>
-                        <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-                            fill="currentColor"></path>
-                    </svg>
-                </div>
-            </button>
-        </div>
     </form>
+
+    <div style="display: flex; justify-content: flex-end; margin: 0px 15px 5px 0px">
+        <button id="miBoton" class="cssbuttons-io-button" type="submit">
+            Siguiente
+            <div class="icon">
+                <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                        fill="currentColor"></path>
+                </svg>
+            </div>
+        </button>
+    </div>
+
+    <script>
+        document.getElementById("miBoton").addEventListener("click", function () {
+            var form = document.getElementById("form1");
+            var allQuestionsAnswered = true;
+
+            // Iterar sobre todas las preguntas
+            form.querySelectorAll('div.p-4').forEach(function (question) {
+                var radios = question.querySelectorAll('input[type="radio"]:checked');
+
+                if (radios.length !== 1) {
+                    // Si no se ha seleccionado exactamente una opción por pregunta, establecer allQuestionsAnswered en falso
+                    allQuestionsAnswered = false;
+                }
+            });
+
+            if (allQuestionsAnswered) {
+                // Todas las preguntas tienen exactamente una opción seleccionada, envía el formulario
+                form.submit();
+            } else {
+                // Falta seleccionar alguna opción, muestra un mensaje de error o realiza la acción que desees
+                alert("Por favor, selecciona una opción para cada pregunta.");
+            }
+        });
+    </script>
 
 
 </body>
