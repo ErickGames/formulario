@@ -35,9 +35,17 @@ $pdf->AddPage();
 $pdf->chapterTitle(1, 'Preguntas y Respuestas');
 $pdf->chapterBody($_SESSION['respuesta_s1p1'] . "\n" .
                   $_SESSION['respuesta_s1p2'] . "\n" .
-                  $_SESSION['respuesta_s1p3'] . "\n" 
+                  $_SESSION['respuesta_s1p3'] . "\n" .
+                  $_SESSION['respuesta_s1p4'] . "\n" .
+                  $_SESSION['respuesta_s1p5'] . "\n" .
+                  $_SESSION['respuesta_s1p6'] . "\n" .
+                  $_SESSION['respuesta_s1p7'] . "\n" .
+                  $_SESSION['respuesta_s1p8'] . "\n" .
+                  $_SESSION['respuesta_s1p9']
                   // ... poner las demás
                 );
+
+
 
 // Nombre del archivo PDF
 $nombreArchivo = 'RespuestasUsuario.pdf';
