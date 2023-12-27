@@ -33,9 +33,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <form action="9_instalaciones.php" method="POST" class="m-4 bordesito">
 
         <!-- PREGUNTA 1 -->
-        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="p-4" style="background-color:rgba(39, 52, 128)">
 
-            <h4 class="mb-3 ">Personal en general</h4>
+            <h4 class="mb-3 " style="color: white">Personal en general</h4>
 
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s8p1" value="s8p1r1">
@@ -70,47 +70,47 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 2 -->
-        <div class="p-4" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="p-4" style="background-color:rgba(142, 191, 59)">
 
             <h4 Class="mb-3 ">Equipo de personas suficiente y asignado a labores especificas</h4>
 
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s8p2" value="s8p2r1">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     No tengo.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s8p2" value="s8p2r2">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Solo tengo un empleado y no me doy abasto.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s8p2" value="s8p2r3">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Tengo 3 personas que colaboran en diferente posiciones pero no son el perfil deseado.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s8p2" value="s8p2r4">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Tengo mas de 3 personas que colaboran en diferente posiciones pero no son el perfil deseado.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s8p2" value="s8p2r5">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Equipo completo en todas las áreas.
                 </label>
             </div>
         </div>
 
         <!-- PREGUNTA 3 -->
-        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="p-4" style="background-color:rgba(39, 52, 128)">
 
 
-            <h4 class="mb-3 ">Administración de nomina</h4>
+            <h4 class="mb-3 " style="color: white">Administración de nomina</h4>
 
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s8p3" value="s8p3r1">
@@ -145,47 +145,47 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 4 -->
-        <div class="p-4" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="p-4" style="background-color:rgba(142, 191, 59)">
 
             <h4 class="mb-3 ">Perfiles de puestos / Descripción de responsabilidades</h4>
 
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s8p4" value="s8p4r1">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     No se tiene.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s8p4" value="s8p4r2">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se tiene para las posiciones claves.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s8p4" value="s8p4r3">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se tiene para todas las posiciones pero no se le da seguimiento y no se cumple.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s8p4" value="s8p4r4">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se tiene para todas las posiciones y se les da seguimiento aunque no se actualizan cada periodo
                     definido.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s8p4" value="s8p4r5">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     se tienen perfiles de puesto y se están constantemente renovando.
                 </label>
             </div>
         </div>
 
         <!-- PREGUNTA 5 -->
-        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="p-4" style="background-color:rgba(39, 52, 128)">
 
-            <h4 Class="mb-3 ">Metas y objetivos claros por persona</h4>
+            <h4 Class="mb-3 " style="color: white">Metas y objetivos claros por persona</h4>
 
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s8p5" value="s8p5r1">
@@ -221,46 +221,46 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 6 -->
-        <div class="p-4" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="p-4" style="background-color:rgba(142, 191, 59)">
 
             <h4 class="mb-3 ">Incentivos / Bonos y Comisiones</h4>
 
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s8p6" value="s8p6r1">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     No tengo.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s8p6" value="s8p6r2">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Solo doy incentivos económicos al final del año.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s8p6" value="s8p6r3">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Solo tengo bono mensual por metas y se lleva manual.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s8p6" value="s8p6r4">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se tiene un programa mixto entre metas y pago variable de manera mensual y apoyados en Excel.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s8p6" value="s8p6r5">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se tiene un programa mixto entre metas y pago variable en un sistema especializado para ello.
                 </label>
             </div>
         </div>
 
         <!-- PREGUNTA 7 -->
-        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="p-4" style="background-color:rgba(39, 52, 128)">
 
-            <h4 Class="mb-3 ">Competitividad laboral</h4>
+            <h4 Class="mb-3 " style="color: white">Competitividad laboral</h4>
 
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s8p7" value="s8p7r1">
@@ -298,47 +298,47 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 8 -->
-        <div class="p-4" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="p-4" style="background-color:rgba(142, 191, 59)">
 
 
             <h4 class="mb-3 ">Rotación</h4>
 
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s8p8" value="s8p8r1">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Tengo mucha rotación, es mayor al 50% en un año.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s8p8" value="s8p8r2">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se tiene rotación alta entre un 40% al año.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s8p8" value="s8p8r3">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se tiene rotación media alrededor del 30% al año.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s8p8" value="s8p8r4">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se tiene rotación baja alrededor del 20% al año.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s8p8" value="s8p8r5">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     La rotación no rebasa el 10%.
                 </label>
             </div>
         </div>
 
         <!-- PREGUNTA 9 -->
-        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="p-4" style="background-color:rgba(39, 52, 128)">
 
-            <h4 class="mb-3 ">Reclutamiento</h4>
+            <h4 class="mb-3 " style="color: white">Reclutamiento</h4>
 
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s8p9" value="s8p9r1">
@@ -374,45 +374,45 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 10 -->
-        <div class="p-4" style="background-color:rgba(61, 177, 102, 0.1)
+        <div class="p-4" style="background-color:rgba(142, 191, 59)
             <h4 Class=" mb-3 ">Comunicación y alineación</h4>
 
             <div class=" form-check mx-4">
             <input class="form-check-input" type="radio" name="s8p10" value="s8p10r1">
-            <label class="form-check-label">
+            <label class="form-check-label" style="color: white">
                 Nunca me reúno con mi equipo.
             </label>
         </div>
         <div class="form-check mx-4">
             <input class="form-check-input" type="radio" name="s8p10" value="s8p10r2">
-            <label class="form-check-label">
+            <label class="form-check-label" style="color: white">
                 reuniones solo si hay problemas.
             </label>
         </div>
         <div class="form-check mx-4">
             <input class="form-check-input" type="radio" name="s8p10" value="s8p10r3">
-            <label class="form-check-label">
+            <label class="form-check-label" style="color: white">
                 Reuniones semanales.
             </label>
         </div>
         <div class="form-check mx-4">
             <input class="form-check-input" type="radio" name="s8p10" value="s8p10r4">
-            <label class="form-check-label">
+            <label class="form-check-label" style="color: white">
                 Reuniones mensuales.
             </label>
         </div>
         <div class="form-check mx-4">
             <input class="form-check-input" type="radio" name="s8p10" value="s8p10r5">
-            <label class="form-check-label">
+            <label class="form-check-label" style="color: white">
                 Reuniones mensuales y reuniones de consejo con lideres trimestrales.
             </label>
         </div>
         </div>
 
         <!-- PREGUNTA 11 -->
-        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="p-4" style="background-color:rgba(39, 52, 128)">
 
-            <h4 Class="mb-3 ">Gestión de doctores y enfermeras</h4>
+            <h4 Class="mb-3 " style="color: white">Gestión de doctores y enfermeras</h4>
 
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s8p11" value="s8p11r1">
@@ -449,7 +449,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 12 -->
-        <div class="p-4" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="p-4" style="background-color:rgba(142, 191, 59)">
 
 
             <h4 class="mb-3 ">Reconocimiento / Premios</h4>
@@ -487,9 +487,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 13 -->
-        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="p-4" style="background-color:rgba(39, 52, 128)">
 
-            <h4 class="mb-3 ">Liderazgo y desarrollo de otros</h4>
+            <h4 class="mb-3 " style="color: white">Liderazgo y desarrollo de otros</h4>
 
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s8p13" value="s8p13r1">
@@ -524,7 +524,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 14 -->
-        <div class="p-4" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="p-4" style="background-color:rgba(142, 191, 59)">
 
             <h4 Class="mb-3 ">Capacitación y Entrenamiento</h4>
 

@@ -24,47 +24,47 @@ session_start();
     <form action="2_recepciones.php" method="POST" class="m-4 bordesito">
 
         <!-- PREGUNTA 1 -->
-        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="p-4" style="background-color:rgba(39, 52, 128)">
 
-            <h4 class="mb-3 ">Gestión de venta</h4>
+            <h4 class="mb-3" style="color: white">Gestión de venta</h4>
 
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s1p1" value="1" required>
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     No se cuenta con una labor de venta específica, solo la atención de clientes que nos buscan.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s1p1" value="2" required>
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se cuenta con los mínimos protocolos de venta, para conectar con clientes de manera presencial y
                     virtual.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s1p1" value="3" required>
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Solo se cuenta con seguimiento manual.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s1p1" value="4" required>
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se cuenta con un CRM para la integración y monitorio de los pacientes actuales y posibles nuevos.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s1p1" value="5" required>
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se cuenta con un CRM que es explotado y aprovechado al máximo nivel.
                 </label>
             </div>
         </div>
 
         <!-- PREGUNTA 2 -->
-        <div class="p-4" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="p-4" style="background-color:rgba(142, 191, 59)">
 
-            <h4 Class="mb-3 ">Actividad Promocional</h4>
+            <h4 Class="mb-3" >Actividad Promocional</h4>
 
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s1p2" value="1">
@@ -100,48 +100,48 @@ session_start();
         </div>
 
         <!-- PREGUNTA 3 -->
-        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="p-4" style="background-color:rgba(39, 52, 128)">
 
 
-            <h4 class="mb-3 ">Gestión de venta</h4>
+            <h4 class="mb-3" style="color: white">Gestión de venta</h4>
 
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s1p3" value="1">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     No se cuenta con una labor de venta específica, solo la atención de clientes que nos buscan.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s1p3" value="2">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se cuenta con los mínimos protocolos de venta, para conectar con clientes de manera presencial y
                     virtual.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s1p3" value="3">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Solo se cuenta con seguimiento manual.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s1p3" value="4">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se cuenta con un CRM para la integración y monitorio de los pacientes actuales y posibles nuevos.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s1p3" value="5">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se cuenta con un CRM que es explotado y aprovechado al máximo nivel.
                 </label>
             </div>
         </div>
 
         <!-- PREGUNTA 4 -->
-        <div class="p-4" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="p-4" style="background-color:rgba(142, 191, 59)">
 
-            <h4 class="mb-3 ">Redes Sociales</h4>
+            <h4 class="mb-3" style="color: white">Redes Sociales</h4>
 
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s1p4" value="1">
@@ -176,37 +176,37 @@ session_start();
         </div>
 
         <!-- PREGUNTA 5 -->
-        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="p-4" style="background-color:rgba(39, 52, 128)">
 
-            <h4 Class="mb-3 ">Poder de marca</h4>
+            <h4 Class="mb-3 " style="color: white">Poder de marca</h4>
 
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s1p5" value="1">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     No se cuenta con una marca.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s1p5" value="2">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se cuenta con una marca básica y con oportunidades para comunicación.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s1p5" value="3">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se tiene una marca bien definida pero poco conocida.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s1p5" value="4">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se cuenta con una buena marca, muy reconocida pero no se explotada para generar venta incremental.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s1p5" value="5">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se cuenta con una marca muy reconocida y explotada en una medida generando venta orgánica sin
                     necesidad de pago en comunicación.
                 </label>
@@ -214,7 +214,7 @@ session_start();
         </div>
 
         <!-- PREGUNTA 6 -->
-        <div class="p-4" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="p-4" style="background-color:rgba(142, 191, 59)">
 
             <h4 class="mb-3 ">Página WEB del negocio</h4>
 
@@ -252,37 +252,37 @@ session_start();
         </div>
 
         <!-- PREGUNTA 7 -->
-        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="p-4" style="background-color:rgba(39, 52, 128)">
 
-            <h4 class="mb-3 ">Publicidad en medios tradicionales </h4>
+            <h4 class="mb-3 " style="color: white">Publicidad en medios tradicionales </h4>
 
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s1p7" value="1">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     No cuenta con publicidad en medios tradicionales.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s1p7" value="2">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se cuenta con publicidad básica en revista y volantes de la zona.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s1p7" value="3">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se cuenta con publicidad en periódicos, revistas y volantes con una efectividad aceptable.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s1p7" value="4">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se cuenta con publicidad tradicional efectiva y rentable además de radio.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s1p7" value="5">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Publicaciones efectivas en medios impresos, radio y televisión que impactan directamente en venta
                     incremental.
                 </label>
@@ -290,77 +290,77 @@ session_start();
         </div>
 
         <!-- PREGUNTA 8 -->
-        <div class="p-4" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="p-4" style="background-color:rgba(142, 191, 59)">
 
             <h4 Class="mb-3 ">Plan de Lealtad e incentivos con pacientes frecuentes</h4>
 
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s1p8" value="1">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     No se cuenta con un plan de incentivos.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s1p8" value="2">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se tienen incentivos ocasionales para clientes frecuentes.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s1p8" value="3">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se cuenta con un programa de lealtad integral y de incentivos pero manual.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s1p8" value="4">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se cuenta con un programa integral de Lealtad y programa de incentivos que generan venta y utilidad
                     incremental al activarlo.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s1p8" value="5">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Tienen un sistema automatizado de lealtad con alto aprovechamiento de parte de los clientes.
                 </label>
             </div>
         </div>
 
         <!-- PREGUNTA 9 -->
-        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="p-4" style="background-color:rgba(39, 52, 128)">
 
 
-            <h4 class="mb-3 ">Soporte para comunicación y mercadotecnia (Agencia o profesionales)</h4>
+            <h4 class="mb-3" style="color: white">Soporte para comunicación y mercadotecnia (Agencia o profesionales)</h4>
 
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s1p9" value="1">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     No se cuenta con equipo externo ni interno para impulsar una estrategia de comunicación y
                     mercadotecnia.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s1p9" value="2">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Existe una persona que internamente hace labores de marketing de manera parcial.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s1p9" value="3">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Existe un recurso interno y también se cuenta con apoyo externo con alcance limitado.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s1p9" value="4">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se cuenta con apoyo externo, experto y efectivo en el diseño y ejecución de contenidos.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s1p9" value="5">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se cuenta con apoyo externo, experto y efectivo en el diseño y ejecución de contenidos, además de
                     recurso interno.
                 </label>

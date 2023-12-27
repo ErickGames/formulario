@@ -32,9 +32,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <form action="8_RH.php" method="POST" class="m-4 bordesito">
 
         <!-- PREGUNTA 1 -->
-        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="p-4" style="background-color:rgba(39, 52, 128)">
 
-            <h4 class="mb-3 ">Inventario de activos</h4>
+            <h4 class="mb-3 " style="color: white">Inventario de activos</h4>
 
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s7p1" value="s7p1r1">
@@ -69,47 +69,47 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 2 -->
-        <div class="p-4" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="p-4" style="background-color:rgba(142, 191, 59)">
 
             <h4 Class="mb-3 ">Nivel de Inversión en equipos</h4>
 
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s7p2" value="s7p2r1">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     No se tiene equipos.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s7p2" value="s7p2r2">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se cuenta con equipo básico, no diferenciado o de alto valor.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s7p2" value="s7p2r3">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se cuenta con 1 o 2 equipos si son referencia en el mercado.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s7p2" value="s7p2r4">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     La clínica o consultorio cuenta con equipo de primer nivel.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s7p2" value="s7p2r5">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     La clínica o consultorio cuenta con equipo de primer nivel y es reconocido en el mercado por eso.
                 </label>
             </div>
         </div>
 
         <!-- PREGUNTA 3 -->
-        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="p-4" style="background-color:rgba(39, 52, 128)">
 
 
-            <h4 class="mb-3 ">Registro de depreciación de activos</h4>
+            <h4 class="mb-3 " style="color: white">Registro de depreciación de activos</h4>
 
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s7p3" value="s7p3r1">
@@ -147,39 +147,39 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 4 -->
-        <div class="p-4" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="p-4" style="background-color:rgba(142, 191, 59)">
 
             <h4 class="mb-3 ">Cotizaciones, evaluación de proveedores y opciones de financiamiento</h4>
 
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s7p4" value="s7p4r1">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     No se tiene un proceso de cotizaciones y cuando se compra no se evalúan diferentes opciones
                     posibles.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s7p4" value="s7p4r2">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     No se tiene un proceso pero si se evalúan al menos 3 opciones posibles.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s7p4" value="s7p4r3">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se tiene un proceso de cotización y de comparación financiera para determinar la mejor opción.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s7p4" value="s7p4r4">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se tiene un proceso de cotización y se selecciona la mejor opción aunque el financiamiento no
                     necesariamente es el optimo entre efectivo, deuda #pendiente.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s7p4" value="s7p4r5">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se tiene un proceso de cotización y se selecciona la mejor opción, tanto de proveedor como sistema
                     de financiamiento, con la mejor mezcla entre contado y deuda.
                 </label>
@@ -187,9 +187,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 5 -->
-        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="p-4" style="background-color:rgba(39, 52, 128)">
 
-            <h4 Class="mb-3 ">Nivel de apalancamiento con proveedores</h4>
+            <h4 Class="mb-3 " style="color: white">Nivel de apalancamiento con proveedores</h4>
 
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s7p5" value="s7p5r1">
@@ -227,32 +227,32 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 6 -->
-        <div class="p-4" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="p-4" style="background-color:rgba(142, 191, 59)">
 
             <h4 class="mb-3 ">Costeo de equipos en los diferentes servicios</h4>
 
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s7p6" value="s7p6r1">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     No se conoce el costo de equipo en cada servicio.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s7p6" value="s7p6r2">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se tiene una idea vaga pero no se refleja en el costeo de los servicios.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s7p6" value="s7p6r3">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se sabe un aproximado del costo de 1 hora de uso de un equipo y este monto es considerado en el
                     costeo de cada servicio.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s7p6" value="s7p6r4">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se conoce el costo de los equipos al realizar cada servicio, y este costo se refleja en el costeo
                     del servicio con el fin de lograr utilidad después de pagar el costo de uso del equipo además de los
                     consumibles.
@@ -260,7 +260,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s7p6" value="s7p6r5">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se conoce el costo de cada equipo por servicio, incluye en la fijación de precios y en la
                     determinación de promociones con el objetivo de generar afluencia y la inversión en el equipo
                     termine de pagarse.
@@ -269,9 +269,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 7 -->
-        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="p-4" style="background-color:rgba(39, 52, 128)">
 
-            <h4 class="mb-3 ">Nivel de utilización de los equipos</h4>
+            <h4 class="mb-3 " style="color: white">Nivel de utilización de los equipos</h4>
 
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s7p7" value="s7p7r1">

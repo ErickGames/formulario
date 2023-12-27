@@ -34,44 +34,44 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <form action="6_fiscal_legal.php" method="POST" class="m-4 bordesito">
 
         <!-- PREGUNTA 1 -->
-        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="p-4" style="background-color:rgba(39, 52, 128)">
 
-            <h4 class="mb-3 ">Cuento con farmacia</h4>
+            <h4 class="mb-3 " style="color: white">Cuento con farmacia</h4>
 
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s5p1" value="s5p1r1">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     No tengo venta de ningún producto.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s5p1" value="s5p1r2">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Tengo venta ocasional de medicamentos pero no tengo los permisos respectivos.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s5p1" value="s5p1r3">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Tengo venta de mostrador pero sin farmacia en un espacio pequeño.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s5p1" value="s5p1r4">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Tengo una farmacia con un área destinada para ello, pero no tengo papelería en forma.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s5p1" value="s5p1r5">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Tengo una farmacia en forma, con PNO y controlados.
                 </label>
             </div>
         </div>
 
         <!-- PREGUNTA 2 -->
-        <div class="p-4" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="p-4" style="background-color:rgba(142, 191, 59)">
 
             <h4 Class="mb-3 ">Administración de Farmacia </h4>
 
@@ -110,42 +110,42 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 3 -->
-        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="p-4" style="background-color:rgba(39, 52, 128)">
 
 
-            <h4 class="mb-3 ">Manejo Inventarios y faltantes</h4>
+            <h4 class="mb-3 " style="color: white">Manejo Inventarios y faltantes</h4>
 
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s5p3" value="s5p3r1">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     No se tiene un proceso para el control de inventarios y frecuentemente hay productos no disponibles
                     para vente.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s5p3" value="s5p3r2">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se cuenta con un proceso pero frecuentemente hay productos que caen en agotamiento porque no se
                     tiene producto para picos de demanda imprevistos.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s5p3" value="s5p3r3">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se tiene un proceso de monitoreo y compra de productos de manera sistematizado y en Excel pero al
                     menos 1 producto sea agota al mes y se pierde venta.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s5p3" value="s5p3r4">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se tiene un proceso de monitoreo y compra de productos de manera sistematizado y en una herramienta
                     especializada para eso y el agotamiento de productos es ocasional.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s5p3" value="s5p3r5">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se tiene un proceso de monitoreo y compra automatizado en una herramienta especializada, y lo
                     agotamientos son mínimos por picos de demanda.
                 </label>

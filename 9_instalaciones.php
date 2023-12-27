@@ -41,113 +41,113 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <form action="10_proyecto_personal.php" method="POST" class="m-4 bordesito">
 
         <!-- PREGUNTA 1 -->
-        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="p-4" style="background-color:rgba(39, 52, 128)">
 
-            <h4 class="mb-3 ">Inventario de activos</h4>
+            <h4 class="mb-3 " style="color: white">Inventario de activos</h4>
 
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s9p1" value="s9p1r1">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     No tengo.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s9p1" value="s9p1r2">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Llevo los activos escritos en papel.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s9p1" value="s9p1r3">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se lleva el registro en un Excel.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s9p1" value="s9p1r4">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Tengo un sistema de activos pero no se ajustan cada mes.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s9p1" value="s9p1r5">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Tengo un sistema de activos y se ajustan cada mes.
                 </label>
             </div>
         </div>
 
         <!-- PREGUNTA 2 -->
-        <div class="p-4" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="p-4" style="background-color:rgba(142, 191, 59)">
 
             <h4 Class="mb-3 ">Nivel de Inversión en equipos</h4>
 
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s9p2" value="s9p2r1">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     No se tiene equipos.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s9p2" value="s9p2r2">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se cuenta con equipo básico, no diferenciado o de alto valor.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s9p2" value="s9p2r3">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se cuenta con 1 o 2 equipos si son referencia en el mercado.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s9p2" value="s9p2r4">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     La clínica o consultorio cuenta con equipo de primer nivel.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s9p2" value="s9p2r5">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     La clínica o consultorio cuenta con equipo de primer nivel y es reconocido en el mercado por eso.
                 </label>
             </div>
         </div>
 
         <!-- PREGUNTA 3 -->
-        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="p-4" style="background-color:rgba(39, 52, 128)">
 
 
-            <h4 class="mb-3 ">Registro de depreciación de activos</h4>
+            <h4 class="mb-3 " style="color: white">Registro de depreciación de activos</h4>
 
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s9p3" value="s9p3r1">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     No se lleva.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s9p3" value="s9p3r2">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Solo se lleva con algunos activos.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s9p3" value="s9p3r3">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se lleva de manera manual o en Excel de todos lo activos.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s9p3" value="s9p3r4">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se cuenta con un sistema contable que permite la automatización y sistematización del registro y su
                     depreciación.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s9p3" value="s9p3r5">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se cuenta con un sistema contable integral que conecta estados financieros, tanto el estado de
                     perdidas y ganancias incluyendo el registro de depreciación, como la actualización de activos y su
                     depreciación acumulada en el balance general.
@@ -156,39 +156,39 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 4 -->
-        <div class="p-4" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="p-4" style="background-color:rgba(142, 191, 59)">
 
             <h4 class="mb-3 ">Cotizaciones, evaluación de proveedores y opciones de financiamiento</h4>
 
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s9p4" value="s9p4r1">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     No se tiene un proceso de cotizaciones y cuando se compra no se evalúan diferentes opciones
                     posibles.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s9p4" value="s9p4r2">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     No se tiene un proceso pero si se evalúan al menos 3 opciones posibles.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s9p4" value="s9p4r3">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se tiene un proceso de cotización y de comparación financiera para determinar la mejor opción.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s9p4" value="s9p4r4">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se tiene un proceso de cotización y se selecciona la mejor opción aunque el financiamiento no
                     necesariamente es el optimo entre efectivo, deuda #pendiente.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s9p4" value="s9p4r5">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se tiene un proceso de cotización y se selecciona la mejor opción, tanto de proveedor como sistema
                     de financiamiento, con la mejor mezcla entre contado y deuda.
                 </label>
@@ -196,38 +196,38 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 5 -->
-        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="p-4" style="background-color:rgba(39, 52, 128)">
 
-            <h4 Class="mb-3 ">Nivel de apalancamiento con proveedores</h4>
+            <h4 Class="mb-3 " style="color: white">Nivel de apalancamiento con proveedores</h4>
 
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s9p5" value="s9p5r1">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     No se conoce.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s9p5" value="s9p5r2">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se cuenta con estrategia básica de 30 días de pago a proveedores.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s9p5" value="s9p5r3">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se cuenta con inventarios en consignación y herramientas financieras como el crédito revolvente .
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s9p5" value="s9p5r4">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se tiene un buen balance entre el manejo y aprovechamiento del efectivo, el acceso a deuda con bajo
                     interés.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s9p5" value="s9p5r5">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     El modelo de financiamiento y apalancamiento es el optimo para seguir creciendo, generando expansión
                     en una combinación optima entre recursos propios y financiamiento con proveedores e instituciones
                     bancarias.

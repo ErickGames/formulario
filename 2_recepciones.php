@@ -37,47 +37,47 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <form action="3_administracion.php" method="POST" class="m-4 bordesito">
 
         <!-- PREGUNTA 1 -->
-        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="p-4" style="background-color:rgba(39, 52, 128)">
 
-            <h4 class="mb-3 ">Sistema para admón. de citas</h4>
+            <h4 class="mb-3 " style="color: white">Sistema para administración de citas</h4>
 
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s2p1" value="s2p1r1">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     No se cuenta con un sistema y el registro se lleva manual pero con inconsistencias y sin
                     confirmaciones.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s2p1" value="s2p1r2">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se lleva registro a mano y es eficiente en la medida de lo posible.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s2p1" value="s2p1r3">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se lleva restiro electrónico en Excel.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s2p1" value="s2p1r4">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Sistema de calendarización de citas comercial.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s2p1" value="s2p1r5">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Cuenta con un sistema integral de citas integrada con agenda y otros sistemas internos.
                 </label>
             </div>
         </div>
 
         <!-- PREGUNTA 2 -->
-        <div class="p-4" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="p-4" style="background-color:rgba(142, 191, 59)">
 
-            <h4 Class="mb-3 ">Area de recepción</h4>
+            <h4 Class="mb-3 ">Área de recepción</h4>
 
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s2p2" value="s2p2r1">
@@ -112,38 +112,38 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 3 -->
-        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="p-4" style="background-color:rgba(39, 52, 128)">
 
 
-            <h4 class="mb-3 ">Persona dedicada a recepción</h4>
+            <h4 class="mb-3 " style="color: white">Persona dedicada a recepción</h4>
 
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s2p3" value="s2p3r1">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     No cuenta con personal dedicado a esta área y este rol lo hacen diferentes personas.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s2p3" value="s2p3r2">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Cuenta con una recepcionista compartida.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s2p3" value="s2p3r3">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Cuenta con un persona dedicada a recepción y otras tareas.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s2p3" value="s2p3r4">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Cuenta con equipo y turnos dedicados a recepción.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s2p3" value="s2p3r5">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Cuenta con un equipo y turnos de recepción que además de tener un nivel de servicio superior,
                     también impulsan la venta.
                 </label>
@@ -151,7 +151,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 4 -->
-        <div class="p-4" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="p-4" style="background-color:rgba(142, 191, 59)">
 
             <h4 class="mb-3 ">Administración de Expedientes</h4>
 

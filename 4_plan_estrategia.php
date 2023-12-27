@@ -36,39 +36,39 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <form action="5_farmacia.php" method="POST" class="m-4 bordesito">
 
         <!-- PREGUNTA 1 -->
-        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="p-4" style="background-color:rgba(39, 52, 128)">
 
-            <h4 class="mb-3 ">Visión y Estrategia de la empresa</h4>
+            <h4 class="mb-3 " style="color: white">Visión y Estrategia de la empresa</h4>
 
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s4p1" value="s4p1r1">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     No se tiene definida una visión clara de a donde vamos.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s4p1" value="s4p1r2">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se tiene una idea de la visión de la empresa pero no se tiene claridad de como se va a lograr.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s4p1" value="s4p1r3">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se tiene una muy buena idea de a donde vamos pero las estrategias definidas no son suficientes para
                     lograr la visión.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s4p1" value="s4p1r4">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se tiene una visión clara y las diferentes estrategias para lograrlas pero no se tiene una ejecución
                     y seguimiento rigurosos.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s4p1" value="s4p1r5">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se cuenta con una visión clara, estrategias generales y especificas, y un monitoreo y seguimiento de
                     indicadores para medir los avances.
                 </label>
@@ -76,9 +76,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 2 -->
-        <div class="p-4" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="p-4" style="background-color:rgba(142, 191, 59)">
 
-            <h4 Class="mb-3 ">Conocimiento de la competencia</h4>
+            <h4 Class="mb-3 " style="color: white">Conocimiento de la competencia</h4>
 
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s4p2" value="s4p2r1">
@@ -114,39 +114,39 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 3 -->
-        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="p-4" style="background-color:rgba(39, 52, 128)">
 
 
-            <h4 class="mb-3 ">Planeación anual / Presupuestos</h4>
+            <h4 class="mb-3 " style="color: white">Planeación anual / Presupuestos</h4>
 
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s4p3" value="s4p3r1">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     No se tiene.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s4p3" value="s4p3r2">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se tiene idea de los números o metas de venta anual de manera general.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s4p3" value="s4p3r3">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se cuenta con objetivos de venta y rentabilidad pero no se tienen objetivos mensuales.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s4p3" value="s4p3r4">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se cuenta con un proceso para la definición de metas de ventas, gastos y utilidades por mes pero es
                     difícil cumplirlo.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s4p3" value="s4p3r5">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se cuenta con un proceso para la definición de metas de ventas, gastos y utilidades, se le da
                     seguimiento, se cumple y/o se adecua conforme avanza el año.
                 </label>
@@ -154,7 +154,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 4 -->
-        <div class="p-4" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="p-4" style="background-color:rgba(142, 191, 59)">
 
             <h4 class="mb-3 ">Competitividad en el mercado</h4>
 
@@ -192,38 +192,38 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 5 -->
-        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="p-4" style="background-color:rgba(39, 52, 128)">
 
-            <h4 class="mb-3 ">Optimización de servicios (Generación y eliminación)</h4>
+            <h4 class="mb-3 " style="color: white">Optimización de servicios (Generación y eliminación)</h4>
 
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s4p5" value="s4p5r1">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     No se cuenta con un proceso para esto.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s4p5" value="s4p5r2">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se generan y eliminan servicios pero de manera ocasional y no basados en metodologías integrales.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s4p5" value="s4p5r3">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se cuenta con una revisión anual de depuración y creación de servicios.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s4p5" value="s4p5r4">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se cuenta con un monitorio permanente de servicios, sus venta y rentabilidad así como de la
                     competencia para...
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s4p5" value="s4p5r5">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se mantiene un portafolio de servicios y productos vigentes y atractivos, eliminando lo que
                     desenfoca y generando atención a las nuevas tendencias y a los servicios donde mayor valor agrega el
                     doctor, otro servicios se eliminan o se delegan.
@@ -232,7 +232,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 6 -->
-        <div class="p-4" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="p-4" style="background-color:rgba(142, 191, 59)">
 
             <h4 Class="mb-3 ">Costeo y rentabilidad de Servicios</h4>
 
@@ -273,41 +273,41 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 7 -->
-        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="p-4" style="background-color:rgba(39, 52, 128)">
 
 
-            <h4 class="mb-3 ">Fijación de precios</h4>
+            <h4 class="mb-3 " style="color: white">Fijación de precios</h4>
 
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s4p7" value="s4p7r1">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     No se tiene un proceso para esto, solo una revisión anual basada en los incrementos de los
                     proveedores o del mercado en el que se compite.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s4p7" value="s4p7r2">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Para la definición de precios se cuenta con un proceso básico de costo mas un margen deseado.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s4p7" value="s4p7r3">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     En la fijación de precios se ocupa tanto el incremento en insumos como también los precios de la
                     competencia.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s4p7" value="s4p7r4">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se cuenta con un proceso que considera el incremento en insumos, los precios de la competencia y la
                     estrategia deseada internamente para provocar mas o menos ventas de cada producto o servicio.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s4p7" value="s4p7r5">
-                <label class="form-check-label">
+                <label class="form-check-label" style="color: white">
                     Se cuenta con un proceso integral tomando en cuenta inflación de insumos, precios del mercado,
                     estrategia interna. Este plan se sigue y monitorea todo el año, al mismo tiempo que se evalúan
                     ajustes por eventos imprevistos.
