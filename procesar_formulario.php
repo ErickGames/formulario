@@ -74,7 +74,7 @@ if ($_SESSION['respuesta_s1p9'] == '4' || $_SESSION['respuesta_s1p9'] == '5') {
 
 $pdf->chapterBody($bodyContentFortalezas1);
 
-$pdf->chapterTitle(2, 'Ventas y mercadotecnia: DEBILIDADES');
+$pdf->chapterTitle(1, 'Ventas y mercadotecnia: DEBILIDADES');
 
 $bodyContentDebilidades1 = '';
 
@@ -118,6 +118,7 @@ $pdf->chapterBody($bodyContentDebilidades1);
 
 // Nombre del archivo PDF
 $nombreArchivo = 'RespuestasUsuario.pdf';
++
 
 // Salida del PDF al navegador
 $pdf->Output($nombreArchivo, 'D');
