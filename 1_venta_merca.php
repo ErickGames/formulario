@@ -29,32 +29,32 @@ session_start();
             <h4 class="mb-3 ">Gestión de venta</h4>
 
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="s1p1" value="1" required>
+                <input class="form-check-input" type="radio" name="s1p1" value="1">
                 <label class="form-check-label">
                     No se cuenta con una labor de venta específica, solo la atención de clientes que nos buscan.
                 </label>
             </div>
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="s1p1" value="2" required>
+                <input class="form-check-input" type="radio" name="s1p1" value="2">
                 <label class="form-check-label">
                     Se cuenta con los mínimos protocolos de venta, para conectar con clientes de manera presencial y
                     virtual.
                 </label>
             </div>
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="s1p1" value="3" required>
+                <input class="form-check-input" type="radio" name="s1p1" value="3">
                 <label class="form-check-label">
                     Solo se cuenta con seguimiento manual.
                 </label>
             </div>
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="s1p1" value="4" required>
+                <input class="form-check-input" type="radio" name="s1p1" value="4">
                 <label class="form-check-label">
                     Se cuenta con un CRM para la integración y monitorio de los pacientes actuales y posibles nuevos.
                 </label>
             </div>
             <div class="form-check mx-4">
-                <input class="form-check-input" type="radio" name="s1p1" value="5" required>
+                <input class="form-check-input" type="radio" name="s1p1" value="5">
                 <label class="form-check-label">
                     Se cuenta con un CRM que es explotado y aprovechado al máximo nivel.
                 </label>
