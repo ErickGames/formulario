@@ -32,30 +32,36 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <h5>Todas sus respuestas son confidenciales y usadas para ofrecer lo mejor de nuestros servicios.</h5>
     </div>
 
-    <form id="miFormulario" action="procesar_formulario.php" method="post mx-5">
-        <label class="form-label" for="nombre">Nombre Completo:</label>
-        <input class="form-control" type="text" name="nombre" required>
+    <div class="row">
+        <div class="col-md-3">
 
-        <label class="form-label" for="nombre">Especialidad:</label>
-        <input class="form-control" type="text" name="nombre" required>
+        </div>
+        <div class="col-md-6">
+            <form id="miFormulario" action="procesar_formulario.php" method="post mx-5">
+                <label class="form-label" for="nombre">Nombre Completo:</label>
+                <input class="form-control" type="text" name="nombre" required>
 
-        <label class="form-label" for="email">Correo Electrónico:</label>
-        <input class="form-control" type="email" name="email" required>
+                <label class="form-label" for="nombre">Especialidad:</label>
+                <input class="form-control" type="text" name="nombre" required>
 
-        <button type="submit">Enviar</button>
-    </form>
+                <label class="form-label" for="email">Correo Electrónico:</label>
+                <input class="form-control" type="email" name="email" required>
 
+                <div style="display: flex; justify-content: center;">
+                    <button type="submit" class="btn btn-primary mt-1">Enviar</button>
+                </div>
 
+            </form>
+        </div>
+        <div class="col-md-3">
 
-    
-
+        </div>
+    </div>
 
     <div class="mx-5 mt-5">
         <h2>PENDIENTES</h2>
-        <h4>--INGRESO DE DATOS (NOMBRE, CORREO, ETC) -> puede ser una panmtalla anterior a esta que solo sea el ingreso
-            de datos, y despues redirija a esta. (cambiar action del form en pag 10 y cambiar codigo php que valida el
-            POST)</h4>
-        <h4>--GENERAR PDF PERSONALIZADO (CON RESPUESTAS DEL EXCEL Y GENERACION DE GRÁFICAS)</h4>
+        <h4>--REVISAR WHASAP</h4>
+        <h4>--GENERACION DE GRÁFICAS</h4>
         <h4>--ENVIAR POR CORREO</h4>
         <h4>--GUARDAR RESULTADOS EN BD O GUARDAR PDFS O ENVIAR PDFS A ADMINISTRADORES</h4>
 
