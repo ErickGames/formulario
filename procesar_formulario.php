@@ -855,11 +855,19 @@ if ($hayDebilidades10 == false) {
 }
 $pdf->chapterBody($bodyContentDebilidades10);
 
+// Ruta donde se guardará el PDF automáticamente
+$rutaGuardado = 'PDFS/Respuesta.pdf';
+
+$pdf->Output($rutaGuardado, 'F'); // 'F' indica que se guardará en el servidor
+
 // Nombre del archivo PDF
 $nombreArchivo = 'RespuestasUsuario.pdf';
 
 // Salida del PDF al navegador
+
 $pdf->Output($nombreArchivo, 'D');
+
+
 
 // Redirige al usuario a la página actualcen caso de error
 // header('Location: nombre_de_tu_pagina.php');

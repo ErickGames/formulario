@@ -56,8 +56,9 @@ $promS6 = 4.0;
 $promS7 = 3.8;
 $promS8 = 4.5;
 $promS9 = 3.2;
-$promS10 = 2.1
+$promS10 = 2.1;
 
+$datos = 0;
 $datos = [$promS1, $promS2, $promS3, $promS4, $promS5, $promS6, $promS7, $promS8, $promS9, $promS10];
 $datos_js = json_encode($datos);
 ?>
