@@ -27,13 +27,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <body>
 
-    <div class="mx-5 mt-5 mb-5">
-        <h2>Gracias por sus respuestas</h2> <br>
-        <h5>Todas sus respuestas son confidenciales y usadas para ofrecer lo mejor de nuestros servicios.</h5>
+    <div class="row mx-5 mt-5 mb-5">
+        <div class="col-8">
+            <h2>¡Gracias por sus respuestas!</h2> <br>
+            <h5>Todas sus respuestas son confidenciales y usadas para ofrecer lo mejor de nuestros servicios.</h5><br>
+        </div>
+
+        <div class="col-4">
+            <img src="img/logo-01.png" alt="" style="display:block; margin:auto; width:40%">
+        </div>
+        <h5>Para obtener tus resultados, completa la información a continuación y da click en "Enviar"</h5>
+    </div>
     </div>
 
     <div class="row">
         <div class="col-md-3">
+            
 
         </div>
         <div class="col-md-6">
@@ -60,10 +69,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <div class="mx-5 mt-5">
         <h2>PENDIENTES</h2>
-        <h4>--REVISAR WHASAP</h4>
-        <h4>--GENERACION DE GRÁFICAS</h4>
-        <h4>--ENVIAR POR CORREO</h4>
-        <h4>--GUARDAR RESULTADOS EN BD O GUARDAR PDFS O ENVIAR PDFS A ADMINISTRADORES</h4>
+        <h4>--INSERTAR GRÁFICAS EN PDF</h4>
+        <h4>--HACER PRUEBA DE ENVIO POR CORREO</h4>
+        <h4>--GUARDAR PDFS</h4>
+        <h4>--CHEQUEO GENERAL DE ORTOGRAFIA</h4>
 
     </div>
 
