@@ -30,6 +30,9 @@ class PDF extends FPDF
 
 $pdf = new PDF();
 $pdf->AddPage();
+
+
+
 $hayFortalezas1 = false;
 $hayDebilidades1 = false;
 $hayFortalezas2 = false;
