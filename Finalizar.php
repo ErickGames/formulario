@@ -36,7 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="col-4">
             <img src="img/logo-01.png" alt="" style="display:block; margin:auto; width:40%">
         </div>
-        <h5>Para obtener tus resultados, completa la información a continuación y da click en "Enviar"</h5>
+        <h5>Nos interesa que conozcas tus resultados, completa la información a continuación y da click en "Enviar" para obtener un PDF con la retroalimentación que tenemos para ti.</h5>
     </div>
     </div>
 

@@ -16,6 +16,7 @@
             <p><b>Modo de Evaluación:</b></p>
             <p>Utilizaremos una escala del 1 al 5 para evaluar cada aspecto. Siendo la primer respuesta el nivel más bajo en relación a la pregunta planteada, mientras que la última 
              denota el nivel más alto.</p>
+            <p> Duración del formulario: 15 minutos.</p>
 
             <p><b>Instrucciones:</b></p>
             <p>Responde cada pregunta honestamente según tu percepción sobre la situación actual en tu práctica médica. No hay respuestas 

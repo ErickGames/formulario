@@ -30,7 +30,7 @@ session_start();
 
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s1p1" value="1">
-                <label class="form-check-label">
+                <label class="form-check-label" for="opcion1">
                     No se cuenta con una labor de venta específica, solo la atención de clientes que nos buscan.
                 </label>
             </div>
