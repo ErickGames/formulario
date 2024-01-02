@@ -158,7 +158,8 @@ $pdf->chapterBody($bodyContentDebilidades1);
 ////////////////
 // Sección 2 //
 //////////////
-$pdf->chapterTitle(2, utf8_decode('Recepción / Citas / Expedientes: FORTALEZAS'));
+$pdf->chapterTitle(2, utf8_decode('Recepción / Citas / Expedientes'));
+$pdf->chapterSub('FORTALEZAS:');
 $bodyContentFortalezas2 = '';
 
 if ($_SESSION['respuesta_s2p1'] == '4' || $_SESSION['respuesta_s2p1'] == '5') {
@@ -183,7 +184,7 @@ if ($hayFortalezas2 == false) {
 }
 
 $pdf->chapterBody($bodyContentFortalezas1);
-$pdf->chapterTitle(2, utf8_decode('Recepción / Citas / Expedientes: DEBILIDADES'));
+$pdf->chapterSub('DEBILIDADES:');
 $bodyContentDebilidades2 = '';
 
 if ($_SESSION['respuesta_s2p1'] == '1' || $_SESSION['respuesta_s2p1'] == '2') {
@@ -210,7 +211,8 @@ $pdf->chapterBody($bodyContentDebilidades2);
 ////////////////
 // Sección 3 //
 //////////////
-$pdf->chapterTitle(3, utf8_decode('Administración: FORTALEZAS'));
+$pdf->chapterTitle(3, utf8_decode('Administración'));
+$pdf->chapterSub('FORTALEZAS:');
 $bodyContentFortalezas3 = '';
 
 if ($_SESSION['respuesta_s3p1'] == '4' || $_SESSION['respuesta_s3p1'] == '5') {
@@ -255,7 +257,7 @@ if (!$hayFortalezas3) {
 }
 
 $pdf->chapterBody($bodyContentFortalezas3);
-$pdf->chapterTitle(3, utf8_decode('Administración: DEBILIDADES'));
+$pdf->chapterSub('DEBILIDADES:');
 $bodyContentDebilidades3 = '';
 
 if ($_SESSION['respuesta_s3p1'] == '1' || $_SESSION['respuesta_s3p1'] == '2') {
@@ -302,7 +304,8 @@ $pdf->chapterBody($bodyContentDebilidades3);
 ////////////////
 // Sección 4 //
 //////////////
-$pdf->chapterTitle(4, utf8_decode('Planeación y Estrategia: FORTALEZAS'));
+$pdf->chapterTitle(4, utf8_decode('Planeación y Estrategia'));
+$pdf->chapterSub('FORTALEZAS:');
 $bodyContentFortalezas4 = '';
 
 if ($_SESSION['respuesta_s4p1'] == '4' || $_SESSION['respuesta_s4p1'] == '5') {
@@ -339,7 +342,7 @@ if (!$hayFortalezas4) {
 }
 
 $pdf->chapterBody($bodyContentFortalezas4);
-$pdf->chapterTitle(4, utf8_decode('Planeación y Estrategia: DEBILIDADES'));
+$pdf->chapterSub('DEBILIDADES:');
 $bodyContentDebilidades4 = '';
 
 if ($_SESSION['respuesta_s4p1'] == '1' || $_SESSION['respuesta_s4p1'] == '2') {
@@ -378,7 +381,8 @@ $pdf->chapterBody($bodyContentDebilidades4);
 ////////////////
 // Sección 5 //
 //////////////
-$pdf->chapterTitle(5, utf8_decode('Farmacia: FORTALEZAS'));
+$pdf->chapterTitle(5, utf8_decode('Farmacia'));
+$pdf->chapterSub('FORTALEZAS:');
 $bodyContentFortalezas5 = '';
 
 if ($_SESSION['respuesta_s5p1'] == '4' || $_SESSION['respuesta_s5p1'] == '5') {
@@ -399,7 +403,7 @@ if (!$hayFortalezas5) {
 }
 
 $pdf->chapterBody($bodyContentFortalezas5);
-$pdf->chapterTitle(5, utf8_decode('Farmacia: DEBILIDADES'));
+$pdf->chapterSub('DEBILIDADES:');
 $bodyContentDebilidades5 = '';
 
 if ($_SESSION['respuesta_s5p1'] == '1' || $_SESSION['respuesta_s5p1'] == '2') {
@@ -422,7 +426,8 @@ $pdf->chapterBody($bodyContentDebilidades5);
 ////////////////
 // Sección 6 //
 //////////////
-$pdf->chapterTitle(6, utf8_decode('Fiscal y Legal: FORTALEZAS'));
+$pdf->chapterTitle(6, utf8_decode('Fiscal y Legal'));
+$pdf->chapterSub('FORTALEZAS:');
 $bodyContentFortalezas6 = '';
 
 if ($_SESSION['respuesta_s6p1'] == '4' || $_SESSION['respuesta_s6p1'] == '5') {
@@ -451,7 +456,7 @@ if (!$hayFortalezas6) {
 }
 
 $pdf->chapterBody($bodyContentFortalezas6);
-$pdf->chapterTitle(6, utf8_decode('Fiscal y Legal: DEBILIDADES'));
+$pdf->chapterSub('DEBILIDADES:');
 $bodyContentDebilidades6 = '';
 
 if ($_SESSION['respuesta_s6p1'] == '1' || $_SESSION['respuesta_s6p1'] == '2') {
@@ -482,7 +487,8 @@ $pdf->chapterBody($bodyContentDebilidades6);
 ////////////////
 // Sección 7 //
 //////////////
-$pdf->chapterTitle(7, utf8_decode('Activos: FORTALEZAS'));
+$pdf->chapterTitle(7, utf8_decode('Activos'));
+$pdf->chapterSub('FORTALEZAS:');
 $bodyContentFortalezas7 = '';
 
 if ($_SESSION['respuesta_s7p1'] == '4' || $_SESSION['respuesta_s7p1'] == '5') {
@@ -519,7 +525,7 @@ if (!$hayFortalezas7) {
 }
 
 $pdf->chapterBody($bodyContentFortalezas7);
-$pdf->chapterTitle(7, utf8_decode('Activos: DEBILIDADES'));
+$pdf->chapterSub('DEBILIDADES:');
 $bodyContentDebilidades7 = '';
 
 if ($_SESSION['respuesta_s7p1'] == '1' || $_SESSION['respuesta_s7p1'] == '2') {
@@ -558,7 +564,8 @@ $pdf->chapterBody($bodyContentDebilidades7);
 ////////////////
 // Sección 8 //
 //////////////
-$pdf->chapterTitle(8, utf8_decode('Recursos Humanos: FORTALEZAS'));
+$pdf->chapterTitle(8, utf8_decode('Recursos Humanos'));
+$pdf->chapterSub('FORTALEZAS:');
 $bodyContentFortalezas8 = '';
 
 if ($_SESSION['respuesta_s8p1'] == '4' || $_SESSION['respuesta_s8p1'] == '5') {
@@ -623,7 +630,7 @@ if (!$hayFortalezas8) {
 }
 
 $pdf->chapterBody($bodyContentFortalezas8);
-$pdf->chapterTitle(8, utf8_decode('Recursos Humanos: DEBILIDADES'));
+$pdf->chapterSub('DEBILIDADES:');
 $bodyContentDebilidades8 = '';
 
 if ($_SESSION['respuesta_s8p1'] == '1' || $_SESSION['respuesta_s8p1'] == '2') {
@@ -690,7 +697,8 @@ $pdf->chapterBody($bodyContentDebilidades8);
 ////////////////
 // Sección 9 //
 //////////////
-$pdf->chapterTitle(9, utf8_decode('Instalaciones: FORTALEZAS'));
+$pdf->chapterTitle(9, utf8_decode('Instalaciones'));
+$pdf->chapterSub('FORTALEZAS:');
 $bodyContentFortalezas9 = '';
 
 if ($_SESSION['respuesta_s9p1'] == '4' || $_SESSION['respuesta_s9p1'] == '5') {
@@ -719,7 +727,7 @@ if (!$hayFortalezas9) {
 }
 
 $pdf->chapterBody($bodyContentFortalezas9);
-$pdf->chapterTitle(9, utf8_decode('Instalaciones: DEBILIDADES'));
+$pdf->chapterSub('DEBILIDADES:');
 $bodyContentDebilidades9 = '';
 
 if ($_SESSION['respuesta_s9p1'] == '1' || $_SESSION['respuesta_s9p1'] == '2') {
@@ -750,7 +758,8 @@ $pdf->chapterBody($bodyContentDebilidades9);
 ////////////////
 // Sección 10 //
 //////////////
-$pdf->chapterTitle(10, utf8_decode('Proyecto personal / Estatus del negocio: FORTALEZAS'));
+$pdf->chapterTitle(10, utf8_decode('Proyecto personal / Estatus del negocio'));
+$pdf->chapterSub('FORTALEZAS:');
 $bodyContentFortalezas10 = '';
 
 if ($_SESSION['respuesta_s10p1'] == '4' || $_SESSION['respuesta_s10p1'] == '5') {
@@ -807,7 +816,7 @@ if (!$hayFortalezas10) {
 }
 
 $pdf->chapterBody($bodyContentFortalezas10);
-$pdf->chapterTitle(10, utf8_decode('Proyecto personal / Estatus del negocio: DEBILIDADES'));
+$pdf->chapterSub('DEBILIDADES:');
 $bodyContentDebilidades10 = '';
 
 if ($_SESSION['respuesta_s10p1'] == '1' || $_SESSION['respuesta_s10p1'] == '2') {

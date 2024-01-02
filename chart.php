@@ -68,7 +68,7 @@ $datos_js = json_encode($datos);
 
 <body>
 
-    <canvas id="radarChart" width="400" height="400"></canvas>
+    <canvas id="radarChart" width="100px" height="100px"></canvas>
 
     <script>
         var datosPHP = <?php echo $datos_js; ?>;
@@ -78,7 +78,7 @@ $datos_js = json_encode($datos);
             datasets: [{
                 label: 'Promedio de mercado',
                 data: [2, 2.79, 1.78, 2.05, 1.89, 2.07, 1.57, 1.71, 2.67, 2.67],
-                backgroundcolor: 'rgba(255, 99, 132, 0,2)',
+                backgroundcolor: 'transparent',
                 bordercolor: 'rgba(255, 99, 132)',
                 borderwidth: 1
             },
@@ -95,8 +95,8 @@ $datos_js = json_encode($datos);
             scale: {
                 ticks: {
                     beginAtZero: true,
-                    suggestedMin: 0,
-                    suggestedMax: 10,
+                    min: 0,
+                    max: 5,
                     stepSize: 1
                 }
             }
