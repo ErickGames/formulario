@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <!-- PREGUNTA 1 -->
         <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
-            <h4 class="mb-3 ">Sistema para admón. de citas</h4>
+            <h4 class="mb-3 ">Sistema para administración de citas</h4>
 
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s2p1" value="1">
@@ -77,12 +77,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <!-- PREGUNTA 2 -->
         <div class="p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
-            <h4 Class="mb-3 ">Area de recepción</h4>
+            <h4 Class="mb-3 ">Área de recepción</h4>
 
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s2p2" value="1">
                 <label class="form-check-label">
-                    Comparte recepción con mas doctores.
+                    Comparte recepción con más doctores.
                 </label>
             </div>
             <div class="form-check mx-4">
@@ -132,7 +132,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s2p3" value="3">
                 <label class="form-check-label">
-                    Cuenta con un persona dedicada a recepción y otras tareas.
+                    Cuenta con una persona dedicada a recepción y otras tareas.
                 </label>
             </div>
             <div class="form-check mx-4">

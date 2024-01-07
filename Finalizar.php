@@ -67,7 +67,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
     </div>
 
-    <div class="mx-5 mt-5">
+    <!-- <div class="mx-5 mt-5">
         <h2>PENDIENTES</h2>
         <h4>--INSERTAR GRÁFICAS EN PDF (o generar otro pdf con las graficas)</h4>
         <h4>--CHEQUEO GENERAL DE ORTOGRAFIA</h4>
@@ -76,7 +76,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <h5>--HAY QUE HACER QUE EN ESTA PAGINA SE GUARDE EL NOMBRE, ESPECIALIDAD Y CORREO EN VARIABLES DE SESION Y LUEGO AL FINAL DE LA PAGINA DE procesar_formulario HACER QUE EL NOMBRE DEL PDF LLEVE EL NOMBRE DEL USUARIO, PARA IDENTIFICAR</h5>
 
 
-    </div>
+    </div> -->
 
 
 </body>

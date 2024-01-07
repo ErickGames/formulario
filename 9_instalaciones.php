@@ -66,7 +66,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s9p1" value="4">
                 <label class="form-check-label">
-                    Tengo un sistema de activos pero no se ajustan cada mes.
+                    Tengo un sistema de activos, pero no se ajustan cada mes.
                 </label>
             </div>
             <div class="form-check mx-4">
@@ -135,7 +135,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s9p3" value="3">
                 <label class="form-check-label">
-                    Se lleva de manera manual o en Excel de todos lo activos.
+                    Se lleva de manera manual o en Excel de todos los activos.
                 </label>
             </div>
             <div class="form-check mx-4">
@@ -149,7 +149,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <input class="form-check-input" type="radio" name="s9p3" value="5">
                 <label class="form-check-label">
                     Se cuenta con un sistema contable integral que conecta estados financieros, tanto el estado de
-                    perdidas y ganancias incluyendo el registro de depreciación, como la actualización de activos y su
+                    pérdidas y ganancias incluyendo el registro de depreciación, como la actualización de activos y su
                     depreciación acumulada en el balance general.
                 </label>
             </div>
@@ -170,7 +170,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s9p4" value="2">
                 <label class="form-check-label">
-                    No se tiene un proceso pero si se evalúan al menos 3 opciones posibles.
+                    No se tiene un proceso, pero si se evalúan al menos 3 opciones posibles.
                 </label>
             </div>
             <div class="form-check mx-4">
@@ -182,8 +182,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s9p4" value="4">
                 <label class="form-check-label">
-                    Se tiene un proceso de cotización y se selecciona la mejor opción aunque el financiamiento no
-                    necesariamente es el optimo entre efectivo, deuda #pendiente.
+                    Se tiene un proceso de cotización y se selecciona la mejor opción, aunque el financiamiento no
+                    necesariamente es el óptimo entre efectivo, deuda #pendiente.
                 </label>
             </div>
             <div class="form-check mx-4">
@@ -215,7 +215,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s9p5" value="3">
                 <label class="form-check-label">
-                    Se cuenta con inventarios en consignación y herramientas financieras como el crédito revolvente .
+                    Se cuenta con inventarios en consignación y herramientas financieras como el crédito revolvente.
                 </label>
             </div>
             <div class="form-check mx-4">
@@ -228,7 +228,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s9p5" value="5">
                 <label class="form-check-label">
-                    El modelo de financiamiento y apalancamiento es el optimo para seguir creciendo, generando expansión
+                    El modelo de financiamiento y apalancamiento es el óptimo para seguir creciendo, generando expansión
                     en una combinación optima entre recursos propios y financiamiento con proveedores e instituciones
                     bancarias.
                 </label>

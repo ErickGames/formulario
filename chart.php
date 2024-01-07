@@ -84,7 +84,7 @@ $datos_js = json_encode($datos);
             },
             {
                 label: 'Promedio usuario',
-                data: [2, 2.79, 1.78, 2.05, 1.89, 2.07, 1.57, 1.71, 2.67, 2.67],
+                data: [3, 3.79, 2.78, 3.05, 4.89, 3.07, 2.57, 4.71, 3.67, 2.67],
                 backgroundcolor: 'rgba(54, 162, 235, 0,2)',
                 bordercolor: 'rgba(54, 162, 235)',
                 borderwidth: 1

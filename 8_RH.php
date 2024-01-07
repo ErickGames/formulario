@@ -64,7 +64,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s8p1" value="5">
                 <label class="form-check-label">
-                    Se tiene mas de 6 empleaos.
+                    Se tiene más de 6 empleaos.
                 </label>
             </div>
         </div>
@@ -95,7 +95,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s8p2" value="4">
                 <label class="form-check-label">
-                    Tengo mas de 3 personas que colaboran en diferente posiciones pero no son el perfil deseado.
+                    Tengo más de 3 personas que colaboran en diferente posiciones pero no son el perfil deseado.
                 </label>
             </div>
             <div class="form-check mx-4">
@@ -110,7 +110,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
 
-            <h4 class="mb-3 ">Administración de nomina</h4>
+            <h4 class="mb-3 ">Administración de nómina</h4>
 
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s8p3" value="1">
@@ -133,13 +133,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s8p3" value="4">
                 <label class="form-check-label">
-                    Levamos en un Excel el sistema de nomina.
+                    Llevamos en un Excel el sistema de nómina.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s8p3" value="5">
                 <label class="form-check-label">
-                    Levamos un sistema de nomina y tenemos revisiones de la ST.
+                    Levamos un sistema de nómina y tenemos revisiones de la ST.
                 </label>
             </div>
         </div>
@@ -208,7 +208,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s8p5" value="4">
                 <label class="form-check-label">
-                    Se tiene para todas les posiciones y se les da seguimiento aunque no se actualizan cada periodo
+                    Se tiene para todas les posiciones y se les da seguimiento, aunque no se actualizan cada periodo
                     definido.
                 </label>
             </div>
@@ -291,7 +291,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <input class="form-check-input" type="radio" name="s8p7" value="5">
                 <label class="form-check-label">
                     Se contrata y mantiene un equipo estable, motivado y proactivo con una mezcla entre percepciones
-                    fijas y otra por comisiones , además de tener planes de desarrollo en el para el corto, mediano y
+                    fijas y otra por comisiones, además de tener planes de desarrollo en el para el corto, mediano y
                     largo plazo.
                 </label>
             </div>
@@ -386,7 +386,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="form-check mx-4">
             <input class="form-check-input" type="radio" name="s8p10" value="2">
             <label class="form-check-label">
-                reuniones solo si hay problemas.
+                Reuniones solo si hay problemas.
             </label>
         </div>
         <div class="form-check mx-4">
@@ -442,8 +442,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s8p11" value="5">
                 <label class="form-check-label">
-                    Hay una persona encargada de esto y siguiendo los procesos optimizando el tiempo de las personas y
-                    evitando incluir en servicios por au.
+                    Hay una persona encargada de esto y siguiendo los procesos optimizando el tiempo de las personas.
                 </label>
             </div>
         </div>
@@ -475,13 +474,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s8p12" value="4">
                 <label class="form-check-label">
-                    Tengo reconocimientos trimestrales a todos lo puestos.
+                    Tengo reconocimientos trimestrales a todos los puestos.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s8p12" value="5">
                 <label class="form-check-label">
-                    Tengo reconocimientos trimestrales a todos lo puestos y los resultados son extraordinarios.
+                    Tengo reconocimientos trimestrales a todos los puestos y los resultados son extraordinarios.
                 </label>
             </div>
         </div>
@@ -549,7 +548,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s8p14" value="4">
                 <label class="form-check-label">
-                    Se cuenta con un programa pero muchas veces no se cumple.
+                    Se cuenta con un programa, pero muchas veces no se cumple.
                 </label>
             </div>
             <div class="form-check mx-4">

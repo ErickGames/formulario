@@ -49,27 +49,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s4p1" value="2">
                 <label class="form-check-label">
-                    Se tiene una idea de la visión de la empresa pero no se tiene claridad de como se va a lograr.
+                    Se tiene una idea de la visión de la empresa, pero no se tiene claridad de como se va a lograr.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s4p1" value="3">
                 <label class="form-check-label">
-                    Se tiene una muy buena idea de a donde vamos pero las estrategias definidas no son suficientes para
+                    Se tiene una muy buena idea de a donde vamos, pero las estrategias definidas no son suficientes para
                     lograr la visión.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s4p1" value="4">
                 <label class="form-check-label">
-                    Se tiene una visión clara y las diferentes estrategias para lograrlas pero no se tiene una ejecución
+                    Se tiene una visión clara y las diferentes estrategias para lograrlas, pero no se tiene una ejecución
                     y seguimiento rigurosos.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s4p1" value="5">
                 <label class="form-check-label">
-                    Se cuenta con una visión clara, estrategias generales y especificas, y un monitoreo y seguimiento de
+                    Se cuenta con una visión clara, estrategias generales y específicas, y un monitoreo y seguimiento de
                     indicadores para medir los avances.
                 </label>
             </div>
@@ -95,7 +95,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s4p2" value="3">
                 <label class="form-check-label">
-                    Se ha hecho un censo de servicios y precios pero no sea actualiza regularmente.
+                    Se ha hecho un censo de servicios y precios, pero no sea actualiza regularmente.
                 </label>
             </div>
             <div class="form-check mx-4">
@@ -108,7 +108,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <input class="form-check-input" type="radio" name="s4p2" value="5">
                 <label class="form-check-label">
                     Se cuenta con monitorio permanente de la competencia (sus servicios y precios) y esto se toma en
-                    cuanta para la definición de los precios propios y para la generación de promociones.
+                    cuenta para la definición de los precios propios y para la generación de promociones.
                 </label>
             </div>
         </div>
@@ -134,13 +134,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s4p3" value="3">
                 <label class="form-check-label">
-                    Se cuenta con objetivos de venta y rentabilidad pero no se tienen objetivos mensuales.
+                    Se cuenta con objetivos de venta y rentabilidad, pero no se tienen objetivos mensuales.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s4p3" value="4">
                 <label class="form-check-label">
-                    Se cuenta con un proceso para la definición de metas de ventas, gastos y utilidades por mes pero es
+                    Se cuenta con un proceso para la definición de metas de ventas, gastos y utilidades por mes, pero es
                     difícil cumplirlo.
                 </label>
             </div>
@@ -217,7 +217,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s4p5" value="4">
                 <label class="form-check-label">
-                    Se cuenta con un monitorio permanente de servicios, sus venta y rentabilidad así como de la
+                    Se cuenta con un monitorio permanente de servicios, sus ventas y rentabilidad así como de la
                     competencia para...
                 </label>
             </div>
@@ -226,7 +226,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <label class="form-check-label">
                     Se mantiene un portafolio de servicios y productos vigentes y atractivos, eliminando lo que
                     desenfoca y generando atención a las nuevas tendencias y a los servicios donde mayor valor agrega el
-                    doctor, otro servicios se eliminan o se delegan.
+                    doctor, otros servicios se eliminan o se delegan.
                 </label>
             </div>
         </div>
@@ -245,14 +245,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s4p6" value="2">
                 <label class="form-check-label">
-                    Se tiene una idea del costo por servicio y producto pero no se usa para la determinación del precio
+                    Se tiene una idea del costo por servicio y producto, pero no se usa para la determinación del precio
                     y no se tiene la rentabilidad.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s4p6" value="3">
                 <label class="form-check-label">
-                    Se tiene el costo preciso por servicio y producto pero la rentabilidad no se tiene clara en los
+                    Se tiene el costo preciso por servicio y producto, pero la rentabilidad no se tiene clara en los
                     servicios.
                 </label>
             </div>
@@ -260,13 +260,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <input class="form-check-input" type="radio" name="s4p6" value="4">
                 <label class="form-check-label">
                     Tengo una revisión de costos anual de costos, precios y rentabilidad pero hace falta un seguimiento
-                    mas frecuente.
+                    más frecuente.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s4p6" value="5">
                 <label class="form-check-label">
-                    Se mantiene un sistema de calculo y seguimiento de costeo y rentabilidad por servicio y producto.
+                    Se mantiene un sistema de cálculo y seguimiento de costeo y rentabilidad por servicio y producto.
                     Esto también ayuda en el proceso de ajuste de precio.
                 </label>
             </div>
@@ -288,7 +288,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s4p7" value="2">
                 <label class="form-check-label">
-                    Para la definición de precios se cuenta con un proceso básico de costo mas un margen deseado.
+                    Para la definición de precios se cuenta con un proceso básico de costo más un margen deseado.
                 </label>
             </div>
             <div class="form-check mx-4">
@@ -302,7 +302,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <input class="form-check-input" type="radio" name="s4p7" value="4">
                 <label class="form-check-label">
                     Se cuenta con un proceso que considera el incremento en insumos, los precios de la competencia y la
-                    estrategia deseada internamente para provocar mas o menos ventas de cada producto o servicio.
+                    estrategia deseada internamente para provocar más o menos ventas de cada producto o servicio.
                 </label>
             </div>
             <div class="form-check mx-4">

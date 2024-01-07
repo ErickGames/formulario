@@ -119,7 +119,7 @@ h1{
 
 /* Estilos para las respuestas no seleccionadas */
 .form-check-input:not(:checked) + .form-check-label {
-  opacity: 0.5; /* Reducir opacidad */
+  opacity: 0.8; /* Reducir opacidad */
 }
 
 /* Estilos para la respuesta seleccionada */

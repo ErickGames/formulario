@@ -6,7 +6,7 @@ inputs.forEach(input => {
     input.addEventListener('change', function() {
         // Restablecer todos los estilos a opacidad reducida
         inputs.forEach(inp => {
-            inp.nextElementSibling.style.opacity = '0.5';
+            inp.nextElementSibling.style.opacity = '0.8';
             inp.nextElementSibling.style.fontWeight = 'normal';
         });
 

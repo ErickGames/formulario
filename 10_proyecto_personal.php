@@ -43,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s10p1" value="2">
                 <label class="form-check-label">
-                    Trabajo en otra institucion y eso me resta tiempo para atender mi consultorio.
+                    Trabajo en otra institución y eso me resta tiempo para atender mi consultorio.
                 </label>
             </div>
             <div class="form-check mx-4">
@@ -55,7 +55,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s10p1" value="4">
                 <label class="form-check-label">
-                    Trabajo mas del 70% en mi consultorio y converso trabajo en otra insitutción.
+                    Trabajo más del 70% en mi consultorio y converso trabajo en otra insitutción.
                 </label>
             </div>
             <div class="form-check mx-4">
@@ -86,13 +86,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s10p2" value="3">
                 <label class="form-check-label">
-                    La agenda del doctor esta ocupada con citas o procedimientos entre un 40 y un 60% .
+                    La agenda del doctor esta ocupada con citas o procedimientos entre un 40 y un 60%.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s10p2" value="4">
                 <label class="form-check-label">
-                    La agenda del doctor esta ocupada con citas o procedimientos entre un 60 y un 80% .
+                    La agenda del doctor esta ocupada con citas o procedimientos entre un 60 y un 80%.
                 </label>
             </div>
             <div class="form-check mx-4">
@@ -117,26 +117,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s10p3" value="2">
                 <label class="form-check-label">
-                    Tengo menos de 5 años con mi consultorio y se tiene estabilidad aunque cuenta con muchas
+                    Tengo menos de 5 años con mi consultorio y se tiene estabilidad, aunque cuenta con muchas
                     oportunidades por mejorar.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s10p3" value="3">
                 <label class="form-check-label">
-                    Tengo de 5-7 años pero hace falta un diagnostico de evaluación y saber donde estamos.
+                    Tengo de 5-7 años, pero hace falta un diagnóstico de evaluación y saber donde estamos.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s10p3" value="4">
                 <label class="form-check-label">
-                    Tengo mas de 10 años en el negocio, y veo la posibilidad de reinventarlo.
+                    Tengo más de 10 años en el negocio, y veo la posibilidad de reinventarlo.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s10p3" value="5">
                 <label class="form-check-label">
-                    Tengo mas de 10 años en el negocio, esta maduro pero lo quiero evolucionar / reinventar / redefinir.
+                    Tengo más de 10 años en el negocio, está maduro, pero lo quiero evolucionar / reinventar / redefinir.
                 </label>
             </div>
         </div>
@@ -149,13 +149,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s10p4" value="1">
                 <label class="form-check-label">
-                    Tengo poca conformidad actual aunque por otro lado no hago mucho por cambiar las cosas.
+                    Tengo poca conformidad actual, aunque por otro lado no hago mucho por cambiar las cosas.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s10p4" value="2">
                 <label class="form-check-label">
-                    Me gustaría no ser todólogo en el trabajo y enfocarme mas a lo que mas me gusta.
+                    Me gustaría no ser todólogo en el trabajo y enfocarme más a lo que más me gusta.
                 </label>
             </div>
             <div class="form-check mx-4">
@@ -167,13 +167,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s10p4" value="4">
                 <label class="form-check-label">
-                    Hoy dedico mi tiempo en los servicios donde mas agrego valor y son mas rentables.
+                    Hoy dedico mi tiempo en los servicios donde más agrego valor y son más rentables.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s10p4" value="5">
                 <label class="form-check-label">
-                    Me enfoco a lo que mas me gusta y donde soy uno de los mejores, Quiero tener franquicias y más
+                    Me enfoco a lo que más me gusta y donde soy uno de los mejores, Quiero tener franquicias y más
                     sucursales.
                 </label>
             </div>
@@ -187,7 +187,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s10p5" value="1">
                 <label class="form-check-label">
-                    No siento ambiciòn por crecer personalmente, y aunque a veces me despierta la inquietud de
+                    No siento ambición por crecer personalmente, y aunque a veces me despierta la inquietud de
                     evolucionar termino por no hacer nada al respecto.
                 </label>
             </div>
@@ -200,7 +200,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s10p5" value="3">
                 <label class="form-check-label">
-                    Enfoco mi tiempo donde más a gusto me siento pero quiero ser mas efectivo en mi agenda y con mis
+                    Enfoco mi tiempo donde más a gusto me siento pero quiero ser más efectivo en mi agenda y con mis
                     compromisos personales.
                 </label>
             </div>
@@ -228,14 +228,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s10p6" value="1">
                 <label class="form-check-label">
-                    No tengo balance de vida, paso la mayor parde del día trabajando
+                    No tengo balance de vida, paso la mayor parde del día trabajando.
                     .
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s10p6" value="2">
                 <label class="form-check-label">
-                    No tengo balance de vida, pero me gustaría tenerlo y estoy haciendo pequeñas acciones para ello .
+                    No tengo balance de vida, pero me gustaría tenerlo y estoy haciendo pequeñas acciones para ello.
                 </label>
             </div>
             <div class="form-check mx-4">
@@ -248,7 +248,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s10p6" value="4">
                 <label class="form-check-label">
-                    Tengo un buen balance de vida y trabajo, no voy diario al consultorio pero tengo un equipo de
+                    Tengo un buen balance de vida y trabajo, no voy diario al consultorio, pero tengo un equipo de
                     trabajo que me respalda.
                 </label>
             </div>
@@ -256,7 +256,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <input class="form-check-input" type="radio" name="s10p6" value="5">
                 <label class="form-check-label">
                     Tengo un buen balance de vida y trabajo, no voy diario al consultorio, y tengo un equipo de trabajo
-                    que me respalda, esto se refleja en un negocio que crece en venta y rentabilidad .
+                    que me respalda, esto se refleja en un negocio que crece en venta y rentabilidad.
                 </label>
             </div>
         </div>
