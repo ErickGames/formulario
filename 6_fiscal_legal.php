@@ -27,194 +27,208 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
     </div>
 
+    <div id="myProgress" class="w3-light-grey m-4">
+        <div id="myBar" class="w3-container w3-green w3-center" style="width:41.6%">43%</div>
+    </div>
+
     <form action="7_activos.php" method="POST" class="m-4 bordesito" id="form1">
 
         <!-- PREGUNTA 1 -->
-        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
-            <h4 class="mb-3 ">Constitución de empresas</h4>
+            <h4 class="mb-4">Constitución de empresas</h4>
 
-            <div class="form-check mx-4">
+            <div class="col-md-1"></div>
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p1" value="1">
                 <label class="form-check-label">
                     Soy persona física con actividad empresarial y profesional.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p1" value="2">
                 <label class="form-check-label">
                     Estoy en REPSICO.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p1" value="3">
                 <label class="form-check-label">
                     Tengo una empresa SC.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p1" value="4">
                 <label class="form-check-label">
                     Tengo 2 empresa una SC y una SA.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p1" value="5">
                 <label class="form-check-label">
                     Tengo más de 2 empresas y tengo una estrategia fiscal integrada.
                 </label>
             </div>
+            <div class="col-md-1"></div>
         </div>
 
         <!-- PREGUNTA 2 -->
-        <div class="p-4" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
-            <h4 Class="mb-3 ">Planeación Fiscal</h4>
+            <h4 Class="mb-4">Planeación Fiscal</h4>
 
-            <div class="form-check mx-4">
+            <div class="col-md-1"></div>
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p2" value="1">
                 <label class="form-check-label">
                     No tengo planeación fiscal.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p2" value="2">
                 <label class="form-check-label">
                     Opero con recomendaciones básicas de colegas o terceros.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p2" value="3">
                 <label class="form-check-label">
                     Se cuenta con una asesoría formal, pero sin claridad en como ejecutarla en el día a día año.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p2" value="4">
                 <label class="form-check-label">
                     Se cuenta con una planeación integral con apoyo externo, se ejecutar y monitorea con recursos
                     internos.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p2" value="5">
                 <label class="form-check-label">
                     Se cuenta con una planeación fiscal anual, seguimiento y ejecución al mayor nivel asegurando
                     eficiencias contables.
                 </label>
             </div>
+            <div class="col-md-1"></div>
         </div>
 
         <!-- PREGUNTA 3 -->
-        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
 
-            <h4 class="mb-3 ">Permisos COFEPRIS</h4>
+            <h4 class="mb-4">Permisos COFEPRIS</h4>
 
-            <div class="form-check mx-4">
+            <div class="col-md-1"></div>
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p3" value="1">
                 <label class="form-check-label">
                     No tengo.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p3" value="2">
                 <label class="form-check-label">
                     Solo de apertura de consultorio.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p3" value="3">
                 <label class="form-check-label">
                     Se tiene de apertura de consultorio y farmacia.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p3" value="4">
                 <label class="form-check-label">
                     Se tiene de apertura de consultorio, farmacia y mercadotecnia, aunque tengo alguna sin actualizar.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p3" value="5">
                 <label class="form-check-label">
                     Apertura de consultorio, farmacia, marketing y la actualizo cada vez que se debe.
                 </label>
             </div>
+            <div class="col-md-1"></div>
         </div>
 
         <!-- PREGUNTA 4 -->
-        <div class="p-4" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
-            <h4 class="mb-3 ">Certificaciones y otros permisos</h4>
+            <h4 class="mb-4">Certificaciones y otros permisos</h4>
 
-            <div class="form-check mx-4">
+            <div class="col-md-1"></div>
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p4" value="1">
                 <label class="form-check-label">
                     No tengo.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p4" value="2">
                 <label class="form-check-label">
                     Tengo un solo permiso dado de alta.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p4" value="3">
                 <label class="form-check-label">
                     Tengo algunos permisos y certificaciones, pero me faltan otros.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p4" value="4">
                 <label class="form-check-label">
                     Tengo todas las certificaciones y permisos, pero no se actualizan.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p4" value="5">
                 <label class="form-check-label">
                     Tengo todas las certificaciones y permisos y se actualizan constantemente.
                 </label>
             </div>
+            <div class="col-md-1"></div>
         </div>
 
         <!-- PREGUNTA 5 -->
-        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
-            <h4 Class="mb-3 ">Sistema de facturación</h4>
+            <h4 Class="mb-4">Sistema de facturación</h4>
 
-            <div class="form-check mx-4">
+            <div class="col-md-1"></div>
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p5" value="1">
                 <label class="form-check-label">
                     No tengo.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p5" value="2">
                 <label class="form-check-label">
                     Lo hago directamente en el SAT.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p5" value="3">
                 <label class="form-check-label">
                     No tengo, esta actividad la hace mi contador.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p5" value="4">
                 <label class="form-check-label">
                     Tengo un sistema de facturación comercial autorizado, pero sin integrar con otro de mis sistemas.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p5" value="5">
                 <label class="form-check-label">
                     Tengo un sistema de facturación comercial autorizado e integrado con otros de mis sistemas.
                 </label>
             </div>
+            <div class="col-md-1"></div>
         </div>
     </form>
 
@@ -253,6 +267,37 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 // Falta seleccionar alguna opción, muestra un mensaje de error o realiza la acción que desees
                 alert("Por favor, selecciona una opción para cada pregunta.");
             }
+        });
+
+        function move() {
+            var elem = document.getElementById("myBar");
+            var width = 41.6; // Obtener el valor actual 
+
+            // Calcular cuántas preguntas han sido respondidas
+            var answeredQuestions = document.querySelectorAll('input[type="radio"]:checked').length;
+
+            // Calcular el porcentaje de avance basado en el número de preguntas respondidas
+            var progress = width + (1.3 * answeredQuestions);
+
+            // Evitar que el progreso supere el 100%
+            progress = Math.min(progress, 100);
+
+            var id = setInterval(frame, 10);
+
+            function frame() {
+                if (width >= progress) {
+                    clearInterval(id);
+                } else {
+                    width += 1.3; // Incrementar en 1.3% por cada pregunta contestada
+                    elem.style.width = width + '%';
+                    elem.innerHTML = Math.round(width) + '%';
+                }
+            }
+        }
+
+        // Agregar eventos de clic a todos los radio buttons
+        document.querySelectorAll('input[type="radio"]').forEach(function (radio) {
+            radio.addEventListener("click", move);
         });
     </script>
 

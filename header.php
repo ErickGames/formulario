@@ -20,5 +20,8 @@ CONTACT:
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="javascript/resaltar.js"></script>
 
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
     <title>Test</title>
 </head>

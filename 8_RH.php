@@ -30,264 +30,281 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
     </div>
 
+    <div id="myProgress" class="w3-light-grey m-4">
+        <div id="myBar" class="w3-container w3-green w3-center" style="width:57.2%">58%</div>
+    </div>
+
     <form action="9_instalaciones.php" method="POST" class="m-4 bordesito" id="form1">
 
         <!-- PREGUNTA 1 -->
-        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
-            <h4 class="mb-3 ">Personal en general</h4>
+            <h4 class="mb-b">Personal en general</h4>
 
-            <div class="form-check mx-4">
+            <div class="col-md-1"></div>
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p1" value="1">
                 <label class="form-check-label">
                     No tengo.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p1" value="2">
                 <label class="form-check-label">
                     Se tiene 1 empleado.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p1" value="3">
                 <label class="form-check-label">
                     Se tiene entre 2 y 3 empleados (sin contar doctores).
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p1" value="4">
                 <label class="form-check-label">
                     Se tiene entre 5 y 6 empleados incluyendo personal de recepción y enteras (sin contar doctores).
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p1" value="5">
                 <label class="form-check-label">
                     Se tiene más de 6 empleaos.
                 </label>
             </div>
+            <div class="col-md-1"></div>
         </div>
 
         <!-- PREGUNTA 2 -->
-        <div class="p-4" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
-            <h4 Class="mb-3 ">Equipo de personas suficiente y asignado a labores especificas</h4>
+            <h4 Class="mb-b">Equipo de personas suficiente y asignado a labores especificas</h4>
 
-            <div class="form-check mx-4">
+            <div class="col-md-1"></div>
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p2" value="1">
                 <label class="form-check-label">
                     No tengo.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p2" value="2">
                 <label class="form-check-label">
                     Solo tengo un empleado y no me doy abasto.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p2" value="3">
                 <label class="form-check-label">
                     Tengo 3 personas que colaboran en diferente posiciones pero no son el perfil deseado.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p2" value="4">
                 <label class="form-check-label">
                     Tengo más de 3 personas que colaboran en diferente posiciones pero no son el perfil deseado.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p2" value="5">
                 <label class="form-check-label">
                     Equipo completo en todas las áreas.
                 </label>
             </div>
+            <div class="col-md-1"></div>
         </div>
 
         <!-- PREGUNTA 3 -->
-        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
 
-            <h4 class="mb-3 ">Administración de nómina</h4>
+            <h4 class="mb-b">Administración de nómina</h4>
 
-            <div class="form-check mx-4">
+            <div class="col-md-1"></div>
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p3" value="1">
                 <label class="form-check-label">
                     No la llevo.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p3" value="2">
                 <label class="form-check-label">
                     Lo lleva mi contador externo.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p3" value="3">
                 <label class="form-check-label">
                     Lo llevamos internamente.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p3" value="4">
                 <label class="form-check-label">
                     Llevamos en un Excel el sistema de nómina.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p3" value="5">
                 <label class="form-check-label">
                     Levamos un sistema de nómina y tenemos revisiones de la ST.
                 </label>
             </div>
+            <div class="col-md-1"></div>
         </div>
 
         <!-- PREGUNTA 4 -->
-        <div class="p-4" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
-            <h4 class="mb-3 ">Perfiles de puestos / Descripción de responsabilidades</h4>
+            <h4 class="mb-b">Perfiles de puestos / Descripción de responsabilidades</h4>
 
-            <div class="form-check mx-4">
+            <div class="col-md-1"></div>
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p4" value="1">
                 <label class="form-check-label">
                     No se tiene.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p4" value="2">
                 <label class="form-check-label">
                     Se tiene para las posiciones claves.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p4" value="3">
                 <label class="form-check-label">
                     Se tiene para todas las posiciones pero no se le da seguimiento y no se cumple.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p4" value="4">
                 <label class="form-check-label">
                     Se tiene para todas las posiciones y se les da seguimiento aunque no se actualizan cada periodo
                     definido.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p4" value="5">
                 <label class="form-check-label">
                     se tienen perfiles de puesto y se están constantemente renovando.
                 </label>
             </div>
+            <div class="col-md-1"></div>
         </div>
 
         <!-- PREGUNTA 5 -->
-        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
-            <h4 Class="mb-3 ">Metas y objetivos claros por persona</h4>
+            <h4 Class="mb-b">Metas y objetivos claros por persona</h4>
 
-            <div class="form-check mx-4">
+            <div class="col-md-1"></div>
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p5" value="1">
                 <label class="form-check-label">
                     No existen.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p5" value="2">
                 <label class="form-check-label">
                     Se tiene para las posiciones claves.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p5" value="3">
                 <label class="form-check-label">
                     Se tiene para todas las posiciones no se le da seguimiento y no se cumple.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p5" value="4">
                 <label class="form-check-label">
                     Se tiene para todas les posiciones y se les da seguimiento, aunque no se actualizan cada periodo
                     definido.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p5" value="5">
                 <label class="form-check-label">
                     Se tienen perfiles de puesto y se están constantemente renovando.
                 </label>
             </div>
+            <div class="col-md-1"></div>
         </div>
 
         <!-- PREGUNTA 6 -->
-        <div class="p-4" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
-            <h4 class="mb-3 ">Incentivos / Bonos y Comisiones</h4>
+            <h4 class="mb-b">Incentivos / Bonos y Comisiones</h4>
 
-            <div class="form-check mx-4">
+            <div class="col-md-1"></div>
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p6" value="1">
                 <label class="form-check-label">
                     No tengo.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p6" value="2">
                 <label class="form-check-label">
                     Solo doy incentivos económicos al final del año.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p6" value="3">
                 <label class="form-check-label">
                     Solo tengo bono mensual por metas y se lleva manual.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p6" value="4">
                 <label class="form-check-label">
                     Se tiene un programa mixto entre metas y pago variable de manera mensual y apoyados en Excel.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p6" value="5">
                 <label class="form-check-label">
                     Se tiene un programa mixto entre metas y pago variable en un sistema especializado para ello.
                 </label>
             </div>
+            <div class="col-md-1"></div>
         </div>
 
         <!-- PREGUNTA 7 -->
-        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
-            <h4 Class="mb-3 ">Competitividad laboral</h4>
+            <h4 Class="mb-b">Competitividad laboral</h4>
 
-            <div class="form-check mx-4">
+            <div class="col-md-1"></div>
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p7" value="1">
                 <label class="form-check-label">
                     No se tiene competitividad laboral, es difícil contratar.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p7" value="2">
                 <label class="form-check-label">
                     Cuento con un equipo estable pero no cumple con el perfil deseado.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p7" value="3">
                 <label class="form-check-label">
                     Se contrata y mantiene un equipo estable, motivado y proactivo.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p7" value="4">
                 <label class="form-check-label">
                     Se contrata y mantiene un equipo estable, motivado y proactivo con una mezcla entre percepciones
                     fijas y otra por comisiones.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p7" value="5">
                 <label class="form-check-label">
                     Se contrata y mantiene un equipo estable, motivado y proactivo con una mezcla entre percepciones
@@ -295,268 +312,281 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     largo plazo.
                 </label>
             </div>
+            <div class="col-md-1"></div>
         </div>
 
         <!-- PREGUNTA 8 -->
-        <div class="p-4" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
 
-            <h4 class="mb-3 ">Rotación</h4>
+            <h4 class="mb-b">Rotación</h4>
 
-            <div class="form-check mx-4">
+            <div class="col-md-1"></div>
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p8" value="1">
                 <label class="form-check-label">
                     Tengo mucha rotación, es mayor al 50% en un año.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p8" value="2">
                 <label class="form-check-label">
                     Se tiene rotación alta entre un 40% al año.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p8" value="3">
                 <label class="form-check-label">
                     Se tiene rotación media alrededor del 30% al año.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p8" value="4">
                 <label class="form-check-label">
                     Se tiene rotación baja alrededor del 20% al año.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p8" value="5">
                 <label class="form-check-label">
                     La rotación no rebasa el 10%.
                 </label>
             </div>
+            <div class="col-md-1"></div>
         </div>
 
         <!-- PREGUNTA 9 -->
-        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
-            <h4 class="mb-3 ">Reclutamiento</h4>
+            <h4 class="mb-b">Reclutamiento</h4>
 
-            <div class="form-check mx-4">
+            <div class="col-md-1"></div>
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p9" value="1">
                 <label class="form-check-label">
                     Lo hace el doctor en sus tiempos libres.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p9" value="2">
                 <label class="form-check-label">
                     Personal de la clínica colabora en el reclutamiento.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p9" value="3">
                 <label class="form-check-label">
                     Se cuenta con una persona interna de RH que cobre esta tarea.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p9" value="4">
                 <label class="form-check-label">
                     Cuento con un equipo externo que me hace la búsqueda y comparte finalistas.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p9" value="5">
                 <label class="form-check-label">
                     Cuento con un equipo de Rh interno que me hace la búsqueda y para ciertas posiciones contrato
                     también a un agente de apoyo.
                 </label>
             </div>
+            <div class="col-md-1"></div>
         </div>
 
         <!-- PREGUNTA 10 -->
-        <div class="p-4" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
             <h4 class=" mb-3 ">Comunicación y alineación</h4>
 
             <div class=" form-check mx-4">
-            <input class="form-check-input" type="radio" name="s8p10" value="1">
-            <label class="form-check-label">
-                Nunca me reúno con mi equipo.
-            </label>
-        </div>
-        <div class="form-check mx-4">
-            <input class="form-check-input" type="radio" name="s8p10" value="2">
-            <label class="form-check-label">
-                Reuniones solo si hay problemas.
-            </label>
-        </div>
-        <div class="form-check mx-4">
-            <input class="form-check-input" type="radio" name="s8p10" value="3">
-            <label class="form-check-label">
-                Reuniones semanales.
-            </label>
-        </div>
-        <div class="form-check mx-4">
-            <input class="form-check-input" type="radio" name="s8p10" value="4">
-            <label class="form-check-label">
-                Reuniones mensuales.
-            </label>
-        </div>
-        <div class="form-check mx-4">
-            <input class="form-check-input" type="radio" name="s8p10" value="5">
-            <label class="form-check-label">
-                Reuniones mensuales y reuniones de consejo con lideres trimestrales.
-            </label>
-        </div>
+                <input class="form-check-input" type="radio" name="s8p10" value="1">
+                <label class="form-check-label">
+                    Nunca me reúno con mi equipo.
+                </label>
+            </div>
+            <div class="form-check col-md-2">
+                <input class="form-check-input" type="radio" name="s8p10" value="2">
+                <label class="form-check-label">
+                    Reuniones solo si hay problemas.
+                </label>
+            </div>
+            <div class="form-check col-md-2">
+                <input class="form-check-input" type="radio" name="s8p10" value="3">
+                <label class="form-check-label">
+                    Reuniones semanales.
+                </label>
+            </div>
+            <div class="form-check col-md-2">
+                <input class="form-check-input" type="radio" name="s8p10" value="4">
+                <label class="form-check-label">
+                    Reuniones mensuales.
+                </label>
+            </div>
+            <div class="form-check col-md-2">
+                <input class="form-check-input" type="radio" name="s8p10" value="5">
+                <label class="form-check-label">
+                    Reuniones mensuales y reuniones de consejo con lideres trimestrales.
+                </label>
+            </div>
         </div>
 
         <!-- PREGUNTA 11 -->
-        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
-            <h4 Class="mb-3 ">Gestión de doctores y enfermeras</h4>
+            <h4 Class="mb-b">Gestión de doctores y enfermeras</h4>
 
-            <div class="form-check mx-4">
+            <div class="col-md-1"></div>
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p11" value="1">
                 <label class="form-check-label">
                     No se tiene.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p11" value="2">
                 <label class="form-check-label">
                     Se lleva un registro manual.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p11" value="3">
                 <label class="form-check-label">
                     Se tiene un sistema básico de asignación de responsabilidades y prioridades de corto plazo.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p11" value="4">
                 <label class="form-check-label">
                     Se tiene un sistema de asignación de responsabilidades y prioridades de corto plazo y se va
                     ajustando diariamente realizando.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p11" value="5">
                 <label class="form-check-label">
                     Hay una persona encargada de esto y siguiendo los procesos optimizando el tiempo de las personas.
                 </label>
             </div>
+            <div class="col-md-1"></div>
         </div>
 
         <!-- PREGUNTA 12 -->
-        <div class="p-4" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
 
-            <h4 class="mb-3 ">Reconocimiento / Premios</h4>
+            <h4 class="mb-b">Reconocimiento / Premios</h4>
 
-            <div class="form-check mx-4">
+            <div class="col-md-1"></div>
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p12" value="1">
                 <label class="form-check-label">
                     No tengo.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p12" value="2">
                 <label class="form-check-label">
                     Se cuenta reconocimientos esporádicos.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p12" value="3">
                 <label class="form-check-label">
                     Se cuenta con reconocimientos semestrales, pero no están claras las convocatorias.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p12" value="4">
                 <label class="form-check-label">
                     Tengo reconocimientos trimestrales a todos los puestos.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p12" value="5">
                 <label class="form-check-label">
                     Tengo reconocimientos trimestrales a todos los puestos y los resultados son extraordinarios.
                 </label>
             </div>
+            <div class="col-md-1"></div>
         </div>
 
         <!-- PREGUNTA 13 -->
-        <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
-            <h4 class="mb-3 ">Liderazgo y desarrollo de otros</h4>
+            <h4 class="mb-b">Liderazgo y desarrollo de otros</h4>
 
-            <div class="form-check mx-4">
+            <div class="col-md-1"></div>
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p13" value="1">
                 <label class="form-check-label">
                     No tengo tiempo.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p13" value="2">
                 <label class="form-check-label">
                     No se delegar.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p13" value="3">
                 <label class="form-check-label">
                     Desarrollo a las personas del equipo y definimos los nuevos parámetros o certificaciones.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p13" value="4">
                 <label class="form-check-label">
                     Tengo un sistema de entramiento y reconocimiento.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p13" value="5">
                 <label class="form-check-label">
                     Tengo un equipo y les damos capacitación cada semana.
                 </label>
             </div>
+            <div class="col-md-1"></div>
         </div>
 
         <!-- PREGUNTA 14 -->
-        <div class="p-4" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
-            <h4 Class="mb-3 ">Capacitación y Entrenamiento</h4>
+            <h4 Class="mb-b">Capacitación y Entrenamiento</h4>
 
-            <div class="form-check mx-4">
+            <div class="col-md-1"></div>
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p14" value="1">
                 <label class="form-check-label">
                     No se capacitar.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p14" value="2">
                 <label class="form-check-label">
                     No se cuenta con un programa de capacitación y entrenamiento.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p14" value="3">
                 <label class="form-check-label">
                     Se cuenta con un programa solo de algunos puestos.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p14" value="4">
                 <label class="form-check-label">
                     Se cuenta con un programa, pero muchas veces no se cumple.
                 </label>
             </div>
-            <div class="form-check mx-4">
+            <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p14" value="5">
                 <label class="form-check-label">
                     Se cuenta con un programa, se cumple y se complementa con consultores externos.
                 </label>
             </div>
+            <div class="col-md-1"></div>
         </div>
     </form>
 
@@ -595,6 +625,37 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 // Falta seleccionar alguna opción, muestra un mensaje de error o realiza la acción que desees
                 alert("Por favor, selecciona una opción para cada pregunta.");
             }
+        });
+
+        function move() {
+            var elem = document.getElementById("myBar");
+            var width = 57.2; // Obtener el valor actual 
+
+            // Calcular cuántas preguntas han sido respondidas
+            var answeredQuestions = document.querySelectorAll('input[type="radio"]:checked').length;
+
+            // Calcular el porcentaje de avance basado en el número de preguntas respondidas
+            var progress = width + (1.3 * answeredQuestions);
+
+            // Evitar que el progreso supere el 100%
+            progress = Math.min(progress, 100);
+
+            var id = setInterval(frame, 10);
+
+            function frame() {
+                if (width >= progress) {
+                    clearInterval(id);
+                } else {
+                    width += 1.3; // Incrementar en 1.3% por cada pregunta contestada
+                    elem.style.width = width + '%';
+                    elem.innerHTML = Math.round(width) + '%';
+                }
+            }
+        }
+
+        // Agregar eventos de clic a todos los radio buttons
+        document.querySelectorAll('input[type="radio"]').forEach(function (radio) {
+            radio.addEventListener("click", move);
         });
     </script>
 </body>

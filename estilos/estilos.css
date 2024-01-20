@@ -1,86 +1,86 @@
-
-.bordesito{
+.bordesito {
   box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.2);
 }
 
 .pregunta {
-    font-size: 20px;
-    font-weight: bolder;
-    text-align: center;
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: center;
 }
 
 .cssbuttons-io-button {
-    background: #192f59;
-    color: white;
-    font-family: inherit;
-    padding: 0.35em;
-    padding-left: 1.2em;
-    font-size: 17px;
-    font-weight: 500;
-    border-radius: 0.9em;
-    border: none;
-    letter-spacing: 0.05em;
-    display: flex;
-    align-items: center;
-    box-shadow: inset 0 0 1.6em -0.6em #192f59;
-    overflow: hidden;
-    position: relative;
-    height: 2.8em;
-    padding-right: 3.3em;
-    cursor: pointer;
-  }
-  
-  .cssbuttons-io-button .icon {
-    background: white;
-    margin-left: 1em;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 2.2em;
-    width: 2.2em;
-    border-radius: 0.7em;
-    box-shadow: 0.1em 0.1em 0.6em 0.2em #192f59;
-    right: 0.3em;
-    transition: all 0.3s;
-  }
-  
-  .cssbuttons-io-button:hover .icon {
-    width: calc(100% - 0.6em);
-  }
-  
-  .cssbuttons-io-button .icon svg {
-    width: 1.1em;
-    transition: transform 0.3s;
-    color: #192f59;
-  }
-  
-  .cssbuttons-io-button:hover .icon svg {
-    transform: translateX(0.1em);
-  }
-  
-  .cssbuttons-io-button:active .icon {
-    transform: scale(0.95);
-  }
-  
-  /* Index */
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
+  background: #192f59;
+  color: white;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #192f59;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  cursor: pointer;
+}
+
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #192f59;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #192f59;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+}
+
+/* Index */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
 }
 
 .container {
   text-align: center;
-  margin-top: 20vh; /* Ajusta la posición verticalmente según tu preferencia */
+  margin-top: 20vh;
+  /* Ajusta la posición verticalmente según tu preferencia */
   margin-left: 30vh;
   margin-right: 30vh;
 }
 
 .title {
-    font-size: 2.5em;
-    color: #333;
+  font-size: 2.5em;
+  color: #333;
 }
 
 .description {
@@ -92,17 +92,17 @@
 }
 
 .start-button {
-    display: inline-block;
-    padding: 10px 20px;
-    text-decoration: none;
-    background-color: #4CAF50;
-    color: white;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
 .start-button:hover {
-    background-color: #45a049;
+  background-color: #45a049;
 }
 
 .instructions {
@@ -111,19 +111,54 @@
   margin-right: 200px;
   text-align: left;
 }
+
 /* End index */
 
-h1{
+h1 {
   font-family: 'Anton', sans-serif;
 }
 
 /* Estilos para las respuestas no seleccionadas */
-.form-check-input:not(:checked) + .form-check-label {
-  opacity: 0.8; /* Reducir opacidad */
+.form-check-input:not(:checked)+.form-check-label {
+  opacity: 0.8;
+  /* Reducir opacidad */
 }
 
 /* Estilos para la respuesta seleccionada */
-.form-check-input:checked + .form-check-label {
-  opacity: 1; /* Restaurar opacidad */
-  font-weight: bold; /* Otra forma de resaltar */
+.form-check-input:checked+.form-check-label {
+  opacity: 1;
+  /* Restaurar opacidad */
+  font-weight: bold;
+  /* Otra forma de resaltar */
+}
+
+@media only screen and (max-width: 800px) {
+  .title {
+    font-size: 40px;
+    color: #2f2f2f;
+  }
+
+  .description {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    line-height: 1.3;
+  }
+
+  .container {
+    text-align: center;
+    margin-top: 20px;
+    /* Ajusta la posición verticalmente según tu preferencia */
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .instructions {
+    font-size: 18px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: left;
+  }
+
 }
