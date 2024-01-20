@@ -47,13 +47,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s5p1" value="2">
                 <label class="form-check-label">
-                    Tengo venta ocasional de medicamentos pero no tengo los permisos respectivos.
+                    Tengo venta ocasional de medicamentos. pero no tengo los permisos respectivos.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s5p1" value="3">
                 <label class="form-check-label">
-                    Tengo venta de mostrador pero sin farmacia en un espacio pequeño.
+                    Tengo venta de mostrador, pero sin farmacia en un espacio pequeño.
                 </label>
             </div>
             <div class="form-check mx-4">
@@ -125,7 +125,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s5p3" value="2">
                 <label class="form-check-label">
-                    Se cuenta con un proceso pero frecuentemente hay productos que caen en agotamiento porque no se
+                    Se cuenta con un proceso, pero frecuentemente hay productos que caen en agotamiento porque no se
                     tiene producto para picos de demanda imprevistos.
                 </label>
             </div>

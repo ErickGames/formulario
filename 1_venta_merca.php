@@ -30,7 +30,7 @@ session_start();
 
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s1p1" value="1">
-                <label class="form-check-label">
+                <label class="form-check-label" for="opcion1">
                     No se cuenta con una labor de venta específica, solo la atención de clientes que nos buscan.
                 </label>
             </div>
@@ -164,7 +164,7 @@ session_start();
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s1p4" value="4">
                 <label class="form-check-label">
-                    Se cuenta con Facebook / Instagram / Tik-Tok y tienen estrategia de contenido.
+                    Se cuenta con Facebook / Instagram / TikTok y tienen estrategia de contenido.
                 </label>
             </div>
             <div class="form-check mx-4">
@@ -227,7 +227,7 @@ session_start();
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s1p6" value="2">
                 <label class="form-check-label">
-                    Se tiene una pagina WEB muy básica y sin actualización.
+                    Se tiene una página WEB muy básica y sin actualización.
                 </label>
             </div>
             <div class="form-check mx-4">
@@ -239,13 +239,13 @@ session_start();
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s1p6" value="4">
                 <label class="form-check-label">
-                    Se cuenta con una pagina WEB, funcional y atractiva.
+                    Se cuenta con una página WEB, funcional y atractiva.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s1p6" value="5">
                 <label class="form-check-label">
-                    Se cuenta con una pagina WEB, funcional, atractiva y muy efectiva para conectar con los clientes y
+                    Se cuenta con una página WEB, funcional, atractiva y muy efectiva para conectar con los clientes y
                     generar venta incremental.
                 </label>
             </div>
@@ -309,7 +309,7 @@ session_start();
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s1p8" value="3">
                 <label class="form-check-label">
-                    Se cuenta con un programa de lealtad integral y de incentivos pero manual.
+                    Se cuenta con un programa de lealtad integral y de incentivos, pero manual.
                 </label>
             </div>
             <div class="form-check mx-4">

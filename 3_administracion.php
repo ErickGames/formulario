@@ -51,20 +51,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s3p1" value="3">
                 <label class="form-check-label">
-                    Su contabilidad la hace un contador externo y parcialmente dedicado .
+                    Su contabilidad la hace un contador externo y parcialmente dedicado.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s3p1" value="4">
                 <label class="form-check-label">
-                    Tiene una contabilidad externa e interna básica .
+                    Tiene una contabilidad externa e interna básica.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s3p1" value="5">
                 <label class="form-check-label">
                     Cuenta con departamento de contabilidad interno además de un despacho contable externo para
-                    acompañar la operación .
+                    acompañar la operación.
                 </label>
             </div>
         </div>
@@ -83,7 +83,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s3p2" value="2">
                 <label class="form-check-label">
-                    Se cuenta con una idea básica de ventas, costos y gastos .
+                    Se cuenta con una idea básica de ventas, costos y gastos.
                 </label>
             </div>
             <div class="form-check mx-4">
@@ -95,13 +95,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s3p2" value="4">
                 <label class="form-check-label">
-                    Se cuenta con una herramienta sistematizada para la generación de estados financieros .
+                    Se cuenta con una herramienta sistematizada para la generación de estados financieros.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s3p2" value="5">
                 <label class="form-check-label">
-                    Se cuenta con una herramienta sistematizada para la generación de estados financieros .
+                    Se cuenta con una herramienta sistematizada para la generación de estados financieros.
                 </label>
             </div>
         </div>
@@ -115,13 +115,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s3p3" value="1">
                 <label class="form-check-label">
-                    No se tiene registro ni calculo de las utilidades.
+                    No se tiene registro ni cálculo de las utilidades.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s3p3" value="2">
                 <label class="form-check-label">
-                    Se registra generación de utilidades pero son pocas y el cálculo se considera deficiente.
+                    Se registra generación de utilidades, pero son pocas y el cálculo se considera deficiente.
                 </label>
             </div>
             <div class="form-check mx-4">
@@ -134,14 +134,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <input class="form-check-input" type="radio" name="s3p3" value="4">
                 <label class="form-check-label">
                     Se cuenta con un cálculo robusto de las utilidades y se cuenta con estrategias de reinversión o
-                    recuperación .
+                    recuperación.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s3p3" value="5">
                 <label class="form-check-label">
                     Se cuenta con un cálculo robusto de las utilidades y permanentemente se ejecutan estrategias
-                    efectiva de reinversión .
+                    efectiva de reinversión.
                 </label>
             </div>
         </div>
@@ -172,7 +172,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s3p4" value="4">
                 <label class="form-check-label">
-                    Se cuenta con un sistema contable funcional e integral .
+                    Se cuenta con un sistema contable funcional e integral.
                 </label>
             </div>
             <div class="form-check mx-4">
@@ -261,7 +261,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <!-- PREGUNTA 7 -->
         <div class="p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
-            <h4 class="mb-3 ">Reportes se desempeño y seguimiento </h4>
+            <h4 class="mb-3 ">Reportes de desempeño y seguimiento </h4>
 
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s3p7" value="1">
@@ -309,7 +309,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s3p8" value="2">
                 <label class="form-check-label">
-                    Tengo un contador externo de manera parcial pero con inconsistencias.
+                    Tengo un contador externo de manera parcial, pero con inconsistencias.
                 </label>
             </div>
             <div class="form-check mx-4">
@@ -327,7 +327,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s3p8" value="5">
                 <label class="form-check-label">
-                    Tengo un equipo de contabilidad interno de 3 personas o mas, y apoyo de un contador o despacho
+                    Tengo un equipo de contabilidad interno de 3 personas o más, y apoyo de un contador o despacho
                     externo.
                 </label>
             </div>
@@ -348,26 +348,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s3p9" value="2">
                 <label class="form-check-label">
-                    No tengo nada formal pero si me otorgan descuentos de cliente diferenciado .
+                    No tengo nada formal pero si me otorgan descuentos de cliente diferenciado.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s3p9" value="3">
                 <label class="form-check-label">
-                    Cuento con una alianza informal o formal que me da acceso a descuentos permanentes .
+                    Cuento con una alianza informal o formal que me da acceso a descuentos permanentes.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s3p9" value="4">
                 <label class="form-check-label">
-                    Cuenta con una alianza o contrato formal que incluye descuentos y plan de crecimiento anual .
+                    Cuenta con una alianza o contrato formal que incluye descuentos y plan de crecimiento anual.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s3p9" value="5">
                 <label class="form-check-label">
                     Cuenta con una alianza o contrato formal que incluye descuentos y plan de crecimiento anual y 30 o
-                    mas días de crédito o inventario en consignación .
+                    más días de crédito o inventario en consignación.
                 </label>
             </div>
         </div>

@@ -18,7 +18,7 @@ CONTACT:
     <!-- IMPORT SWEETALERT -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
+    <script src="javascript/resaltar.js"></script>
 
     <title>Test</title>
 </head>

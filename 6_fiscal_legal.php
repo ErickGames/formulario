@@ -37,7 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s6p1" value="1">
                 <label class="form-check-label">
-                    Soy persona física con actividad empresaria y profesional.
+                    Soy persona física con actividad empresarial y profesional.
                 </label>
             </div>
             <div class="form-check mx-4">
@@ -61,7 +61,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s6p1" value="5">
                 <label class="form-check-label">
-                    Tengo mas de 2 empresas y tengo una estrategia fiscal integrada.
+                    Tengo más de 2 empresas y tengo una estrategia fiscal integrada.
                 </label>
             </div>
         </div>
@@ -86,7 +86,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s6p2" value="3">
                 <label class="form-check-label">
-                    Se cuenta con una asesoría formal pero sin claridad en como ejecutarla en el día a día año.
+                    Se cuenta con una asesoría formal, pero sin claridad en como ejecutarla en el día a día año.
                 </label>
             </div>
             <div class="form-check mx-4">
@@ -163,13 +163,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s6p4" value="3">
                 <label class="form-check-label">
-                    Tengo algunos permisos y certificaciones pero me faltan otros.
+                    Tengo algunos permisos y certificaciones, pero me faltan otros.
                 </label>
             </div>
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s6p4" value="4">
                 <label class="form-check-label">
-                    Tengo todas las certificaciones y permisos pero no se actualizan.
+                    Tengo todas las certificaciones y permisos, pero no se actualizan.
                 </label>
             </div>
             <div class="form-check mx-4">
@@ -206,7 +206,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check mx-4">
                 <input class="form-check-input" type="radio" name="s6p5" value="4">
                 <label class="form-check-label">
-                    Tengo un sistema de facturación comercial autorizado pero sin integrar con otro de mis sistemas.
+                    Tengo un sistema de facturación comercial autorizado, pero sin integrar con otro de mis sistemas.
                 </label>
             </div>
             <div class="form-check mx-4">

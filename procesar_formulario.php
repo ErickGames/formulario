@@ -21,6 +21,12 @@ class PDF extends FPDF
         $this->Cell(0, 10, utf8_decode('Sección ') . $num . ': ' . $label, 0, 1, 'L');
     }
 
+    function chapterSub($label)
+    {
+        $this->SetFont('Arial', 'B', 12);
+        $this->Cell(0, 10, $label, 0, 1, 'L');
+    }
+
     function chapterBody($body)
     {
         $this->SetFont('Arial', '', 11);
@@ -29,6 +35,7 @@ class PDF extends FPDF
 }
 
 $pdf = new PDF();
+$pdf->SetMargins(25, 25, 25);
 $pdf->AddPage();
 
 
@@ -56,89 +63,91 @@ $hayDebilidades10 = false;
 ////////////////
 // Sección 1 //
 //////////////
-$pdf->chapterTitle(1, 'Ventas y mercadotecnia: FORTALEZAS');
+
+$pdf->chapterTitle(1, 'Ventas y mercadotecnia');
+$pdf->chapterSub('FORTALEZAS:');
 $bodyContentFortalezas1 = '';
-    $bodyContentFortalezas1 .= utf8_decode('Gestión de venta: Sólida identificación, contacto, seguimiento para concretar cita.' . "\n");
+    $bodyContentFortalezas1 .= utf8_decode('- Gestión de venta: Sólida identificación, contacto, seguimiento para concretar cita.' . "\n");
 
 if ($_SESSION['respuesta_s1p1'] == '4' || $_SESSION['respuesta_s1p1'] == '5') {
-    $bodyContentFortalezas1 .= utf8_decode('Gestión de venta: Sólida identificación, contacto, seguimiento para concretar cita.' . "\n");
+    $bodyContentFortalezas1 .= utf8_decode('- Gestión de venta: Sólida identificación, contacto, seguimiento para concretar cita.' . "\n");
     $hayFortalezas1 = true;
 }
 if ($_SESSION['respuesta_s1p2'] == '4' || $_SESSION['respuesta_s1p2'] == '5') {
-    $bodyContentFortalezas1 .= utf8_decode('Actividad promocional: Se captura venta incremental a partir de aprovechar ferias o eventos importantes durante el año.' . "\n");
+    $bodyContentFortalezas1 .= utf8_decode('- Actividad promocional: Se captura venta incremental a partir de aprovechar ferias o eventos importantes durante el año.' . "\n");
     $hayFortalezas1 = true;
 }
 if ($_SESSION['respuesta_s1p3'] == '4' || $_SESSION['respuesta_s1p3'] == '5') {
-    $bodyContentFortalezas1 .= utf8_decode('Configuración y venta de paquetes: Se captura una venta mayor por paciente.' . "\n");
+    $bodyContentFortalezas1 .= utf8_decode('- Configuración y venta de paquetes: Se captura una venta mayor por paciente.' . "\n");
     $hayFortalezas1 = true;
 }
 if ($_SESSION['respuesta_s1p4'] == '4' || $_SESSION['respuesta_s1p4'] == '5') {
-    $bodyContentFortalezas1 .= utf8_decode('Redes sociales: Se mantiene en la conversación.' . "\n");
+    $bodyContentFortalezas1 .= utf8_decode('- Redes sociales: Se mantiene en la conversación.' . "\n");
     $hayFortalezas1 = true;
 }
 if ($_SESSION['respuesta_s1p5'] == '4' || $_SESSION['respuesta_s1p5'] == '5') {
-    $bodyContentFortalezas1 .= utf8_decode('Poder de marca: El mercado tiene presente al doctor y a su clínica y en momentos de necesidad lo recuerdan para agendar cita.' . "\n");
+    $bodyContentFortalezas1 .= utf8_decode('- Poder de marca: El mercado tiene presente al doctor y a su clínica y en momentos de necesidad lo recuerdan para agendar cita.' . "\n");
     $hayFortalezas1 = true;
 }
 if ($_SESSION['respuesta_s1p6'] == '4' || $_SESSION['respuesta_s1p6'] == '5') {
-    $bodyContentFortalezas1 .= utf8_decode('Página WEB del negocio: Se cuenta con elementos de institucionalidad que transmiten confianza y formalidad.' . "\n");
+    $bodyContentFortalezas1 .= utf8_decode('- Página WEB del negocio: Se cuenta con elementos de institucionalidad que transmiten confianza y formalidad.' . "\n");
     $hayFortalezas1 = true;
 }
 if ($_SESSION['respuesta_s1p7'] == '4' || $_SESSION['respuesta_s1p7'] == '5') {
-    $bodyContentFortalezas1 .= utf8_decode('Publicidad en medios tradicionales: Se cuenta con una comunicación en medios tradicionales que permiten mantener vigencia con ciertos segmentos de población.' . "\n");
+    $bodyContentFortalezas1 .= utf8_decode('- Publicidad en medios tradicionales: Se cuenta con una comunicación en medios tradicionales que permiten mantener vigencia con ciertos segmentos de población.' . "\n");
     $hayFortalezas1 = true;
 }
 if ($_SESSION['respuesta_s1p8'] == '4' || $_SESSION['respuesta_s1p8'] == '5') {
-    $bodyContentFortalezas1 .= utf8_decode('Plan de Lealtad e incentivos con pacientes frecuentes: Se cuenta con herramientas formales para el fortalecimiento de la lealtad de cliente frecuentes.' . "\n");
+    $bodyContentFortalezas1 .= utf8_decode('- Plan de Lealtad e incentivos con pacientes frecuentes: Se cuenta con herramientas formales para el fortalecimiento de la lealtad de cliente frecuentes.' . "\n");
     $hayFortalezas1 = true;
 }
 if ($_SESSION['respuesta_s1p9'] == '4' || $_SESSION['respuesta_s1p9'] == '5') {
-    $bodyContentFortalezas1 .= utf8_decode('Soporte para comunicación y mercadotecnia: Se desarrolla de manera profesional la comunicación y mercadotecnia alrededor de la marca.' . "\n");
+    $bodyContentFortalezas1 .= utf8_decode('- Soporte para comunicación y mercadotecnia: Se desarrolla de manera profesional la comunicación y mercadotecnia alrededor de la marca.' . "\n");
     $hayFortalezas1 = true;
 }
 // Verifica si hay alguna fortaleza
 if (!$hayFortalezas1) {
-    $bodyContentFortalezas1 = utf8_decode('No hay fortalezas relevantes.' . "\n");
+    $bodyContentFortalezas1 = utf8_decode('- No hay fortalezas relevantes.' . "\n");
 }
 
 $pdf->chapterBody($bodyContentFortalezas1);
-$pdf->chapterTitle(1, 'Ventas y mercadotecnia: DEBILIDADES');
+$pdf->chapterSub('DEBILIDADES:');
 $bodyContentDebilidades1 = '';
 
 if ($_SESSION['respuesta_s1p1'] == '1' || $_SESSION['respuesta_s1p1'] == '2') {
-    $bodyContentDebilidades1 .= utf8_decode('Gestión de venta: Perdidas permanentes de clientes potenciales por falta de seguimiento.' . "\n");
+    $bodyContentDebilidades1 .= utf8_decode('- Gestión de venta: Perdidas permanentes de clientes potenciales por falta de seguimiento.' . "\n");
     $hayDebilidades1 = true;
 }
 if ($_SESSION['respuesta_s1p2'] == '1' || $_SESSION['respuesta_s1p2'] == '2') {
-    $bodyContentDebilidades1 .= utf8_decode('Actividad promocional: No se aprovechan fechas o eventos importantes para atraer a mas clientes.' . "\n");
+    $bodyContentDebilidades1 .= utf8_decode('- Actividad promocional: No se aprovechan fechas o eventos importantes para atraer a mas clientes.' . "\n");
     $hayDebilidades1 = true;
 }
 if ($_SESSION['respuesta_s1p3'] == '1' || $_SESSION['respuesta_s1p3'] == '2') {
-    $bodyContentDebilidades1 .= utf8_decode('Configuración y venta de paquetes: No se impulsa un ticket de venta mayor (Que cada paciente adquiera mas productos o servicios).' . "\n");
+    $bodyContentDebilidades1 .= utf8_decode('- Configuración y venta de paquetes: No se impulsa un ticket de venta mayor (Que cada paciente adquiera mas productos o servicios).' . "\n");
     $hayDebilidades1 = true;
 }
 if ($_SESSION['respuesta_s1p4'] == '1' || $_SESSION['respuesta_s1p4'] == '2') {
-    $bodyContentDebilidades1 .= utf8_decode('Redes sociales: No se esta presente en la conversación de redes sociales perdiendo oportunidad de posicionamiento. ' . "\n");
+    $bodyContentDebilidades1 .= utf8_decode('- Redes sociales: No se esta presente en la conversación de redes sociales perdiendo oportunidad de posicionamiento. ' . "\n");
     $hayDebilidades1 = true;
 }
 if ($_SESSION['respuesta_s1p5'] == '1' || $_SESSION['respuesta_s1p5'] == '2') {
-    $bodyContentDebilidades1 .= utf8_decode('Poder de marca: No existe reconocimiento de marca y el mercado tienen presente al doctor ni a su clínica.' . "\n");
+    $bodyContentDebilidades1 .= utf8_decode('- Poder de marca: No existe reconocimiento de marca y el mercado tienen presente al doctor ni a su clínica.' . "\n");
     $hayDebilidades1 = true;
 }
 if ($_SESSION['respuesta_s1p6'] == '1' || $_SESSION['respuesta_s1p6'] == '2') {
-    $bodyContentDebilidades1 .= utf8_decode('Página WEB del negocio: No se tiene la institucionalidad suficiente para impulsar la institucionalidad y marca.' . "\n");
+    $bodyContentDebilidades1 .= utf8_decode('- Página WEB del negocio: No se tiene la institucionalidad suficiente para impulsar la institucionalidad y marca.' . "\n");
     $hayDebilidades1 = true;
 }
 if ($_SESSION['respuesta_s1p7'] == '1' || $_SESSION['respuesta_s1p7'] == '2') {
-    $bodyContentDebilidades1 .= utf8_decode('Publicidad en medios tradicionales: No se llega a los posibles clientes por diferentes medios tradicionales de comunicación.' . "\n");
+    $bodyContentDebilidades1 .= utf8_decode('- Publicidad en medios tradicionales: No se llega a los posibles clientes por diferentes medios tradicionales de comunicación.' . "\n");
     $hayDebilidades1 = true;
 }
 if ($_SESSION['respuesta_s1p8'] == '1' || $_SESSION['respuesta_s1p8'] == '2') {
-    $bodyContentDebilidades1 .= utf8_decode('Plan de Lealtad e incentivos con pacientes frecuentes: No se cuenta con una herramienta formal para la generación de lealtad de clientes frecuentes.' . "\n");
+    $bodyContentDebilidades1 .= utf8_decode('- Plan de Lealtad e incentivos con pacientes frecuentes: No se cuenta con una herramienta formal para la generación de lealtad de clientes frecuentes.' . "\n");
     $hayDebilidades1 = true;
 }
 if ($_SESSION['respuesta_s1p9'] == '1' || $_SESSION['respuesta_s1p9'] == '2') {
-    $bodyContentDebilidades1 .= utf8_decode('Soporte para comunicación y mercadotecnia: No se desarrolla de manera profesional la comunicación y mercadotecnia alrededor de la marca.' . "\n");
+    $bodyContentDebilidades1 .= utf8_decode('- Soporte para comunicación y mercadotecnia: No se desarrolla de manera profesional la comunicación y mercadotecnia alrededor de la marca.' . "\n");
     $hayDebilidades1 = true;
 }
 // Verifica si hay alguna debilidad
@@ -149,7 +158,8 @@ $pdf->chapterBody($bodyContentDebilidades1);
 ////////////////
 // Sección 2 //
 //////////////
-$pdf->chapterTitle(2, utf8_decode('Recepción / Citas / Expedientes: FORTALEZAS'));
+$pdf->chapterTitle(2, utf8_decode('Recepción / Citas / Expedientes'));
+$pdf->chapterSub('FORTALEZAS:');
 $bodyContentFortalezas2 = '';
 
 if ($_SESSION['respuesta_s2p1'] == '4' || $_SESSION['respuesta_s2p1'] == '5') {
@@ -174,7 +184,7 @@ if ($hayFortalezas2 == false) {
 }
 
 $pdf->chapterBody($bodyContentFortalezas1);
-$pdf->chapterTitle(2, utf8_decode('Recepción / Citas / Expedientes: DEBILIDADES'));
+$pdf->chapterSub('DEBILIDADES:');
 $bodyContentDebilidades2 = '';
 
 if ($_SESSION['respuesta_s2p1'] == '1' || $_SESSION['respuesta_s2p1'] == '2') {
@@ -201,7 +211,8 @@ $pdf->chapterBody($bodyContentDebilidades2);
 ////////////////
 // Sección 3 //
 //////////////
-$pdf->chapterTitle(3, utf8_decode('Administración: FORTALEZAS'));
+$pdf->chapterTitle(3, utf8_decode('Administración'));
+$pdf->chapterSub('FORTALEZAS:');
 $bodyContentFortalezas3 = '';
 
 if ($_SESSION['respuesta_s3p1'] == '4' || $_SESSION['respuesta_s3p1'] == '5') {
@@ -246,7 +257,7 @@ if (!$hayFortalezas3) {
 }
 
 $pdf->chapterBody($bodyContentFortalezas3);
-$pdf->chapterTitle(3, utf8_decode('Administración: DEBILIDADES'));
+$pdf->chapterSub('DEBILIDADES:');
 $bodyContentDebilidades3 = '';
 
 if ($_SESSION['respuesta_s3p1'] == '1' || $_SESSION['respuesta_s3p1'] == '2') {
@@ -293,7 +304,8 @@ $pdf->chapterBody($bodyContentDebilidades3);
 ////////////////
 // Sección 4 //
 //////////////
-$pdf->chapterTitle(4, utf8_decode('Planeación y Estrategia: FORTALEZAS'));
+$pdf->chapterTitle(4, utf8_decode('Planeación y Estrategia'));
+$pdf->chapterSub('FORTALEZAS:');
 $bodyContentFortalezas4 = '';
 
 if ($_SESSION['respuesta_s4p1'] == '4' || $_SESSION['respuesta_s4p1'] == '5') {
@@ -330,7 +342,7 @@ if (!$hayFortalezas4) {
 }
 
 $pdf->chapterBody($bodyContentFortalezas4);
-$pdf->chapterTitle(4, utf8_decode('Planeación y Estrategia: DEBILIDADES'));
+$pdf->chapterSub('DEBILIDADES:');
 $bodyContentDebilidades4 = '';
 
 if ($_SESSION['respuesta_s4p1'] == '1' || $_SESSION['respuesta_s4p1'] == '2') {
@@ -369,7 +381,8 @@ $pdf->chapterBody($bodyContentDebilidades4);
 ////////////////
 // Sección 5 //
 //////////////
-$pdf->chapterTitle(5, utf8_decode('Farmacia: FORTALEZAS'));
+$pdf->chapterTitle(5, utf8_decode('Farmacia'));
+$pdf->chapterSub('FORTALEZAS:');
 $bodyContentFortalezas5 = '';
 
 if ($_SESSION['respuesta_s5p1'] == '4' || $_SESSION['respuesta_s5p1'] == '5') {
@@ -390,7 +403,7 @@ if (!$hayFortalezas5) {
 }
 
 $pdf->chapterBody($bodyContentFortalezas5);
-$pdf->chapterTitle(5, utf8_decode('Farmacia: DEBILIDADES'));
+$pdf->chapterSub('DEBILIDADES:');
 $bodyContentDebilidades5 = '';
 
 if ($_SESSION['respuesta_s5p1'] == '1' || $_SESSION['respuesta_s5p1'] == '2') {
@@ -413,7 +426,8 @@ $pdf->chapterBody($bodyContentDebilidades5);
 ////////////////
 // Sección 6 //
 //////////////
-$pdf->chapterTitle(6, utf8_decode('Fiscal y Legal: FORTALEZAS'));
+$pdf->chapterTitle(6, utf8_decode('Fiscal y Legal'));
+$pdf->chapterSub('FORTALEZAS:');
 $bodyContentFortalezas6 = '';
 
 if ($_SESSION['respuesta_s6p1'] == '4' || $_SESSION['respuesta_s6p1'] == '5') {
@@ -442,7 +456,7 @@ if (!$hayFortalezas6) {
 }
 
 $pdf->chapterBody($bodyContentFortalezas6);
-$pdf->chapterTitle(6, utf8_decode('Fiscal y Legal: DEBILIDADES'));
+$pdf->chapterSub('DEBILIDADES:');
 $bodyContentDebilidades6 = '';
 
 if ($_SESSION['respuesta_s6p1'] == '1' || $_SESSION['respuesta_s6p1'] == '2') {
@@ -473,7 +487,8 @@ $pdf->chapterBody($bodyContentDebilidades6);
 ////////////////
 // Sección 7 //
 //////////////
-$pdf->chapterTitle(7, utf8_decode('Activos: FORTALEZAS'));
+$pdf->chapterTitle(7, utf8_decode('Activos'));
+$pdf->chapterSub('FORTALEZAS:');
 $bodyContentFortalezas7 = '';
 
 if ($_SESSION['respuesta_s7p1'] == '4' || $_SESSION['respuesta_s7p1'] == '5') {
@@ -510,7 +525,7 @@ if (!$hayFortalezas7) {
 }
 
 $pdf->chapterBody($bodyContentFortalezas7);
-$pdf->chapterTitle(7, utf8_decode('Activos: DEBILIDADES'));
+$pdf->chapterSub('DEBILIDADES:');
 $bodyContentDebilidades7 = '';
 
 if ($_SESSION['respuesta_s7p1'] == '1' || $_SESSION['respuesta_s7p1'] == '2') {
@@ -549,7 +564,8 @@ $pdf->chapterBody($bodyContentDebilidades7);
 ////////////////
 // Sección 8 //
 //////////////
-$pdf->chapterTitle(8, utf8_decode('Recursos Humanos: FORTALEZAS'));
+$pdf->chapterTitle(8, utf8_decode('Recursos Humanos'));
+$pdf->chapterSub('FORTALEZAS:');
 $bodyContentFortalezas8 = '';
 
 if ($_SESSION['respuesta_s8p1'] == '4' || $_SESSION['respuesta_s8p1'] == '5') {
@@ -614,7 +630,7 @@ if (!$hayFortalezas8) {
 }
 
 $pdf->chapterBody($bodyContentFortalezas8);
-$pdf->chapterTitle(8, utf8_decode('Recursos Humanos: DEBILIDADES'));
+$pdf->chapterSub('DEBILIDADES:');
 $bodyContentDebilidades8 = '';
 
 if ($_SESSION['respuesta_s8p1'] == '1' || $_SESSION['respuesta_s8p1'] == '2') {
@@ -681,7 +697,8 @@ $pdf->chapterBody($bodyContentDebilidades8);
 ////////////////
 // Sección 9 //
 //////////////
-$pdf->chapterTitle(9, utf8_decode('Instalaciones: FORTALEZAS'));
+$pdf->chapterTitle(9, utf8_decode('Instalaciones'));
+$pdf->chapterSub('FORTALEZAS:');
 $bodyContentFortalezas9 = '';
 
 if ($_SESSION['respuesta_s9p1'] == '4' || $_SESSION['respuesta_s9p1'] == '5') {
@@ -710,7 +727,7 @@ if (!$hayFortalezas9) {
 }
 
 $pdf->chapterBody($bodyContentFortalezas9);
-$pdf->chapterTitle(9, utf8_decode('Instalaciones: DEBILIDADES'));
+$pdf->chapterSub('DEBILIDADES:');
 $bodyContentDebilidades9 = '';
 
 if ($_SESSION['respuesta_s9p1'] == '1' || $_SESSION['respuesta_s9p1'] == '2') {
@@ -741,7 +758,8 @@ $pdf->chapterBody($bodyContentDebilidades9);
 ////////////////
 // Sección 10 //
 //////////////
-$pdf->chapterTitle(10, utf8_decode('Proyecto personal / Estatus del negocio: FORTALEZAS'));
+$pdf->chapterTitle(10, utf8_decode('Proyecto personal / Estatus del negocio'));
+$pdf->chapterSub('FORTALEZAS:');
 $bodyContentFortalezas10 = '';
 
 if ($_SESSION['respuesta_s10p1'] == '4' || $_SESSION['respuesta_s10p1'] == '5') {
@@ -798,7 +816,7 @@ if (!$hayFortalezas10) {
 }
 
 $pdf->chapterBody($bodyContentFortalezas10);
-$pdf->chapterTitle(10, utf8_decode('Proyecto personal / Estatus del negocio: DEBILIDADES'));
+$pdf->chapterSub('DEBILIDADES:');
 $bodyContentDebilidades10 = '';
 
 if ($_SESSION['respuesta_s10p1'] == '1' || $_SESSION['respuesta_s10p1'] == '2') {

@@ -116,3 +116,14 @@
 h1{
   font-family: 'Anton', sans-serif;
 }
+
+/* Estilos para las respuestas no seleccionadas */
+.form-check-input:not(:checked) + .form-check-label {
+  opacity: 0.8; /* Reducir opacidad */
+}
+
+/* Estilos para la respuesta seleccionada */
+.form-check-input:checked + .form-check-label {
+  opacity: 1; /* Restaurar opacidad */
+  font-weight: bold; /* Otra forma de resaltar */
+}
