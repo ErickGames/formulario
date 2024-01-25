@@ -10,7 +10,7 @@
 <body>
 
     <div class="container">
-        <h1 class="title">Bienvenido al Examen de Diagnóstico para Profesionales Médicos</h1>
+        <h1 class="title">Bienvenido al Diágnostio DNA Factory</h1>
         <div class="description">
             <p>Este formulario está diseñado para brindarte la oportunidad de realizar una autoevaluación en relación
                 con diez aspectos cruciales para tu consultorio o negocio

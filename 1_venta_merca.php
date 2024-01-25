@@ -36,32 +36,31 @@ session_start();
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p1" value="1">
                 <label class="form-check-label" for="opcion1">
-                    No se cuenta con una labor de venta específica, solo la atención de clientes que nos buscan.
+                    No tengo un equipo específico de ventas, solo me enfoco en atender a los clientes que llegan.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p1" value="2">
                 <label class="form-check-label">
-                    Se cuenta con los mínimos protocolos de venta, para conectar con clientes de manera presencial y
-                    virtual.
+                    Tengo muy pocos pasos para vender, ya sea en consultorio  o en línea.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p1" value="3">
                 <label class="form-check-label">
-                    Solo se cuenta con seguimiento manual.
+                    Registro y le doy seguimiento a los clientes de forma manual.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p1" value="4">
                 <label class="form-check-label">
-                    Se cuenta con un CRM para la integración y monitorio de los pacientes actuales y posibles nuevos.
+                    Tengo un sofware profesional (CRM) para la administración de los posibles pacientes nuevos y los actuales. 
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p1" value="5">
                 <label class="form-check-label">
-                    Se cuenta con un CRM que es explotado y aprovechado al máximo nivel.
+                    Aprovecho al máximo el CRM para la administración de ventas. 
                 </label>
             </div>
             <div class="col-md-1"></div>
