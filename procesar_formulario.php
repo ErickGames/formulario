@@ -74,7 +74,7 @@ if ($_SESSION['respuesta_s1p1'] == '4' || $_SESSION['respuesta_s1p1'] == '5') {
     $hayFortalezas1 = true;
 }
 if ($_SESSION['respuesta_s1p2'] == '4' || $_SESSION['respuesta_s1p2'] == '5') {
-    $bodyContentFortalezas1 .= utf8_decode('- Actividad promocional: Se captura venta incremental a partir de aprovechar ferias o eventos importantes durante el año.' . "\n");
+    $bodyContentFortalezas1 .= utf8_decode('- Frecuencia de actividad promocional: Se captura venta incremental a partir de aprovechar ferias o eventos importantes durante el año.' . "\n");
     $hayFortalezas1 = true;
 }
 if ($_SESSION['respuesta_s1p3'] == '4' || $_SESSION['respuesta_s1p3'] == '5') {

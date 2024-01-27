@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $_SESSION['respuesta_s2p1'] = $_POST['s2p1'];
     $_SESSION['respuesta_s2p2'] = $_POST['s2p2'];
     $_SESSION['respuesta_s2p3'] = $_POST['s2p3'];
-    $_SESSION['respuesta_s2p4'] = $_POST['s2p4'];
+    // $_SESSION['respuesta_s2p4'] = $_POST['s2p4'];
 
     // Puedes hacer lo mismo para otras preguntas y SECCIÓNes
 }

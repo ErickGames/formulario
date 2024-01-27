@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $_SESSION['respuesta_s8p11'] = $_POST['s8p11'];
     $_SESSION['respuesta_s8p12'] = $_POST['s8p12'];
     $_SESSION['respuesta_s8p13'] = $_POST['s8p13'];
-    $_SESSION['respuesta_s8p14'] = $_POST['s8p14'];
+    // $_SESSION['respuesta_s8p14'] = $_POST['s8p14'];
 
 
     // Puedes hacer lo mismo para otras preguntas y SECCIÓNes
@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <body>
     <div class=" row mx-5 mt-5">
         <div class="col-8">
-            <h4>SECCIÓN 9</h4>
+            <!-- <h4>SECCIÓN 9</h4> -->
             <h1>INSTALACIONES</h1>
         </div>
 
@@ -47,37 +47,37 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <!-- PREGUNTA 1 -->
         <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
-            <h4 class="mb-4">Inventario de activos</h4>
+            <h4 class="mb-4">Área de recepción</h4>
 
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s9p1" value="1">
                 <label class="form-check-label">
-                    No tengo.
+                No cuento con área de recepción.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s9p1" value="2">
                 <label class="form-check-label">
-                    Llevo los activos escritos en papel.
+                Tengo una pequeña área compartida que uso como recepción.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s9p1" value="3">
                 <label class="form-check-label">
-                    Se lleva el registro en un Excel.
+                Tengo un área pequeña pero exclusiva para recibir a mis pacientes.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s9p1" value="4">
                 <label class="form-check-label">
-                    Tengo un sistema de activos, pero no se ajustan cada mes.
+                Tengo un área amplia para recibir a mis pacientes.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s9p1" value="5">
                 <label class="form-check-label">
-                    Tengo un sistema de activos y se ajustan cada mes.
+                Tengo una recepción amplia, cómoda y agradable para atender a los pacientes.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -86,37 +86,37 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <!-- PREGUNTA 2 -->
         <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
-            <h4 Class="mb-4">Nivel de Inversión en equipos</h4>
+            <h4 Class="mb-4">Consultorios</h4>
 
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s9p2" value="1">
                 <label class="form-check-label">
-                    No se tiene equipos.
+                No tengo consultorio.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s9p2" value="2">
                 <label class="form-check-label">
-                    Se cuenta con equipo básico, no diferenciado o de alto valor.
+                Tengo solo un consultorio.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s9p2" value="3">
                 <label class="form-check-label">
-                    Se cuenta con 1 o 2 equipos si son referencia en el mercado.
+                Tengo dos consultorios.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s9p2" value="4">
                 <label class="form-check-label">
-                    La clínica o consultorio cuenta con equipo de primer nivel.
+                Tengo 4 consultorios. Y URGENCIAS +
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s9p2" value="5">
                 <label class="form-check-label">
-                    La clínica o consultorio cuenta con equipo de primer nivel y es reconocido en el mercado por eso.
+                Atiendo a mis clientes en un hospital.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -126,40 +126,37 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
 
-            <h4 class="mb-4">Registro de depreciación de activos</h4>
+            <h4 class="mb-4">Cubículos de servicios</h4>
 
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s9p3" value="1">
                 <label class="form-check-label">
-                    No se lleva.
+                No tengo cubículos especiales para los servicios.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s9p3" value="2">
                 <label class="form-check-label">
-                    Solo se lleva con algunos activos.
+                Cuento con un cubículo especial para ciertos servicios.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s9p3" value="3">
                 <label class="form-check-label">
-                    Se lleva de manera manual o en Excel de todos los activos.
+                Cuento con dos cubículos para distintos servicios.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s9p3" value="4">
                 <label class="form-check-label">
-                    Se cuenta con un sistema contable que permite la automatización y sistematización del registro y su
-                    depreciación.
+                Cuento con tres cubículos para diferentes servicios.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s9p3" value="5">
                 <label class="form-check-label">
-                    Se cuenta con un sistema contable integral que conecta estados financieros, tanto el estado de
-                    pérdidas y ganancias incluyendo el registro de depreciación, como la actualización de activos y su
-                    depreciación acumulada en el balance general.
+                Cuento con 4 o más cubículos para cada servicio que ofrezco.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -168,40 +165,37 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <!-- PREGUNTA 4 -->
         <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
-            <h4 class="mb-4">Cotizaciones, evaluación de proveedores y opciones de financiamiento</h4>
+            <h4 class="mb-4">Nivel de utilización de las instalaciones</h4>
 
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s9p4" value="1">
                 <label class="form-check-label">
-                    No se tiene un proceso de cotizaciones y cuando se compra no se evalúan diferentes opciones
-                    posibles.
+                Desconozco cuál es el % de uso de mis instalaciones.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s9p4" value="2">
                 <label class="form-check-label">
-                    No se tiene un proceso, pero si se evalúan al menos 3 opciones posibles.
+                Mis instalaciones se utilizan de un 20% a un 40%.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s9p4" value="3">
                 <label class="form-check-label">
-                    Se tiene un proceso de cotización y de comparación financiera para determinar la mejor opción.
+                Mis instalaciones se utilizan en promedio del 40% al 60%.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s9p4" value="4">
                 <label class="form-check-label">
-                    Se tiene un proceso de cotización y se selecciona la mejor opción, aunque el financiamiento no
-                    necesariamente es el óptimo entre efectivo, deuda #pendiente.
+                Mis instalaciones se utilizan aprox. del 60% al 80%.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s9p4" value="5">
                 <label class="form-check-label">
-                    Se tiene un proceso de cotización y se selecciona la mejor opción, tanto de proveedor como sistema
-                    de financiamiento, con la mejor mezcla entre contado y deuda.
+                Mis instalaciones se aprovechan muy bien, del 80% al 100% de su capacidad.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -210,40 +204,37 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <!-- PREGUNTA 5 -->
         <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
-            <h4 Class="mb-4">Nivel de apalancamiento con proveedores</h4>
+            <h4 Class="mb-4">Mantenimiento / Estado de instalaciones</h4>
 
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s9p5" value="1">
                 <label class="form-check-label">
-                    No se conoce.
+                Mis instalaciones son antiguas y no se encuentran en las mejores condiciones.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s9p5" value="2">
                 <label class="form-check-label">
-                    Se cuenta con estrategia básica de 30 días de pago a proveedores.
+                Mis instalaciones son antiguas pero cumplen con lo necesario.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s9p5" value="3">
                 <label class="form-check-label">
-                    Se cuenta con inventarios en consignación y herramientas financieras como el crédito revolvente.
+                Mis instalaciones tenían áreas de oportunidad por lo que estoy remodelando.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s9p5" value="4">
                 <label class="form-check-label">
-                    Se tiene un buen balance entre el manejo y aprovechamiento del efectivo, el acceso a deuda con bajo
-                    interés.
+                Mis instalaciones son nuevas pero tienen áreas de oportunidad.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s9p5" value="5">
                 <label class="form-check-label">
-                    El modelo de financiamiento y apalancamiento es el óptimo para seguir creciendo, generando expansión
-                    en una combinación optima entre recursos propios y financiamiento con proveedores e instituciones
-                    bancarias.
+                Mis instalaciones son nuevas y cumplen con todo lo que necesito.
                 </label>
             </div>
             <div class="col-md-1"></div>
