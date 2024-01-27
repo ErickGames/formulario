@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <div class=" row mx-5 mt-5">
         <div class="col-8">
-            <h4>SECCIÓN 6</h4>
+            <!-- <h4>SECCIÓN 6</h4> -->
             <h1>FISCAL Y LEGAL</h1>
         </div>
 
@@ -42,31 +42,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p1" value="1">
                 <label class="form-check-label">
-                    Soy persona física con actividad empresarial y profesional.
+                Soy persona física con actividad empresarial y profesional.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p1" value="2">
                 <label class="form-check-label">
-                    Estoy en REPSICO.
+                Estoy dado de alta como RESICO.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p1" value="3">
                 <label class="form-check-label">
-                    Tengo una empresa SC.
+                Tengo una empresa. SRL DE CV
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p1" value="4">
                 <label class="form-check-label">
-                    Tengo 2 empresa una SC y una SA.
+                Tengo una Sociedad Civil y/o Sociedad Anónima.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p1" value="5">
                 <label class="form-check-label">
-                    Tengo más de 2 empresas y tengo una estrategia fiscal integrada.
+                Tengo una estrategia fiscal perfectamente bien integrada y/o tengo más de dos empresas.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -81,33 +81,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p2" value="1">
                 <label class="form-check-label">
-                    No tengo planeación fiscal.
+                No llevo una planeación fiscal.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p2" value="2">
                 <label class="form-check-label">
-                    Opero con recomendaciones básicas de colegas o terceros.
+                Llevo mis asuntos fiscales basándome en recomendaciones de colegas.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p2" value="3">
                 <label class="form-check-label">
-                    Se cuenta con una asesoría formal, pero sin claridad en como ejecutarla en el día a día año.
+                Me he asesorado sobre los asuntos fiscales pero no me queda completamente claro.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p2" value="4">
                 <label class="form-check-label">
-                    Se cuenta con una planeación integral con apoyo externo, se ejecutar y monitorea con recursos
-                    internos.
+                Se cuenta con una planeación fiscal con apoyo externo, se ejecuta y monitorea con recursos internos.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p2" value="5">
                 <label class="form-check-label">
-                    Se cuenta con una planeación fiscal anual, seguimiento y ejecución al mayor nivel asegurando
-                    eficiencias contables.
+                Hago mi planeación anual y le doy seguimiento para asegurar su eficiencia.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -123,38 +121,38 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p3" value="1">
                 <label class="form-check-label">
-                    No tengo.
+                No cuento con los permisos de COFEPRIS.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p3" value="2">
                 <label class="form-check-label">
-                    Solo de apertura de consultorio.
+                Tengo el permiso de COFEPRIS para mi consultorio pero está desactualizado.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p3" value="3">
                 <label class="form-check-label">
-                    Se tiene de apertura de consultorio y farmacia.
+                Tengo el permiso de COFEPRIS actualizado para mi consultorio y/o farmacia.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p3" value="4">
                 <label class="form-check-label">
-                    Se tiene de apertura de consultorio, farmacia y mercadotecnia, aunque tengo alguna sin actualizar.
+                Tengo el permiso de salubridad para mi consultorio, farmacia y para la publicidad.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p3" value="5">
                 <label class="form-check-label">
-                    Apertura de consultorio, farmacia, marketing y la actualizo cada vez que se debe.
+                Tengo todos los permisos necesarios y los actualizo constantemente.
                 </label>
             </div>
             <div class="col-md-1"></div>
         </div>
 
         <!-- PREGUNTA 4 -->
-        <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
+        <!-- <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
             <h4 class="mb-4">Certificaciones y otros permisos</h4>
 
@@ -190,10 +188,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </label>
             </div>
             <div class="col-md-1"></div>
-        </div>
+        </div> -->
 
         <!-- PREGUNTA 5 -->
-        <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <!-- <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
             <h4 Class="mb-4">Sistema de facturación</h4>
 
@@ -229,7 +227,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </label>
             </div>
             <div class="col-md-1"></div>
-        </div>
+        </div> -->
     </form>
 
     <div style="display: flex; justify-content: flex-end; margin: 0px 15px 5px 0px">

@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <div class=" row mx-5 mt-5">
         <div class="col-8">
-            <h4>SECCIÓN 7</h4>
+            <!-- <h4>SECCIÓN 7</h4> -->
             <h1>ACTIVOS</h1>
         </div>
 
@@ -44,31 +44,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p1" value="1">
                 <label class="form-check-label">
-                    No tengo.
+                No tengo un inventario de mis activos.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p1" value="2">
                 <label class="form-check-label">
-                    Llevo los activos escritos en papel.
+                Llevo un inventario a mano de mis activos.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p1" value="3">
                 <label class="form-check-label">
-                    Se lleva el registro en un Excel.
+                Llevo el registro de los activos en Excel.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p1" value="4">
                 <label class="form-check-label">
-                    Tengo un sistema de activos, pero no se ajustan cada mes.
+                Registro mis activos en un software pero no los actualizo frecuentemente.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p1" value="5">
                 <label class="form-check-label">
-                    Tengo un sistema de activos y se ajustan cada mes.
+                Llevo un registro de mis activos en un software que actualizo cada mes.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -83,31 +83,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p2" value="1">
                 <label class="form-check-label">
-                    No se tiene equipos.
+                No tengo equipo de trabajo.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p2" value="2">
                 <label class="form-check-label">
-                    Se cuenta con equipo básico, no diferenciado o de alto valor.
+                Tengo el equipo básico para trabajar pero no es muy moderno.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p2" value="3">
                 <label class="form-check-label">
-                    Se cuenta con 1 o 2 equipos si son referencia en el mercado.
+                Tengo al menos 1 equipo moderno y que es referencia en el mercado.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p2" value="4">
                 <label class="form-check-label">
-                    La clínica o consultorio cuenta con equipo de primer nivel.
+                Cuento con equipo de primer nivel en mi consultorio.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p2" value="5">
                 <label class="form-check-label">
-                    La clínica o consultorio cuenta con equipo de primer nivel y es reconocido en el mercado por eso.
+                Todo mi equipo de trabajo es de primer nivel y me distingo por eso.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -116,41 +116,37 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <!-- PREGUNTA 3 -->
         <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
-
             <h4 class="mb-4">Registro de depreciación de activos</h4>
 
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p3" value="1">
                 <label class="form-check-label">
-                    No se lleva.
+                No llevo un registro de la devaluación de mi equipo.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p3" value="2">
                 <label class="form-check-label">
-                    Solo se lleva con algunos activos.
+                Solo estoy al pendiente de la devaluación de algunos equipos.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p3" value="3">
                 <label class="form-check-label">
-                    Se lleva de manera manual o en Excel de todos los activos.
+                Tengo un registro manual o en Excel de todos los activos y su devaluación.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p3" value="4">
                 <label class="form-check-label">
-                    Se cuenta con un sistema contable que permite la automatización y sistematización del registro y su
-                    depreciación.
+                Tengo un sistema para automatizar el registro de los activos y su devaluación.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p3" value="5">
                 <label class="form-check-label">
-                    Se cuenta con un sistema contable integral que conecta estados financieros, tanto el estado de
-                    pérdidas y ganancias incluyendo el registro de depreciación, como la actualización de activos y su
-                    depreciación acumulada en el balance general.
+                Tengo un sistema especial que se conecta con los estados financieros y el balance general de mi empresa.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -159,40 +155,37 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <!-- PREGUNTA 4 -->
         <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
-            <h4 class="mb-4">Cotizaciones, evaluación de proveedores y opciones de financiamiento</h4>
+            <h4 class="mb-4">Nivel de utilización de los equipos</h4>
 
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p4" value="1">
                 <label class="form-check-label">
-                    No se tiene un proceso de cotizaciones y cuando se compra no se evalúan diferentes opciones
-                    posibles.
+                Considero que utilizo mi equipo aprox. un 10%.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p4" value="2">
                 <label class="form-check-label">
-                    No se tiene un proceso, pero si se evalúan al menos 3 opciones posibles.
+                Considero que utilizo mi equipo aprox. del 10 al 40%.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p4" value="3">
                 <label class="form-check-label">
-                    Se tiene un proceso de cotización y de comparación financiera para determinar la mejor opción.
+                Considero que utilizo mi equipo entre el 40 y el 60%.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p4" value="4">
                 <label class="form-check-label">
-                    Se tiene un proceso de cotización y se selecciona la mejor opción, aunque el financiamiento no
-                    necesariamente es el óptimo entre efectivo, deuda #pendiente.
+                El porcentaje de uso de mi equipo es del 70 al 90%.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p4" value="5">
                 <label class="form-check-label">
-                    Se tiene un proceso de cotización y se selecciona la mejor opción, tanto de proveedor como sistema
-                    de financiamiento, con la mejor mezcla entre contado y deuda.
+                El nivel de uso de mi equipo es del 100% y ya estoy buscando adquirir otros.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -201,40 +194,37 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <!-- PREGUNTA 5 -->
         <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
-            <h4 Class="mb-4">Nivel de apalancamiento con proveedores</h4>
+            <h4 Class="mb-4">Cotizaciones</h4>
 
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p5" value="1">
                 <label class="form-check-label">
-                    No se conoce.
+                No tengo un proceso específico para cotizar y no suelo evaluar diferentes opciones de compra.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p5" value="2">
                 <label class="form-check-label">
-                    Se cuenta con estrategia básica de 30 días de pago a proveedores.
+                No tengo un proceso para cotizar pero siempre busco comparar al menos 2 opciones.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p5" value="3">
                 <label class="form-check-label">
-                    Se cuenta con inventarios en consignación y herramientas financieras como el crédito revolvente.
+                Tengo un proceso para cotizar y comparar alternativas para elegir la mejor opción.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p5" value="4">
                 <label class="form-check-label">
-                    Se tiene un buen balance entre el manejo y aprovechamiento del efectivo, el acceso a deuda con bajo
-                    interés.
+                Tengo un proceso para cotizar aunque no siempre me ayuda a elegir la mejor opción de financiamiento.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p5" value="5">
                 <label class="form-check-label">
-                    El modelo de financiamiento y apalancamiento es el óptimo para seguir creciendo, generando expansión
-                    en una combinación optima entre recursos propios y financiamiento con proveedores e instituciones
-                    bancarias.
+                Mi proceso para cotizar me permite elegir la mejor opción de proveedor y financiamiento.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -249,43 +239,38 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p6" value="1">
                 <label class="form-check-label">
-                    No se conoce el costo de equipo en cada servicio.
+                Desconozco el costo del equipo que se utiliza para cada servicio.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p6" value="2">
                 <label class="form-check-label">
-                    Se tiene una idea vaga pero no se refleja en el costeo de los servicios.
+                Sé cuál es el costo por el uso del equipo pero no lo aplico en los precios.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p6" value="3">
                 <label class="form-check-label">
-                    Se sabe un aproximado del costo de 1 hora de uso de un equipo y este monto es considerado en el
-                    costeo de cada servicio.
+                Conozco el costo por usar el equipo y lo aplico en los precios de algunos servicios.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p6" value="4">
                 <label class="form-check-label">
-                    Se conoce el costo de los equipos al realizar cada servicio, y este costo se refleja en el costeo
-                    del servicio con el fin de lograr utilidad después de pagar el costo de uso del equipo además de los
-                    consumibles.
+                Conozco el costo del uso de los equipos y lo aplico en los precios buscando una mejor utilidad.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p6" value="5">
                 <label class="form-check-label">
-                    Se conoce el costo de cada equipo por servicio, incluye en la fijación de precios y en la
-                    determinación de promociones con el objetivo de generar afluencia y la inversión en el equipo
-                    termine de pagarse.
+                Conozco el costo del uso de los equipos y lo aplico en los precios y en las promociones, buscando vender más.
                 </label>
             </div>
             <div class="col-md-1"></div>
         </div>
 
         <!-- PREGUNTA 7 -->
-        <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <!-- <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
             <h4 class="mb-4">Nivel de utilización de los equipos</h4>
 
@@ -322,7 +307,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </label>
             </div>
             <div class="col-md-1"></div>
-        </div>
+        </div> -->
     </form>
 
     <div style="display: flex; justify-content: flex-end; margin: 0px 15px 5px 0px">

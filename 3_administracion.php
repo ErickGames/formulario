@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <div class=" row mx-5 mt-5">
         <div class="col-8">
-            <h4>SECCIÓN 3</h4>
+            <!-- <h4>SECCIÓN 3</h4> -->
             <h1>ADMINISTRACIÓN</h1>
         </div>
 
@@ -38,38 +38,37 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <!-- PREGUNTA 1 -->
         <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
-            <h4 class="mb-4">Registro contable</h4>
+            <h4 class="mb-4">Soporte de un Contador interno/externo</h4>
 
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p1" value="1">
                 <label class="form-check-label">
-                    No hace contabilidad.
+                    No tengo contador público.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p1" value="2">
                 <label class="form-check-label">
-                    Usted hace su contabilidad.
+                    Tengo un contador externo que me apoya ocasionalmente.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p1" value="3">
                 <label class="form-check-label">
-                    Su contabilidad la hace un contador externo y parcialmente dedicado.
+                    Tengo un contador que me apoya parcialmente pero es consistente.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p1" value="4">
                 <label class="form-check-label">
-                    Tiene una contabilidad externa e interna básica.
+                    Tengo un contador interno que se apoya de un externo para tener mejores resultados.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p1" value="5">
                 <label class="form-check-label">
-                    Cuenta con departamento de contabilidad interno además de un despacho contable externo para
-                    acompañar la operación.
+                    Tengo un equipo encargado de mi contabilidad y/o apoyo de expertos externos.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -78,37 +77,37 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <!-- PREGUNTA 2 -->
         <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
-            <h4 Class="mb-4">Estados financieros</h4>
+            <h4 Class="mb-4">Registro contable</h4>
 
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p2" value="1">
                 <label class="form-check-label">
-                    No tengo estados financieros.
+                    No llevo registro de mi contabilidad.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p2" value="2">
                 <label class="form-check-label">
-                    Se cuenta con una idea básica de ventas, costos y gastos.
+                    Yo mismo llevo mi contabilidad.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p2" value="3">
                 <label class="form-check-label">
-                    Se cuenta con estados financieros básicos, tanto para temas ficales como operativos.
+                    Tengo un contador externo que lleva mi contabilidad.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p2" value="4">
                 <label class="form-check-label">
-                    Se cuenta con una herramienta sistematizada para la generación de estados financieros.
+                    Tengo un contador externo, pero también cuento con un encargado interno del área.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p2" value="5">
                 <label class="form-check-label">
-                    Se cuenta con una herramienta sistematizada para la generación de estados financieros.
+                    Tengo un departamento de contabilidad interno, además de un despacho externo para acompañar la operación.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -118,39 +117,37 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
 
-            <h4 class="mb-4">Generación de utilidades</h4>
+            <h4 class="mb-4">Estados Financieros</h4>
 
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p3" value="1">
                 <label class="form-check-label">
-                    No se tiene registro ni cálculo de las utilidades.
+                    No cuento con estados financieros.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p3" value="2">
                 <label class="form-check-label">
-                    Se registra generación de utilidades, pero son pocas y el cálculo se considera deficiente.
+                    No tengo estados financieros pero tengo una idea del historial de ingresos y egresos.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p3" value="3">
                 <label class="form-check-label">
-                    Se registran utilidades y se tiene una idea de como reinvertirlas o bien sacarlas del #pendiente.
+                    Tengo estados financieros básicos 
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p3" value="4">
                 <label class="form-check-label">
-                    Se cuenta con un cálculo robusto de las utilidades y se cuenta con estrategias de reinversión o
-                    recuperación.
+                    Tengo un programa para capturar la información contable.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p3" value="5">
                 <label class="form-check-label">
-                    Se cuenta con un cálculo robusto de las utilidades y permanentemente se ejecutan estrategias
-                    efectiva de reinversión.
+                    Tengo un programa para generar mis estados financieros automáticamente.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -159,38 +156,37 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <!-- PREGUNTA 4 -->
         <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
-            <h4 class="mb-4">Registro de transacciones por evento y operación </h4>
+            <h4 class="mb-4">Generación de utilidades</h4>
 
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p4" value="1">
                 <label class="form-check-label">
-                    No lleva ninguno.
+                    No sé nada de mis utilidades.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p4" value="2">
                 <label class="form-check-label">
-                    Lleva en una libreta ingresos.
+                    Sí calculo mis utilidades pero considero que mi cálculo es deficiente.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p4" value="3">
                 <label class="form-check-label">
-                    Se lleva en archivos de Excel y un nivel básico de ventas, costos y gastos.
+                    Sí calculo mis utilidades pero no sé qué hacer con ellas.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p4" value="4">
                 <label class="form-check-label">
-                    Se cuenta con un sistema contable funcional e integral.
+                    Hago el cálculo mis utilidades y tengo una estrategia de reinversión y/o recuperación.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p4" value="5">
                 <label class="form-check-label">
-                    Su departamento de contabilidad con el apoyo de un sistema integral lleva un proceso de ingreso y
-                    egresos.
+                    Hago el cálculo de mis utilidades y tengo algunas estrategias para reinvertirlas.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -199,37 +195,37 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <!-- PREGUNTA 5 -->
         <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
-            <h4 Class="mb-4">Clientes y cuentas por cobrar</h4>
+            <h4 Class="mb-4">Registro de transacciones por evento y operación</h4>
 
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p5" value="1">
                 <label class="form-check-label">
-                    No cuenta con ninguna estadística.
+                    No llevo registro de mis operaciones.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p5" value="2">
                 <label class="form-check-label">
-                    Sabe cuales son los pacientes que le deben.
+                    Tengo una libreta de ingresos que se llena a mano.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p5" value="3">
                 <label class="form-check-label">
-                    Lleva un registro a mano de los pacientes que le deben y cuanto le deben.
+                    Registro mis ingresos y gastos en un Excel.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p5" value="4">
                 <label class="form-check-label">
-                    Lleva un registro en Excel de sus clientes y cuentas por cobrar.
+                    Tengo un sistema administrativo para registrar mis transacciones.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p5" value="5">
                 <label class="form-check-label">
-                    Lleva un registro automatizado de sus pacientes morosos y de las cuentas por cobrar.
+                    Tengo un departamento de contabilidad que lleva un análisis profundo de los ingresos y egresos.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -238,37 +234,37 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <!-- PREGUNTA 6 -->
         <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
-            <h4 class="mb-4">Proveedores y cuentas por pagar</h4>
+            <h4 class="mb-4">Clientes y cuentas por cobrar</h4>
 
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p6" value="1">
                 <label class="form-check-label">
-                    No cuenta con registro.
+                    No tengo pacientes con crédito.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p6" value="2">
                 <label class="form-check-label">
-                    Lo hace a mano y no de manera consistente.
+                    No tengo reigstro pero recuerdo quiénes son los pacientes con crédito.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p6" value="3">
                 <label class="form-check-label">
-                    Lo hace a mano de manera consistente.
+                    Tengo un registro a mano de los pacientes y su crédito.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p6" value="4">
                 <label class="form-check-label">
-                    Lo lleva en Excel de manera consistente.
+                    Tengo un registro en Excel de los pacientes con crédito.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p6" value="5">
                 <label class="form-check-label">
-                    Lo llega en un sistema de contabilidad integrador.
+                    Llevo un registro automatizado de los pacientes y sus cuentas por cobrar.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -277,37 +273,37 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <!-- PREGUNTA 7 -->
         <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
-            <h4 class="mb-4">Reportes de desempeño y seguimiento </h4>
+            <h4 class="mb-4">Proveedores y cuentas por pagar</h4>
 
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p7" value="1">
                 <label class="form-check-label">
-                    No tiene.
+                    Mis proveedores me cobran cuando ya es tiempo. 
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p7" value="2">
                 <label class="form-check-label">
-                    Lo hace a mano y no de manera consistente.
+                    Llevo un registro a mano de algunos proveedores y de las cuentas por pagar.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p7" value="3">
                 <label class="form-check-label">
-                    Lo hace a mano de manera consistente.
+                    Llevo un registro consistente a mano de los proveedores y las cuentas por pagar.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p7" value="4">
                 <label class="form-check-label">
-                    Lo lleva en Excel de manera consistente.
+                    Llevo un buen registro en Excel de los proveedores y las cuentas por pagar.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p7" value="5">
                 <label class="form-check-label">
-                    Lo llena y lo saca en un sistema de contabilidad integrador.
+                    Tengo un sistema especial para llevar el registro de los proveedores y las cuentas por pagar.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -316,38 +312,37 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <!-- PREGUNTA 8 -->
         <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
-            <h4 Class="mb-4">Soporte de un Contador interno/externo</h4>
+            <h4 Class="mb-4">Alianzas con proveedores</h4>
 
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p8" value="1">
                 <label class="form-check-label">
-                    No tengo contador.
+                    No tengo ningun convenio con mis proveedores
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p8" value="2">
                 <label class="form-check-label">
-                    Tengo un contador externo de manera parcial, pero con inconsistencias.
+                    No es oficial pero algunos proveedores me otorgan descuentos.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p8" value="3">
                 <label class="form-check-label">
-                    Tengo un contador interno o externo de tiempo parcial con consistencia.
+                    Tengo un convenio de descuentos con algunos proveedores.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p8" value="4">
                 <label class="form-check-label">
-                    Tengo un contador interno y apoyo de un contador externo.
+                    Tengo convenios formales con proveedores que promueven mi plan de crecimiento anual.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p8" value="5">
                 <label class="form-check-label">
-                    Tengo un equipo de contabilidad interno de 3 personas o más, y apoyo de un contador o despacho
-                    externo.
+                    Tengo alianzas formales con proveedores que incluyen descuentos, plan de crecimiento y 30 días o más de crédito.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -357,38 +352,154 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
 
-            <h4 class="mb-4">Negociación y alianzas con proveedores</h4>
+            <h4 class="mb-4">Sistema de facturación</h4>
 
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p9" value="1">
                 <label class="form-check-label">
-                    No tengo alianzas.
+                    No cuento con sistema de facturación.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p9" value="2">
                 <label class="form-check-label">
-                    No tengo nada formal pero si me otorgan descuentos de cliente diferenciado.
+                    Hago mis facturas yo mismo directamente en el SAT. 
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p9" value="3">
                 <label class="form-check-label">
-                    Cuento con una alianza informal o formal que me da acceso a descuentos permanentes.
+                    Tengo una persona que realiza mis facturas. 
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p9" value="4">
                 <label class="form-check-label">
-                    Cuenta con una alianza o contrato formal que incluye descuentos y plan de crecimiento anual.
+                    Tengo un sistema que automatiza la realización de las facturas. 
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p9" value="5">
                 <label class="form-check-label">
-                    Cuenta con una alianza o contrato formal que incluye descuentos y plan de crecimiento anual y 30 o
-                    más días de crédito o inventario en consignación.
+                    Tengo un programa especial para facturar que se integra con otros de mis programas.
+                </label>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+
+        <!-- PREGUNTA 10 -->
+        <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
+
+            <h4 class="mb-4">Nivel de Inversión en equipos</h4>
+
+            <div class="col-md-1"></div>
+            <div class="form-check col-md-2">
+                <input class="form-check-input" type="radio" name="s3p10" value="1">
+                <label class="form-check-label">
+                    No tengo equipo de trabajo.
+                </label>
+            </div>
+            <div class="form-check col-md-2">
+                <input class="form-check-input" type="radio" name="s3p10" value="2">
+                <label class="form-check-label">
+                    Tengo el equipo básico para trabajar pero no es muy moderno.
+                </label>
+            </div>
+            <div class="form-check col-md-2">
+                <input class="form-check-input" type="radio" name="s3p10" value="3">
+                <label class="form-check-label">
+                    Tengo al menos 1 equipo moderno y que es referencia en el mercado.
+                </label>
+            </div>
+            <div class="form-check col-md-2">
+                <input class="form-check-input" type="radio" name="s3p10" value="4">
+                <label class="form-check-label">
+                    Cuento con equipo de primer nivel en mi consultorio.
+                </label>
+            </div>
+            <div class="form-check col-md-2">
+                <input class="form-check-input" type="radio" name="s3p10" value="5">
+                <label class="form-check-label">
+                    Todo mi equipo de trabajo es de primer nivel y me distingo por eso.
+                </label>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+
+        <!-- PREGUNTA 11 -->
+        <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+
+            <h4 class="mb-4">Costeo de equipos en los diferentes servicios</h4>
+
+            <div class="col-md-1"></div>
+            <div class="form-check col-md-2">
+                <input class="form-check-input" type="radio" name="s3p11" value="1">
+                <label class="form-check-label">
+                    Desconozco el costo del equipo que se utiliza para cada servicio.
+                </label>
+            </div>
+            <div class="form-check col-md-2">
+                <input class="form-check-input" type="radio" name="s3p11" value="2">
+                <label class="form-check-label">
+                    Sé cuál es el costo por el uso del equipo pero no lo aplico en los precios.
+                </label>
+            </div>
+            <div class="form-check col-md-2">
+                <input class="form-check-input" type="radio" name="s3p11" value="3">
+                <label class="form-check-label">
+                    Conozco el costo por usar el equipo y lo aplico en los precios de algunos servicios.
+                </label>
+            </div>
+            <div class="form-check col-md-2">
+                <input class="form-check-input" type="radio" name="s3p11" value="4">
+                <label class="form-check-label">
+                    Conozco el costo del uso de los equipos y lo aplico en los precios buscando una mejor utilidad.
+                </label>
+            </div>
+            <div class="form-check col-md-2">
+                <input class="form-check-input" type="radio" name="s3p11" value="5">
+                <label class="form-check-label">
+                    Conozco el costo del uso de los equipos y lo aplico en los precios y en las promociones, buscando vender más.
+                </label>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+
+        <!-- PREGUNTA 12 -->
+        <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
+
+            <h4 class="mb-4">Cotizaciones</h4>
+
+            <div class="col-md-1"></div>
+            <div class="form-check col-md-2">
+                <input class="form-check-input" type="radio" name="s3p12" value="1">
+                <label class="form-check-label">
+                    No tengo un proceso específico para cotizar y no suelo evaluar diferentes opciones de compra.
+                </label>
+            </div>
+            <div class="form-check col-md-2">
+                <input class="form-check-input" type="radio" name="s3p12" value="2">
+                <label class="form-check-label">
+                    No tengo un proceso para cotizar pero siempre busco comparar al menos 2 opciones.
+                </label>
+            </div>
+            <div class="form-check col-md-2">
+                <input class="form-check-input" type="radio" name="s3p12" value="3">
+                <label class="form-check-label">
+                    Tengo un proceso para cotizar y comparar alternativas para elegir la mejor opción.
+                </label>
+            </div>
+            <div class="form-check col-md-2">
+                <input class="form-check-input" type="radio" name="s3p12" value="4">
+                <label class="form-check-label">
+                    Tengo un proceso para cotizar aunque no siempre me ayuda a elegir la mejor opción de financiamiento.
+                </label>
+            </div>
+            <div class="form-check col-md-2">
+                <input class="form-check-input" type="radio" name="s3p12" value="5">
+                <label class="form-check-label">
+                    Mi proceso para cotizar me permite elegir la mejor opción de proveedor y financiamiento.
                 </label>
             </div>
             <div class="col-md-1"></div>

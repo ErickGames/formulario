@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <div class="row mx-5 mt-5">
         <div class="col-8">
-            <h4>SECCIÓN 2</h4>
+            <!-- <h4>SECCIÓN 2</h4> -->
             <h1>RECEPCIÓN / CITAS / EXPEDIENTES</h1>
         </div>
 
@@ -48,32 +48,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s2p1" value="1">
                 <label class="form-check-label">
-                    No se cuenta con un sistema y el registro se lleva manual pero con inconsistencias y sin
-                    confirmaciones.
+                    Las citas se registran a mano y no se hacen llamadas para confirmar. 
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s2p1" value="2">
                 <label class="form-check-label">
-                    Se lleva registro a mano y es eficiente en la medida de lo posible.
+                    Las citas se registran a mano y a veces se confirman.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s2p1" value="3">
                 <label class="form-check-label">
-                    Se lleva restiro electrónico en Excel.
+                    Se registran todas las citas en Excel y siempre llamamos antes para confirmar. 
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s2p1" value="4">
                 <label class="form-check-label">
-                    Sistema de calendarización de citas comercial.
+                    Tenemos un programa especial para agendar y confirmar las citas.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s2p1" value="5">
                 <label class="form-check-label">
-                    Cuenta con un sistema integral de citas integrada con agenda y otros sistemas internos.
+                    Agendamos y confirmamos las citas mediante un software que se vincula a otros programas internos. 
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -82,36 +81,36 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <!-- PREGUNTA 2 -->
         <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
-            <h4 Class="mb-4">Área de recepción</h4>
+            <h4 Class="mb-4">Persona dedicada a recepción</h4>
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s2p2" value="1">
                 <label class="form-check-label">
-                    Comparte recepción con más doctores.
+                    No tengo recepcionista. El primero que esté disponible atiende al paciente.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s2p2" value="2">
                 <label class="form-check-label">
-                    Se cuenta con un espacio pequeño.
+                    Tengo un/una recepcionista que apoya a varios doctores.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s2p2" value="3">
                 <label class="form-check-label">
-                    Cuenta con un área especial de recepción.
+                    Tengo un/una recepcionista que hace otras tareas además de atender a los pacientes.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s2p2" value="4">
                 <label class="form-check-label">
-                    Su recepción es amplia y con amenidades.
+                    Tengo recepcionista para cada turno y se dividen las tareas.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s2p2" value="5">
                 <label class="form-check-label">
-                    Además de recepción tiene área VIP para pacientes oro.
+                    Tengo una o dos recepcionistas para cada turno, que también tienen habilidades de ventas. 
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -121,44 +120,43 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
 
-            <h4 class="mb-4">Persona dedicada a recepción</h4>
+            <h4 class="mb-4">Administración de Expedientes</h4>
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s2p3" value="1">
                 <label class="form-check-label">
-                    No cuenta con personal dedicado a esta área y este rol lo hacen diferentes personas.
+                    No tengo expedientes
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s2p3" value="2">
                 <label class="form-check-label">
-                    Cuenta con una recepcionista compartida.
+                Tengo expedientes en papel
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s2p3" value="3">
                 <label class="form-check-label">
-                    Cuenta con una persona dedicada a recepción y otras tareas.
+                Tengo un expediente básico de los pacientes en Excel o Word.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s2p3" value="4">
                 <label class="form-check-label">
-                    Cuenta con equipo y turnos dedicados a recepción.
+                Tengo un expediente clínico digital para cada paciente.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s2p3" value="5">
                 <label class="form-check-label">
-                    Cuenta con un equipo y turnos de recepción que además de tener un nivel de servicio superior,
-                    también impulsan la venta.
+                Tengo un sistema integral electrónico en la nube para los expedientes clínicos.
                 </label>
             </div>
             <div class="col-md-1"></div>
         </div>
 
         <!-- PREGUNTA 4 -->
-        <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
+        <!-- <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
             <h4 class="mb-4">Administración de Expedientes</h4>
             <div class="col-md-1"></div>
@@ -193,7 +191,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </label>
             </div>
             <div class="col-md-1"></div>
-        </div>
+        </div> -->
     </form>
 
     <div style="display: flex; justify-content: flex-end; margin: 0px 15px 5px 0px">

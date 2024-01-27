@@ -12,7 +12,7 @@ session_start();
 
     <div class="row mx-5 mt-5">
         <div class="col-8">
-            <h4>SECCIÓN 1</h4>
+            <!-- <h4>SECCIÓN 1</h4> -->
             <h1>VENTAS Y MERCADOTECNIA</h1>
         </div>
 
@@ -70,37 +70,36 @@ session_start();
         <!-- PREGUNTA 2 -->
         <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
-            <h4 Class="mb-4">Actividad Promocional</h4>
+            <h4 Class="mb-4">Frecuencia de actividad promocional</h4>
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p2" value="1">
                 <label class="form-check-label">
-                    No se cuenta con actividad promocional.
+                    No me promociono ningún día del año. 
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p2" value="2">
                 <label class="form-check-label">
-                    Se cuenta con promoción solo en algunas fechas importantes.
+                    Hago promoción solo en algunas fechas relevantes.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p2" value="3">
                 <label class="form-check-label">
-                    Se cuenta con promoción fechas importantes y en servicios específicos a lo largo del año.
+                    Tengo ofertas en fechas clave y en servicios específicos durante todo el año.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p2" value="4">
                 <label class="form-check-label">
-                    Se cuenta con un programa anual de promociones aprovechando las temporalidades de año.
+                    Tengo un plan de promociones para todo el año, aprovechando las diferentes épocas.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p2" value="5">
                 <label class="form-check-label">
-                    Se cuenta con un programa anual de promociones además de un plan de lealtad con privilegios
-                    exclusivos.
+                    Tengo promociones todo el año y un programa de lealtad con beneficios exclusivos.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -111,37 +110,36 @@ session_start();
         <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
 
-            <h4 class="mb-4">Gestión de venta</h4>
+            <h4 class="mb-4">Publicidad en medios tradicionales</h4>
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p3" value="1">
                 <label class="form-check-label">
-                    No se cuenta con una labor de venta específica, solo la atención de clientes que nos buscan.
+                    No hago publicidad en ningún medio.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p3" value="2">
                 <label class="form-check-label">
-                    Se cuenta con los mínimos protocolos de venta, para conectar con clientes de manera presencial y
-                    virtual.
+                    Utilizo al menos una forma de publicidad impresa.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p3" value="3">
                 <label class="form-check-label">
-                    Solo se cuenta con seguimiento manual.
+                    Hago publicidad impresa variada que me ha funcionado bien.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p3" value="4">
                 <label class="form-check-label">
-                    Se cuenta con un CRM para la integración y monitorio de los pacientes actuales y posibles nuevos.
+                    Llevo publicidad impresa y en algún medio masivo como radio.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p3" value="5">
                 <label class="form-check-label">
-                    Se cuenta con un CRM que es explotado y aprovechado al máximo nivel.
+                    Hago publicidad impresa y en medios masivos que me ha generado más ventas y rentabilidad.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -151,36 +149,36 @@ session_start();
         <!-- PREGUNTA 4 -->
         <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
-            <h4 class="mb-4">Redes Sociales</h4>
+            <h4 class="mb-4">Configuración y venta de paquetes</h4>
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p4" value="1">
                 <label class="form-check-label">
-                    No se cuenta con redes sociales.
+                    No ofrezco paquetes de servicios.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p4" value="2">
                 <label class="form-check-label">
-                    Se cuenta con Facebook (Solo se postea o sube contenido aislado sin estrategia).
+                    Ofrezco de 1 a 3 paquetes incluyendo algunos servicios que no son los más vendidos. 
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p4" value="3">
                 <label class="form-check-label">
-                    Se cuenta con Facebook / Instagram.
+                    Ofrezco paquetes de los servicios que más se mueven.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p4" value="4">
                 <label class="form-check-label">
-                    Se cuenta con Facebook / Instagram / TikTok y tienen estrategia de contenido.
+                    Tengo una estrategia planeada para vender más con paquetes atractivos de diferentes precios. 
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p4" value="5">
                 <label class="form-check-label">
-                    Se tiene y ejecuta una estrategia efectiva y rentable que genera venta y utilidad incremental.
+                    Tengo una estrategia efectiva que ya nos genera más ventas y utilidades.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -190,37 +188,36 @@ session_start();
         <!-- PREGUNTA 5 -->
         <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
-            <h4 Class="mb-4">Poder de marca</h4>
+            <h4 Class="mb-4">Plan de Lealtad e incentivos con pacientes frecuentes</h4>
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p5" value="1">
                 <label class="form-check-label">
-                    No se cuenta con una marca.
+                    No tengo beneficios para los clientes frecuentes. 
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p5" value="2">
                 <label class="form-check-label">
-                    Se cuenta con una marca básica y con oportunidades para comunicación.
+                    Ofrezco beneficios ocasionales para clientes frecuentes
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p5" value="3">
                 <label class="form-check-label">
-                    Se tiene una marca bien definida pero poco conocida.
+                    Sí llevo un programa de lealtad sencillo para clientes frecuentes. 
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p5" value="4">
                 <label class="form-check-label">
-                    Se cuenta con una buena marca, muy reconocida pero no se explotada para generar venta incremental.
+                    Tengo un programa de lealtad atractivo que nos ha generado más ventas. 
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p5" value="5">
                 <label class="form-check-label">
-                    Se cuenta con una marca muy reconocida y explotada en una medida generando venta orgánica sin
-                    necesidad de pago en comunicación.
+                    Hay un sistema de lealtad automático que la gente usa mucho. Muchos lo aprovechan al máximo
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -230,37 +227,36 @@ session_start();
         <!-- PREGUNTA 6 -->
         <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
-            <h4 class="mb-4">Página WEB del negocio</h4>
+            <h4 class="mb-4">Redes Sociales</h4>
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p6" value="1">
                 <label class="form-check-label">
-                    No cuenta con web.
+                    No tengo redes sociales. 
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p6" value="2">
                 <label class="form-check-label">
-                    Se tiene una página WEB muy básica y sin actualización.
+                    Solo tengo una red social y publico de vez en cuando. 
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p6" value="3">
                 <label class="form-check-label">
-                    Tiene un web funcional pero muy básica.
+                    Tengo 1-2 redes sociales y publico pocas veces por semana. 
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p6" value="4">
                 <label class="form-check-label">
-                    Se cuenta con una página WEB, funcional y atractiva.
+                    Tengo 1-3 redes sociales y llevo una buena planeación para publicar en todas. 
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p6" value="5">
                 <label class="form-check-label">
-                    Se cuenta con una página WEB, funcional, atractiva y muy efectiva para conectar con los clientes y
-                    generar venta incremental.
+                    Tengo varias redes sociales y sé usarlas todas para sacar el máximo provecho. 
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -270,37 +266,36 @@ session_start();
         <!-- PREGUNTA 7 -->
         <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
-            <h4 class="mb-4">Publicidad en medios tradicionales </h4>
+            <h4 class="mb-4">Poder de marca</h4>
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p7" value="1">
                 <label class="form-check-label">
-                    No cuenta con publicidad en medios tradicionales.
+                    No tengo una marca definida.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p7" value="2">
                 <label class="form-check-label">
-                    Se cuenta con publicidad básica en revista y volantes de la zona.
+                    Se puede considerar mi nombre como una marca básica.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p7" value="3">
                 <label class="form-check-label">
-                    Se cuenta con publicidad en periódicos, revistas y volantes con una efectividad aceptable.
+                    Mi marca está bien definida pero es poco conocida.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p7" value="4">
                 <label class="form-check-label">
-                    Se cuenta con publicidad tradicional efectiva y rentable además de radio.
+                    Tengo una buena marca, muy reconocida pero no se ha explotado para vender más.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p7" value="5">
                 <label class="form-check-label">
-                    Publicaciones efectivas en medios impresos, radio y televisión que impactan directamente en venta
-                    incremental.
+                    Tengo una marca muy reconocida que vende sola sin tener que pagar publicidad.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -310,37 +305,36 @@ session_start();
         <!-- PREGUNTA 8 -->
         <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
-            <h4 Class="mb-4">Plan de Lealtad e incentivos con pacientes frecuentes</h4>
+            <h4 Class="mb-4">Página WEB del negocio</h4>
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p8" value="1">
                 <label class="form-check-label">
-                    No se cuenta con un plan de incentivos.
+                    No tengo página web.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p8" value="2">
                 <label class="form-check-label">
-                    Se tienen incentivos ocasionales para clientes frecuentes.
+                    Tengo un sitio web antiguo con información básica.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p8" value="3">
                 <label class="form-check-label">
-                    Se cuenta con un programa de lealtad integral y de incentivos, pero manual.
+                    Tengo un sitio web sencillo pero con información relevante.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p8" value="4">
                 <label class="form-check-label">
-                    Se cuenta con un programa integral de Lealtad y programa de incentivos que generan venta y utilidad
-                    incremental al activarlo.
+                    Tengo un sitio web atractivo y que nos funciona muy bien.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p8" value="5">
                 <label class="form-check-label">
-                    Tienen un sistema automatizado de lealtad con alto aprovechamiento de parte de los clientes.
+                    Tengo un sitio web atractivo y amigable que nos funciona para atraer pacientes e incrementar ventas.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -356,33 +350,31 @@ session_start();
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p9" value="1">
                 <label class="form-check-label">
-                    No se cuenta con equipo externo ni interno para impulsar una estrategia de comunicación y
-                    mercadotecnia.
+                    No cuento con especialistas en mercadotecnia. 
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p9" value="2">
                 <label class="form-check-label">
-                    Existe una persona que internamente hace labores de marketing de manera parcial.
+                    Tengo a un encargado interno de mercadotecnia o ventas.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p9" value="3">
                 <label class="form-check-label">
-                    Existe un recurso interno y también se cuenta con apoyo externo con alcance limitado.
+                    Tengo a un encargado interno de mercadotecnia y a veces cuento con apoyo externo.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p9" value="4">
                 <label class="form-check-label">
-                    Se cuenta con apoyo externo, experto y efectivo en el diseño y ejecución de contenidos.
+                    Tengo apoyo externo, experto y efectivo para el área de mercadotecnia y ventas. 
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p9" value="5">
                 <label class="form-check-label">
-                    Se cuenta con apoyo externo, experto y efectivo en el diseño y ejecución de contenidos, además de
-                    recurso interno.
+                    Tengo un experto en mercadotecnia y ventas en el equipo además de ayuda de un experto externo.
                 </label>
             </div>
             <div class="col-md-1"></div>

@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <div class=" row mx-5 mt-5">
         <div class="col-8">
-            <h4>SECCIÓN 4</h4>
+            <!-- <h4>SECCIÓN 4</h4> -->
             <h1>PLANEACIÓN Y ESTRATEGIA</h1>
         </div>
 
@@ -48,35 +48,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p1" value="1">
                 <label class="form-check-label">
-                    No se tiene definida una visión clara de a donde vamos.
+                No tengo una visión muy clara a futuro.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p1" value="2">
                 <label class="form-check-label">
-                    Se tiene una idea de la visión de la empresa, pero no se tiene claridad de como se va a lograr.
+                Tengo una visión pero no sé cómo alcanzarla.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p1" value="3">
                 <label class="form-check-label">
-                    Se tiene una muy buena idea de a donde vamos, pero las estrategias definidas no son suficientes para
-                    lograr la visión.
+                Tengo una visión definida y algunas estrategias pero no son suficientes para alcanzarla.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p1" value="4">
                 <label class="form-check-label">
-                    Se tiene una visión clara y las diferentes estrategias para lograrlas, pero no se tiene una
-                    ejecución
-                    y seguimiento rigurosos.
+                Tengo una visión y una buena estratregia para alcanzarla pero no llevo un plan de acción.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p1" value="5">
                 <label class="form-check-label">
-                    Se cuenta con una visión clara, estrategias generales y específicas, y un monitoreo y seguimiento de
-                    indicadores para medir los avances.
+                Tengo una visión con un plan de acción claro incluyendo un seguimiento con indicadores.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -91,32 +87,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p2" value="1">
                 <label class="form-check-label">
-                    No se tiene.
+                No conozco a mis competidores.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p2" value="2">
                 <label class="form-check-label">
-                    Se tiene una idea vaga de la competencia y de sus servicios y precios.
+                Tengo una ligera idea de quiénes son mis competidores y lo que ofrecen.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p2" value="3">
                 <label class="form-check-label">
-                    Se ha hecho un censo de servicios y precios, pero no sea actualiza regularmente.
+                Sé quiénes son mis competidores y he investigado sus servicios y precios.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p2" value="4">
                 <label class="form-check-label">
-                    Se cuenta con un monitorio permanente de la competencia, sus servicios y precios.
+                Sé quiénes son mis competidores y monitoreo con regularidad lo que ofrecen.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p2" value="5">
                 <label class="form-check-label">
-                    Se cuenta con monitorio permanente de la competencia (sus servicios y precios) y esto se toma en
-                    cuenta para la definición de los precios propios y para la generación de promociones.
+                Hago un monitoreo periódico de mis competidores y esto se toma en cuenta para definir mi estrategia.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -132,33 +127,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p3" value="1">
                 <label class="form-check-label">
-                    No se tiene.
+                No realizo una planeación anual ni un presupuesto.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p3" value="2">
                 <label class="form-check-label">
-                    Se tiene idea de los números o metas de venta anual de manera general.
+                Tengo una idea de los objetivos de ventas de manera general.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p3" value="3">
                 <label class="form-check-label">
-                    Se cuenta con objetivos de venta y rentabilidad, pero no se tienen objetivos mensuales.
+                Tengo una planeación anual con objetivos de ventas, pero sin objetivos mensuales.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p3" value="4">
                 <label class="form-check-label">
-                    Se cuenta con un proceso para la definición de metas de ventas, gastos y utilidades por mes, pero es
-                    difícil cumplirlo.
+                Defino objetivos mensuales de ventas, utilidades y control de gastos, pero no siempre los puedo cumplir.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p3" value="5">
                 <label class="form-check-label">
-                    Se cuenta con un proceso para la definición de metas de ventas, gastos y utilidades, se le da
-                    seguimiento, se cumple y/o se adecua conforme avanza el año.
+                Tengo objetivos alcanzables de ventas a los que le doy seguimiento y voy adecuando a lo largo del año.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -167,38 +160,37 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <!-- PREGUNTA 4 -->
         <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
-            <h4 class="mb-4">Competitividad en el mercado</h4>
+            <h4 class="mb-4">Reportes se desempeño y seguimiento</h4>
 
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p4" value="1">
                 <label class="form-check-label">
-                    No se es competitivo en el mercado, ni por precio mi por calidad.
+                No llevo un reporte de desempeño.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p4" value="2">
                 <label class="form-check-label">
-                    Se cuenta con servicios y precios promedio y no se sobresale en el mercado.
+                Llevo un reporte de desempeño a mano pero no le doy seguimiento.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p4" value="3">
                 <label class="form-check-label">
-                    Se tiene una buena competitividad, por precio o por calidad y servicio.
+                Llevo un reporte a mano pero consistente para el seguimiento del desempeño.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p4" value="4">
                 <label class="form-check-label">
-                    Se es muy competitivo en el mercado, ya gente nos busca ya sea por precio o por calidad y servicio.
+                Llevo un reporte de desempeño en Excel.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p4" value="5">
                 <label class="form-check-label">
-                    Somos una referencia en el mercado, las personas nos buscan porque estamos posicionados con una
-                    ecuación atractiva precio-calidad.
+                Tengo un programa especial para medir el desempeño y darle seguimiento.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -207,40 +199,37 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <!-- PREGUNTA 5 -->
         <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
-            <h4 class="mb-4">Optimización de servicios (Generación y eliminación)</h4>
+            <h4 class="mb-4">Competitividad en el mercado</h4>
 
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p5" value="1">
                 <label class="form-check-label">
-                    No se cuenta con un proceso para esto.
+                No sé si mi calidad o mis precios son competitivos.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p5" value="2">
                 <label class="form-check-label">
-                    Se generan y eliminan servicios pero de manera ocasional y no basados en metodologías integrales.
+                Mis servicios y precios están dentro del promedio.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p5" value="3">
                 <label class="form-check-label">
-                    Se cuenta con una revisión anual de depuración y creación de servicios.
+                Me considero competitivo ante mis competidores por precio, calidad y/o servicios.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p5" value="4">
                 <label class="form-check-label">
-                    Se cuenta con un monitorio permanente de servicios, sus ventas y rentabilidad así como de la
-                    competencia para...
+                Me distingo y sobresalgo ante mis competidores por precio, calidad y/o servicio.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p5" value="5">
                 <label class="form-check-label">
-                    Se mantiene un portafolio de servicios y productos vigentes y atractivos, eliminando lo que
-                    desenfoca y generando atención a las nuevas tendencias y a los servicios donde mayor valor agrega el
-                    doctor, otros servicios se eliminan o se delegan.
+                Soy una referencia en el mercado por precio-calidad y los clientes me buscan por eso.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -249,41 +238,37 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <!-- PREGUNTA 6 -->
         <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
-            <h4 Class="mb-4">Costeo y rentabilidad de Servicios</h4>
+            <h4 Class="mb-4">Optimización de servicios (Generación y eliminación)</h4>
 
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p6" value="1">
                 <label class="form-check-label">
-                    No se tiene.
+                No tengo un proceso para gestionar mis servicios.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p6" value="2">
                 <label class="form-check-label">
-                    Se tiene una idea del costo por servicio y producto, pero no se usa para la determinación del precio
-                    y no se tiene la rentabilidad.
+                Incluyo o elimino servicios de manera ocasional sin pensarlo mucho.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p6" value="3">
                 <label class="form-check-label">
-                    Se tiene el costo preciso por servicio y producto, pero la rentabilidad no se tiene clara en los
-                    servicios.
+                Hago una revisión anual para depurar o crear nuevos servicios.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p6" value="4">
                 <label class="form-check-label">
-                    Tengo una revisión de costos anual de costos, precios y rentabilidad pero hace falta un seguimiento
-                    más frecuente.
+                Hago una evaluación de la rentabilidad de mis servicios para poder generar nuevos.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p6" value="5">
                 <label class="form-check-label">
-                    Se mantiene un sistema de cálculo y seguimiento de costeo y rentabilidad por servicio y producto.
-                    Esto también ayuda en el proceso de ajuste de precio.
+                Mantengo mis servicios actualizados según las tendencias del mercado para darle valor al cliente.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -299,36 +284,70 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p7" value="1">
                 <label class="form-check-label">
-                    No se tiene un proceso para esto, solo una revisión anual basada en los incrementos de los
-                    proveedores o del mercado en el que se compite.
+                Asigno los precios de mis servicios al tanteo.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p7" value="2">
                 <label class="form-check-label">
-                    Para la definición de precios se cuenta con un proceso básico de costo más un margen deseado.
+                Fijo mis precios solo en base a los competidores.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p7" value="3">
                 <label class="form-check-label">
-                    En la fijación de precios se ocupa tanto el incremento en insumos como también los precios de la
-                    competencia.
+                Fijo los precios en base a mis costos pero no tengo una buena ganancia.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p7" value="4">
                 <label class="form-check-label">
-                    Se cuenta con un proceso que considera el incremento en insumos, los precios de la competencia y la
-                    estrategia deseada internamente para provocar más o menos ventas de cada producto o servicio.
+                Fijo mis precios según los insumos, la competencia y la ganancia que quiero.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p7" value="5">
                 <label class="form-check-label">
-                    Se cuenta con un proceso integral tomando en cuenta inflación de insumos, precios del mercado,
-                    estrategia interna. Este plan se sigue y monitorea todo el año, al mismo tiempo que se evalúan
-                    ajustes por eventos imprevistos.
+                Tengo un plan detallado para fijar precios que se monitorea todo el año para hacer ajustes necesarios.
+                </label>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+
+        <!-- PREGUNTA 8 -->
+        <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
+
+            <h4 Class="mb-4">Certificaciones</h4>
+
+            <div class="col-md-1"></div>
+            <div class="form-check col-md-2">
+                <input class="form-check-input" type="radio" name="s4p8" value="1">
+                <label class="form-check-label">
+                No cuento con certificaciones.
+                </label>
+            </div>
+            <div class="form-check col-md-2">
+                <input class="form-check-input" type="radio" name="s4p8" value="2">
+                <label class="form-check-label">
+                Tengo al menos una certificación.
+                </label>
+            </div>
+            <div class="form-check col-md-2">
+                <input class="form-check-input" type="radio" name="s4p8" value="3">
+                <label class="form-check-label">
+                Tengo dos certificaciones.
+                </label>
+            </div>
+            <div class="form-check col-md-2">
+                <input class="form-check-input" type="radio" name="s4p8" value="4">
+                <label class="form-check-label">
+                Tengo tres certificaciones.
+                </label>
+            </div>
+            <div class="form-check col-md-2">
+                <input class="form-check-input" type="radio" name="s4p8" value="5">
+                <label class="form-check-label">
+                Tengo más de 3 certificaciones. spolo medicos, n clinica.
                 </label>
             </div>
             <div class="col-md-1"></div>
