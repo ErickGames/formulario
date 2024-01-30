@@ -78,27 +78,27 @@ if ($_SESSION['respuesta_s1p2'] == '4' || $_SESSION['respuesta_s1p2'] == '5') {
     $hayFortalezas1 = true;
 }
 if ($_SESSION['respuesta_s1p3'] == '4' || $_SESSION['respuesta_s1p3'] == '5') {
-    $bodyContentFortalezas1 .= utf8_decode('- Configuración y venta de paquetes: Se captura una venta mayor por paciente.' . "\n");
-    $hayFortalezas1 = true;
-}
-if ($_SESSION['respuesta_s1p4'] == '4' || $_SESSION['respuesta_s1p4'] == '5') {
-    $bodyContentFortalezas1 .= utf8_decode('- Redes sociales: Se mantiene en la conversación.' . "\n");
-    $hayFortalezas1 = true;
-}
-if ($_SESSION['respuesta_s1p5'] == '4' || $_SESSION['respuesta_s1p5'] == '5') {
-    $bodyContentFortalezas1 .= utf8_decode('- Poder de marca: El mercado tiene presente al doctor y a su clínica y en momentos de necesidad lo recuerdan para agendar cita.' . "\n");
-    $hayFortalezas1 = true;
-}
-if ($_SESSION['respuesta_s1p6'] == '4' || $_SESSION['respuesta_s1p6'] == '5') {
-    $bodyContentFortalezas1 .= utf8_decode('- Página WEB del negocio: Se cuenta con elementos de institucionalidad que transmiten confianza y formalidad.' . "\n");
-    $hayFortalezas1 = true;
-}
-if ($_SESSION['respuesta_s1p7'] == '4' || $_SESSION['respuesta_s1p7'] == '5') {
     $bodyContentFortalezas1 .= utf8_decode('- Publicidad en medios tradicionales: Se cuenta con una comunicación en medios tradicionales que permiten mantener vigencia con ciertos segmentos de población.' . "\n");
     $hayFortalezas1 = true;
 }
-if ($_SESSION['respuesta_s1p8'] == '4' || $_SESSION['respuesta_s1p8'] == '5') {
+if ($_SESSION['respuesta_s1p4'] == '4' || $_SESSION['respuesta_s1p4'] == '5') {
+    $bodyContentFortalezas1 .= utf8_decode('- Configuración y venta de paquetes: Se captura una venta mayor por paciente.' . "\n");
+    $hayFortalezas1 = true;
+}
+if ($_SESSION['respuesta_s1p5'] == '4' || $_SESSION['respuesta_s1p5'] == '5') {
     $bodyContentFortalezas1 .= utf8_decode('- Plan de Lealtad e incentivos con pacientes frecuentes: Se cuenta con herramientas formales para el fortalecimiento de la lealtad de cliente frecuentes.' . "\n");
+    $hayFortalezas1 = true;
+}
+if ($_SESSION['respuesta_s1p6'] == '4' || $_SESSION['respuesta_s1p6'] == '5') {
+    $bodyContentFortalezas1 .= utf8_decode('- Redes sociales: Se mantiene en la conversación.' . "\n");
+    $hayFortalezas1 = true;
+}
+if ($_SESSION['respuesta_s1p7'] == '4' || $_SESSION['respuesta_s1p7'] == '5') {
+    $bodyContentFortalezas1 .= utf8_decode('- Poder de marca: El mercado tiene presente al doctor y a su clínica y en momentos de necesidad lo recuerdan para agendar cita.' . "\n");
+    $hayFortalezas1 = true;
+}
+if ($_SESSION['respuesta_s1p8'] == '4' || $_SESSION['respuesta_s1p8'] == '5') {
+    $bodyContentFortalezas1 .= utf8_decode('- Página WEB del negocio: Se cuenta con elementos de institucionalidad que transmiten confianza y formalidad.' . "\n");
     $hayFortalezas1 = true;
 }
 if ($_SESSION['respuesta_s1p9'] == '4' || $_SESSION['respuesta_s1p9'] == '5') {
