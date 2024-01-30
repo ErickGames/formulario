@@ -3,6 +3,9 @@
 session_start();
 
 require('fpdf/fpdf.php');
+require('fpdf/fpdf.php');
+require('phpmailer/PHPMailerAutoload.php'); // Asegúrate de descargar PHPMailer y ajustar la ruta
+
 
 class PDF extends FPDF
 {
@@ -67,7 +70,7 @@ $hayDebilidades10 = false;
 $pdf->chapterTitle(1, 'Ventas y mercadotecnia');
 $pdf->chapterSub('FORTALEZAS:');
 $bodyContentFortalezas1 = '';
-    $bodyContentFortalezas1 .= utf8_decode('- Gestión de venta: Sólida identificación, contacto, seguimiento para concretar cita.' . "\n");
+$bodyContentFortalezas1 .= utf8_decode('- Gestión de venta: Sólida identificación, contacto, seguimiento para concretar cita.' . "\n");
 
 if ($_SESSION['respuesta_s1p1'] == '4' || $_SESSION['respuesta_s1p1'] == '5') {
     $bodyContentFortalezas1 .= utf8_decode('- Gestión de venta: Sólida identificación, contacto, seguimiento para concretar cita.' . "\n");
@@ -880,6 +883,51 @@ $pdf->Output($rutaGuardado, 'F'); // 'F' indica que se guardará en el servidor
 
 // Nombre del archivo PDF
 $nombreArchivo = 'RespuestasUsuario.pdf';
+
+
+///// enviar por correo
+
+$destinatario = $_POST['email'];
+
+$mail = new PHPMailer;
+$mail->isSMTP();
+$mail->Host = 'smtp.ionos.mx';  // Cambia esto con la dirección de tu servidor SMTP
+$mail->SMTPAuth = true;
+$mail->Username = 'diagnostico@dnafactorymedicos.com'; // Cambia esto con tu nombre de usuario SMTP
+$mail->Password = 'diag.dna01'; // Cambia esto con tu contraseña SMTP
+$mail->SMTPSecure = 'tls'; // Puede ser 'ssl' o 'tls'
+$mail->Port = 587; // Puerto SMTP
+
+$mail->setFrom('diagnostico@dnafactorymedicos.com', 'DNA Factory Medicos'); // Cambia con tu dirección de correo y nombre
+$mail->addAddress($destinatario);
+$mail->Subject = 'Resultado del Diagnostico';
+$mail->Body = 'Adjunto encontrarás tus respuestas en formato PDF. \n \n Datos de usuario: \n Nuevo test de: ' . $_POST['nombre'] . '\nEspecialidad: ' . $_POST['email'] . '\nCorreo: ' . $_POST['email'];
+$mail->addAttachment($rutaGuardado, 'RespuestasDNAFactory.pdf'); // Adjunta el PDF generado
+
+if ($mail->send()) {
+
+    echo 'Correo enviado correctamente';
+
+    $mail->setFrom('diagnostico@dnafactorymedicos.com', 'DNA Factory Medicos'); // Cambia con tu dirección de correo y nombre
+    $mail->addAddress('diagnostico@dnafactorymedicos.com');
+    $mail->Subject = 'RESULTADO: ' . $_POST['nombre'];
+    $mail->Body = 'Nuevo test de: ' . $_POST['nombre'] . '\nEspecialidad: ' . $_POST['email'] . '\nCorreo: ' . $_POST['email'];
+    $mail->addAttachment($rutaGuardado, 'RespuestasDNAFactory.pdf'); // Adjunta el PDF generado
+
+    $mail->send();
+
+} else {
+    echo 'Error al enviar el correo: ' . $mail->ErrorInfo;
+
+    $mail->setFrom('diagnostico@dnafactorymedicos.com', 'DNA Factory Medicos'); // Cambia con tu dirección de correo y nombre
+    $mail->addAddress('diagnostico@dnafactorymedicos.com');
+    $mail->Subject = 'RESULTADO: ' . $_POST['nombre'];
+    $mail->Body = '(Debido a un error este correo no le ha llegado al usuario, favor de compartir este PDF por otro medio.) \n Nuevo test de: ' . $_POST['nombre'] . '\nEspecialidad: ' . $_POST['email'] . '\nCorreo: ' . $_POST['email'];
+    $mail->addAttachment($rutaGuardado, 'RespuestasDNAFactory.pdf'); // Adjunta el PDF generado
+
+    $mail->send();
+}
+/////
 
 // Salida del PDF al navegador
 

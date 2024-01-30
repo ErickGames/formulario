@@ -46,12 +46,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         </div>
         <div class="col-md-6">
-            <form id="miFormulario" action="procesar_formulario.php" method="post mx-5">
+            <form id="miFormulario" action="procesar_formulario.php" method="post">
                 <label class="form-label" for="nombre">Nombre Completo:</label>
                 <input class="form-control" type="text" name="nombre" required>
 
-                <label class="form-label" for="nombre">Especialidad:</label>
-                <input class="form-control" type="text" name="nombre" required>
+                <label class="form-label" for="especialidad">Especialidad:</label>
+                <input class="form-control" type="text" name="especialidad" required>
 
                 <label class="form-label" for="email">Correo Electrónico:</label>
                 <input class="form-control" type="email" name="email" required>
