@@ -5,6 +5,13 @@ session_start();
 require('fpdf/fpdf.php');
 require('fpdf/fpdf.php');
 require('phpmailer/PHPMailerAutoload.php'); // Asegúrate de descargar PHPMailer y ajustar la ruta
+require('vendor/phpmailer/PHPMailerAutoload.php'); // Asegúrate de descargar PHPMailer y ajustar la ruta
+require('vendor/phpmailer/autoload.php'); // Asegúrate de descargar PHPMailer y ajustar la ruta
+require('phpmailer/autoload.php'); // Asegúrate de descargar PHPMailer y ajustar la ruta
+require('vendor/autoload.php'); // Asegúrate de descargar PHPMailer y ajustar la ruta
+require('vendor/phpmailer'); // Asegúrate de descargar PHPMailer y ajustar la ruta
+require('phpmailer'); // Asegúrate de descargar PHPMailer y ajustar la ruta
+require 'vendor/autoload.php';
 
 
 class PDF extends FPDF
