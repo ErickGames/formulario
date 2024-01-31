@@ -904,7 +904,7 @@ $mail->Port = 587; // Puerto SMTP
 $mail->setFrom('diagnostico@dnafactorymedicos.com', 'DNA Factory Medicos'); // Cambia con tu dirección de correo y nombre
 $mail->addAddress($destinatario);
 $mail->Subject = 'Resultado del Diagnostico';
-$mail->Body = 'Adjunto encontrarás tus respuestas en formato PDF. \n \n Datos de usuario: \n Nuevo test de: ' . $_POST['nombre'] . '\nEspecialidad: ' . $_POST['email'] . '\nCorreo: ' . $_POST['email'];
+$mail->Body = 'Adjunto encontrarás tus respuestas en formato PDF.     Datos de usuario:   Nuevo test de: ' . $_POST['nombre'] . ' Especialidad: ' . $_POST['especialidad'] . ' Correo: ' . $_POST['email'];
 $mail->addAttachment($rutaGuardado, 'RespuestasDNAFactory.pdf'); // Adjunta el PDF generado
 
 if ($mail->send()) {
@@ -914,7 +914,7 @@ if ($mail->send()) {
     $mail->setFrom('diagnostico@dnafactorymedicos.com', 'DNA Factory Medicos'); // Cambia con tu dirección de correo y nombre
     $mail->addAddress('diagnostico@dnafactorymedicos.com');
     $mail->Subject = 'RESULTADO: ' . $_POST['nombre'];
-    $mail->Body = 'Nuevo test de: ' . $_POST['nombre'] . '\nEspecialidad: ' . $_POST['email'] . '\nCorreo: ' . $_POST['email'];
+    $mail->Body = 'Nuevo test de: ' . $_POST['nombre'] . ' Especialidad: ' . $_POST['especialidad'] . ' Correo: ' . $_POST['email'];
     $mail->addAttachment($rutaGuardado, 'RespuestasDNAFactory.pdf'); // Adjunta el PDF generado
 
     $mail->send();
@@ -925,7 +925,7 @@ if ($mail->send()) {
     $mail->setFrom('diagnostico@dnafactorymedicos.com', 'DNA Factory Medicos'); // Cambia con tu dirección de correo y nombre
     $mail->addAddress('diagnostico@dnafactorymedicos.com');
     $mail->Subject = 'RESULTADO: ' . $_POST['nombre'];
-    $mail->Body = '(Debido a un error este correo no le ha llegado al usuario, favor de compartir este PDF por otro medio.) \n Nuevo test de: ' . $_POST['nombre'] . '\nEspecialidad: ' . $_POST['email'] . '\nCorreo: ' . $_POST['email'];
+    $mail->Body = '(Debido a un error este correo no le ha llegado al usuario, favor de compartir este PDF por otro medio.)   Nuevo test de: ' . $_POST['nombre'] . ' Especialidad: ' . $_POST['especialidad'] . ' Correo: ' . $_POST['email'];
     $mail->addAttachment($rutaGuardado, 'RespuestasDNAFactory.pdf'); // Adjunta el PDF generado
 
     $mail->send();

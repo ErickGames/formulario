@@ -46,7 +46,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         </div>
         <div class="col-md-6">
-            <form id="miFormulario" action="procesar_formulario.php" method="post">
+            <form id="miFormulario">
                 <label class="form-label" for="nombre">Nombre Completo:</label>
                 <input class="form-control" type="text" name="nombre" required>
 
@@ -91,7 +91,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         var xhr = new XMLHttpRequest();
         xhr.open('POST', 'procesar_formulario.php', true);
         xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-
         xhr.onreadystatechange = function () {
             if (xhr.readyState == 4 && xhr.status == 200) {
                 // Descarga automáticamente el PDF generado por PHP
