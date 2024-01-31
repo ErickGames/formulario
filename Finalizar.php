@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <div class="row mx-5 mt-5 mb-5">
         <div class="col-8">
-            <h2>¡Gracias por sus respuestas!</h2> <br>
+            <h2 style="color:rgba(25, 47, 89)">¡Gracias por sus respuestas!</h2> <br>
             <h5>Todas sus respuestas son confidenciales y usadas para ofrecer lo mejor de nuestros servicios.</h5><br>
         </div>
 

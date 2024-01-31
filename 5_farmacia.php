@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class=" row mx-5 mt-5">
         <div class="col-8">
             <!-- <h4>SECCIÓN 5</h4> -->
-            <h1>FARMACIA</h1>
+            <h1 style="color:rgba(25, 47, 89)">FARMACIA</h1>
         </div>
 
         <div class="col-4">
