@@ -9,6 +9,16 @@
 
 <body>
 
+    <div class="row">
+        <div class="col-9">
+        </div>
+        <div class="col-3">
+            <button name="" id="" class="btn btn-primary" onclick="administrador()" role="button">Portal del
+                Administrador</button>
+        </div>
+    </div>
+
+
     <div class="container">
         <h1 class="title">Bienvenido al Diágnostio DNA Factory</h1>
         <div class="description">
@@ -35,6 +45,58 @@
         </div>
         <a href="1_venta_merca.php" class="start-button">Comenzar</a>
     </div>
+
+    <script>
+
+        function administrador() {
+            validar().then(({ username, password }) => {
+                if (username === "diagnostico@dnafactorymedicos.com" && password === "p4ssw0rd_dna") {
+                    window.location = 'administrador.php';
+                } else {
+                    window.location.reload();
+                }
+            });
+        }
+
+        function validar() {
+            import Swal from 'sweetalert2'
+
+            type LoginFormResult = {
+                username: string
+                password: string
+            }
+
+            let usernameInput: HTMLInputElement
+            let passwordInput: HTMLInputElement
+
+            Swal.fire < LoginFormResult > ({
+                title: 'Login',
+                html: `
+                    <input type="text" id="username" class="swal2-input" placeholder="E-Mail">
+                    <input type="password" id="password" class="swal2-input" placeholder="Contraseña">
+                `,
+                confirmButtonText: 'Entrar',
+                focusConfirm: false,
+                didOpen: () => {
+                    const popup = Swal.getPopup()!
+                    usernameInput = popup.querySelector('#username') as HTMLInputElement
+                    passwordInput = popup.querySelector('#password') as HTMLInputElement
+                    usernameInput.onkeyup = (event) => event.key === 'Enter' && Swal.clickConfirm()
+                    passwordInput.onkeyup = (event) => event.key === 'Enter' && Swal.clickConfirm()
+                },
+                preConfirm: () => {
+                    const username = usernameInput.value
+                    const password = passwordInput.value
+                    if (!username || !password) {
+                        Swal.showValidationMessage(`Please enter username and password`)
+                    }
+                    resolve({ username, password });
+                },
+            })
+
+        }
+
+    </script>
 
 </body>
 
