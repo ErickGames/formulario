@@ -67,7 +67,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
             <div class="col-md-1"></div>
         </div>
-        
+
         <!-- PREGUNTA 1 -->
         <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
@@ -571,45 +571,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
             <div class="col-md-1"></div>
         </div>
-
-        <!-- PREGUNTA 14 -->
-        <!-- <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
-
-            <h4 Class="mb-b">Capacitación y Entrenamiento</h4>
-
-            <div class="col-md-1"></div>
-            <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s8p14" value="1">
-                <label class="form-check-label">
-                    No se capacitar.
-                </label>
-            </div>
-            <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s8p14" value="2">
-                <label class="form-check-label">
-                    No se cuenta con un programa de capacitación y entrenamiento.
-                </label>
-            </div>
-            <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s8p14" value="3">
-                <label class="form-check-label">
-                    Se cuenta con un programa solo de algunos puestos.
-                </label>
-            </div>
-            <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s8p14" value="4">
-                <label class="form-check-label">
-                    Se cuenta con un programa, pero muchas veces no se cumple.
-                </label>
-            </div>
-            <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s8p14" value="5">
-                <label class="form-check-label">
-                    Se cuenta con un programa, se cumple y se complementa con consultores externos.
-                </label>
-            </div>
-            <div class="col-md-1"></div>
-        </div> -->
     </form>
 
     <div style="display: flex; justify-content: flex-end; margin: 0px 15px 5px 0px">

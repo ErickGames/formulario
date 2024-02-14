@@ -70,7 +70,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
             <div class="col-md-1"></div>
         </div>
-        
+
         <!-- PREGUNTA 1 -->
         <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
@@ -196,31 +196,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s4p5" value="1">
+                <input class="form-check-input" type="radio" name="s4p4" value="1">
                 <label class="form-check-label">
                 No sé si mi calidad o mis precios son competitivos.
                 </label>
             </div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s4p5" value="2">
+                <input class="form-check-input" type="radio" name="s4p4" value="2">
                 <label class="form-check-label">
                 Mis servicios y precios están dentro del promedio.
                 </label>
             </div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s4p5" value="3">
+                <input class="form-check-input" type="radio" name="s4p4" value="3">
                 <label class="form-check-label">
                 Me considero competitivo ante mis competidores por precio, calidad y/o servicios.
                 </label>
             </div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s4p5" value="4">
+                <input class="form-check-input" type="radio" name="s4p4" value="4">
                 <label class="form-check-label">
                 Me distingo y sobresalgo ante mis competidores por precio, calidad y/o servicio.
                 </label>
             </div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s4p5" value="5">
+                <input class="form-check-input" type="radio" name="s4p4" value="5">
                 <label class="form-check-label">
                 Soy una referencia en el mercado por precio-calidad y los clientes me buscan por eso.
                 </label>
@@ -235,31 +235,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s4p6" value="1">
+                <input class="form-check-input" type="radio" name="s4p5" value="1">
                 <label class="form-check-label">
                 No tengo un proceso para gestionar mis servicios.
                 </label>
             </div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s4p6" value="2">
+                <input class="form-check-input" type="radio" name="s4p5" value="2">
                 <label class="form-check-label">
                 Incluyo o elimino servicios de manera ocasional sin pensarlo mucho.
                 </label>
             </div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s4p6" value="3">
+                <input class="form-check-input" type="radio" name="s4p5" value="3">
                 <label class="form-check-label">
                 Hago una revisión anual para depurar o crear nuevos servicios.
                 </label>
             </div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s4p6" value="4">
+                <input class="form-check-input" type="radio" name="s4p5" value="4">
                 <label class="form-check-label">
                 Hago una evaluación de la rentabilidad de mis servicios para poder generar nuevos.
                 </label>
             </div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s4p6" value="5">
+                <input class="form-check-input" type="radio" name="s4p5" value="5">
                 <label class="form-check-label">
                 Mantengo mis servicios actualizados según las tendencias del mercado para darle valor al cliente.
                 </label>

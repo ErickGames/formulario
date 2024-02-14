@@ -66,7 +66,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
             <div class="col-md-1"></div>
         </div>
-        
+
         <!-- PREGUNTA 1 -->
         <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
@@ -191,31 +191,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s7p5" value="1">
+                <input class="form-check-input" type="radio" name="s7p4" value="1">
                 <label class="form-check-label">
                 No tengo un proceso específico para cotizar y no suelo evaluar diferentes opciones de compra.
                 </label>
             </div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s7p5" value="2">
+                <input class="form-check-input" type="radio" name="s7p4" value="2">
                 <label class="form-check-label">
                 No tengo un proceso para cotizar pero siempre busco comparar al menos 2 opciones.
                 </label>
             </div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s7p5" value="3">
+                <input class="form-check-input" type="radio" name="s7p4" value="3">
                 <label class="form-check-label">
                 Tengo un proceso para cotizar y comparar alternativas para elegir la mejor opción.
                 </label>
             </div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s7p5" value="4">
+                <input class="form-check-input" type="radio" name="s7p4" value="4">
                 <label class="form-check-label">
                 Tengo un proceso para cotizar aunque no siempre me ayuda a elegir la mejor opción de financiamiento.
                 </label>
             </div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s7p5" value="5">
+                <input class="form-check-input" type="radio" name="s7p4" value="5">
                 <label class="form-check-label">
                 Mi proceso para cotizar me permite elegir la mejor opción de proveedor y financiamiento.
                 </label>
@@ -308,31 +308,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s7p4" value="1">
+                <input class="form-check-input" type="radio" name="s7p7" value="1">
                 <label class="form-check-label">
                 Considero que utilizo mi equipo aprox. un 10%.
                 </label>
             </div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s7p4" value="2">
+                <input class="form-check-input" type="radio" name="s7p7" value="2">
                 <label class="form-check-label">
                 Considero que utilizo mi equipo aprox. del 10 al 40%.
                 </label>
             </div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s7p4" value="3">
+                <input class="form-check-input" type="radio" name="s7p7" value="3">
                 <label class="form-check-label">
                 Considero que utilizo mi equipo entre el 40 y el 60%.
                 </label>
             </div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s7p4" value="4">
+                <input class="form-check-input" type="radio" name="s7p7" value="4">
                 <label class="form-check-label">
                 El porcentaje de uso de mi equipo es del 70 al 90%.
                 </label>
             </div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s7p4" value="5">
+                <input class="form-check-input" type="radio" name="s7p7" value="5">
                 <label class="form-check-label">
                 El nivel de uso de mi equipo es del 100% y ya estoy buscando adquirir otros.
                 </label>

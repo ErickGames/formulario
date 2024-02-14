@@ -64,7 +64,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
             <div class="col-md-1"></div>
         </div>
-        
+
         <!-- PREGUNTA 1 -->
         <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
@@ -267,31 +267,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s10p5" value="1">
+                <input class="form-check-input" type="radio" name="s10p6" value="1">
                 <label class="form-check-label">
                 Todo el día estoy trabajando, no he encontrado un balance.
                 </label>
             </div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s10p5" value="2">
+                <input class="form-check-input" type="radio" name="s10p6" value="2">
                 <label class="form-check-label">
                 Hago pequeños cambios en mi vida para empezar a balancear mis actividades.
                 </label>
             </div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s10p5" value="3">
+                <input class="form-check-input" type="radio" name="s10p6" value="3">
                 <label class="form-check-label">
                 Tengo un moderado balance de vida y trabajo, aunque quisiera mejorarlo.
                 </label>
             </div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s10p5" value="4">
+                <input class="form-check-input" type="radio" name="s10p6" value="4">
                 <label class="form-check-label">
                 Considero que tengo un buen balance entre mi trabajo y mi persona gracias a mi equipo que me respalda.
                 </label>
             </div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s10p5" value="5">
+                <input class="form-check-input" type="radio" name="s10p6" value="5">
                 <label class="form-check-label">
                 Tengo un buen balance de vida y trabajo, lo reflejo con mis pacientes y esto me ayuda a incrementar ventas.
                 </label>
@@ -345,32 +345,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s10p6" value="1">
+                <input class="form-check-input" type="radio" name="s10p8" value="1">
                 <label class="form-check-label">
-                No me considero creativo para innovar en mi consultorio.
-                    .
+                No me considero creativo para innovar en mi consultorio..
                 </label>
             </div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s10p6" value="2">
+                <input class="form-check-input" type="radio" name="s10p8" value="2">
                 <label class="form-check-label">
                 Identifico algunas áreas de oportunidad para innovar pero no sé aplicarlas.
                 </label>
             </div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s10p6" value="3">
+                <input class="form-check-input" type="radio" name="s10p8" value="3">
                 <label class="form-check-label">
                 A veces implemento cambios innovadores que me distinguen en el mercado.
                 </label>
             </div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s10p6" value="4">
+                <input class="form-check-input" type="radio" name="s10p8" value="4">
                 <label class="form-check-label">
                 Regularmente identifico innovaciones y las adapto a mi negocio para volverlo único en el mercado.
                 </label>
             </div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s10p6" value="5">
+                <input class="form-check-input" type="radio" name="s10p8" value="5">
                 <label class="form-check-label">
                 Siempre busco innovar en mi consultorio para que mis clientes me prefieran.
                 </label>
@@ -385,31 +384,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s10p7" value="1">
+                <input class="form-check-input" type="radio" name="s10p9" value="1">
                 <label class="form-check-label">
                 No soy persistente con los caminos y estrategias que defino.
                 </label>
             </div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s10p7" value="2">
+                <input class="form-check-input" type="radio" name="s10p9" value="2">
                 <label class="form-check-label">
                 No soy constante y desisto de las estrategias que defino para alcanzar los objetivos.
                 </label>
             </div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s10p7" value="3">
+                <input class="form-check-input" type="radio" name="s10p9" value="3">
                 <label class="form-check-label">
                 Trato de mantenerme constante con las acciones para lograr mis objetivos.
                 </label>
             </div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s10p7" value="4">
+                <input class="form-check-input" type="radio" name="s10p9" value="4">
                 <label class="form-check-label">
                 La mayoría de las veces me mantengo constante en las estrategias que definí.
                 </label>
             </div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s10p7" value="5">
+                <input class="form-check-input" type="radio" name="s10p9" value="5">
                 <label class="form-check-label">
                 Siempre me mantengo constante con los objetivos y las estrategias definidas.
                 </label>
@@ -424,31 +423,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s10p8" value="1">
+                <input class="form-check-input" type="radio" name="s10p10" value="1">
                 <label class="form-check-label">
                 No tengo el control de mi consultorio y no puedo tomar decisiones.
                 </label>
             </div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s10p8" value="2">
+                <input class="form-check-input" type="radio" name="s10p10" value="2">
                 <label class="form-check-label">
                 No tengo el control total del consultorio, solo puedo tomar algunas decisiones.
                 </label>
             </div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s10p8" value="3">
+                <input class="form-check-input" type="radio" name="s10p10" value="3">
                 <label class="form-check-label">
                 Solo tengo el 50% del control del consultorio y de las decisiones importantes.
                 </label>
             </div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s10p8" value="4">
+                <input class="form-check-input" type="radio" name="s10p10" value="4">
                 <label class="form-check-label">
                 Tengo el control de mi consultorio y puedo tomar decisiones e implementarlas.
                 </label>
             </div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s10p8" value="5">
+                <input class="form-check-input" type="radio" name="s10p10" value="5">
                 <label class="form-check-label">
                 Tengo el control de mi consultorio y las decisiones que tomo son muy buenas. 
                 </label>
@@ -463,31 +462,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s10p9" value="1">
+                <input class="form-check-input" type="radio" name="s10p11" value="1">
                 <label class="form-check-label">
                 No soy optimista cuando se presentan situaciones adversas.
                 </label>
             </div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s10p9" value="2">
+                <input class="form-check-input" type="radio" name="s10p11" value="2">
                 <label class="form-check-label">
                 Suelo ser optimista pero en situaciones adversas no siempre lo logro.
                 </label>
             </div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s10p9" value="3">
+                <input class="form-check-input" type="radio" name="s10p11" value="3">
                 <label class="form-check-label">
                 Solo en situaciones adversas me motivo para salir adelante.
                 </label>
             </div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s10p9" value="4">
+                <input class="form-check-input" type="radio" name="s10p11" value="4">
                 <label class="form-check-label">
                 La mayoría del tiempo soy optimista, ya sea en situaciones benéficas o adversas.
                 </label>
             </div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s10p9" value="5">
+                <input class="form-check-input" type="radio" name="s10p11" value="5">
                 <label class="form-check-label">
                 Siempre soy optimista y me motiva mi orgullo por salir adelante y crecer.
                 </label>
@@ -502,31 +501,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s10p10" value="1">
+                <input class="form-check-input" type="radio" name="s10p12" value="1">
                 <label class="form-check-label">
                 No detecto oportunidades a tiempo.
                 </label>
             </div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s10p10" value="2">
+                <input class="form-check-input" type="radio" name="s10p12" value="2">
                 <label class="form-check-label">
                 En algunas ocasiones he identificado necesidades pero no ejecuto acciones a tiempo.
                 </label>
             </div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s10p10" value="3">
+                <input class="form-check-input" type="radio" name="s10p12" value="3">
                 <label class="form-check-label">
                 A veces identifico oportunidades y las ejecuto de manera oportuna.
                 </label>
             </div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s10p10" value="4">
+                <input class="form-check-input" type="radio" name="s10p12" value="4">
                 <label class="form-check-label">
                 La mayoría del tiempo estoy buscando áreas de oportunidad y busco mejorarlas rápido.
                 </label>
             </div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s10p10" value="5">
+                <input class="form-check-input" type="radio" name="s10p12" value="5">
                 <label class="form-check-label">
                 Siempre identifico tendencias y oportunidades, que se atacan con acciones oportunas que incrementan ventas.
                 </label>

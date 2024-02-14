@@ -71,7 +71,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
             <div class="col-md-1"></div>
         </div>
-        
+
         <!-- PREGUNTA 1 -->
         <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
@@ -154,31 +154,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <h4 Class="mb-4">Persona dedicada a recepción</h4>
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s2p2" value="1">
+                <input class="form-check-input" type="radio" name="s2p3" value="1">
                 <label class="form-check-label">
                 No tengo recepcionista. El primero que esté disponible atiende al paciente.
                 </label>
             </div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s2p2" value="2">
+                <input class="form-check-input" type="radio" name="s2p3" value="2">
                 <label class="form-check-label">
                 Tengo un/una recepcionista que apoya a varios doctores.
                 </label>
             </div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s2p2" value="3">
+                <input class="form-check-input" type="radio" name="s2p3" value="3">
                 <label class="form-check-label">
                 Tengo un/una recepcionista que hace otras tareas además de atender a los pacientes.
                 </label>
             </div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s2p2" value="4">
+                <input class="form-check-input" type="radio" name="s2p3" value="4">
                 <label class="form-check-label">
                 Tengo recepcionista para cada turno y se dividen las tareas.
                 </label>
             </div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s2p2" value="5">
+                <input class="form-check-input" type="radio" name="s2p3" value="5">
                 <label class="form-check-label">
                 Tengo una o dos recepcionistas para cada turno, que también tienen habilidades de ventas.
                 </label>
@@ -192,31 +192,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <h4 class="mb-4">Administración de Expedientes</h4>
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s2p3" value="1">
+                <input class="form-check-input" type="radio" name="s2p4" value="1">
                 <label class="form-check-label">
                     No tengo expedientes
                 </label>
             </div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s2p3" value="2">
+                <input class="form-check-input" type="radio" name="s2p4" value="2">
                 <label class="form-check-label">
                 Tengo expedientes en papel
                 </label>
             </div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s2p3" value="3">
+                <input class="form-check-input" type="radio" name="s2p4" value="3">
                 <label class="form-check-label">
                 Tengo un expediente básico de los pacientes en Excel o Word.
                 </label>
             </div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s2p3" value="4">
+                <input class="form-check-input" type="radio" name="s2p4" value="4">
                 <label class="form-check-label">
                 Tengo un expediente clínico digital para cada paciente.
                 </label>
             </div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s2p3" value="5">
+                <input class="form-check-input" type="radio" name="s2p4" value="5">
                 <label class="form-check-label">
                 Tengo un sistema integral electrónico en la nube para los expedientes clínicos.
                 </label>

@@ -302,31 +302,31 @@ session_start();
             <h4 class="mb-4">Publicidad en medios tradicionales</h4>
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s1p6" value="1">
+                <input class="form-check-input" type="radio" name="s1p7" value="1">
                 <label class="form-check-label">
                 No hago publicidad en ningún medio. 
                 </label>
             </div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s1p6" value="2">
+                <input class="form-check-input" type="radio" name="s1p7" value="2">
                 <label class="form-check-label">
                 Utilizo al menos una forma de publicidad impresa.
                 </label>
             </div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s1p6" value="3">
+                <input class="form-check-input" type="radio" name="s1p7" value="3">
                 <label class="form-check-label">
                 Hago publicidad impresa variada que me ha funcionado bien.
                 </label>
             </div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s1p6" value="4">
+                <input class="form-check-input" type="radio" name="s1p7" value="4">
                 <label class="form-check-label">
                 Llevo publicidad impresa y en algún medio masivo como radio.
                 </label>
             </div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s1p6" value="5">
+                <input class="form-check-input" type="radio" name="s1p7" value="5">
                 <label class="form-check-label">
                 Hago publicidad impresa y en medios masivos que me ha generado más ventas y rentabilidad.
                 </label>
