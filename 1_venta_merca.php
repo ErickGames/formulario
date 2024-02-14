@@ -5,9 +5,6 @@ session_start();
 
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-
 <body>
 
     <div class="row mx-5 mt-5">
@@ -478,8 +475,6 @@ session_start();
 
 
 </body>
-
-</html>
 
 <?php
 include('footer.php');

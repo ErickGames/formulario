@@ -174,7 +174,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 4 -->
-        <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
             <h4 Class="mb-4">Cotizaciones, evaluación de proveedores y opciones de financiamiento</h4>
 
@@ -293,7 +293,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 7 -->
-        <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
             <h4 class="mb-4">Nivel de utilización de los equipos</h4>
 

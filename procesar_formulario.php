@@ -66,6 +66,7 @@ $hayFortalezas9 = false;
 $hayDebilidades9 = false;
 $hayFortalezas10 = false;
 $hayDebilidades10 = false;
+
 ////////////////
 // Sección 1 //
 //////////////
@@ -880,7 +881,7 @@ if ($hayDebilidades10 == false) {
 $pdf->chapterBody($bodyContentDebilidades10);
 
 // Ruta donde se guardará el PDF automáticamente
-$rutaGuardado = 'PDFS/Respuesta_'.$_POST['nombre'].'.pdf';
+$rutaGuardado = 'PDFS';
 
 $pdf->Output($rutaGuardado, 'F'); // 'F' indica que se guardará en el servidor
 
@@ -942,6 +943,28 @@ if ($mail->send()) {
 
 // Redirige al usuario a la página actualcen caso de error
 // header('Location: nombre_de_tu_pagina.php');
+
+echo($_SESSION['respuesta_s1p3']);
+echo($_SESSION['respuesta_s2p2']);
+echo($_SESSION['respuesta_s3p3']);
+echo($_SESSION['respuesta_s4p1']);
+echo($_SESSION['respuesta_s5p3']);
+echo($_SESSION['respuesta_s6p2']);
+echo($_SESSION['respuesta_s7p1']);
+echo($_SESSION['respuesta_s8p1']);
+echo($_SESSION['respuesta_s9p2']);
+echo($_SESSION['respuesta_s10p3']);
+echo($_SESSION['respuesta_s1p2']);
+echo($_SESSION['respuesta_s8p5']);
+echo($_SESSION['respuesta_s7p4']);
+echo($_SESSION['respuesta_s9p1']);
+echo($_SESSION['respuesta_s9p2']);
+echo($_SESSION['respuesta_s1p1']);
+echo($_SESSION['respuesta_s6p1']);
+echo($_SESSION['respuesta_s5p1']);
+echo($_SESSION['respuesta_s4p1']);
+echo($_SESSION['respuesta_s3p1']);
+echo($_SESSION['respuesta_s4p5']);
 
 exit();
 ?>

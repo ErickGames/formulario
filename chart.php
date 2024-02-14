@@ -63,9 +63,6 @@ $datos = [$promS1, $promS2, $promS3, $promS4, $promS5, $promS6, $promS7, $promS8
 $datos_js = json_encode($datos);
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-
 <body>
 
     <canvas id="radarChart" width="100px" height="100px"></canvas>
@@ -115,7 +112,6 @@ $datos_js = json_encode($datos);
     </script>
 
 </body>
-</html>
 
 <?php
 ?>

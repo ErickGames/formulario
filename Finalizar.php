@@ -22,9 +22,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-
 <body>
 
     <div class="row mx-5 mt-5 mb-5">
@@ -80,8 +77,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 </body>
-
-</html>
 
 <script>
     document.getElementById('miFormulario').addEventListener('submit', function (event) {

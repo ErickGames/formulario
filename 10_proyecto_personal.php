@@ -249,7 +249,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 6 -->
-        <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
             <h4 Class="mb-4">Balance Vida-Trabajo</h4>
 

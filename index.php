@@ -23,10 +23,10 @@
 
 <body>
 
-    <div class="row">
-        <div class="col-9">
+    <div class="row mt-4">
+        <div class="col-10">
         </div>
-        <div class="col-3">
+        <div class="col-2">
             <button name="" id="" class="btn btn-primary" onclick="administrador()" role="button" >Portal del
                 Administrador</button>
         </div>
