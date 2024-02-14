@@ -33,39 +33,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div id="myBar" class="w3-container w3-green w3-center" style="width:48.1%">49%</div>
     </div>
 
-    <form action="8_RH.php" method="POST" class="m-4 bordesito" id="form1">
-
     <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.2)">
-
-            <div class="col-md-1"></div>
-            
-            <div class="form-check col-md-2">
-                <label class="form-check-label">
-                    <center>1<br>Capacidad Nula</center>
-                </label>
-            </div>
-            <div class="form-check col-md-2">
-                <label class="form-check-label">
-                    <center>2<br>Capacidad básica</center>
-                </label>
-            </div>
-            <div class="form-check col-md-2">
-                <label class="form-check-label">
-                    <center>3<br>Capacidad mediana</center>
-                </label>
-            </div>
-            <div class="form-check col-md-2">
-                <label class="form-check-label">
-                    <center>4<br>Capacidad alta</center>
-                </label>
-            </div>
-            <div class="form-check col-md-2">
-                <label class="form-check-label">
-                    <center>5<br>Lo mejor del mercado</center>
-                </label>
-            </div>
-            <div class="col-md-1"></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-2 centerrr">
+            <h4>1<br>Capacidad Nula</h4>
         </div>
+        <div class="col-md-2 centerrr">
+            <h4>2<br>Capacidad básica</h4>
+        </div>
+        <div class="col-md-2 centerrr">
+            <h4>3<br>Capacidad mediana</h4>
+        </div>
+        <div class="col-md-2 centerrr">
+            <h4>4<br>Capacidad alta</h4>
+        </div>
+        <div class="col-md-2 centerrr">
+            <h4>5<br>Lo mejor del mercado</h4>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+
+    <form action="8_RH.php" method="POST" class="m-4 bordesito" id="form1">
 
         <!-- PREGUNTA 1 -->
         <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
@@ -76,31 +64,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p1" value="1">
                 <label class="form-check-label">
-                No tengo un inventario de mis activos.
+                    No tengo un inventario de mis activos.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p1" value="2">
                 <label class="form-check-label">
-                Llevo un inventario a mano de mis activos.
+                    Llevo un inventario a mano de mis activos.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p1" value="3">
                 <label class="form-check-label">
-                Llevo el registro de los activos en Excel.
+                    Llevo el registro de los activos en Excel.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p1" value="4">
                 <label class="form-check-label">
-                Registro mis activos en un software pero no los actualizo frecuentemente.
+                    Registro mis activos en un software pero no los actualizo frecuentemente.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p1" value="5">
                 <label class="form-check-label">
-                Llevo un registro de mis activos en un software que actualizo cada mes.
+                    Llevo un registro de mis activos en un software que actualizo cada mes.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -115,31 +103,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p2" value="1">
                 <label class="form-check-label">
-                No tengo equipo de trabajo.
+                    No tengo equipo de trabajo.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p2" value="2">
                 <label class="form-check-label">
-                Tengo el equipo básico para trabajar pero no es muy moderno.
+                    Tengo el equipo básico para trabajar pero no es muy moderno.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p2" value="3">
                 <label class="form-check-label">
-                Tengo al menos 1 equipo moderno y que es referencia en el mercado.
+                    Tengo al menos 1 equipo moderno y que es referencia en el mercado.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p2" value="4">
                 <label class="form-check-label">
-                Cuento con equipo de primer nivel en mi consultorio.
+                    Cuento con equipo de primer nivel en mi consultorio.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p2" value="5">
                 <label class="form-check-label">
-                Todo mi equipo de trabajo es de primer nivel y me distingo por eso.
+                    Todo mi equipo de trabajo es de primer nivel y me distingo por eso.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -154,31 +142,32 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p3" value="1">
                 <label class="form-check-label">
-                No llevo un registro de la devaluación de mi equipo.
+                    No llevo un registro de la devaluación de mi equipo.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p3" value="2">
                 <label class="form-check-label">
-                Solo estoy al pendiente de la devaluación de algunos equipos.
+                    Solo estoy al pendiente de la devaluación de algunos equipos.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p3" value="3">
                 <label class="form-check-label">
-                Tengo un registro manual o en Excel de todos los activos y su devaluación.
+                    Tengo un registro manual o en Excel de todos los activos y su devaluación.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p3" value="4">
                 <label class="form-check-label">
-                Tengo un sistema para automatizar el registro de los activos y su devaluación.
+                    Tengo un sistema para automatizar el registro de los activos y su devaluación.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p3" value="5">
                 <label class="form-check-label">
-                Tengo un sistema especial que se conecta con los estados financieros y el balance general de mi empresa.
+                    Tengo un sistema especial que se conecta con los estados financieros y el balance general de mi
+                    empresa.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -193,31 +182,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p4" value="1">
                 <label class="form-check-label">
-                No tengo un proceso específico para cotizar y no suelo evaluar diferentes opciones de compra.
+                    No tengo un proceso específico para cotizar y no suelo evaluar diferentes opciones de compra.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p4" value="2">
                 <label class="form-check-label">
-                No tengo un proceso para cotizar pero siempre busco comparar al menos 2 opciones.
+                    No tengo un proceso para cotizar pero siempre busco comparar al menos 2 opciones.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p4" value="3">
                 <label class="form-check-label">
-                Tengo un proceso para cotizar y comparar alternativas para elegir la mejor opción.
+                    Tengo un proceso para cotizar y comparar alternativas para elegir la mejor opción.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p4" value="4">
                 <label class="form-check-label">
-                Tengo un proceso para cotizar aunque no siempre me ayuda a elegir la mejor opción de financiamiento.
+                    Tengo un proceso para cotizar aunque no siempre me ayuda a elegir la mejor opción de financiamiento.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p4" value="5">
                 <label class="form-check-label">
-                Mi proceso para cotizar me permite elegir la mejor opción de proveedor y financiamiento.
+                    Mi proceso para cotizar me permite elegir la mejor opción de proveedor y financiamiento.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -232,31 +221,32 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p5" value="1">
                 <label class="form-check-label">
-                No conozco esta información.
+                    No conozco esta información.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p5" value="2">
                 <label class="form-check-label">
-                Tengo una estrategia básica de 30 días de pago a proveedores.
+                    Tengo una estrategia básica de 30 días de pago a proveedores.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p5" value="3">
                 <label class="form-check-label">
-                Tengo inventarios a consignación y herramientas como el crédito revolvente.
+                    Tengo inventarios a consignación y herramientas como el crédito revolvente.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p5" value="4">
                 <label class="form-check-label">
-                Se tiene un buen balance entre el efectivo y el acceso a deuda con bajo interés.
+                    Se tiene un buen balance entre el efectivo y el acceso a deuda con bajo interés.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p5" value="5">
                 <label class="form-check-label">
-                Tengo una estrategia de financiamiento para crecer con recursos propios y financiamiento con proveedores y bancos.
+                    Tengo una estrategia de financiamiento para crecer con recursos propios y financiamiento con
+                    proveedores y bancos.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -271,31 +261,32 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p6" value="1">
                 <label class="form-check-label">
-                Desconozco el costo del equipo que se utiliza para cada servicio.
+                    Desconozco el costo del equipo que se utiliza para cada servicio.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p6" value="2">
                 <label class="form-check-label">
-                Sé cuál es el costo por el uso del equipo pero no lo aplico en los precios.
+                    Sé cuál es el costo por el uso del equipo pero no lo aplico en los precios.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p6" value="3">
                 <label class="form-check-label">
-                Conozco el costo por usar el equipo y lo aplico en los precios de algunos servicios.
+                    Conozco el costo por usar el equipo y lo aplico en los precios de algunos servicios.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p6" value="4">
                 <label class="form-check-label">
-                Conozco el costo del uso de los equipos y lo aplico en los precios buscando una mejor utilidad.
+                    Conozco el costo del uso de los equipos y lo aplico en los precios buscando una mejor utilidad.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p6" value="5">
                 <label class="form-check-label">
-                Conozco el costo del uso de los equipos y lo aplico en los precios y en las promociones, buscando vender más.
+                    Conozco el costo del uso de los equipos y lo aplico en los precios y en las promociones, buscando
+                    vender más.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -310,31 +301,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p7" value="1">
                 <label class="form-check-label">
-                Considero que utilizo mi equipo aprox. un 10%.
+                    Considero que utilizo mi equipo aprox. un 10%.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p7" value="2">
                 <label class="form-check-label">
-                Considero que utilizo mi equipo aprox. del 10 al 40%.
+                    Considero que utilizo mi equipo aprox. del 10 al 40%.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p7" value="3">
                 <label class="form-check-label">
-                Considero que utilizo mi equipo entre el 40 y el 60%.
+                    Considero que utilizo mi equipo entre el 40 y el 60%.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p7" value="4">
                 <label class="form-check-label">
-                El porcentaje de uso de mi equipo es del 70 al 90%.
+                    El porcentaje de uso de mi equipo es del 70 al 90%.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s7p7" value="5">
                 <label class="form-check-label">
-                El nivel de uso de mi equipo es del 100% y ya estoy buscando adquirir otros.
+                    El nivel de uso de mi equipo es del 100% y ya estoy buscando adquirir otros.
                 </label>
             </div>
             <div class="col-md-1"></div>

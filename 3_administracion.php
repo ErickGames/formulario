@@ -33,40 +33,28 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div id="myBar" class="w3-container w3-green w3-center" style="width:16.9%">17%</div>
     </div>
 
+    <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.2)">
+        <div class="col-md-1"></div>
+        <div class="col-md-2 centerrr">
+            <h4>1<br>Capacidad Nula</h4>
+        </div>
+        <div class="col-md-2 centerrr">
+            <h4>2<br>Capacidad básica</h4>
+        </div>
+        <div class="col-md-2 centerrr">
+            <h4>3<br>Capacidad mediana</h4>
+        </div>
+        <div class="col-md-2 centerrr">
+            <h4>4<br>Capacidad alta</h4>
+        </div>
+        <div class="col-md-2 centerrr">
+            <h4>5<br>Lo mejor del mercado</h4>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+
     <form action="4_plan_estrategia.php" method="POST" class="m-4 bordesito" id="form1">
 
-    <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.2)">
-
-            <div class="col-md-1"></div>
-            
-            <div class="form-check col-md-2">
-                <label class="form-check-label">
-                    <center>1<br>Capacidad Nula</center>
-                </label>
-            </div>
-            <div class="form-check col-md-2">
-                <label class="form-check-label">
-                    <center>2<br>Capacidad básica</center>
-                </label>
-            </div>
-            <div class="form-check col-md-2">
-                <label class="form-check-label">
-                    <center>3<br>Capacidad mediana</center>
-                </label>
-            </div>
-            <div class="form-check col-md-2">
-                <label class="form-check-label">
-                    <center>4<br>Capacidad alta</center>
-                </label>
-            </div>
-            <div class="form-check col-md-2">
-                <label class="form-check-label">
-                    <center>5<br>Lo mejor del mercado</center>
-                </label>
-            </div>
-            <div class="col-md-1"></div>
-        </div>
-        
         <!-- PREGUNTA 1 -->
         <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
@@ -76,31 +64,32 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p1" value="1">
                 <label class="form-check-label">
-                No llevo registro de mi contabilidad.
+                    No llevo registro de mi contabilidad.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p1" value="2">
                 <label class="form-check-label">
-                Yo mismo llevo mi contabilidad.
+                    Yo mismo llevo mi contabilidad.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p1" value="3">
                 <label class="form-check-label">
-                Tengo un contador externo que lleva mi contabilidad.
+                    Tengo un contador externo que lleva mi contabilidad.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p1" value="4">
                 <label class="form-check-label">
-                Tengo un contador externo, pero también cuento con un encargado interno del área.
+                    Tengo un contador externo, pero también cuento con un encargado interno del área.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p1" value="5">
                 <label class="form-check-label">
-                Tengo un departamento de contabilidad interno, además de un despacho externo para acompañar la operación.
+                    Tengo un departamento de contabilidad interno, además de un despacho externo para acompañar la
+                    operación.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -115,31 +104,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p2" value="1">
                 <label class="form-check-label">
-                No cuento con estados financieros.
+                    No cuento con estados financieros.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p2" value="2">
                 <label class="form-check-label">
-                No tengo estados financieros pero tengo una idea del historial de ingresos y egresos.
+                    No tengo estados financieros pero tengo una idea del historial de ingresos y egresos.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p2" value="3">
                 <label class="form-check-label">
-                Tengo estados financieros básicos.
+                    Tengo estados financieros básicos.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p2" value="4">
                 <label class="form-check-label">
-                Tengo un programa para capturar la información contable.
+                    Tengo un programa para capturar la información contable.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p2" value="5">
                 <label class="form-check-label">
-                Tengo un programa para generar mis estados financieros automáticamente.
+                    Tengo un programa para generar mis estados financieros automáticamente.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -155,31 +144,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p3" value="1">
                 <label class="form-check-label">
-                No sé nada de mis utilidades.
+                    No sé nada de mis utilidades.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p3" value="2">
                 <label class="form-check-label">
-                Sí calculo mis utilidades pero considero que mi cálculo es deficiente.
+                    Sí calculo mis utilidades pero considero que mi cálculo es deficiente.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p3" value="3">
                 <label class="form-check-label">
-                Sí calculo mis utilidades pero no sé qué hacer con ellas.
+                    Sí calculo mis utilidades pero no sé qué hacer con ellas.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p3" value="4">
                 <label class="form-check-label">
-                Hago el cálculo mis utilidades y tengo una estrategia de reinversión y/o recuperación.
+                    Hago el cálculo mis utilidades y tengo una estrategia de reinversión y/o recuperación.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p3" value="5">
                 <label class="form-check-label">
-                Hago el cálculo de mis utilidades y tengo algunas estrategias para reinvertirlas.
+                    Hago el cálculo de mis utilidades y tengo algunas estrategias para reinvertirlas.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -194,31 +183,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p4" value="1">
                 <label class="form-check-label">
-                No llevo registro de mis operaciones.
+                    No llevo registro de mis operaciones.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p4" value="2">
                 <label class="form-check-label">
-                Tengo una libreta de ingresos que se llena a mano.
+                    Tengo una libreta de ingresos que se llena a mano.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p4" value="3">
                 <label class="form-check-label">
-                Registro mis ingresos y gastos en un Excel.
+                    Registro mis ingresos y gastos en un Excel.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p4" value="4">
                 <label class="form-check-label">
-                Tengo un sistema administrativo para registrar mis transacciones.
+                    Tengo un sistema administrativo para registrar mis transacciones.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p4" value="5">
                 <label class="form-check-label">
-                Tengo un departamento de contabilidad que lleva un análisis profundo de los ingresos y egresos.
+                    Tengo un departamento de contabilidad que lleva un análisis profundo de los ingresos y egresos.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -233,31 +222,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p5" value="1">
                 <label class="form-check-label">
-                No tengo pacientes con crédito.
+                    No tengo pacientes con crédito.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p5" value="2">
                 <label class="form-check-label">
-                No tengo reigstro pero recuerdo quiénes son los pacientes con crédito.
+                    No tengo reigstro pero recuerdo quiénes son los pacientes con crédito.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p5" value="3">
                 <label class="form-check-label">
-                Tengo un registro a mano de los pacientes y su crédito.
+                    Tengo un registro a mano de los pacientes y su crédito.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p5" value="4">
                 <label class="form-check-label">
-                Tengo un registro en Excel de los pacientes con crédito.
+                    Tengo un registro en Excel de los pacientes con crédito.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p5" value="5">
                 <label class="form-check-label">
-                Llevo un registro automatizado de los pacientes y sus cuentas por cobrar.
+                    Llevo un registro automatizado de los pacientes y sus cuentas por cobrar.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -272,31 +261,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p6" value="1">
                 <label class="form-check-label">
-                Mis proveedores me cobran cuando ya es tiempo.
+                    Mis proveedores me cobran cuando ya es tiempo.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p6" value="2">
                 <label class="form-check-label">
-                Llevo un registro a mano de algunos proveedores y de las cuentas por pagar.
+                    Llevo un registro a mano de algunos proveedores y de las cuentas por pagar.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p6" value="3">
                 <label class="form-check-label">
-                Llevo un registro consistente a mano de los proveedores y las cuentas por pagar.
+                    Llevo un registro consistente a mano de los proveedores y las cuentas por pagar.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p6" value="4">
                 <label class="form-check-label">
-                Llevo un buen registro en Excel de los proveedores y las cuentas por pagar.
+                    Llevo un buen registro en Excel de los proveedores y las cuentas por pagar.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p6" value="5">
                 <label class="form-check-label">
-                Tengo un sistema especial para llevar el registro de los proveedores y las cuentas por pagar.
+                    Tengo un sistema especial para llevar el registro de los proveedores y las cuentas por pagar.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -311,31 +300,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p7" value="1">
                 <label class="form-check-label">
-                No llevo control del desempeño.
+                    No llevo control del desempeño.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p7" value="2">
                 <label class="form-check-label">
-                Intento llevar un reporte a mano pero no lo hago de manera consistente.
+                    Intento llevar un reporte a mano pero no lo hago de manera consistente.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p7" value="3">
                 <label class="form-check-label">
-                Llevo un reporte a mano y lo actualizo constantemente.
+                    Llevo un reporte a mano y lo actualizo constantemente.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p7" value="4">
                 <label class="form-check-label">
-                Llevo un reporte de desempeño en Excel que actualizo periódicamente.
+                    Llevo un reporte de desempeño en Excel que actualizo periódicamente.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p7" value="5">
                 <label class="form-check-label">
-                Tengo un programa especial con el que mido el desempeño y le doy seguimiento.
+                    Tengo un programa especial con el que mido el desempeño y le doy seguimiento.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -350,31 +339,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p8" value="1">
                 <label class="form-check-label">
-                No tengo contador público.
+                    No tengo contador público.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p8" value="2">
                 <label class="form-check-label">
-                Tengo un contador externo que me apoya ocasionalmente.
+                    Tengo un contador externo que me apoya ocasionalmente.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p8" value="3">
                 <label class="form-check-label">
-                Tengo un contador que me apoya parcialmente pero es consistente.
+                    Tengo un contador que me apoya parcialmente pero es consistente.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p8" value="4">
                 <label class="form-check-label">
-                Tengo un contador interno que se apoya de un externo para tener mejores resultados.
+                    Tengo un contador interno que se apoya de un externo para tener mejores resultados.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p8" value="5">
                 <label class="form-check-label">
-                Tengo un equipo encargado de mi contabilidad y/o apoyo de expertos externos.
+                    Tengo un equipo encargado de mi contabilidad y/o apoyo de expertos externos.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -389,31 +378,32 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p9" value="1">
                 <label class="form-check-label">
-                No tengo ningun convenio con mis proveedores.
+                    No tengo ningun convenio con mis proveedores.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p9" value="2">
                 <label class="form-check-label">
-                No es oficial pero algunos proveedores me otorgan descuentos.
+                    No es oficial pero algunos proveedores me otorgan descuentos.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p9" value="3">
                 <label class="form-check-label">
-                Tengo un convenio de descuentos con algunos proveedores.
+                    Tengo un convenio de descuentos con algunos proveedores.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p9" value="4">
                 <label class="form-check-label">
-                Tengo convenios formales con proveedores que promueven mi plan de crecimiento anual.
+                    Tengo convenios formales con proveedores que promueven mi plan de crecimiento anual.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p9" value="5">
                 <label class="form-check-label">
-                Tengo alianzas formales con proveedores que incluyen descuentos, plan de crecimiento y 30 días o más de crédito.
+                    Tengo alianzas formales con proveedores que incluyen descuentos, plan de crecimiento y 30 días o más
+                    de crédito.
                 </label>
             </div>
             <div class="col-md-1"></div>

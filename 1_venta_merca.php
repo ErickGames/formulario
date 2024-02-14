@@ -25,40 +25,27 @@ session_start();
         <div id="myBar" class="w3-container w3-green w3-center" style="width:0%">0%</div>
     </div>
 
-    <form action="2_recepciones.php" method="POST" class="m-4 bordesito" id="form1">
-
-
     <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.2)">
-
-            <div class="col-md-1"></div>
-            
-            <div class="form-check col-md-2">
-                <label class="form-check-label">
-                    <center>1<br>Capacidad Nula</center>
-                </label>
-            </div>
-            <div class="form-check col-md-2">
-                <label class="form-check-label">
-                    <center>2<br>Capacidad básica</center>
-                </label>
-            </div>
-            <div class="form-check col-md-2">
-                <label class="form-check-label">
-                    <center>3<br>Capacidad mediana</center>
-                </label>
-            </div>
-            <div class="form-check col-md-2">
-                <label class="form-check-label">
-                    <center>4<br>Capacidad alta</center>
-                </label>
-            </div>
-            <div class="form-check col-md-2">
-                <label class="form-check-label">
-                    <center>5<br>Lo mejor del mercado</center>
-                </label>
-            </div>
-            <div class="col-md-1"></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-2 centerrr">
+            <h4>1<br>Capacidad Nula</h4>
         </div>
+        <div class="col-md-2 centerrr">
+            <h4>2<br>Capacidad básica</h4>
+        </div>
+        <div class="col-md-2 centerrr">
+            <h4>3<br>Capacidad mediana</h4>
+        </div>
+        <div class="col-md-2 centerrr">
+            <h4>4<br>Capacidad alta</h4>
+        </div>
+        <div class="col-md-2 centerrr">
+            <h4>5<br>Lo mejor del mercado</h4>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+
+    <form action="2_recepciones.php" method="POST" class="m-4 bordesito" id="form1">
 
         <!-- PREGUNTA 1 -->
         <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
@@ -87,13 +74,14 @@ session_start();
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p1" value="4">
                 <label class="form-check-label">
-                    Tengo un sofware profesional (CRM) para la administración de los posibles pacientes nuevos y los actuales. 
+                    Tengo un sofware profesional (CRM) para la administración de los posibles pacientes nuevos y los
+                    actuales.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p1" value="5">
                 <label class="form-check-label">
-                    Aprovecho al máximo el CRM para la administración de ventas. 
+                    Aprovecho al máximo el CRM para la administración de ventas.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -108,7 +96,7 @@ session_start();
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p2" value="1">
                 <label class="form-check-label">
-                    No me promociono ningún día del año. 
+                    No me promociono ningún día del año.
                 </label>
             </div>
             <div class="form-check col-md-2">
@@ -148,31 +136,31 @@ session_start();
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p3" value="1">
                 <label class="form-check-label">
-                No ofrezco paquetes de servicios.
+                    No ofrezco paquetes de servicios.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p3" value="2">
                 <label class="form-check-label">
-                Ofrezco de 1 a 3 paquetes incluyendo algunos servicios que no son los más vendidos.
+                    Ofrezco de 1 a 3 paquetes incluyendo algunos servicios que no son los más vendidos.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p3" value="3">
                 <label class="form-check-label">
-                Ofrezco paquetes de los servicios que más se mueven.
+                    Ofrezco paquetes de los servicios que más se mueven.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p3" value="4">
                 <label class="form-check-label">
-                Tengo una estrategia planeada para vender más con paquetes atractivos de diferentes precios.
+                    Tengo una estrategia planeada para vender más con paquetes atractivos de diferentes precios.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p3" value="5">
                 <label class="form-check-label">
-                Tengo una estrategia efectiva que ya nos genera más ventas y utilidades.
+                    Tengo una estrategia efectiva que ya nos genera más ventas y utilidades.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -187,31 +175,31 @@ session_start();
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p4" value="1">
                 <label class="form-check-label">
-                No tengo redes sociales.
+                    No tengo redes sociales.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p4" value="2">
                 <label class="form-check-label">
-                Solo tengo una red social y publico de vez en cuando. 
+                    Solo tengo una red social y publico de vez en cuando.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p4" value="3">
                 <label class="form-check-label">
-                Tengo 1-2 redes sociales y publico pocas veces por semana.
+                    Tengo 1-2 redes sociales y publico pocas veces por semana.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p4" value="4">
                 <label class="form-check-label">
-                Tengo 1-3 redes sociales y llevo una buena planeación para publicar en todas. 
+                    Tengo 1-3 redes sociales y llevo una buena planeación para publicar en todas.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p4" value="5">
                 <label class="form-check-label">
-                Tengo varias redes sociales y sé usarlas todas para sacar el máximo provecho.
+                    Tengo varias redes sociales y sé usarlas todas para sacar el máximo provecho.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -226,31 +214,31 @@ session_start();
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p5" value="1">
                 <label class="form-check-label">
-                No tengo una marca definida.
+                    No tengo una marca definida.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p5" value="2">
                 <label class="form-check-label">
-                Se puede considerar mi nombre como una marca básica.
+                    Se puede considerar mi nombre como una marca básica.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p5" value="3">
                 <label class="form-check-label">
-                Mi marca está bien definida pero es poco conocida.
+                    Mi marca está bien definida pero es poco conocida.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p5" value="4">
                 <label class="form-check-label">
-                Tengo una buena marca, muy reconocida pero no se ha explotado para vender más.
+                    Tengo una buena marca, muy reconocida pero no se ha explotado para vender más.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p5" value="5">
                 <label class="form-check-label">
-                Tengo una marca muy reconocida que vende sola sin tener que pagar publicidad.
+                    Tengo una marca muy reconocida que vende sola sin tener que pagar publicidad.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -265,31 +253,32 @@ session_start();
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p6" value="1">
                 <label class="form-check-label">
-                No tengo página web. 
+                    No tengo página web.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p6" value="2">
                 <label class="form-check-label">
-                Tengo un sitio web antiguo con información básica.
+                    Tengo un sitio web antiguo con información básica.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p6" value="3">
                 <label class="form-check-label">
-                Tengo un sitio web sencillo pero con información relevante.
+                    Tengo un sitio web sencillo pero con información relevante.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p6" value="4">
                 <label class="form-check-label">
-                Tengo un sitio web atractivo y que nos funciona muy bien.
+                    Tengo un sitio web atractivo y que nos funciona muy bien.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p6" value="5">
                 <label class="form-check-label">
-                Tengo un sitio web atractivo y amigable que nos funciona para atraer pacientes e incrementar ventas.
+                    Tengo un sitio web atractivo y amigable que nos funciona para atraer pacientes e incrementar
+                    ventas.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -297,38 +286,38 @@ session_start();
         </div>
 
         <!-- PREGUNTA 7 -->
-        <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
             <h4 class="mb-4">Publicidad en medios tradicionales</h4>
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p7" value="1">
                 <label class="form-check-label">
-                No hago publicidad en ningún medio. 
+                    No hago publicidad en ningún medio.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p7" value="2">
                 <label class="form-check-label">
-                Utilizo al menos una forma de publicidad impresa.
+                    Utilizo al menos una forma de publicidad impresa.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p7" value="3">
                 <label class="form-check-label">
-                Hago publicidad impresa variada que me ha funcionado bien.
+                    Hago publicidad impresa variada que me ha funcionado bien.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p7" value="4">
                 <label class="form-check-label">
-                Llevo publicidad impresa y en algún medio masivo como radio.
+                    Llevo publicidad impresa y en algún medio masivo como radio.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p7" value="5">
                 <label class="form-check-label">
-                Hago publicidad impresa y en medios masivos que me ha generado más ventas y rentabilidad.
+                    Hago publicidad impresa y en medios masivos que me ha generado más ventas y rentabilidad.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -343,31 +332,31 @@ session_start();
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p8" value="1">
                 <label class="form-check-label">
-                No tengo beneficios para los clientes frecuentes.
+                    No tengo beneficios para los clientes frecuentes.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p8" value="2">
                 <label class="form-check-label">
-                Ofrezco beneficios ocasionales para clientes frecuentes
+                    Ofrezco beneficios ocasionales para clientes frecuentes
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p8" value="3">
                 <label class="form-check-label">
-                Sí llevo un programa de lealtad sencillo para clientes frecuentes. 
+                    Sí llevo un programa de lealtad sencillo para clientes frecuentes.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p8" value="4">
                 <label class="form-check-label">
-                Tengo un programa de lealtad atractivo que nos ha generado más ventas. 
+                    Tengo un programa de lealtad atractivo que nos ha generado más ventas.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p8" value="5">
                 <label class="form-check-label">
-                Hay un sistema de lealtad automático que la gente usa mucho. Muchos lo aprovechan al máximo.
+                    Hay un sistema de lealtad automático que la gente usa mucho. Muchos lo aprovechan al máximo.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -383,31 +372,31 @@ session_start();
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p9" value="1">
                 <label class="form-check-label">
-                No cuento con especialistas en mercadotecnia. 
+                    No cuento con especialistas en mercadotecnia.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p9" value="2">
                 <label class="form-check-label">
-                Tengo a un encargado interno de mercadotecnia o ventas.
+                    Tengo a un encargado interno de mercadotecnia o ventas.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p9" value="3">
                 <label class="form-check-label">
-                Tengo a un encargado interno de mercadotecnia y a veces cuento con apoyo externo.
+                    Tengo a un encargado interno de mercadotecnia y a veces cuento con apoyo externo.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p9" value="4">
                 <label class="form-check-label">
-                Tengo apoyo externo, experto y efectivo para el área de mercadotecnia y ventas. 
+                    Tengo apoyo externo, experto y efectivo para el área de mercadotecnia y ventas.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s1p9" value="5">
                 <label class="form-check-label">
-                Tengo un experto en mercadotecnia y ventas en el equipo además de ayuda de un experto externo.
+                    Tengo un experto en mercadotecnia y ventas en el equipo además de ayuda de un experto externo.
                 </label>
             </div>
             <div class="col-md-1"></div>

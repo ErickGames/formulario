@@ -37,39 +37,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div id="myBar" class="w3-container w3-green w3-center" style="width:28.6%">29%</div>
     </div>
 
-    <form action="5_farmacia.php" method="POST" class="m-4 bordesito" id="form1">
-
     <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.2)">
-
-            <div class="col-md-1"></div>
-            
-            <div class="form-check col-md-2">
-                <label class="form-check-label">
-                    <center>1<br>Capacidad Nula</center>
-                </label>
-            </div>
-            <div class="form-check col-md-2">
-                <label class="form-check-label">
-                    <center>2<br>Capacidad básica</center>
-                </label>
-            </div>
-            <div class="form-check col-md-2">
-                <label class="form-check-label">
-                    <center>3<br>Capacidad mediana</center>
-                </label>
-            </div>
-            <div class="form-check col-md-2">
-                <label class="form-check-label">
-                    <center>4<br>Capacidad alta</center>
-                </label>
-            </div>
-            <div class="form-check col-md-2">
-                <label class="form-check-label">
-                    <center>5<br>Lo mejor del mercado</center>
-                </label>
-            </div>
-            <div class="col-md-1"></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-2 centerrr">
+            <h4>1<br>Capacidad Nula</h4>
         </div>
+        <div class="col-md-2 centerrr">
+            <h4>2<br>Capacidad básica</h4>
+        </div>
+        <div class="col-md-2 centerrr">
+            <h4>3<br>Capacidad mediana</h4>
+        </div>
+        <div class="col-md-2 centerrr">
+            <h4>4<br>Capacidad alta</h4>
+        </div>
+        <div class="col-md-2 centerrr">
+            <h4>5<br>Lo mejor del mercado</h4>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+
+    <form action="5_farmacia.php" method="POST" class="m-4 bordesito" id="form1">
 
         <!-- PREGUNTA 1 -->
         <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
@@ -80,31 +68,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p1" value="1">
                 <label class="form-check-label">
-                No tengo una visión muy clara a futuro.
+                    No tengo una visión muy clara a futuro.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p1" value="2">
                 <label class="form-check-label">
-                Tengo una visión pero no sé cómo alcanzarla.
+                    Tengo una visión pero no sé cómo alcanzarla.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p1" value="3">
                 <label class="form-check-label">
-                Tengo una visión definida y algunas estrategias pero no son suficientes para alcanzarla.
+                    Tengo una visión definida y algunas estrategias pero no son suficientes para alcanzarla.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p1" value="4">
                 <label class="form-check-label">
-                Tengo una visión y una buena estratregia para alcanzarla pero no llevo un plan de acción.
+                    Tengo una visión y una buena estratregia para alcanzarla pero no llevo un plan de acción.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p1" value="5">
                 <label class="form-check-label">
-                Tengo una visión con un plan de acción claro incluyendo un seguimiento con indicadores.
+                    Tengo una visión con un plan de acción claro incluyendo un seguimiento con indicadores.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -119,31 +107,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p2" value="1">
                 <label class="form-check-label">
-                No conozco a mis competidores.
+                    No conozco a mis competidores.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p2" value="2">
                 <label class="form-check-label">
-                Tengo una ligera idea de quiénes son mis competidores y lo que ofrecen.
+                    Tengo una ligera idea de quiénes son mis competidores y lo que ofrecen.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p2" value="3">
                 <label class="form-check-label">
-                Sé quiénes son mis competidores y he investigado sus servicios y precios.
+                    Sé quiénes son mis competidores y he investigado sus servicios y precios.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p2" value="4">
                 <label class="form-check-label">
-                Sé quiénes son mis competidores y monitoreo con regularidad lo que ofrecen.
+                    Sé quiénes son mis competidores y monitoreo con regularidad lo que ofrecen.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p2" value="5">
                 <label class="form-check-label">
-                Hago un monitoreo periódico de mis competidores y esto se toma en cuenta para definir mi estrategia.
+                    Hago un monitoreo periódico de mis competidores y esto se toma en cuenta para definir mi estrategia.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -159,31 +147,33 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p3" value="1">
                 <label class="form-check-label">
-                No realizo una planeación anual ni un presupuesto.
+                    No realizo una planeación anual ni un presupuesto.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p3" value="2">
                 <label class="form-check-label">
-                Tengo una idea de los objetivos de ventas de manera general.
+                    Tengo una idea de los objetivos de ventas de manera general.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p3" value="3">
                 <label class="form-check-label">
-                Tengo una planeación anual con objetivos de ventas, pero sin objetivos mensuales.
+                    Tengo una planeación anual con objetivos de ventas, pero sin objetivos mensuales.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p3" value="4">
                 <label class="form-check-label">
-                Defino objetivos mensuales de ventas, utilidades y control de gastos, pero no siempre los puedo cumplir.
+                    Defino objetivos mensuales de ventas, utilidades y control de gastos, pero no siempre los puedo
+                    cumplir.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p3" value="5">
                 <label class="form-check-label">
-                Tengo objetivos alcanzables de ventas a los que le doy seguimiento y voy adecuando a lo largo del año.
+                    Tengo objetivos alcanzables de ventas a los que le doy seguimiento y voy adecuando a lo largo del
+                    año.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -198,31 +188,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p4" value="1">
                 <label class="form-check-label">
-                No sé si mi calidad o mis precios son competitivos.
+                    No sé si mi calidad o mis precios son competitivos.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p4" value="2">
                 <label class="form-check-label">
-                Mis servicios y precios están dentro del promedio.
+                    Mis servicios y precios están dentro del promedio.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p4" value="3">
                 <label class="form-check-label">
-                Me considero competitivo ante mis competidores por precio, calidad y/o servicios.
+                    Me considero competitivo ante mis competidores por precio, calidad y/o servicios.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p4" value="4">
                 <label class="form-check-label">
-                Me distingo y sobresalgo ante mis competidores por precio, calidad y/o servicio.
+                    Me distingo y sobresalgo ante mis competidores por precio, calidad y/o servicio.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p4" value="5">
                 <label class="form-check-label">
-                Soy una referencia en el mercado por precio-calidad y los clientes me buscan por eso.
+                    Soy una referencia en el mercado por precio-calidad y los clientes me buscan por eso.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -237,31 +227,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p5" value="1">
                 <label class="form-check-label">
-                No tengo un proceso para gestionar mis servicios.
+                    No tengo un proceso para gestionar mis servicios.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p5" value="2">
                 <label class="form-check-label">
-                Incluyo o elimino servicios de manera ocasional sin pensarlo mucho.
+                    Incluyo o elimino servicios de manera ocasional sin pensarlo mucho.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p5" value="3">
                 <label class="form-check-label">
-                Hago una revisión anual para depurar o crear nuevos servicios.
+                    Hago una revisión anual para depurar o crear nuevos servicios.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p5" value="4">
                 <label class="form-check-label">
-                Hago una evaluación de la rentabilidad de mis servicios para poder generar nuevos.
+                    Hago una evaluación de la rentabilidad de mis servicios para poder generar nuevos.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p5" value="5">
                 <label class="form-check-label">
-                Mantengo mis servicios actualizados según las tendencias del mercado para darle valor al cliente.
+                    Mantengo mis servicios actualizados según las tendencias del mercado para darle valor al cliente.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -276,31 +266,32 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p6" value="1">
                 <label class="form-check-label">
-                No sé cómo calcular el costo ni la rentabilidad de mis servicios.
+                    No sé cómo calcular el costo ni la rentabilidad de mis servicios.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p6" value="2">
                 <label class="form-check-label">
-                Tengo solo una idea del costo y rentabilidad por servicio y producto.
+                    Tengo solo una idea del costo y rentabilidad por servicio y producto.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p6" value="3">
                 <label class="form-check-label">
-                Tengo un costo estimado por servicio y producto pero no tengo clara la rentabilidad.
+                    Tengo un costo estimado por servicio y producto pero no tengo clara la rentabilidad.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p6" value="4">
                 <label class="form-check-label">
-                Tengo una revisión detallada anual de costos, precios y rentabilidad pero no le doy más seguimiento.
+                    Tengo una revisión detallada anual de costos, precios y rentabilidad pero no le doy más seguimiento.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p6" value="5">
                 <label class="form-check-label">
-                Tengo un sistema constante de cálculo y seguimiento de costeo y rentabilidad y ajusto precios cuando es necesario.
+                    Tengo un sistema constante de cálculo y seguimiento de costeo y rentabilidad y ajusto precios cuando
+                    es necesario.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -316,30 +307,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p7" value="1">
                 <label class="form-check-label">
-                Asigno los precios de mis servicios al tanteo.
+                    Asigno los precios de mis servicios al tanteo.
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p7" value="2">
                 <label class="form-check-label">
-                Fijo mis precios solo en base a los competidores.
+                    Fijo mis precios solo en base a los competidores.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p7" value="3">
                 <label class="form-check-label">
-                Fijo los precios en base a mis costos pero no tengo una buena ganancia.
+                    Fijo los precios en base a mis costos pero no tengo una buena ganancia.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p7" value="4">
                 <label class="form-check-label">
-                Fijo mis precios según los insumos, la competencia y la ganancia que quiero.
+                    Fijo mis precios según los insumos, la competencia y la ganancia que quiero.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p7" value="5">
                 <label class="form-check-label">
-                Tengo un plan detallado para fijar precios que se monitorea todo el año para hacer ajustes necesarios.
+                    Tengo un plan detallado para fijar precios que se monitorea todo el año para hacer ajustes
+                    necesarios.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -354,31 +346,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p8" value="1">
                 <label class="form-check-label">
-                No cuento con certificaciones.
+                    No cuento con certificaciones.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p8" value="2">
                 <label class="form-check-label">
-                Tengo al menos una certificación.
+                    Tengo al menos una certificación.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p8" value="3">
                 <label class="form-check-label">
-                Tengo dos certificaciones.
+                    Tengo dos certificaciones.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p8" value="4">
                 <label class="form-check-label">
-                Tengo tres certificaciones.
+                    Tengo tres certificaciones.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p8" value="5">
                 <label class="form-check-label">
-                Tengo más de 3 certificaciones. spolo medicos, n clinica.
+                    Tengo más de 3 certificaciones. spolo medicos, n clinica.
                 </label>
             </div>
             <div class="col-md-1"></div>

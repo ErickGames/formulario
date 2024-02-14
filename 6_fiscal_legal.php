@@ -31,40 +31,28 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div id="myBar" class="w3-container w3-green w3-center" style="width:41.6%">43%</div>
     </div>
 
+    <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.2)">
+        <div class="col-md-1"></div>
+        <div class="col-md-2 centerrr">
+            <h4>1<br>Capacidad Nula</h4>
+        </div>
+        <div class="col-md-2 centerrr">
+            <h4>2<br>Capacidad básica</h4>
+        </div>
+        <div class="col-md-2 centerrr">
+            <h4>3<br>Capacidad mediana</h4>
+        </div>
+        <div class="col-md-2 centerrr">
+            <h4>4<br>Capacidad alta</h4>
+        </div>
+        <div class="col-md-2 centerrr">
+            <h4>5<br>Lo mejor del mercado</h4>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+
     <form action="7_activos.php" method="POST" class="m-4 bordesito" id="form1">
 
-    <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.2)">
-
-            <div class="col-md-1"></div>
-            
-            <div class="form-check col-md-2">
-                <label class="form-check-label">
-                    <center>1<br>Capacidad Nula</center>
-                </label>
-            </div>
-            <div class="form-check col-md-2">
-                <label class="form-check-label">
-                    <center>2<br>Capacidad básica</center>
-                </label>
-            </div>
-            <div class="form-check col-md-2">
-                <label class="form-check-label">
-                    <center>3<br>Capacidad mediana</center>
-                </label>
-            </div>
-            <div class="form-check col-md-2">
-                <label class="form-check-label">
-                    <center>4<br>Capacidad alta</center>
-                </label>
-            </div>
-            <div class="form-check col-md-2">
-                <label class="form-check-label">
-                    <center>5<br>Lo mejor del mercado</center>
-                </label>
-            </div>
-            <div class="col-md-1"></div>
-        </div>
-        
         <!-- PREGUNTA 1 -->
         <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
@@ -74,31 +62,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p1" value="1">
                 <label class="form-check-label">
-                Soy persona física con actividad empresarial y profesional.
+                    Soy persona física con actividad empresarial y profesional.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p1" value="2">
                 <label class="form-check-label">
-                Estoy dado de alta como RESICO.
+                    Estoy dado de alta como RESICO.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p1" value="3">
                 <label class="form-check-label">
-                Tengo una empresa.
+                    Tengo una empresa.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p1" value="4">
                 <label class="form-check-label">
-                Tengo una Sociedad Civil y/o Sociedad Anónima.
+                    Tengo una Sociedad Civil y/o Sociedad Anónima.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p1" value="5">
                 <label class="form-check-label">
-                Tengo una estrategia fiscal perfectamente bien integrada y/o tengo más de dos empresas.
+                    Tengo una estrategia fiscal perfectamente bien integrada y/o tengo más de dos empresas.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -113,31 +101,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p2" value="1">
                 <label class="form-check-label">
-                No llevo una planeación fiscal.
+                    No llevo una planeación fiscal.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p2" value="2">
                 <label class="form-check-label">
-                Llevo mis asuntos fiscales basándome en recomendaciones de colegas.
+                    Llevo mis asuntos fiscales basándome en recomendaciones de colegas.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p2" value="3">
                 <label class="form-check-label">
-                Me he asesorado sobre los asuntos fiscales pero no me queda completamente claro.
+                    Me he asesorado sobre los asuntos fiscales pero no me queda completamente claro.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p2" value="4">
                 <label class="form-check-label">
-                Se cuenta con una planeación fiscal con apoyo externo, se ejecuta y monitorea con recursos internos.
+                    Se cuenta con una planeación fiscal con apoyo externo, se ejecuta y monitorea con recursos internos.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p2" value="5">
                 <label class="form-check-label">
-                Hago mi planeación anual y le doy seguimiento para asegurar su eficiencia.
+                    Hago mi planeación anual y le doy seguimiento para asegurar su eficiencia.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -153,31 +141,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p3" value="1">
                 <label class="form-check-label">
-                No cuento con los permisos de COFEPRIS.
+                    No cuento con los permisos de COFEPRIS.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p3" value="2">
                 <label class="form-check-label">
-                Tengo el permiso de COFEPRIS para mi consultorio pero está desactualizado.
+                    Tengo el permiso de COFEPRIS para mi consultorio pero está desactualizado.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p3" value="3">
                 <label class="form-check-label">
-                Tengo el permiso de COFEPRIS actualizado para mi consultorio y/o farmacia.
+                    Tengo el permiso de COFEPRIS actualizado para mi consultorio y/o farmacia.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p3" value="4">
                 <label class="form-check-label">
-                Tengo el permiso de salubridad para mi consultorio, farmacia y para la publicidad.
+                    Tengo el permiso de salubridad para mi consultorio, farmacia y para la publicidad.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p3" value="5">
                 <label class="form-check-label">
-                Tengo todos los permisos necesarios y los actualizo constantemente.
+                    Tengo todos los permisos necesarios y los actualizo constantemente.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -192,31 +180,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p4" value="1">
                 <label class="form-check-label">
-                No cuento con certificaciones.
+                    No cuento con certificaciones.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p4" value="2">
                 <label class="form-check-label">
-                Tengo al menos una certificación.
+                    Tengo al menos una certificación.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p4" value="3">
                 <label class="form-check-label">
-                Tengo dos certificaciones.
+                    Tengo dos certificaciones.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p4" value="4">
                 <label class="form-check-label">
-                Tengo tres certificaciones.
+                    Tengo tres certificaciones.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p4" value="5">
                 <label class="form-check-label">
-                Tengo más de 3 certificaciones.
+                    Tengo más de 3 certificaciones.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -231,31 +219,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p5" value="1">
                 <label class="form-check-label">
-                No cuento con sistema de facturación.
+                    No cuento con sistema de facturación.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p5" value="2">
                 <label class="form-check-label">
-                Hago mis facturas yo mismo directamente en el SAT.
+                    Hago mis facturas yo mismo directamente en el SAT.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p5" value="3">
                 <label class="form-check-label">
-                Tengo una persona que realiza mis facturas.
+                    Tengo una persona que realiza mis facturas.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p5" value="4">
                 <label class="form-check-label">
-                Tengo un sistema que automatiza la realización de las facturas.
+                    Tengo un sistema que automatiza la realización de las facturas.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p5" value="5">
                 <label class="form-check-label">
-                Tengo un programa especial para facturar que se integra con otros de mis programas.
+                    Tengo un programa especial para facturar que se integra con otros de mis programas.
                 </label>
             </div>
             <div class="col-md-1"></div>

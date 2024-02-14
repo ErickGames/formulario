@@ -42,40 +42,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div id="myBar" class="w3-container w3-green w3-center" style="width:75.4%">77%</div>
     </div>
 
-    <form action="10_proyecto_personal.php" method="POST" class="m-4 bordesito" id="form1">
-
     <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.2)">
-
-            <div class="col-md-1"></div>
-            
-            <div class="form-check col-md-2">
-                <label class="form-check-label">
-                    <center>1<br>Capacidad Nula</center>
-                </label>
-            </div>
-            <div class="form-check col-md-2">
-                <label class="form-check-label">
-                    <center>2<br>Capacidad básica</center>
-                </label>
-            </div>
-            <div class="form-check col-md-2">
-                <label class="form-check-label">
-                    <center>3<br>Capacidad mediana</center>
-                </label>
-            </div>
-            <div class="form-check col-md-2">
-                <label class="form-check-label">
-                    <center>4<br>Capacidad alta</center>
-                </label>
-            </div>
-            <div class="form-check col-md-2">
-                <label class="form-check-label">
-                    <center>5<br>Lo mejor del mercado</center>
-                </label>
-            </div>
-            <div class="col-md-1"></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-2 centerrr">
+            <h4>1<br>Capacidad Nula</h4>
         </div>
-        
+        <div class="col-md-2 centerrr">
+            <h4>2<br>Capacidad básica</h4>
+        </div>
+        <div class="col-md-2 centerrr">
+            <h4>3<br>Capacidad mediana</h4>
+        </div>
+        <div class="col-md-2 centerrr">
+            <h4>4<br>Capacidad alta</h4>
+        </div>
+        <div class="col-md-2 centerrr">
+            <h4>5<br>Lo mejor del mercado</h4>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+
+    <form action="10_proyecto_personal.php" method="POST" class="m-4 bordesito" id="form1">
         <!-- PREGUNTA 1 -->
         <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
@@ -85,31 +72,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s9p1" value="1">
                 <label class="form-check-label">
-                No cuento con área de estacionamiento.
+                    No cuento con área de estacionamiento.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s9p1" value="2">
                 <label class="form-check-label">
-                Tengo una pequeña área compartida con otros negocios.
+                    Tengo una pequeña área compartida con otros negocios.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s9p1" value="3">
                 <label class="form-check-label">
-                Tengo un área pequeña pero exclusiva para mis pacientes.
+                    Tengo un área pequeña pero exclusiva para mis pacientes.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s9p1" value="4">
                 <label class="form-check-label">
-                Tengo un área amplia para mis pacientes.
+                    Tengo un área amplia para mis pacientes.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s9p1" value="5">
                 <label class="form-check-label">
-                Tengo un estacionamiento amplio y cómodo.
+                    Tengo un estacionamiento amplio y cómodo.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -124,31 +111,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s9p2" value="1">
                 <label class="form-check-label">
-                No tengo consultorio.
+                    No tengo consultorio.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s9p2" value="2">
                 <label class="form-check-label">
-                Tengo solo un consultorio.
+                    Tengo solo un consultorio.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s9p2" value="3">
                 <label class="form-check-label">
-                Tengo dos consultorios.
+                    Tengo dos consultorios.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s9p2" value="4">
                 <label class="form-check-label">
-                Tengo 4 consultorios. Y URGENCIAS +
+                    Tengo 4 consultorios. Y URGENCIAS +
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s9p2" value="5">
                 <label class="form-check-label">
-                Atiendo a mis clientes en un hospital.
+                    Atiendo a mis clientes en un hospital.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -164,31 +151,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s9p3" value="1">
                 <label class="form-check-label">
-                No tengo cubículos especiales para los servicios.
+                    No tengo cubículos especiales para los servicios.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s9p3" value="2">
                 <label class="form-check-label">
-                Cuento con un cubículo especial para ciertos servicios.
+                    Cuento con un cubículo especial para ciertos servicios.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s9p3" value="3">
                 <label class="form-check-label">
-                Cuento con dos cubículos para distintos servicios.
+                    Cuento con dos cubículos para distintos servicios.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s9p3" value="4">
                 <label class="form-check-label">
-                Cuento con tres cubículos para diferentes servicios.
+                    Cuento con tres cubículos para diferentes servicios.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s9p3" value="5">
                 <label class="form-check-label">
-                Cuento con 4 o más cubículos para cada servicio que ofrezco.
+                    Cuento con 4 o más cubículos para cada servicio que ofrezco.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -203,31 +190,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s9p4" value="1">
                 <label class="form-check-label">
-                Desconozco cuál es el % de uso de mis instalaciones.
+                    Desconozco cuál es el % de uso de mis instalaciones.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s9p4" value="2">
                 <label class="form-check-label">
-                Mis instalaciones se utilizan de un 20% a un 40%.
+                    Mis instalaciones se utilizan de un 20% a un 40%.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s9p4" value="3">
                 <label class="form-check-label">
-                Mis instalaciones se utilizan en promedio del 40% al 60%.
+                    Mis instalaciones se utilizan en promedio del 40% al 60%.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s9p4" value="4">
                 <label class="form-check-label">
-                Mis instalaciones se utilizan aprox. del 60% al 80%.
+                    Mis instalaciones se utilizan aprox. del 60% al 80%.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s9p4" value="5">
                 <label class="form-check-label">
-                Mis instalaciones se aprovechan muy bien, del 80% al 100% de su capacidad.
+                    Mis instalaciones se aprovechan muy bien, del 80% al 100% de su capacidad.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -242,31 +229,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s9p5" value="1">
                 <label class="form-check-label">
-                Mis instalaciones son antiguas y no se encuentran en las mejores condiciones.
+                    Mis instalaciones son antiguas y no se encuentran en las mejores condiciones.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s9p5" value="2">
                 <label class="form-check-label">
-                Mis instalaciones son antiguas pero cumplen con lo necesario.
+                    Mis instalaciones son antiguas pero cumplen con lo necesario.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s9p5" value="3">
                 <label class="form-check-label">
-                Mis instalaciones tenían áreas de oportunidad por lo que estoy remodelando.
+                    Mis instalaciones tenían áreas de oportunidad por lo que estoy remodelando.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s9p5" value="4">
                 <label class="form-check-label">
-                Mis instalaciones son nuevas pero tienen áreas de oportunidad.
+                    Mis instalaciones son nuevas pero tienen áreas de oportunidad.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s9p5" value="5">
                 <label class="form-check-label">
-                Mis instalaciones son nuevas y cumplen con todo lo que necesito.
+                    Mis instalaciones son nuevas y cumplen con todo lo que necesito.
                 </label>
             </div>
             <div class="col-md-1"></div>

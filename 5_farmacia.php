@@ -35,40 +35,28 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div id="myBar" class="w3-container w3-green w3-center" style="width:37.7%">39%</div>
     </div>
 
+    <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.2)">
+        <div class="col-md-1"></div>
+        <div class="col-md-2 centerrr">
+            <h4>1<br>Capacidad Nula</h4>
+        </div>
+        <div class="col-md-2 centerrr">
+            <h4>2<br>Capacidad básica</h4>
+        </div>
+        <div class="col-md-2 centerrr">
+            <h4>3<br>Capacidad mediana</h4>
+        </div>
+        <div class="col-md-2 centerrr">
+            <h4>4<br>Capacidad alta</h4>
+        </div>
+        <div class="col-md-2 centerrr">
+            <h4>5<br>Lo mejor del mercado</h4>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+
     <form action="6_fiscal_legal.php" method="POST" class="m-4 bordesito" id="form1">
 
-    <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.2)">
-
-            <div class="col-md-1"></div>
-            
-            <div class="form-check col-md-2">
-                <label class="form-check-label">
-                    <center>1<br>Capacidad Nula</center>
-                </label>
-            </div>
-            <div class="form-check col-md-2">
-                <label class="form-check-label">
-                    <center>2<br>Capacidad básica</center>
-                </label>
-            </div>
-            <div class="form-check col-md-2">
-                <label class="form-check-label">
-                    <center>3<br>Capacidad mediana</center>
-                </label>
-            </div>
-            <div class="form-check col-md-2">
-                <label class="form-check-label">
-                    <center>4<br>Capacidad alta</center>
-                </label>
-            </div>
-            <div class="form-check col-md-2">
-                <label class="form-check-label">
-                    <center>5<br>Lo mejor del mercado</center>
-                </label>
-            </div>
-            <div class="col-md-1"></div>
-        </div>
-        
         <!-- PREGUNTA 1 -->
         <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
@@ -78,31 +66,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s5p1" value="1">
                 <label class="form-check-label">
-                No tengo ningún producto a la venta.
+                    No tengo ningún producto a la venta.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s5p1" value="2">
                 <label class="form-check-label">
-                No cuento con farmacia pero tengo algunos productos en venta en el mostrador.
+                    No cuento con farmacia pero tengo algunos productos en venta en el mostrador.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s5p1" value="3">
                 <label class="form-check-label">
-                Tengo algunos medicamentos en venta pero no cuento con el permiso oficial.
+                    Tengo algunos medicamentos en venta pero no cuento con el permiso oficial.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s5p1" value="4">
                 <label class="form-check-label">
-                Tengo una farmacia pero no tengo su papelería en orden.
+                    Tengo una farmacia pero no tengo su papelería en orden.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s5p1" value="5">
                 <label class="form-check-label">
-                Tengo una farmacia registrada, con PNO controlados.
+                    Tengo una farmacia registrada, con PNO controlados.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -117,31 +105,33 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s5p2" value="1">
                 <label class="form-check-label">
-                No tengo una administración en mi farmacia.
+                    No tengo una administración en mi farmacia.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s5p2" value="2">
                 <label class="form-check-label">
-                Llevo una administración básica de la farmacia y a veces tengo apoyo en el mostrador.
+                    Llevo una administración básica de la farmacia y a veces tengo apoyo en el mostrador.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s5p2" value="3">
                 <label class="form-check-label">
-                Tengo una persona dedicada a la farmacia que registra las compras, ventas e inventarios.
+                    Tengo una persona dedicada a la farmacia que registra las compras, ventas e inventarios.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s5p2" value="4">
                 <label class="form-check-label">
-                Tengo un sistema especial manejado por una persona para administrar las ventas, compras e inventarios.
+                    Tengo un sistema especial manejado por una persona para administrar las ventas, compras e
+                    inventarios.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s5p2" value="5">
                 <label class="form-check-label">
-                Tengo personal de apoyo con herramientas dedicadas a maximizar las ventas y evitar mermas/descuadres.
+                    Tengo personal de apoyo con herramientas dedicadas a maximizar las ventas y evitar
+                    mermas/descuadres.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -157,31 +147,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s5p3" value="1">
                 <label class="form-check-label">
-                No llevo un control de inventarios y se me acaban algunos productos sin percatarme.
+                    No llevo un control de inventarios y se me acaban algunos productos sin percatarme.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s5p3" value="2">
                 <label class="form-check-label">
-                Trato de controlar el inventario pero aún así hay productos que se agotan frecuentemente.
+                    Trato de controlar el inventario pero aún así hay productos que se agotan frecuentemente.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s5p3" value="3">
                 <label class="form-check-label">
-                Monitoreo periódicamente el inventario en Excel pero aún tiene áreas de oportunidad.
+                    Monitoreo periódicamente el inventario en Excel pero aún tiene áreas de oportunidad.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s5p3" value="4">
                 <label class="form-check-label">
-                Administro el inventario con un sistema especial de monitoreo para tratar de evitar el desabasto.
+                    Administro el inventario con un sistema especial de monitoreo para tratar de evitar el desabasto.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s5p3" value="5">
                 <label class="form-check-label">
-                Monitoreo el inventario para realizar compras automatizadas antes de que se agoten los productos.
+                    Monitoreo el inventario para realizar compras automatizadas antes de que se agoten los productos.
                 </label>
             </div>
             <div class="col-md-1"></div>
