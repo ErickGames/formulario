@@ -84,31 +84,31 @@ if ($_SESSION['respuesta_s1p2'] == '4' || $_SESSION['respuesta_s1p2'] == '5') {
     $hayFortalezas1 = true;
 }
 if ($_SESSION['respuesta_s1p3'] == '4' || $_SESSION['respuesta_s1p3'] == '5') {
-    $bodyContentFortalezas1 .= utf8_decode('- Publicidad en medios tradicionales: Se cuenta con una comunicación en medios tradicionales que permiten mantener vigencia con ciertos segmentos de población.' . "\n");
-    $hayFortalezas1 = true;
-}
-if ($_SESSION['respuesta_s1p4'] == '4' || $_SESSION['respuesta_s1p4'] == '5') {
     $bodyContentFortalezas1 .= utf8_decode('- Configuración y venta de paquetes: Se captura una venta mayor por paciente.' . "\n");
     $hayFortalezas1 = true;
 }
+if ($_SESSION['respuesta_s1p4'] == '4' || $_SESSION['respuesta_s1p4'] == '5') {
+    $bodyContentFortalezas1 .= utf8_decode('- Redes sociales: Se mantiene en la conversación y se posiciona en la mente del consumidor.' . "\n");
+    $hayFortalezas1 = true;
+}
 if ($_SESSION['respuesta_s1p5'] == '4' || $_SESSION['respuesta_s1p5'] == '5') {
-    $bodyContentFortalezas1 .= utf8_decode('- Plan de Lealtad e incentivos con pacientes frecuentes: Se cuenta con herramientas formales para el fortalecimiento de la lealtad de cliente frecuentes.' . "\n");
+    $bodyContentFortalezas1 .= utf8_decode('- Poder de marca: El mercado tiene presente al doctor y a su clínica y en momentos de necesidad lo recuerdan para agendar cita o recomendar.' . "\n");
     $hayFortalezas1 = true;
 }
 if ($_SESSION['respuesta_s1p6'] == '4' || $_SESSION['respuesta_s1p6'] == '5') {
-    $bodyContentFortalezas1 .= utf8_decode('- Redes sociales: Se mantiene en la conversación.' . "\n");
+    $bodyContentFortalezas1 .= utf8_decode('- Página WEB: Se cuenta con elementos de institucionalidad que transmiten confianza y formalidad.' . "\n");
     $hayFortalezas1 = true;
 }
 if ($_SESSION['respuesta_s1p7'] == '4' || $_SESSION['respuesta_s1p7'] == '5') {
-    $bodyContentFortalezas1 .= utf8_decode('- Poder de marca: El mercado tiene presente al doctor y a su clínica y en momentos de necesidad lo recuerdan para agendar cita.' . "\n");
+    $bodyContentFortalezas1 .= utf8_decode('- Publicidad en medios tradicionales: Se cuenta con una comunicación en medios tradicionales que permiten mantener vigencia con ciertos segmentos del mercado.' . "\n");
     $hayFortalezas1 = true;
 }
 if ($_SESSION['respuesta_s1p8'] == '4' || $_SESSION['respuesta_s1p8'] == '5') {
-    $bodyContentFortalezas1 .= utf8_decode('- Página WEB del negocio: Se cuenta con elementos de institucionalidad que transmiten confianza y formalidad.' . "\n");
+    $bodyContentFortalezas1 .= utf8_decode('- PPlan de Lealtad e incentivos con pacientes frecuentes: Se cuenta con herramientas formales para el fortalecimiento de la lealtad de clientes frecuentes.' . "\n");
     $hayFortalezas1 = true;
 }
 if ($_SESSION['respuesta_s1p9'] == '4' || $_SESSION['respuesta_s1p9'] == '5') {
-    $bodyContentFortalezas1 .= utf8_decode('- Soporte para comunicación y mercadotecnia: Se desarrolla de manera profesional la comunicación y mercadotecnia alrededor de la marca.' . "\n");
+    $bodyContentFortalezas1 .= utf8_decode('- Soporte para comunicación y mercadotecnia (Agencia o profesionales): Se desarrolla de manera profesional la comunicación y mercadotecnia alrededor de la marca.' . "\n");
     $hayFortalezas1 = true;
 }
 // Verifica si hay alguna fortaleza
@@ -125,35 +125,35 @@ if ($_SESSION['respuesta_s1p1'] == '1' || $_SESSION['respuesta_s1p1'] == '2') {
     $hayDebilidades1 = true;
 }
 if ($_SESSION['respuesta_s1p2'] == '1' || $_SESSION['respuesta_s1p2'] == '2') {
-    $bodyContentDebilidades1 .= utf8_decode('- Actividad promocional: No se aprovechan fechas o eventos importantes para atraer a mas clientes.' . "\n");
+    $bodyContentDebilidades1 .= utf8_decode('- Frecuencia de actividad promocional: No se aprovechan fechas o eventos importantes para atraer a más clientes.' . "\n");
     $hayDebilidades1 = true;
 }
 if ($_SESSION['respuesta_s1p3'] == '1' || $_SESSION['respuesta_s1p3'] == '2') {
-    $bodyContentDebilidades1 .= utf8_decode('- Publicidad en medios tradicionales: No se llega a los posibles clientes por diferentes medios tradicionales de comunicación.' . "\n");
+    $bodyContentDebilidades1 .= utf8_decode('- Configuración y venta de paquetes: No se impulsa un ticket de venta mayor. (Que cada paciente adquiera más productos o servicios).' . "\n");
     $hayDebilidades1 = true;
 }
 if ($_SESSION['respuesta_s1p4'] == '1' || $_SESSION['respuesta_s1p4'] == '2') {
-    $bodyContentDebilidades1 .= utf8_decode('- Configuración y venta de paquetes: No se impulsa un ticket de venta mayor (Que cada paciente adquiera más productos o servicios).' . "\n");
+    $bodyContentDebilidades1 .= utf8_decode('- Redes Sociales: No se está presente en la conversación de redes sociales perdiendo oportunidad de posicionamiento.' . "\n");
     $hayDebilidades1 = true;
 }
 if ($_SESSION['respuesta_s1p5'] == '1' || $_SESSION['respuesta_s1p5'] == '2') {
-    $bodyContentDebilidades1 .= utf8_decode('- Plan de Lealtad e incentivos con pacientes frecuentes: No se cuenta con una herramienta formal para la generación de lealtad de clientes frecuentes.' . "\n");
+    $bodyContentDebilidades1 .= utf8_decode('- Poder de marca: No existe reconocimiento de marca y el mercado no tiene presente al doctor ni a su clínica.' . "\n");
     $hayDebilidades1 = true;
 }
 if ($_SESSION['respuesta_s1p6'] == '1' || $_SESSION['respuesta_s1p6'] == '2') {
-    $bodyContentDebilidades1 .= utf8_decode('- Redes sociales: No se está presente en la conversación de redes sociales perdiendo oportunidad de posicionamiento.' . "\n");
+    $bodyContentDebilidades1 .= utf8_decode('- Página WEB del negocio: No se tiene la institucionalidad suficiente para impulsar el posicionamiento de la marca.' . "\n");
     $hayDebilidades1 = true;
 }
 if ($_SESSION['respuesta_s1p7'] == '1' || $_SESSION['respuesta_s1p7'] == '2') {
-    $bodyContentDebilidades1 .= utf8_decode('- Poder de marca: No existe reconocimiento de marca y el mercado tienen presente al doctor ni a su clínica.' . "\n");
+    $bodyContentDebilidades1 .= utf8_decode('- Publicidad en medios tradicionales: No se llega a los posibles clientes por diferentes medios tradicionales de comunicación.' . "\n");
     $hayDebilidades1 = true;
 }
 if ($_SESSION['respuesta_s1p8'] == '1' || $_SESSION['respuesta_s1p8'] == '2') {
-    $bodyContentDebilidades1 .= utf8_decode('- Página WEB del negocio: No se tiene la institucionalidad suficiente para impulsar la institucionalidad y marca.' . "\n");
+    $bodyContentDebilidades1 .= utf8_decode('- Plan de Lealtad e incentivos con pacientes frecuentes: No se cuenta con una herramienta formal para la generación de lealtad de clientes frecuentes.' . "\n");
     $hayDebilidades1 = true;
 }
 if ($_SESSION['respuesta_s1p9'] == '1' || $_SESSION['respuesta_s1p9'] == '2') {
-    $bodyContentDebilidades1 .= utf8_decode('- Soporte para comunicación y mercadotecnia: No se desarrolla de manera profesional la comunicación y mercadotecnia alrededor de la marca.' . "\n");
+    $bodyContentDebilidades1 .= utf8_decode('- Soporte para comunicación y mercadotecnia (Agencia o profesionales): No se desarrolla de manera profesional la comunicación y mercadotecnia alrededor de la marca.' . "\n");
     $hayDebilidades1 = true;
 }
 // Verifica si hay alguna debilidad
@@ -173,11 +173,11 @@ if ($_SESSION['respuesta_s2p1'] == '4' || $_SESSION['respuesta_s2p1'] == '5') {
     $hayFortalezas2 = true;
 }
 if ($_SESSION['respuesta_s2p2'] == '4' || $_SESSION['respuesta_s2p2'] == '5') {
-    $bodyContentFortalezas2 .= utf8_decode('- Area de recepción: Recepción cómoda y amplia que mejora la experiencia del paciente.' . "\n");
+    $bodyContentFortalezas2 .= utf8_decode('- Área de recepción: Un adecuado espacio de recepción permite una estancia mas agradable y en general una mejor experiencia del paciente.' . "\n");
     $hayFortalezas2 = true;
 }
 if ($_SESSION['respuesta_s2p3'] == '4' || $_SESSION['respuesta_s2p3'] == '5') {
-    $bodyContentFortalezas2 .= utf8_decode('- Persona dedicada a recepción: Atención a cada paciente que asiste a la clínica.' . "\n");
+    $bodyContentFortalezas2 .= utf8_decode('- Persona dedicada a recepción: Atención personalizada a cada paciente que asiste a la clínica.' . "\n");
     $hayFortalezas2 = true;
 }
 if ($_SESSION['respuesta_s2p4'] == '4' || $_SESSION['respuesta_s2p4'] == '5') {
@@ -194,19 +194,19 @@ $pdf->chapterSub('DEBILIDADES:');
 $bodyContentDebilidades2 = '';
 
 if ($_SESSION['respuesta_s2p1'] == '1' || $_SESSION['respuesta_s2p1'] == '2') {
-    $bodyContentDebilidades2 .= utf8_decode('- Sistema para admón. de citas: Riesgo de perder visibilidad de citas, empalmar horarios y no aprovechar horarios disponibles.' . "\n");
+    $bodyContentDebilidades2 .= utf8_decode('- Sistema para admón. de citas: Riesgo de perder visibilidad de citas, empalmar pacientes y no aprovechar horarios disponibles.' . "\n");
     $hayDebilidades2 = true;
 }
 if ($_SESSION['respuesta_s2p2'] == '1' || $_SESSION['respuesta_s2p2'] == '2') {
-    $bodyContentDebilidades2 .= utf8_decode('- Area de recepción: Perdida de pacientes que no encuentran un espacio cómodo a su llegada.' . "\n");
+    $bodyContentDebilidades2 .= utf8_decode('- Area de recepción: La falta de espacio para una recepción cómoda puede ahuyentar la asistencia de las personas o hacer su estancia menos agradable.' . "\n");
     $hayDebilidades2 = true;
 }
 if ($_SESSION['respuesta_s2p3'] == '1' || $_SESSION['respuesta_s2p3'] == '2') {
-    $bodyContentDebilidades2 .= utf8_decode('- Persona dedicada a recepción: Perdida de pacientes que no son bien recibidos y atendidos.' . "\n");
+    $bodyContentDebilidades2 .= utf8_decode('- Persona dedicada a recepción: Pérdida de pacientes que no son bien recibidos y/o atendidos.' . "\n");
     $hayDebilidades2 = true;
 }
 if ($_SESSION['respuesta_s2p4'] == '1' || $_SESSION['respuesta_s2p4'] == '2') {
-    $bodyContentDebilidades2 .= utf8_decode('- Administración de expedientes: Perdida de historial de los pacientes y retrabajo en su registro y seguimiento.' . "\n");
+    $bodyContentDebilidades2 .= utf8_decode('- Administración de expedientes: Pérdida de historial de los pacientes y retardo en su registro y seguimiento.' . "\n");
     $hayDebilidades2 = true;
 }
 // Verifica si hay alguna debilidad
@@ -242,7 +242,7 @@ if ($_SESSION['respuesta_s3p5'] == '4' || $_SESSION['respuesta_s3p5'] == '5') {
     $hayFortalezas3 = true;
 }
 if ($_SESSION['respuesta_s3p6'] == '4' || $_SESSION['respuesta_s3p6'] == '5') {
-    $bodyContentFortalezas3 .= utf8_decode('- Proveedores y cuentas por cobrar: Visibilidad, control y cumplimiento de compromisos de pago por proveedor.' . "\n");
+    $bodyContentFortalezas3 .= utf8_decode('- Proveedores y cuentas por cobrar: Visibilidad, control y cumplimiento de cuentas por pagar manteniendo la buena relación con los proveedores.' . "\n");
     $hayFortalezas3 = true;
 }
 if ($_SESSION['respuesta_s3p7'] == '4' || $_SESSION['respuesta_s3p7'] == '5') {
@@ -254,7 +254,7 @@ if ($_SESSION['respuesta_s3p8'] == '4' || $_SESSION['respuesta_s3p8'] == '5') {
     $hayFortalezas3 = true;
 }
 if ($_SESSION['respuesta_s3p9'] == '4' || $_SESSION['respuesta_s3p9'] == '5') {
-    $bodyContentFortalezas3 .= utf8_decode('- Negociación y alianzas con proveedores: Las alianzas con proveedores permiten aprovechar mejores precios, descuentos y servicio.' . "\n");
+    $bodyContentFortalezas3 .= utf8_decode('- Alianzas con proveedores: Las alianzas con proveedores permiten aprovechar mejores precios, descuentos y servicio.' . "\n");
     $hayFortalezas3 = true;
 }
 // Verifica si hay alguna fortaleza
@@ -275,7 +275,7 @@ if ($_SESSION['respuesta_s3p2'] == '1' || $_SESSION['respuesta_s3p2'] == '2') {
     $hayDebilidades3 = true;
 }
 if ($_SESSION['respuesta_s3p3'] == '1' || $_SESSION['respuesta_s3p3'] == '2') {
-    $bodyContentDebilidades3 .= utf8_decode('- Generación de utilidades: Sin claridad de las utilidades para reinvertir.' . "\n");
+    $bodyContentDebilidades3 .= utf8_decode('- Generación de utilidades: Se desaprovecha la posibilidad de reinvertir por falta de claridad en las utilidades.' . "\n");
     $hayDebilidades3 = true;
 }
 if ($_SESSION['respuesta_s3p4'] == '1' || $_SESSION['respuesta_s3p4'] == '2') {
@@ -283,11 +283,11 @@ if ($_SESSION['respuesta_s3p4'] == '1' || $_SESSION['respuesta_s3p4'] == '2') {
     $hayDebilidades3 = true;
 }
 if ($_SESSION['respuesta_s3p5'] == '1' || $_SESSION['respuesta_s3p5'] == '2') {
-    $bodyContentDebilidades3 .= utf8_decode('- Clientes y cuentas por cobrar: Posible perdida de ingresos por no tener control de saldos por cobrar a clientes.' . "\n");
+    $bodyContentDebilidades3 .= utf8_decode('- Clientes y cuentas por cobrar: Posible pérdida de ingresos por no tener control de cuentas por cobrar de los pacientes.' . "\n");
     $hayDebilidades3 = true;
 }
 if ($_SESSION['respuesta_s3p6'] == '1' || $_SESSION['respuesta_s3p6'] == '2') {
-    $bodyContentDebilidades3 .= utf8_decode('- Proveedores y cuentas por cobrar: Falta de control sobre compromisos con proveedores que puede ocasionar la suspensión de productos y servicios por falta de pago.' . "\n");
+    $bodyContentDebilidades3 .= utf8_decode('- Proveedores y cuentas por cobrar: Falta de control sobre pagos con proveedores que puede ocasionar la suspensión de productos y servicios por falta de pago.' . "\n");
     $hayDebilidades3 = true;
 }
 if ($_SESSION['respuesta_s3p7'] == '1' || $_SESSION['respuesta_s3p7'] == '2') {
@@ -295,11 +295,11 @@ if ($_SESSION['respuesta_s3p7'] == '1' || $_SESSION['respuesta_s3p7'] == '2') {
     $hayDebilidades3 = true;
 }
 if ($_SESSION['respuesta_s3p8'] == '1' || $_SESSION['respuesta_s3p8'] == '2') {
-    $bodyContentDebilidades3 .= utf8_decode('- Soporte de un contador interno/externo: No se cuenta con apoyo profesional permanente en la contabilidad y se corre riesgo de caer en incumplimientos de la autoridad.' . "\n");
+    $bodyContentDebilidades3 .= utf8_decode('- Soporte de un contador interno/externo: No se cuenta con apoyo profesional en la contabilidad y se corre riesgo de caer en incumplimientos de la autoridad.' . "\n");
     $hayDebilidades3 = true;
 }
 if ($_SESSION['respuesta_s3p9'] == '1' || $_SESSION['respuesta_s3p9'] == '2') {
-    $bodyContentDebilidades3 .= utf8_decode('- Negociación y alianzas con proveedores: Al no existir alianzas fuertes con proveedores se deja de aprovechar el acceso a descuentos y mejores precios o servicios.' . "\n");
+    $bodyContentDebilidades3 .= utf8_decode('- Negociación y alianzas con proveedores: Al no existir alianzas fuertes con proveedores se deja de aprovechar el acceso a descuentos y mejores precios o servicios.   ' . "\n");
     $hayDebilidades3 = true;
 }
 // Verifica si hay alguna debilidad
@@ -396,7 +396,7 @@ if ($_SESSION['respuesta_s5p1'] == '4' || $_SESSION['respuesta_s5p1'] == '5') {
     $hayFortalezas5 = true;
 }
 if ($_SESSION['respuesta_s5p2'] == '4' || $_SESSION['respuesta_s5p2'] == '5') {
-    $bodyContentFortalezas5 .= utf8_decode('- Administración de Farmacia: Lo que se tiene de farmacia esta bien administrado.' . "\n");
+    $bodyContentFortalezas5 .= utf8_decode('- Administración de Farmacia: Las actividades de farmacia están bien administradas y permite ser eficientes.' . "\n");
     $hayFortalezas5 = true;
 }
 if ($_SESSION['respuesta_s5p3'] == '4' || $_SESSION['respuesta_s5p3'] == '5') {
@@ -417,7 +417,7 @@ if ($_SESSION['respuesta_s5p1'] == '1' || $_SESSION['respuesta_s5p1'] == '2') {
     $hayDebilidades5 = true;
 }
 if ($_SESSION['respuesta_s5p2'] == '1' || $_SESSION['respuesta_s5p2'] == '2') {
-    $bodyContentDebilidades5 .= utf8_decode('- Administración de Farmacia: No se tiene un control sobre actividades de farmacia.' . "\n");
+    $bodyContentDebilidades5 .= utf8_decode('- Administración de Farmacia: No se tiene un control sobre actividades de farmacia, generando perdida de dinero.' . "\n");
     $hayDebilidades5 = true;
 }
 if ($_SESSION['respuesta_s5p3'] == '1' || $_SESSION['respuesta_s5p3'] == '2') {
@@ -437,7 +437,7 @@ $pdf->chapterSub('FORTALEZAS:');
 $bodyContentFortalezas6 = '';
 
 if ($_SESSION['respuesta_s6p1'] == '4' || $_SESSION['respuesta_s6p1'] == '5') {
-    $bodyContentFortalezas6 .= utf8_decode('- Constitución de empresas: La constitución formal de la empresa permite generar beneficios fiscales y de otros tipos.' . "\n");
+    $bodyContentFortalezas6 .= utf8_decode('- Constitución de empresas: La constitución formal de la empresa permite generar beneficios fiscales y tranquilidad patrimonial.' . "\n");
     $hayFortalezas6 = true;
 }
 if ($_SESSION['respuesta_s6p2'] == '4' || $_SESSION['respuesta_s6p2'] == '5') {
@@ -449,11 +449,11 @@ if ($_SESSION['respuesta_s6p3'] == '4' || $_SESSION['respuesta_s6p3'] == '5') {
     $hayFortalezas6 = true;
 }
 if ($_SESSION['respuesta_s6p4'] == '4' || $_SESSION['respuesta_s6p4'] == '5') {
-    $bodyContentFortalezas6 .= utf8_decode('- Certificaciones y otros permisos: Contar con certificaciones y permisos varios da formalidad y certeza al negocio.' . "\n");
+    $bodyContentFortalezas6 .= utf8_decode('- Certificaciones: Contar con certificaciones y permisos varios da formalidad y certeza al negocio. Incrementa la confianza y el valor de los clientes.' . "\n");
     $hayFortalezas6 = true;
 }
 if ($_SESSION['respuesta_s6p5'] == '4' || $_SESSION['respuesta_s6p5'] == '5') {
-    $bodyContentFortalezas6 .= utf8_decode('- Sistema de facturación: El contar con un sistema de facturación permite  un mejor uso del tiempo y la integración de información con otras herramientas de la clínica.' . "\n");
+    $bodyContentFortalezas6 .= utf8_decode('- Sistema de facturación: El contar con un sistema de facturación permite un mejor uso del tiempo y la integración de información con otras herramientas de la clínica.' . "\n");
     $hayFortalezas6 = true;
 }
 // Verifica si hay alguna fortaleza
@@ -466,7 +466,7 @@ $pdf->chapterSub('DEBILIDADES:');
 $bodyContentDebilidades6 = '';
 
 if ($_SESSION['respuesta_s6p1'] == '1' || $_SESSION['respuesta_s6p1'] == '2') {
-    $bodyContentDebilidades6 .= utf8_decode('- Constitución de empresas: La falta de una constitución formal de empresa puede presentar oportunidades en la recuperación de impuestos y otros beneficios.' . "\n");
+    $bodyContentDebilidades6 .= utf8_decode('- Constitución de empresas: La falta de una constitución formal de la empresa puede llevarte a la perdida de tu patrimonio.' . "\n");
     $hayDebilidades6 = true;
 }
 if ($_SESSION['respuesta_s6p2'] == '1' || $_SESSION['respuesta_s6p2'] == '2') {
@@ -474,15 +474,15 @@ if ($_SESSION['respuesta_s6p2'] == '1' || $_SESSION['respuesta_s6p2'] == '2') {
     $hayDebilidades6 = true;
 }
 if ($_SESSION['respuesta_s6p3'] == '1' || $_SESSION['respuesta_s6p3'] == '2') {
-    $bodyContentDebilidades6 .= utf8_decode('- Permisos COFEPRIS: El no contar con permisos de Cofepris genera un riesgo de clausura.' . "\n");
+    $bodyContentDebilidades6 .= utf8_decode('- Permisos COFEPRIS: El no contar con permisos de COFEPRIS genera un riesgo de clausura.' . "\n");
     $hayDebilidades6 = true;
 }
 if ($_SESSION['respuesta_s6p4'] == '1' || $_SESSION['respuesta_s6p4'] == '2') {
-    $bodyContentDebilidades6 .= utf8_decode('- Certificaciones y otros permisos: La falta de certificaciones y permisos varios genera riesgo de clausura.' . "\n");
+    $bodyContentDebilidades6 .= utf8_decode('- Certificaciones y otros permisos: La falta de certificaciones y permisos varios genera riesgo de clausura, además de que genera menos confianza en el paciente.' . "\n");
     $hayDebilidades6 = true;
 }
 if ($_SESSION['respuesta_s6p5'] == '1' || $_SESSION['respuesta_s6p5'] == '2') {
-    $bodyContentDebilidades6 .= utf8_decode('- Sistema de facturación: El no tener sistema de facturación puede generar perdida de tiempo y falta de un buen servicio a clientes que necesitan factura.' . "\n");
+    $bodyContentDebilidades6 .= utf8_decode('- Sistema de facturación: El no tener sistema de facturación puede generar pérdida de tiempo y falta de un buen servicio a los clientes que necesitan factura.' . "\n");
     $hayDebilidades6 = true;
 }
 // Verifica si hay alguna debilidad
@@ -575,11 +575,11 @@ $pdf->chapterSub('FORTALEZAS:');
 $bodyContentFortalezas8 = '';
 
 if ($_SESSION['respuesta_s8p1'] == '4' || $_SESSION['respuesta_s8p1'] == '5') {
-    $bodyContentFortalezas8 .= utf8_decode('- Personal en general: El contar con un equipo fuerte de empleados permite una mejor distribución de tareas y el uso eficiente del tiempo del doctor.' . "\n");
+    $bodyContentFortalezas8 .= utf8_decode('- Cantidad de empleados en general: El contar con un equipo fuerte de empleados permite una mejor distribución de tareas y el uso eficiente del tiempo del doctor.' . "\n");
     $hayFortalezas8 = true;
 }
 if ($_SESSION['respuesta_s8p2'] == '4' || $_SESSION['respuesta_s8p2'] == '5') {
-    $bodyContentFortalezas8 .= utf8_decode('- Equipo de personas suficiente y asignado a labores especificas: Contar con el personal adecuado en cada posición conlleva a que cada tarea se ejecute de una mejor manera, efectiva y eficiente.' . "\n");
+    $bodyContentFortalezas8 .= utf8_decode('- Equipo de personas suficiente y asignado a labores específicas: Contar con el personal adecuado en cada posición conlleva a que cada tarea se ejecute de una mejor manera, efectiva y eficiente.' . "\n");
     $hayFortalezas8 = true;
 }
 if ($_SESSION['respuesta_s8p3'] == '4' || $_SESSION['respuesta_s8p3'] == '5') {
@@ -595,7 +595,7 @@ if ($_SESSION['respuesta_s8p5'] == '4' || $_SESSION['respuesta_s8p5'] == '5') {
     $hayFortalezas8 = true;
 }
 if ($_SESSION['respuesta_s8p6'] == '4' || $_SESSION['respuesta_s8p6'] == '5') {
-    $bodyContentFortalezas8 .= utf8_decode('- Incentivos / Bonos y comisiones: Un programa de metas con bonos e inventivos genera un mejor desempeño de los empleados.' . "\n");
+    $bodyContentFortalezas8 .= utf8_decode('- Incentivos / Bonos y Comisiones: Un programa de metas con bonos e inventivos genera un mejor desempeño de los empleados.' . "\n");
     $hayFortalezas8 = true;
 }
 if ($_SESSION['respuesta_s8p7'] == '4' || $_SESSION['respuesta_s8p7'] == '5') {
@@ -615,7 +615,7 @@ if ($_SESSION['respuesta_s8p10'] == '4' || $_SESSION['respuesta_s8p10'] == '5') 
     $hayFortalezas8 = true;
 }
 if ($_SESSION['respuesta_s8p11'] == '4' || $_SESSION['respuesta_s8p11'] == '5') {
-    $bodyContentFortalezas8 .= utf8_decode('- Gestión de doctores y enfermeras: Una buena gestión de doctores y enfermeras permite un mejor seguimiento de tareas y objetivos para el logro de mejores resultados.' . "\n");
+    $bodyContentFortalezas8 .= utf8_decode('- Un sistema de premios y reconocimientos permite mantener comprometido y motivado a un equipo de alto desempeño.' . "\n");
     $hayFortalezas8 = true;
 }
 if ($_SESSION['respuesta_s8p12'] == '4' || $_SESSION['respuesta_s8p12'] == '5') {
@@ -623,7 +623,7 @@ if ($_SESSION['respuesta_s8p12'] == '4' || $_SESSION['respuesta_s8p12'] == '5') 
     $hayFortalezas8 = true;
 }
 if ($_SESSION['respuesta_s8p13'] == '4' || $_SESSION['respuesta_s8p13'] == '5') {
-    $bodyContentFortalezas8 .= utf8_decode('- Liderazgo y desarrollo de otros: Impulsar liderazgo y desarrollo de otros conlleva a un crecimiento de las personas y del mismo  negocio.' . "\n");
+    $bodyContentFortalezas8 .= utf8_decode('- Liderazgo y desarrollo de otros: Impulsar liderazgo y desarrollo de otros conlleva a un crecimiento de las personas y del mismo negocio.' . "\n");
     $hayFortalezas8 = true;
 }
 if ($_SESSION['respuesta_s8p14'] == '4' || $_SESSION['respuesta_s8p14'] == '5') {
@@ -680,7 +680,7 @@ if ($_SESSION['respuesta_s8p10'] == '1' || $_SESSION['respuesta_s8p10'] == '2') 
     $hayDebilidades8 = true;
 }
 if ($_SESSION['respuesta_s8p11'] == '1' || $_SESSION['respuesta_s8p11'] == '2') {
-    $bodyContentDebilidades8 .= utf8_decode('- Gestión de doctores y enfermeras: La falta de una gestión puntual de doctores y enfermeras conlleva a una falta de claridad de los objetivos y tareas diarias y semanales.' . "\n");
+    $bodyContentDebilidades8 .= utf8_decode('- Reconocimiento / Premios: La falta de premios y reconocimientos periódicos puede mermar el desempeño de los colaboradores.' . "\n");
     $hayDebilidades8 = true;
 }
 if ($_SESSION['respuesta_s8p12'] == '1' || $_SESSION['respuesta_s8p12'] == '2') {
@@ -708,7 +708,7 @@ $pdf->chapterSub('FORTALEZAS:');
 $bodyContentFortalezas9 = '';
 
 if ($_SESSION['respuesta_s9p1'] == '4' || $_SESSION['respuesta_s9p1'] == '5') {
-    $bodyContentFortalezas9 .= utf8_decode('- Área de recepción: Un adecuado espacio de recepción permite una estancia mas agradable y en general una mejor experiencia del usuario.' . "\n");
+    $bodyContentFortalezas9 .= utf8_decode('- Área de estacionamiento: Un adecuado espacio de recepción permite una estancia mas agradable y en general una mejor experiencia del paciente.' . "\n");
     $hayFortalezas9 = true;
 }
 if ($_SESSION['respuesta_s9p2'] == '4' || $_SESSION['respuesta_s9p2'] == '5') {
@@ -773,7 +773,7 @@ if ($_SESSION['respuesta_s10p1'] == '4' || $_SESSION['respuesta_s10p1'] == '5') 
     $hayFortalezas10 = true;
 }
 if ($_SESSION['respuesta_s10p2'] == '4' || $_SESSION['respuesta_s10p2'] == '5') {
-    $bodyContentFortalezas10 .= utf8_decode('- % de agenda llena: Una agenda saturada es indicación tanto de una productividad mayor pero también de un potencial de crecimiento a futuro.' . "\n");
+    $bodyContentFortalezas10 .= utf8_decode('- Agenda en su propio consultorio: Una agenda saturada es indicación tanto de una productividad mayor pero también de un potencial de crecimiento a futuro.' . "\n");
     $hayFortalezas10 = true;
 }
 if ($_SESSION['respuesta_s10p3'] == '4' || $_SESSION['respuesta_s10p3'] == '5') {
