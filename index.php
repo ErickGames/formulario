@@ -24,7 +24,7 @@
         <div class="col-9">
         </div>
         <div class="col-3">
-            <button name="" id="" class="btn btn-primary" onclick="administrador()" role="button">Portal del
+            <button name="" id="" class="btn btn-primary" onclick="administrador()" role="button" disabled>Portal del
                 Administrador</button>
         </div>
     </div>

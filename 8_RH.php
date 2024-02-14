@@ -36,6 +36,38 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <form action="9_instalaciones.php" method="POST" class="m-4 bordesito" id="form1">
 
+    <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.2)">
+
+            <div class="col-md-1"></div>
+            
+            <div class="form-check col-md-2">
+                <label class="form-check-label">
+                    <center>1<br>Capacidad Nula</center>
+                </label>
+            </div>
+            <div class="form-check col-md-2">
+                <label class="form-check-label">
+                    <center>2<br>Capacidad básica</center>
+                </label>
+            </div>
+            <div class="form-check col-md-2">
+                <label class="form-check-label">
+                    <center>3<br>Capacidad mediana</center>
+                </label>
+            </div>
+            <div class="form-check col-md-2">
+                <label class="form-check-label">
+                    <center>4<br>Capacidad alta</center>
+                </label>
+            </div>
+            <div class="form-check col-md-2">
+                <label class="form-check-label">
+                    <center>5<br>Lo mejor del mercado</center>
+                </label>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        
         <!-- PREGUNTA 1 -->
         <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
