@@ -47,37 +47,37 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <!-- PREGUNTA 1 -->
         <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
-            <h4 class="mb-4">Área de recepción</h4>
+            <h4 class="mb-4">Área de estacionamiento</h4>
 
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s9p1" value="1">
                 <label class="form-check-label">
-                No cuento con área de recepción.
+                No cuento con área de estacionamiento.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s9p1" value="2">
                 <label class="form-check-label">
-                Tengo una pequeña área compartida que uso como recepción.
+                Tengo una pequeña área compartida con otros negocios.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s9p1" value="3">
                 <label class="form-check-label">
-                Tengo un área pequeña pero exclusiva para recibir a mis pacientes.
+                Tengo un área pequeña pero exclusiva para mis pacientes.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s9p1" value="4">
                 <label class="form-check-label">
-                Tengo un área amplia para recibir a mis pacientes.
+                Tengo un área amplia para mis pacientes.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s9p1" value="5">
                 <label class="form-check-label">
-                Tengo una recepción amplia, cómoda y agradable para atender a los pacientes.
+                Tengo un estacionamiento amplio y cómodo.
                 </label>
             </div>
             <div class="col-md-1"></div>

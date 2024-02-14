@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $_SESSION['respuesta_s7p4'] = $_POST['s7p4'];
     $_SESSION['respuesta_s7p5'] = $_POST['s7p5'];
     $_SESSION['respuesta_s7p6'] = $_POST['s7p6'];
-    // $_SESSION['respuesta_s7p7'] = $_POST['s7p7'];
+    $_SESSION['respuesta_s7p7'] = $_POST['s7p7'];
 
     // Puedes hacer lo mismo para otras preguntas y SECCIÓNes
 }
@@ -39,37 +39,37 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <!-- PREGUNTA 1 -->
         <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
-            <h4 class="mb-b">Equipo de personas suficiente y asignado a labores especificas </h4>
+            <h4 class="mb-b">Cantidad de empleados en general</h4>
 
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p1" value="1">
                 <label class="form-check-label">
-                No tengo a un equipo de trabajo.
+                De 0 a 1 empleado.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p1" value="2">
                 <label class="form-check-label">
-                Solo tengo un empleado al que le asigno todas las tareas.
+                De 2 a 3 empleados.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p1" value="3">
                 <label class="form-check-label">
-                Cuento con 2 o 3 personas que se encargan de varias áreas al mismo tiempo.
+                De 4 a 6 empleados.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p1" value="4">
                 <label class="form-check-label">
-                Tengo más de 3 personas que se dividen las actividades a realizar.
+                De 7 a 9 empleados.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p1" value="5">
                 <label class="form-check-label">
-                Tengo un equipo de trabajo completo y especializado en cada área.
+                De 10 o mas empleados.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -78,37 +78,37 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <!-- PREGUNTA 2 -->
         <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
-            <h4 Class="mb-b">Administración de nomina</h4>
+            <h4 Class="mb-b">Equipo de personas  suficiente y asignado a labores especificas</h4>
 
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p2" value="1">
                 <label class="form-check-label">
-                No llevo una nómina.
+                No tengo a un equipo de trabajo.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p2" value="2">
                 <label class="form-check-label">
-                Mi contador externo me lleva la nómina.
+                Solo tengo un empleado al que le asigno todas las tareas.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p2" value="3">
                 <label class="form-check-label">
-                La nómina la llevo internamente y de forma manual.
+                Cuento con 2 o 3 personas que se encargan de varias áreas al mismo tiempo.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p2" value="4">
                 <label class="form-check-label">
-                Tengo un Excel en donde se registra la nómina de los empleados.
+                Tengo más de 3 personas que se dividen las actividades a realizar.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p2" value="5">
                 <label class="form-check-label">
-                Tengo un sistema especial para llevar la nómina aprovado por la Secretaría del Trabajo.
+                Tengo un equipo de trabajo completo y especializado en cada área.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -118,38 +118,37 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
 
-            <h4 class="mb-b">Perfiles de puestos / Descripción de responsabilidades</h4>
+            <h4 class="mb-b">Administración de nómina</h4>
 
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p3" value="1">
                 <label class="form-check-label">
-                No tengo un perfil de los puestos que necesito.
+                No llevo una nómina.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p3" value="2">
                 <label class="form-check-label">
-                Tengo la descripción de responsabilidades para algunos puestos clave.
+                Mi contador externo me lleva la nómina.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p3" value="3">
                 <label class="form-check-label">
-                Tengo los perfiles de todos los puestos pero no se asegura su cumplimiento.
+                La nómina la llevo internamente y de forma manual.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p3" value="4">
                 <label class="form-check-label">
-                Todos los puestos tienen una descripción de actividades y se les da seguimiento.
+                Tengo un Excel en donde se registra la nómina de los empleados.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p3" value="5">
                 <label class="form-check-label">
-                Todos los puestos tienen una descripción de actividades, se les da seguimiento y se renuevan seguido.
-                </label>
+                Tengo un sistema especial para llevar la nómina aprovado por la Secretaría del Trabajo.
             </div>
             <div class="col-md-1"></div>
         </div>
@@ -157,38 +156,37 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <!-- PREGUNTA 4 -->
         <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
-            <h4 class="mb-b">Metas y objetivos claros por posiciones</h4>
+            <h4 class="mb-b">Perfiles de puestos / Descripción de responsabilidades</h4>
 
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p4" value="1">
                 <label class="form-check-label">
-                No tengo establecidos objetivos por persona.
+                No tengo un perfil de los puestos que necesito.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p4" value="2">
                 <label class="form-check-label">
-                Tengo objetivos establecidos solo para algunos puestos clave.
+                Tengo la descripción de responsabilidades para algunos puestos clave.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p4" value="3">
                 <label class="form-check-label">
-                Se tienen objetivos para cada puesto pero no se asegura su cumplimiento.
+                Tengo los perfiles de todos los puestos pero no se asegura su cumplimiento.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p4" value="4">
                 <label class="form-check-label">
-                Todos los puestos tienen objetivos definidos y se les da un buen seguimiento.
+                Todos los puestos tienen una descripción de actividades y se les da seguimiento.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p4" value="5">
                 <label class="form-check-label">
-                Todos los puestos tienen objetivos establecidos que se están renovando seguido.
-                </label>
+                Todos los puestos tienen una descripción de actividades, se les da seguimiento y se renuevan seguido.
             </div>
             <div class="col-md-1"></div>
         </div>
@@ -196,37 +194,36 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <!-- PREGUNTA 5 -->
         <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
-            <h4 Class="mb-b">Incentivos / Bonos y Comisiones</h4>
+            <h4 Class="mb-b">Metas y objetivos claros por posiciones</h4>
 
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p5" value="1">
                 <label class="form-check-label">
-                No ofrezco incentivos para mis empleados.
-                </label>
+                No tengo establecidos objetivos por persona.
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p5" value="2">
                 <label class="form-check-label">
-                Solo ofrezco incentivos al final del año.
+                Tengo objetivos establecidos solo para algunos puestos clave.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p5" value="3">
                 <label class="form-check-label">
-                Cuento con un programa de bonos mensuales que se calcula manualmente.
+                Se tienen objetivos para cada puesto pero no se asegura su cumplimiento.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p5" value="4">
                 <label class="form-check-label">
-                Cuento con un programa digital de bonos basado en metas y rendimiento.
+                Todos los puestos tienen objetivos definidos y se les da un buen seguimiento.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p5" value="5">
                 <label class="form-check-label">
-                Tengo un sistema especial para calcular comisiones/bonos basado en metas y rendimiento.
+                Todos los puestos tienen objetivos establecidos que se están renovando seguido.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -235,37 +232,37 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <!-- PREGUNTA 6 -->
         <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
-            <h4 class="mb-b">Competitividad laboral</h4>
+            <h4 class="mb-b">Incentivos / Bonos y Comisiones</h4>
 
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p6" value="1">
                 <label class="form-check-label">
-                Suelo batallar para contratar personal nuevo. 
+                No ofrezco incentivos para mis empleados.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p6" value="2">
                 <label class="form-check-label">
-                Tengo un equipo de trabajo estable pero sus habilidades no son ideales.
+                Solo ofrezco incentivos al final del año.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p6" value="3">
                 <label class="form-check-label">
-                Tengo un equipo de trabajo motivado y proactivo con habilidades ideales.
+                Cuento con un programa de bonos mensuales que se calcula manualmente.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p6" value="4">
                 <label class="form-check-label">
-                Tengo un equipo motivado y proactivo que tiene sueldo fijo además de comisiones.
+                Cuento con un programa digital de bonos basado en metas y rendimiento.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p6" value="5">
                 <label class="form-check-label">
-                Tengo un equipo estable, con ingresos fijos y variables y con un plan de desarrollo a futuro.
+                Tengo un sistema especial para calcular comisiones/bonos basado en metas y rendimiento.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -274,37 +271,37 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <!-- PREGUNTA 7 -->
         <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
-            <h4 Class="mb-b">Rotación</h4>
+            <h4 Class="mb-b">Competitividad laboral</h4>
 
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p7" value="1">
                 <label class="form-check-label">
-                Tengo mucha rotación de personal. El 50% de mis empleados cambia durante el año.
+                Suelo batallar para contratar personal nuevo.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p7" value="2">
                 <label class="form-check-label">
-                Tengo una rotación alta de personal que en promedio es un 40% al año. 
+                Tengo un equipo de trabajo estable pero sus habilidades no son ideales.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p7" value="3">
                 <label class="form-check-label">
-                Tengo rotación media de personal, aprox. del 30% de los empleados al año.
+                Tengo un equipo de trabajo motivado y proactivo con habilidades ideales.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p7" value="4">
                 <label class="form-check-label">
-                Tengo poca rotación de personal, aprox. de un 20% al año.
+                Tengo un equipo motivado y proactivo que tiene sueldo fijo además de comisiones.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p7" value="5">
                 <label class="form-check-label">
-                Mi rotación de personal no rebasa el 10% al año.
+                Tengo un equipo estable, con ingresos fijos y variables y con un plan de desarrollo a futuro.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -314,37 +311,37 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
 
-            <h4 class="mb-b">Reclutamiento</h4>
+            <h4 class="mb-b">Rotación</h4>
 
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p8" value="1">
                 <label class="form-check-label">
-                Yo hago el reclutamiento de mis empleados.
+                Tengo mucha rotación de personal. El 50% de mis empleados cambia durante el año.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p8" value="2">
                 <label class="form-check-label">
-                Hay alguien en el equipo que no es especialista pero se encarga del reclutamiento.
+                Tengo una rotación alta de personal que en promedio es un 40% al año.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p8" value="3">
                 <label class="form-check-label">
-                Tengo un equipo externo de reclutamiento que me envía candidatos viables.
+                Tengo rotación media de personal, aprox. del 30% de los empleados al año.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p8" value="4">
                 <label class="form-check-label">
-                Tengo un encargado de RH que se encarga del reclutamiento.
+                Tengo poca rotación de personal, aprox. de un 20% al año.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p8" value="5">
                 <label class="form-check-label">
-                Tengo un equipo de RH encargado de reclutar y seleccionar. Yo tengo la última palabra.
+                Mi rotación de personal no rebasa el 10% al año.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -353,37 +350,37 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <!-- PREGUNTA 9 -->
         <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
-            <h4 class="mb-b">Comunicación y alineación</h4>
+            <h4 class="mb-b">Reclutamiento</h4>
 
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p9" value="1">
                 <label class="form-check-label">
-                No hago reuniones con mi equipo.
+                Yo hago el reclutamiento de mis empleados.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p9" value="2">
                 <label class="form-check-label">
-                Solo convoco a reuniones si hay algún problema.
+                Hay alguien en el equipo que no es especialista pero se encarga del reclutamiento.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p9" value="3">
                 <label class="form-check-label">
-                Tengo reuniones mensuales con el equipo.
+                Tengo un equipo externo de reclutamiento que me envía candidatos viables.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p9" value="4">
                 <label class="form-check-label">
-                Tengo reuniones semanales con mi equipo.
+                Tengo un encargado de RH que se encarga del reclutamiento.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p9" value="5">
                 <label class="form-check-label">
-                Tengo reuniones periódicas y efectivas con mi equipo, además de una junta trimestral con los líderes de consejo.
+                Tengo un equipo de RH encargado de reclutar y seleccionar. Yo tengo la última palabra.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -391,36 +388,36 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         <!-- PREGUNTA 10 -->
         <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
-            <h4 class=" mb-3 ">Gestión de doctores y enfermeras</h4>
+            <h4 class=" mb-3 ">Comunicación y alineación</h4>
 
             <div class=" form-check mx-4">
                 <input class="form-check-input" type="radio" name="s8p10" value="1">
                 <label class="form-check-label">
-                No tengo una administración de actividades entre doctores y enfermeras.
+                No hago reuniones con mi equipo.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p10" value="2">
                 <label class="form-check-label">
-                Llevo un registro manual de las actividades entre doctores y enfermeras.
+                Solo convoco a reuniones si hay algún problema.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p10" value="3">
                 <label class="form-check-label">
-                Tengo una descripción de responsabilidades y actividades de los doctores y enfermeras.
+                Tengo reuniones mensuales con el equipo.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p10" value="4">
                 <label class="form-check-label">
-                Los doctores y las enfermeras tienen asignadas sus responsabilidades y se van ajustando constantemente.
+                Tengo reuniones semanales con mi equipo.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p10" value="5">
                 <label class="form-check-label">
-                Tengo una persona encargada del seguimiento de las actividades tratando de optimizar el tiempo del personal.
+                Tengo reuniones periódicas y efectivas con mi equipo, además de una junta trimestral con los líderes de consejo.
                 </label>
             </div>
         </div>

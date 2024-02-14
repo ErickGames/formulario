@@ -15,9 +15,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $_SESSION['respuesta_s3p7'] = $_POST['s3p7'];
     $_SESSION['respuesta_s3p8'] = $_POST['s3p8'];
     $_SESSION['respuesta_s3p9'] = $_POST['s3p9'];
-    $_SESSION['respuesta_s3p10'] = $_POST['s3p10'];
-    $_SESSION['respuesta_s3p11'] = $_POST['s3p11'];
-    $_SESSION['respuesta_s3p12'] = $_POST['s3p12'];
 
     // Puedes hacer lo mismo para otras preguntas y SECCIÓNes
 }
@@ -161,45 +158,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 4 -->
-        <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
-
-            <h4 class="mb-4">Reportes se desempeño y seguimiento</h4>
-
-            <div class="col-md-1"></div>
-            <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s4p4" value="1">
-                <label class="form-check-label">
-                No llevo un reporte de desempeño.
-                </label>
-            </div>
-            <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s4p4" value="2">
-                <label class="form-check-label">
-                Llevo un reporte de desempeño a mano pero no le doy seguimiento.
-                </label>
-            </div>
-            <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s4p4" value="3">
-                <label class="form-check-label">
-                Llevo un reporte a mano pero consistente para el seguimiento del desempeño.
-                </label>
-            </div>
-            <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s4p4" value="4">
-                <label class="form-check-label">
-                Llevo un reporte de desempeño en Excel.
-                </label>
-            </div>
-            <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s4p4" value="5">
-                <label class="form-check-label">
-                Tengo un programa especial para medir el desempeño y darle seguimiento.
-                </label>
-            </div>
-            <div class="col-md-1"></div>
-        </div>
-
-        <!-- PREGUNTA 5 -->
         <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
             <h4 class="mb-4">Competitividad en el mercado</h4>
@@ -238,7 +196,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="col-md-1"></div>
         </div>
 
-        <!-- PREGUNTA 6 -->
+        <!-- PREGUNTA 5 -->
         <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
             <h4 Class="mb-4">Optimización de servicios (Generación y eliminación)</h4>
@@ -277,6 +235,45 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="col-md-1"></div>
         </div>
 
+        <!-- PREGUNTA 6 -->
+        <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
+
+            <h4 Class="mb-4">Costeo y rentabilidad de Servicios</h4>
+
+            <div class="col-md-1"></div>
+            <div class="form-check col-md-2">
+                <input class="form-check-input" type="radio" name="s4p6" value="1">
+                <label class="form-check-label">
+                No sé cómo calcular el costo ni la rentabilidad de mis servicios.
+                </label>
+            </div>
+            <div class="form-check col-md-2">
+                <input class="form-check-input" type="radio" name="s4p6" value="2">
+                <label class="form-check-label">
+                Tengo solo una idea del costo y rentabilidad por servicio y producto.
+                </label>
+            </div>
+            <div class="form-check col-md-2">
+                <input class="form-check-input" type="radio" name="s4p6" value="3">
+                <label class="form-check-label">
+                Tengo un costo estimado por servicio y producto pero no tengo clara la rentabilidad.
+                </label>
+            </div>
+            <div class="form-check col-md-2">
+                <input class="form-check-input" type="radio" name="s4p6" value="4">
+                <label class="form-check-label">
+                Tengo una revisión detallada anual de costos, precios y rentabilidad pero no le doy más seguimiento.
+                </label>
+            </div>
+            <div class="form-check col-md-2">
+                <input class="form-check-input" type="radio" name="s4p6" value="5">
+                <label class="form-check-label">
+                Tengo un sistema constante de cálculo y seguimiento de costeo y rentabilidad y ajusto precios cuando es necesario.
+                </label>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+
         <!-- PREGUNTA 7 -->
         <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
@@ -288,7 +285,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <input class="form-check-input" type="radio" name="s4p7" value="1">
                 <label class="form-check-label">
                 Asigno los precios de mis servicios al tanteo.
-                </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p7" value="2">

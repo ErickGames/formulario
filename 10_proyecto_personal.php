@@ -192,6 +192,45 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <!-- PREGUNTA 5 -->
         <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
+            <h4 Class="mb-4">Conformidad personal</h4>
+
+            <div class="col-md-1"></div>
+            <div class="form-check col-md-2">
+                <input class="form-check-input" type="radio" name="s10p5" value="1">
+                <label class="form-check-label">
+                No siento tanta  ambición por crecer personalmente ni en mi patrimonio.
+                </label>
+            </div>
+            <div class="form-check col-md-2">
+                <input class="form-check-input" type="radio" name="s10p5" value="2">
+                <label class="form-check-label">
+                Siento poca conformidad personal o familiar pero no encuentro las maneras de cambiar eso.
+                </label>
+            </div>
+            <div class="form-check col-md-2">
+                <input class="form-check-input" type="radio" name="s10p5" value="3">
+                <label class="form-check-label">
+                Dedico mi tiempo a lo que más quiero pero me gustaría dedicar mas tiempo a mi familia y compromisos personales.
+                </label>
+            </div>
+            <div class="form-check col-md-2">
+                <input class="form-check-input" type="radio" name="s10p5" value="4">
+                <label class="form-check-label">
+                Me reto permanentemente para no estancarme y busco mejorar mis hábitos.
+                </label>
+            </div>
+            <div class="form-check col-md-2">
+                <input class="form-check-input" type="radio" name="s10p5" value="5">
+                <label class="form-check-label">
+                Me reto permanentemente para crecer personalmente y tengo buenos hábitos para lograrlo.
+                </label>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+
+        <!-- PREGUNTA 6 -->
+        <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+
             <h4 Class="mb-4">Balance Vida-Trabajo</h4>
 
             <div class="col-md-1"></div>
@@ -228,7 +267,46 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="col-md-1"></div>
         </div>
 
-        <!-- PREGUNTA 6 -->
+        <!-- PREGUNTA 7 -->
+        <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+
+            <h4 Class="mb-4">Pasión</h4>
+
+            <div class="col-md-1"></div>
+            <div class="form-check col-md-2">
+                <input class="form-check-input" type="radio" name="s10p7" value="1">
+                <label class="form-check-label">
+                No soy persistente con las estrategias que defino.
+                </label>
+            </div>
+            <div class="form-check col-md-2">
+                <input class="form-check-input" type="radio" name="s10p7" value="2">
+                <label class="form-check-label">
+                No soy constante y desisto de las estrategias que defino para alcanzar los objetivos.
+                </label>
+            </div>
+            <div class="form-check col-md-2">
+                <input class="form-check-input" type="radio" name="s10p7" value="3">
+                <label class="form-check-label">
+                Trato de mantenerme constante con las acciones para lograr mis objetivos.
+                </label>
+            </div>
+            <div class="form-check col-md-2">
+                <input class="form-check-input" type="radio" name="s10p7" value="4">
+                <label class="form-check-label">
+                La mayoría de las veces me mantengo constante en las estrategias que definí.
+                </label>
+            </div>
+            <div class="form-check col-md-2">
+                <input class="form-check-input" type="radio" name="s10p7" value="5">
+                <label class="form-check-label">
+                Siempre me mantengo constante con los objetivos y las estrategias definidas.
+                </label>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+
+        <!-- PREGUNTA 8 -->
         <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
             <h4 class="mb-4">Creatividad</h4>
@@ -268,16 +346,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="col-md-1"></div>
         </div>
 
-        <!-- PREGUNTA 7 -->
+        <!-- PREGUNTA 9 -->
         <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
-            <h4 Class="mb-4">Pasión y persistencia</h4>
+            <h4 Class="mb-4">Persistencia</h4>
 
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p7" value="1">
                 <label class="form-check-label">
-                No soy persistente con las estrategias que defino.
+                No soy persistente con los caminos y estrategias que defino.
                 </label>
             </div>
             <div class="form-check col-md-2">
@@ -307,7 +385,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="col-md-1"></div>
         </div>
 
-        <!-- PREGUNTA 8 -->
+        <!-- PREGUNTA 10 -->
         <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
             <h4 Class="mb-4">Autonomía</h4>
@@ -346,7 +424,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="col-md-1"></div>
         </div>
 
-        <!-- PREGUNTA 9 -->
+        <!-- PREGUNTA 11 -->
         <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
             <h4 Class="mb-4">Autoestima</h4>
@@ -385,7 +463,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="col-md-1"></div>
         </div>
 
-        <!-- PREGUNTA 10 -->
+        <!-- PREGUNTA 12 -->
         <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
             <h4 Class="mb-4">Es oportuno</h4>
@@ -424,93 +502,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="col-md-1"></div>
         </div>
 
-        <!-- PREGUNTA 11 -->
-        <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
-
-            <h4 Class="mb-4">Autoestima</h4>
-
-            <div class="col-md-1"></div>
-            <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s10p11" value="1">
-                <label class="form-check-label">
-                    En situaciones adversas no logro ser optimista y no sobresale mi orgullo personal para salir
-                    adelante.
-                </label>
-            </div>
-            <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s10p11" value="2">
-                <label class="form-check-label">
-                    Alguna ocasión he sido optimista para enfrentar situaciones adversas y ha sobresalido mi orgullo
-                    personas para salir adelante.
-                </label>
-            </div>
-            <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s10p11" value="3">
-                <label class="form-check-label">
-                    Solo a veces cuando se enfrentan situaciones adversas se es optimista y sobresale su orgullo
-                    personal para salir adelante.
-                </label>
-            </div>
-            <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s10p11" value="4">
-                <label class="form-check-label">
-                    La mayoría del tiempo a pesar de las situaciones adversas se es optimista y sobresale su orgullo
-                    personal para salir adelante.
-                </label>
-            </div>
-            <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s10p11" value="5">
-                <label class="form-check-label">
-                    A pesar de las situaciones adversas se es optimista y sobresale su orgullo personal para salir
-                    adelante.
-                </label>
-            </div>
-            <div class="col-md-1"></div>
-        </div>
-
-        <!-- PREGUNTA 12 -->
-        <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
-
-            <h4 Class="mb-4">Es oportuno</h4>
-
-            <div class="col-md-1"></div>
-            <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s10p12" value="1">
-                <label class="form-check-label">
-                    Nunca he identificado necesidades y tendencias de manera oportuna, ni tampoco he ejecutado acciones
-                    para lograr mayor alineación en los productos y servicios que ofrece la clínica.
-                </label>
-            </div>
-            <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s10p12" value="2">
-                <label class="form-check-label">
-                    Alguna vez he identificado necesidades y tendencias de manera oportuna, pero no he ejecutado
-                    acciones para lograr mayor alineación en los productos y servicios que ofrece la clínica.
-                </label>
-            </div>
-            <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s10p12" value="3">
-                <label class="form-check-label">
-                    Solo a veces identifico necesidades y tendencias de manera oportuna y se ejecutan acciones para
-                    lograr mayor alineación en los productos y servicios que ofrece la clínica.
-                </label>
-            </div>
-            <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s10p12" value="4">
-                <label class="form-check-label">
-                    Casi siempre identifico necesidades y tendencias de manera oportuna y se ejecutan acciones para
-                    lograr mayor alineación en los productos y servicios que ofrece la clínica.
-                </label>
-            </div>
-            <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s10p12" value="5">
-                <label class="form-check-label">
-                    Se identifican necesidades y tendencias de manera oportuna y se ejecutan acciones para lograr mayor
-                    alineación en los productos y servicios que ofrece la clínica.
-                </label>
-            </div>
-            <div class="col-md-1"></div>
-        </div>
     </form>
 
     <div style="display: flex; justify-content: flex-end; margin: 0px 15px 5px 0px">

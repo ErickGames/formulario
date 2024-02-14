@@ -9,8 +9,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $_SESSION['respuesta_s6p1'] = $_POST['s6p1'];
     $_SESSION['respuesta_s6p2'] = $_POST['s6p2'];
     $_SESSION['respuesta_s6p3'] = $_POST['s6p3'];
-    // $_SESSION['respuesta_s6p4'] = $_POST['s6p4'];
-    // $_SESSION['respuesta_s6p5'] = $_POST['s6p5'];
+    $_SESSION['respuesta_s6p4'] = $_POST['s6p4'];
+    $_SESSION['respuesta_s6p5'] = $_POST['s6p5'];
 
     // Puedes hacer lo mismo para otras preguntas y SECCIÓNes
 }
@@ -153,48 +153,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 4 -->
-        <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
-
-            <h4 class="mb-4">Nivel de utilización de los equipos</h4>
-
-            <div class="col-md-1"></div>
-            <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s7p4" value="1">
-                <label class="form-check-label">
-                Considero que utilizo mi equipo aprox. un 10%.
-                </label>
-            </div>
-            <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s7p4" value="2">
-                <label class="form-check-label">
-                Considero que utilizo mi equipo aprox. del 10 al 40%.
-                </label>
-            </div>
-            <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s7p4" value="3">
-                <label class="form-check-label">
-                Considero que utilizo mi equipo entre el 40 y el 60%.
-                </label>
-            </div>
-            <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s7p4" value="4">
-                <label class="form-check-label">
-                El porcentaje de uso de mi equipo es del 70 al 90%.
-                </label>
-            </div>
-            <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s7p4" value="5">
-                <label class="form-check-label">
-                El nivel de uso de mi equipo es del 100% y ya estoy buscando adquirir otros.
-                </label>
-            </div>
-            <div class="col-md-1"></div>
-        </div>
-
-        <!-- PREGUNTA 5 -->
         <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
-            <h4 Class="mb-4">Cotizaciones</h4>
+            <h4 Class="mb-4">Cotizaciones, evaluación de proveedores y opciones de financiamiento</h4>
 
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
@@ -225,6 +186,45 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <input class="form-check-input" type="radio" name="s7p5" value="5">
                 <label class="form-check-label">
                 Mi proceso para cotizar me permite elegir la mejor opción de proveedor y financiamiento.
+                </label>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+
+        <!-- PREGUNTA 5 -->
+        <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+
+            <h4 Class="mb-4">Nivel de apalancamiento con proveedores</h4>
+
+            <div class="col-md-1"></div>
+            <div class="form-check col-md-2">
+                <input class="form-check-input" type="radio" name="s7p5" value="1">
+                <label class="form-check-label">
+                No conozco esta información.
+                </label>
+            </div>
+            <div class="form-check col-md-2">
+                <input class="form-check-input" type="radio" name="s7p5" value="2">
+                <label class="form-check-label">
+                Tengo una estrategia básica de 30 días de pago a proveedores.
+                </label>
+            </div>
+            <div class="form-check col-md-2">
+                <input class="form-check-input" type="radio" name="s7p5" value="3">
+                <label class="form-check-label">
+                Tengo inventarios a consignación y herramientas como el crédito revolvente.
+                </label>
+            </div>
+            <div class="form-check col-md-2">
+                <input class="form-check-input" type="radio" name="s7p5" value="4">
+                <label class="form-check-label">
+                Se tiene un buen balance entre el efectivo y el acceso a deuda con bajo interés.
+                </label>
+            </div>
+            <div class="form-check col-md-2">
+                <input class="form-check-input" type="radio" name="s7p5" value="5">
+                <label class="form-check-label">
+                Tengo una estrategia de financiamiento para crecer con recursos propios y financiamiento con proveedores y bancos.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -270,44 +270,43 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 7 -->
-        <!-- <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
             <h4 class="mb-4">Nivel de utilización de los equipos</h4>
 
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s7p7" value="1">
+                <input class="form-check-input" type="radio" name="s7p4" value="1">
                 <label class="form-check-label">
-                    No se tiene registro preciso pero la utilización es muy baja, menor al 10%.
+                Considero que utilizo mi equipo aprox. un 10%.
                 </label>
             </div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s7p7" value="2">
+                <input class="form-check-input" type="radio" name="s7p4" value="2">
                 <label class="form-check-label">
-                    El nivel de utilización de un equipo ronda entre el 10 y 40%.
+                Considero que utilizo mi equipo aprox. del 10 al 40%.
                 </label>
             </div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s7p7" value="3">
+                <input class="form-check-input" type="radio" name="s7p4" value="3">
                 <label class="form-check-label">
-                    El nivel de utilización de un equipo ronda entre el 40 y 60%.
+                Considero que utilizo mi equipo entre el 40 y el 60%.
                 </label>
             </div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s7p7" value="4">
+                <input class="form-check-input" type="radio" name="s7p4" value="4">
                 <label class="form-check-label">
-                    El % de la utilización de los equipos esta entre un 70 y 90%.
+                El porcentaje de uso de mi equipo es del 70 al 90%.
                 </label>
             </div>
             <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s7p7" value="5">
+                <input class="form-check-input" type="radio" name="s7p4" value="5">
                 <label class="form-check-label">
-                    El Nivel de utilización de los equipos es prácticamente del 100% y ya estamos pensando en comprar
-                    nuevos para crecer la capacidad.
+                El nivel de uso de mi equipo es del 100% y ya estoy buscando adquirir otros.
                 </label>
             </div>
             <div class="col-md-1"></div>
-        </div> -->
+        </div>
     </form>
 
     <div style="display: flex; justify-content: flex-end; margin: 0px 15px 5px 0px">

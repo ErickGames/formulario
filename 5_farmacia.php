@@ -13,7 +13,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $_SESSION['respuesta_s4p5'] = $_POST['s4p5'];
     $_SESSION['respuesta_s4p6'] = $_POST['s4p6'];
     $_SESSION['respuesta_s4p7'] = $_POST['s4p7'];
-    $_SESSION['respuesta_s4p8'] = $_POST['s4p8'];
 
     // Puedes hacer lo mismo para otras preguntas y SECCIÓNes
 }
@@ -41,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <!-- PREGUNTA 1 -->
         <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
-            <h4 class="mb-4">Cuento con material ortopédico. </h4>
+            <h4 class="mb-4">Cuento con farmacia.</h4>
 
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
@@ -138,19 +137,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s5p3" value="3">
                 <label class="form-check-label">
-                Se monitorea periódicamente el inventario con un Excel pero aún tiene áreas de oportunidad.
+                Monitoreo periódicamente el inventario en Excel pero aún tiene áreas de oportunidad.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s5p3" value="4">
                 <label class="form-check-label">
-                Se administra el inventario con un sistema especial de monitoreo para tratar de evitar el desabasto.
+                Administro el inventario con un sistema especial de monitoreo para tratar de evitar el desabasto.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s5p3" value="5">
                 <label class="form-check-label">
-                Se monitorea el inventario para realizar compras automatizadas antes de que se agoten los productos.
+                Monitoreo el inventario para realizar compras automatizadas antes de que se agoten los productos.
                 </label>
             </div>
             <div class="col-md-1"></div>

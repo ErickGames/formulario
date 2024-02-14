@@ -54,7 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p1" value="3">
                 <label class="form-check-label">
-                Tengo una empresa. SRL DE CV
+                Tengo una empresa.
                 </label>
             </div>
             <div class="form-check col-md-2">
@@ -152,46 +152,46 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 4 -->
-        <!-- <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
-            <h4 class="mb-4">Certificaciones y otros permisos</h4>
+            <h4 class="mb-4">Certificaciones</h4>
 
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p4" value="1">
                 <label class="form-check-label">
-                    No tengo.
+                No cuento con certificaciones.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p4" value="2">
                 <label class="form-check-label">
-                    Tengo un solo permiso dado de alta.
+                Tengo al menos una certificación.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p4" value="3">
                 <label class="form-check-label">
-                    Tengo algunos permisos y certificaciones, pero me faltan otros.
+                Tengo dos certificaciones.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p4" value="4">
                 <label class="form-check-label">
-                    Tengo todas las certificaciones y permisos, pero no se actualizan.
+                Tengo tres certificaciones.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p4" value="5">
                 <label class="form-check-label">
-                    Tengo todas las certificaciones y permisos y se actualizan constantemente.
+                Tengo más de 3 certificaciones.
                 </label>
             </div>
             <div class="col-md-1"></div>
-        </div> -->
+        </div>
 
         <!-- PREGUNTA 5 -->
-        <!-- <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
             <h4 Class="mb-4">Sistema de facturación</h4>
 
@@ -199,35 +199,35 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p5" value="1">
                 <label class="form-check-label">
-                    No tengo.
+                No cuento con sistema de facturación.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p5" value="2">
                 <label class="form-check-label">
-                    Lo hago directamente en el SAT.
+                Hago mis facturas yo mismo directamente en el SAT.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p5" value="3">
                 <label class="form-check-label">
-                    No tengo, esta actividad la hace mi contador.
+                Tengo una persona que realiza mis facturas.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p5" value="4">
                 <label class="form-check-label">
-                    Tengo un sistema de facturación comercial autorizado, pero sin integrar con otro de mis sistemas.
+                Tengo un sistema que automatiza la realización de las facturas.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s6p5" value="5">
                 <label class="form-check-label">
-                    Tengo un sistema de facturación comercial autorizado e integrado con otros de mis sistemas.
+                Tengo un programa especial para facturar que se integra con otros de mis programas.
                 </label>
             </div>
             <div class="col-md-1"></div>
-        </div> -->
+        </div>
     </form>
 
     <div style="display: flex; justify-content: flex-end; margin: 0px 15px 5px 0px">

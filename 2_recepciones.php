@@ -48,31 +48,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s2p1" value="1">
                 <label class="form-check-label">
-                    Las citas se registran a mano y no se hacen llamadas para confirmar. 
+                Las citas se registran a mano y no se hacen llamadas para confirmar.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s2p1" value="2">
                 <label class="form-check-label">
-                    Las citas se registran a mano y a veces se confirman.
+                Las citas se registran a mano y a veces se confirman.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s2p1" value="3">
                 <label class="form-check-label">
-                    Se registran todas las citas en Excel y siempre llamamos antes para confirmar. 
+                Se registran todas las citas en Excel y siempre llamamos antes para confirmar.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s2p1" value="4">
                 <label class="form-check-label">
-                    Tenemos un programa especial para agendar y confirmar las citas.
+                Tenemos un programa especial para agendar y confirmar las citas.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s2p1" value="5">
                 <label class="form-check-label">
-                    Agendamos y confirmamos las citas mediante un software que se vincula a otros programas internos. 
+                Agendamos y confirmamos las citas mediante un software que se vincula a otros programas internos.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -81,44 +81,81 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <!-- PREGUNTA 2 -->
         <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
-            <h4 Class="mb-4">Persona dedicada a recepción</h4>
+            <h4 Class="mb-4">Área de recepción</h4>
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s2p2" value="1">
                 <label class="form-check-label">
-                    No tengo recepcionista. El primero que esté disponible atiende al paciente.
+                No cuento con área de recepción.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s2p2" value="2">
                 <label class="form-check-label">
-                    Tengo un/una recepcionista que apoya a varios doctores.
+                Tengo una pequeña área compartida que uso como recepción.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s2p2" value="3">
                 <label class="form-check-label">
-                    Tengo un/una recepcionista que hace otras tareas además de atender a los pacientes.
+                Tengo un área pequeña pero exclusiva para recibir a mis pacientes.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s2p2" value="4">
                 <label class="form-check-label">
-                    Tengo recepcionista para cada turno y se dividen las tareas.
+                Tengo un área amplia para recibir a mis pacientes.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s2p2" value="5">
                 <label class="form-check-label">
-                    Tengo una o dos recepcionistas para cada turno, que también tienen habilidades de ventas. 
+                Tengo una recepción amplia, cómoda y agradable para atender a los pacientes.
                 </label>
             </div>
             <div class="col-md-1"></div>
         </div>
 
         <!-- PREGUNTA 3 -->
-        <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
+            <h4 Class="mb-4">Persona dedicada a recepción</h4>
+            <div class="col-md-1"></div>
+            <div class="form-check col-md-2">
+                <input class="form-check-input" type="radio" name="s2p2" value="1">
+                <label class="form-check-label">
+                No tengo recepcionista. El primero que esté disponible atiende al paciente.
+                </label>
+            </div>
+            <div class="form-check col-md-2">
+                <input class="form-check-input" type="radio" name="s2p2" value="2">
+                <label class="form-check-label">
+                Tengo un/una recepcionista que apoya a varios doctores.
+                </label>
+            </div>
+            <div class="form-check col-md-2">
+                <input class="form-check-input" type="radio" name="s2p2" value="3">
+                <label class="form-check-label">
+                Tengo un/una recepcionista que hace otras tareas además de atender a los pacientes.
+                </label>
+            </div>
+            <div class="form-check col-md-2">
+                <input class="form-check-input" type="radio" name="s2p2" value="4">
+                <label class="form-check-label">
+                Tengo recepcionista para cada turno y se dividen las tareas.
+                </label>
+            </div>
+            <div class="form-check col-md-2">
+                <input class="form-check-input" type="radio" name="s2p2" value="5">
+                <label class="form-check-label">
+                Tengo una o dos recepcionistas para cada turno, que también tienen habilidades de ventas.
+                </label>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+
+        <!-- PREGUNTA 4  -->
+        <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
             <h4 class="mb-4">Administración de Expedientes</h4>
             <div class="col-md-1"></div>
@@ -154,45 +191,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
             <div class="col-md-1"></div>
         </div>
-
-        <!-- PREGUNTA 4 -->
-        <!-- <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
-
-            <h4 class="mb-4">Administración de Expedientes</h4>
-            <div class="col-md-1"></div>
-            <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s2p4" value="1">
-                <label class="form-check-label">
-                    No tiene expedientes.
-                </label>
-            </div>
-            <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s2p4" value="2">
-                <label class="form-check-label">
-                    Tiene expedientes de papel.
-                </label>
-            </div>
-            <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s2p4" value="3">
-                <label class="form-check-label">
-                    Cuenta con un Excel o Word de expedientes.
-                </label>
-            </div>
-            <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s2p4" value="4">
-                <label class="form-check-label">
-                    Cuenta con expediente clínico digital.
-                </label>
-            </div>
-            <div class="form-check col-md-2">
-                <input class="form-check-input" type="radio" name="s2p4" value="5">
-                <label class="form-check-label">
-                    Cuenta con un sistema integral, electrónico en la nube.
-                </label>
-            </div>
-            <div class="col-md-1"></div>
-        </div> -->
-    </form>
 
     <div style="display: flex; justify-content: flex-end; margin: 0px 15px 5px 0px">
         <button id="miBoton" class="cssbuttons-io-button" type="submit">
