@@ -881,7 +881,7 @@ if ($hayDebilidades10 == false) {
 $pdf->chapterBody($bodyContentDebilidades10);
 
 // Ruta donde se guardará el PDF automáticamente
-$rutaGuardado = 'PDFS';
+$rutaGuardado = 'PDFS/RespuestasUsuario'.$_POST['nombre'].'.pdf';
 
 $pdf->Output($rutaGuardado, 'F'); // 'F' indica que se guardará en el servidor
 
