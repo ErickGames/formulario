@@ -592,7 +592,7 @@ if ($_SESSION['respuesta_s8p4'] == '4' || $_SESSION['respuesta_s8p4'] == '5') {
     $hayFortalezas8 = true;
 }
 if ($_SESSION['respuesta_s8p5'] == '4' || $_SESSION['respuesta_s8p5'] == '5') {
-    $bodyContentFortalezas8 .= utf8_decode('- Metas y objetivos claros por persona: La calidad de metas objetivos y metas específicos de cada posición permiten un mejor desempeño de los empleados.' . "\n");
+    $bodyContentFortalezas8 .= utf8_decode('- Metas y objetivos claros por posiciones: La calidad de metas objetivos y metas específicos de cada posición permiten un mejor desempeño de los empleados.' . "\n");
     $hayFortalezas8 = true;
 }
 if ($_SESSION['respuesta_s8p6'] == '4' || $_SESSION['respuesta_s8p6'] == '5') {
@@ -615,19 +615,15 @@ if ($_SESSION['respuesta_s8p10'] == '4' || $_SESSION['respuesta_s8p10'] == '5') 
     $bodyContentFortalezas8 .= utf8_decode('- Comunicación y alineación: Una comunicación sólida permite una mejor alineación de los empleados en la búsqueda de mejores resultados.' . "\n");
     $hayFortalezas8 = true;
 }
-if ($_SESSION['respuesta_s8p11'] == '4' || $_SESSION['respuesta_s8p11'] == '5') {
-    $bodyContentFortalezas8 .= utf8_decode('- Un sistema de premios y reconocimientos permite mantener comprometido y motivado a un equipo de alto desempeño.' . "\n");
-    $hayFortalezas8 = true;
-}
-if ($_SESSION['respuesta_s8p12'] == '4' || $_SESSION['respuesta_s8p12'] == '5') {
+if ($_SESSION['respuesta_s8p12'] == '4' || $_SESSION['respuesta_s8p11'] == '5') {
     $bodyContentFortalezas8 .= utf8_decode('- Reconocimiento / premios: Un sistema de premios y reconocimientos permite mantener comprometido y motivado a un equipo de alto desempeño.' . "\n");
     $hayFortalezas8 = true;
 }
-if ($_SESSION['respuesta_s8p13'] == '4' || $_SESSION['respuesta_s8p13'] == '5') {
+if ($_SESSION['respuesta_s8p13'] == '4' || $_SESSION['respuesta_s8p12'] == '5') {
     $bodyContentFortalezas8 .= utf8_decode('- Liderazgo y desarrollo de otros: Impulsar liderazgo y desarrollo de otros conlleva a un crecimiento de las personas y del mismo negocio.' . "\n");
     $hayFortalezas8 = true;
 }
-if ($_SESSION['respuesta_s8p14'] == '4' || $_SESSION['respuesta_s8p14'] == '5') {
+if ($_SESSION['respuesta_s8p14'] == '4' || $_SESSION['respuesta_s8p13'] == '5') {
     $bodyContentFortalezas8 .= utf8_decode('- Capacitación y entrenamiento: Contar con un programa de entrenamientos y capacitación conlleva a personal mejor preparado en la atención del cliente y ejecución de los servicios.' . "\n");
     $hayFortalezas8 = true;
 }
@@ -641,7 +637,7 @@ $pdf->chapterSub('DEBILIDADES:');
 $bodyContentDebilidades8 = '';
 
 if ($_SESSION['respuesta_s8p1'] == '1' || $_SESSION['respuesta_s8p1'] == '2') {
-    $bodyContentDebilidades8 .= utf8_decode('- Personal en general: La falta de empleados conlleva al mala distribución del tiempo del doctor, perdiendo mucho tiempo en actividades de bajo valor para el negocio.' . "\n");
+    $bodyContentDebilidades8 .= utf8_decode('- Cantidad de empleados en general: La falta de empleados conlleva al mala distribución del tiempo del doctor, perdiendo mucho tiempo en actividades de bajo valor para el negocio.' . "\n");
     $hayDebilidades8 = true;
 }
 if ($_SESSION['respuesta_s8p2'] == '1' || $_SESSION['respuesta_s8p2'] == '2') {
@@ -688,11 +684,7 @@ if ($_SESSION['respuesta_s8p12'] == '1' || $_SESSION['respuesta_s8p12'] == '2') 
     $bodyContentDebilidades8 .= utf8_decode('- Reconocimiento / premios: La falta de precios y reconocimientos periódicos puede mercar el desempeño de los colaboradores.' . "\n");
     $hayDebilidades8 = true;
 }
-if ($_SESSION['respuesta_s8p13'] == '1' || $_SESSION['respuesta_s8p6'] == '2') {
-    $bodyContentDebilidades8 .= utf8_decode('- Liderazgo y desarrollo de otros: No impulsar liderazgo ni desarrollo de otros conlleva a una falta de crecimiento de las personas en el negocio.' . "\n");
-    $hayDebilidades8 = true;
-}
-if ($_SESSION['respuesta_s8p14'] == '1' || $_SESSION['respuesta_s8p14'] == '2') {
+if ($_SESSION['respuesta_s8p14'] == '1' || $_SESSION['respuesta_s8p113'] == '2') {
     $bodyContentDebilidades8 .= utf8_decode('- Capacitación y entrenamiento: No contar con entrenamientos y capacitación conlleva a personal no preparado en la atención del cliente y ejecución de los servicios.' . "\n");
     $hayDebilidades8 = true;
 }
@@ -944,27 +936,27 @@ if ($mail->send()) {
 // Redirige al usuario a la página actualcen caso de error
 // header('Location: nombre_de_tu_pagina.php');
 
-echo($_SESSION['respuesta_s1p3']);
-echo($_SESSION['respuesta_s2p2']);
-echo($_SESSION['respuesta_s3p3']);
-echo($_SESSION['respuesta_s4p1']);
-echo($_SESSION['respuesta_s5p3']);
-echo($_SESSION['respuesta_s6p2']);
-echo($_SESSION['respuesta_s7p1']);
-echo($_SESSION['respuesta_s8p1']);
-echo($_SESSION['respuesta_s9p2']);
-echo($_SESSION['respuesta_s10p3']);
-echo($_SESSION['respuesta_s1p2']);
-echo($_SESSION['respuesta_s8p5']);
-echo($_SESSION['respuesta_s7p4']);
-echo($_SESSION['respuesta_s9p1']);
-echo($_SESSION['respuesta_s9p2']);
-echo($_SESSION['respuesta_s1p1']);
-echo($_SESSION['respuesta_s6p1']);
-echo($_SESSION['respuesta_s5p1']);
-echo($_SESSION['respuesta_s4p1']);
-echo($_SESSION['respuesta_s3p1']);
-echo($_SESSION['respuesta_s4p5']);
+// echo($_SESSION['respuesta_s1p3']);
+// echo($_SESSION['respuesta_s2p2']);
+// echo($_SESSION['respuesta_s3p3']);
+// echo($_SESSION['respuesta_s4p1']);
+// echo($_SESSION['respuesta_s5p3']);
+// echo($_SESSION['respuesta_s6p2']);
+// echo($_SESSION['respuesta_s7p1']);
+// echo($_SESSION['respuesta_s8p1']);
+// echo($_SESSION['respuesta_s9p2']);
+// echo($_SESSION['respuesta_s10p3']);
+// echo($_SESSION['respuesta_s1p2']);
+// echo($_SESSION['respuesta_s8p5']);
+// echo($_SESSION['respuesta_s7p4']);
+// echo($_SESSION['respuesta_s9p1']);
+// echo($_SESSION['respuesta_s9p2']);
+// echo($_SESSION['respuesta_s1p1']);
+// echo($_SESSION['respuesta_s6p1']);
+// echo($_SESSION['respuesta_s5p1']);
+// echo($_SESSION['respuesta_s4p1']);
+// echo($_SESSION['respuesta_s3p1']);
+// echo($_SESSION['respuesta_s4p5']);
 
 exit();
 ?>

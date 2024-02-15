@@ -8,6 +8,7 @@
 
 .centerrr{
   text-align: center;
+  color: white;
 }
 
 .pregunta {
@@ -117,6 +118,16 @@ body {
 h1 {
   font-family: 'Anton', sans-serif;
   color: rgba(25, 47, 89);
+  font-weight: bold;
+}
+
+.section-title{
+  font-weight: bold;
+  color: rgba(25, 47, 89);
+}
+
+.mb-4{
+  font-weight: bold;
 }
 
 /* Estilos para las respuestas no seleccionadas */

@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class=" row mx-5 mt-5">
         <div class="col-8">
             <!-- <h4>SECCIÓN 8</h4> -->
-            <h1 style="color:rgba(25, 47, 89)">RECURSOS HUMANOS</h1>
+            <h1 class="section-title">RECURSOS HUMANOS</h1>
         </div>
 
         <div class="col-4">
@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div id="myBar" class="w3-container w3-green w3-center" style="width:57.2%">58%</div>
     </div>
 
-    <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.2)">
+    <div class="row p-4" style="background-color:rgb(36, 55, 124)">
         <div class="col-md-1"></div>
         <div class="col-md-2 centerrr">
             <h4>1<br>Capacidad Nula</h4>
@@ -407,7 +407,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <!-- PREGUNTA 10 -->
         <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
 
-            <h4 class=" mb-3 ">Comunicación y alineación</h4>
+            <h4 class=" mb-4 ">Comunicación y alineación</h4>
 
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p10" value="1">

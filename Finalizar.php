@@ -26,8 +26,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <div class="row mx-5 mt-5 mb-5">
         <div class="col-8">
-            <h2 style="color:rgba(25, 47, 89)">¡Gracias por sus respuestas!</h2> <br>
-            <h5>Todas sus respuestas son confidenciales y usadas para ofrecer lo mejor de nuestros servicios.</h5><br>
+            <h2 style="color:rgba(25, 47, 89)">¡Listo!</h2> <br>
+            <h5>Estás en el camino de mejorar tu negocio</h5><br>
         </div>
 
         <div class="col-4">
@@ -52,6 +52,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 <label class="form-label" for="email">Correo Electrónico:</label>
                 <input class="form-control" type="email" name="email" required>
+
+                <!-- <label class="form-label" for="city">Ciudad:</label>
+                <input class="form-control" type="text" name="ciudad" required> -->
 
                 <div style="display: flex; justify-content: center;">
                     <button type="submit" class="btn btn-primary mt-1">Enviar</button>

@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class=" row mx-5 mt-5">
         <div class="col-8">
             <!-- <h4>SECCIÓN 6</h4> -->
-            <h1 style="color:rgba(25, 47, 89)">FISCAL Y LEGAL</h1>
+            <h1 class="section-title">FISCAL Y LEGAL</h1>
         </div>
 
         <div class="col-4">
@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div id="myBar" class="w3-container w3-green w3-center" style="width:41.6%">43%</div>
     </div>
 
-    <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.2)">
+    <div class="row p-4" style="background-color:rgb(36, 55, 124)">
         <div class="col-md-1"></div>
         <div class="col-md-2 centerrr">
             <h4>1<br>Capacidad Nula</h4>

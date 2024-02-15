@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class=" row mx-5 mt-5">
         <div class="col-8">
             <!-- <h4>SECCIÓN 5</h4> -->
-            <h1 style="color:rgba(25, 47, 89)">FARMACIA</h1>
+            <h1 class="section-title">FARMACIA</h1>
         </div>
 
         <div class="col-4">
@@ -35,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div id="myBar" class="w3-container w3-green w3-center" style="width:37.7%">39%</div>
     </div>
 
-    <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.2)">
+    <div class="row p-4" style="background-color:rgb(36, 55, 124)">
         <div class="col-md-1"></div>
         <div class="col-md-2 centerrr">
             <h4>1<br>Capacidad Nula</h4>
@@ -141,7 +141,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
 
 
-            <h4 class="mb-4">Manejo Inventarios y faltantes</h4>
+            <h4 class="mb-4">Manejo inventarios y faltantes</h4>
 
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">

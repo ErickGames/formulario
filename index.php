@@ -38,11 +38,10 @@
         <div class="col-md-8">
             <h1 class="title">Bienvenido al Diágnostio DNA Factory</h1>
             <div class="description">
-                <p>Este formulario está diseñado para brindarte la oportunidad de realizar una autoevaluación en
-                    relación
-                    con diez aspectos cruciales para tu consultorio o negocio
-                    médico. Tu opinión es fundamental para identificar áreas de mejora y fortaleza en tu práctica
-                    profesional.</p>
+                <p>Este formulario está diseñado para brindarte la oportunidad de realiar una autoevaluación en relación con 
+                    diez aspectos cuciales para tu consultorio o negocio médico. Yu opinión es fundamental para identificar 
+                    áreas de mejora y fortaleza en tu practica profesional.
+                </p>
 
                 <p><b>Modo de Evaluación:</b></p>
                 <p>Utilizaremos una escala del 1 al 5 para evaluar cada aspecto. Siendo la primera respuesta el nivel
