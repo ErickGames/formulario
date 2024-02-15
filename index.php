@@ -43,18 +43,20 @@
                     áreas de mejora y fortaleza en tu practica profesional.
                 </p>
 
-                <p><b>Modo de Evaluación:</b></p>
+                <!-- <p><b>Modo de Evaluación:</b></p>
                 <p>Utilizaremos una escala del 1 al 5 para evaluar cada aspecto. Siendo la primera respuesta el nivel
                     más
                     bajo en relación a la pregunta planteada, mientras que la última
                     denota el nivel más alto.</p>
-                <p> Duración del formulario: 15 minutos.</p>
+                <p> Duración del formulario: 15 minutos.</p>-->
+                
+                <img src="" alt="">
 
-                <p><b>Instrucciones:</b></p>
+                <!--<p><b>Instrucciones:</b></p>
                 <p>Responde cada pregunta honestamente según tu percepción sobre la situación actual en tu práctica
                     médica.
                     No hay respuestas
-                    correctas o incorrectas, simplemente marca la opción que mejor refleje tu situación.</p>
+                    correctas o incorrectas, simplemente marca la opción que mejor refleje tu situación.</p> -->
 
                 <p>Tu participación es invaluable y nos ayudará a ofrecerte información personalizada para mejorar tu
                     desempeño y la calidad de tu servicio.</p>
