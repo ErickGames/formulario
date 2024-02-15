@@ -39,7 +39,7 @@
             <h1 class="title">Bienvenido al Diágnostio DNA Factory</h1>
             <div class="description">
                 <p>Este formulario está diseñado para brindarte la oportunidad de realiar una autoevaluación en relación con 
-                    diez aspectos cuciales para tu consultorio o negocio médico. Yu opinión es fundamental para identificar 
+                    diez aspectos cuciales para tu consultorio o negocio médico. Tu opinión es fundamental para identificar 
                     áreas de mejora y fortaleza en tu practica profesional.
                 </p>
 
