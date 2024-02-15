@@ -1,7 +1,8 @@
 <?php
+session_start();
+
 include_once('header.php');
 
-session_start();
 
 $sumaS1 = $_SESSION['respuesta_s1p1'] + $_SESSION['respuesta_s1p2'] + $_SESSION['respuesta_s1p3'] + $_SESSION['respuesta_s1p4'] + 
 $_SESSION['respuesta_s1p5'] + $_SESSION['respuesta_s1p6'] + $_SESSION['respuesta_s1p7'] + $_SESSION['respuesta_s1p8'] + 

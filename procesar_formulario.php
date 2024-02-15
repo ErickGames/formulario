@@ -74,7 +74,6 @@ $hayDebilidades10 = false;
 $pdf->chapterTitle(1, 'Ventas y mercadotecnia');
 $pdf->chapterSub('FORTALEZAS:');
 $bodyContentFortalezas1 = '';
-$bodyContentFortalezas1 .= utf8_decode('- Gestión de venta: Sólida identificación, contacto, seguimiento para concretar cita.' . "\n");
 
 if ($_SESSION['respuesta_s1p1'] == '4' || $_SESSION['respuesta_s1p1'] == '5') {
     $bodyContentFortalezas1 .= utf8_decode('- Gestión de venta: Sólida identificación, contacto, seguimiento para concretar cita.' . "\n");
@@ -190,7 +189,7 @@ if ($hayFortalezas2 == false) {
     $bodyContentFortalezas2 .= utf8_decode('No hay fortalezas relevantes' . "\n");
 }
 
-$pdf->chapterBody($bodyContentFortalezas1);
+$pdf->chapterBody($bodyContentFortalezas2);
 $pdf->chapterSub('DEBILIDADES:');
 $bodyContentDebilidades2 = '';
 
@@ -878,7 +877,7 @@ $rutaGuardado = 'PDFS/RespuestasUsuario'.$_POST['nombre'].'.pdf';
 $pdf->Output($rutaGuardado, 'F'); // 'F' indica que se guardará en el servidor
 
 // Nombre del archivo PDF
-$nombreArchivo = 'RespuestasUsuario'.$_POST['nombre'].'.pdf';
+//$nombreArchivo = 'RespuestasUsuario'.$_POST['nombre'].'.pdf';
 
 
 ///// enviar por correo
@@ -936,27 +935,27 @@ $mail->send();
 // Redirige al usuario a la página actualcen caso de error
 // header('Location: nombre_de_tu_pagina.php');
 
- echo($_SESSION['respuesta_s1p3']);
- echo($_SESSION['respuesta_s2p2']);
- echo($_SESSION['respuesta_s3p3']);
- echo($_SESSION['respuesta_s4p1']);
- echo($_SESSION['respuesta_s5p3']);
- echo($_SESSION['respuesta_s6p2']);
- echo($_SESSION['respuesta_s7p1']);
- echo($_SESSION['respuesta_s8p1']);
- echo($_SESSION['respuesta_s9p2']);
- echo($_SESSION['respuesta_s10p3']);
- echo($_SESSION['respuesta_s1p2']);
- echo($_SESSION['respuesta_s8p5']);
- echo($_SESSION['respuesta_s7p4']);
- echo($_SESSION['respuesta_s9p1']);
- echo($_SESSION['respuesta_s9p2']);
- echo($_SESSION['respuesta_s1p1']);
- echo($_SESSION['respuesta_s6p1']);
- echo($_SESSION['respuesta_s5p1']);
- echo($_SESSION['respuesta_s4p1']);
- echo($_SESSION['respuesta_s3p1']);
- echo($_SESSION['respuesta_s4p5']);
+ echo('Variable: ' . $_SESSION['respuesta_s1p3']);
+ echo('Variable: ' . $_SESSION['respuesta_s2p2']);
+ echo('Variable: ' . $_SESSION['respuesta_s3p3']);
+ echo('Variable: ' . $_SESSION['respuesta_s4p1']);
+ echo('Variable: ' . $_SESSION['respuesta_s5p3']);
+ echo('Variable: ' . $_SESSION['respuesta_s6p2']);
+ echo('Variable: ' . $_SESSION['respuesta_s7p1']);
+ echo('Variable: ' . $_SESSION['respuesta_s8p1']);
+ echo('Variable: ' . $_SESSION['respuesta_s9p2']);
+ echo('Variable: ' . $_SESSION['respuesta_s10p3']);
+ echo('Variable: ' . $_SESSION['respuesta_s1p2']);
+ echo('Variable: ' . $_SESSION['respuesta_s8p5']);
+ echo('Variable: ' . $_SESSION['respuesta_s7p4']);
+ echo('Variable: ' . $_SESSION['respuesta_s9p1']);
+ echo('Variable: ' . $_SESSION['respuesta_s9p2']);
+ echo('Variable: ' . $_SESSION['respuesta_s1p1']);
+ echo('Variable: ' . $_SESSION['respuesta_s6p1']);
+ echo('Variable: ' . $_SESSION['respuesta_s5p1']);
+ echo('Variable: ' . $_SESSION['respuesta_s4p1']);
+ echo('Variable: ' . $_SESSION['respuesta_s3p1']);
+ echo('Variable: ' . $_SESSION['respuesta_s4p5']);
 
 exit();
 ?>

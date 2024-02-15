@@ -50,7 +50,7 @@
                     denota el nivel más alto.</p>
                 <p> Duración del formulario: 15 minutos.</p>-->
                 
-                <img src="" alt="">
+                <img src="../img/intro.jpg" alt="">
 
                 <!--<p><b>Instrucciones:</b></p>
                 <p>Responde cada pregunta honestamente según tu percepción sobre la situación actual en tu práctica

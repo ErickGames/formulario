@@ -1,7 +1,8 @@
 <?php
+session_start();
+
 include_once('header.php');
 
-session_start();
 
 // Verifica si se ha enviado el formulario
 if ($_SERVER["REQUEST_METHOD"] == "POST") {

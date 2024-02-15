@@ -1,7 +1,14 @@
 <?php
+session_start();
+
+// Establecer el tiempo de vida de la cookie de sesión a 1 hora (3600 segundos)
+ini_set('session.cookie_lifetime', 3600);
+
+// Establecer el tiempo de vida de la sesión a 2 horas (7200 segundos)
+ini_set('session.gc_maxlifetime', 7200);
+
 include_once('header.php');
 
-session_start();
 
 ?>
 
