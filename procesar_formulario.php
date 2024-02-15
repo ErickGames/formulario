@@ -114,7 +114,7 @@ if ($_SESSION['respuesta_s1p9'] == '4' || $_SESSION['respuesta_s1p9'] == '5') {
 }
 // Verifica si hay alguna fortaleza
 if (!$hayFortalezas1) {
-    $bodyContentFortalezas1 = utf8_decode('- No hay fortalezas relevantes.' . "\n");
+    $bodyContentFortalezas1 .= utf8_decode('- No hay fortalezas relevantes.' . "\n");
 }
 
 $pdf->chapterBody($bodyContentFortalezas1);
@@ -159,7 +159,7 @@ if ($_SESSION['respuesta_s1p9'] == '1' || $_SESSION['respuesta_s1p9'] == '2') {
 }
 // Verifica si hay alguna debilidad
 if ($hayDebilidades1 == false) {
-    $bodyContentDebilidades1 = utf8_decode('No hay debilidades relevantes.' . "\n");
+    $bodyContentDebilidades1 .= utf8_decode('No hay debilidades relevantes.' . "\n");
 }
 $pdf->chapterBody($bodyContentDebilidades1);
 ////////////////
@@ -187,7 +187,7 @@ if ($_SESSION['respuesta_s2p4'] == '4' || $_SESSION['respuesta_s2p4'] == '5') {
 }
 // Verifica si hay alguna fortaleza
 if ($hayFortalezas2 == false) {
-    $bodyContentFortalezas2 = utf8_decode('No hay fortalezas relevantes' . "\n");
+    $bodyContentFortalezas2 .= utf8_decode('No hay fortalezas relevantes' . "\n");
 }
 
 $pdf->chapterBody($bodyContentFortalezas1);
@@ -212,7 +212,7 @@ if ($_SESSION['respuesta_s2p4'] == '1' || $_SESSION['respuesta_s2p4'] == '2') {
 }
 // Verifica si hay alguna debilidad
 if (!$hayDebilidades2) {
-    $bodyContentDebilidades2 = utf8_decode('No hay debilidades relevantes' . "\n");
+    $bodyContentDebilidades2 .= utf8_decode('No hay debilidades relevantes' . "\n");
 }
 $pdf->chapterBody($bodyContentDebilidades2);
 ////////////////
@@ -260,7 +260,7 @@ if ($_SESSION['respuesta_s3p9'] == '4' || $_SESSION['respuesta_s3p9'] == '5') {
 }
 // Verifica si hay alguna fortaleza
 if (!$hayFortalezas3) {
-    $bodyContentFortalezas3 = utf8_decode('No hay fortalezas relevantes.' . "\n");
+    $bodyContentFortalezas3 .= utf8_decode('No hay fortalezas relevantes.' . "\n");
 }
 
 $pdf->chapterBody($bodyContentFortalezas3);
@@ -305,7 +305,7 @@ if ($_SESSION['respuesta_s3p9'] == '1' || $_SESSION['respuesta_s3p9'] == '2') {
 }
 // Verifica si hay alguna debilidad
 if ($hayDebilidades3 == false) {
-    $bodyContentDebilidades3 = utf8_decode('No hay debilidades relevantes.' . "\n");
+    $bodyContentDebilidades3 .= utf8_decode('No hay debilidades relevantes.' . "\n");
 }
 $pdf->chapterBody($bodyContentDebilidades3);
 ////////////////
@@ -345,7 +345,7 @@ if ($_SESSION['respuesta_s4p7'] == '4' || $_SESSION['respuesta_s4p7'] == '5') {
 }
 // Verifica si hay alguna fortaleza
 if (!$hayFortalezas4) {
-    $bodyContentFortalezas4 = utf8_decode('No hay fortalezas relevantes.' . "\n");
+    $bodyContentFortalezas4 .= utf8_decode('No hay fortalezas relevantes.' . "\n");
 }
 
 $pdf->chapterBody($bodyContentFortalezas4);
@@ -382,7 +382,7 @@ if ($_SESSION['respuesta_s4p7'] == '1' || $_SESSION['respuesta_s4p7'] == '2') {
 }
 // Verifica si hay alguna debilidad
 if ($hayDebilidades4 == false) {
-    $bodyContentDebilidades4 = utf8_decode('No hay debilidades relevantes.' . "\n");
+    $bodyContentDebilidades4 .= utf8_decode('No hay debilidades relevantes.' . "\n");
 }
 $pdf->chapterBody($bodyContentDebilidades4);
 ////////////////
@@ -406,7 +406,7 @@ if ($_SESSION['respuesta_s5p3'] == '4' || $_SESSION['respuesta_s5p3'] == '5') {
 }
 // Verifica si hay alguna fortaleza
 if (!$hayFortalezas5) {
-    $bodyContentFortalezas5 = utf8_decode('No hay fortalezas relevantes.' . "\n");
+    $bodyContentFortalezas5 .= utf8_decode('No hay fortalezas relevantes.' . "\n");
 }
 
 $pdf->chapterBody($bodyContentFortalezas5);
@@ -427,7 +427,7 @@ if ($_SESSION['respuesta_s5p3'] == '1' || $_SESSION['respuesta_s5p3'] == '2') {
 }
 // Verifica si hay alguna debilidad
 if ($hayDebilidades5 == false) {
-    $bodyContentDebilidades5 = utf8_decode('No hay debilidades relevantes.' . "\n");
+    $bodyContentDebilidades5 .= utf8_decode('No hay debilidades relevantes.' . "\n");
 }
 $pdf->chapterBody($bodyContentDebilidades5);
 ////////////////
@@ -459,7 +459,7 @@ if ($_SESSION['respuesta_s6p5'] == '4' || $_SESSION['respuesta_s6p5'] == '5') {
 }
 // Verifica si hay alguna fortaleza
 if (!$hayFortalezas6) {
-    $bodyContentFortalezas6 = utf8_decode('No hay fortalezas relevantes.' . "\n");
+    $bodyContentFortalezas6 .= utf8_decode('No hay fortalezas relevantes.' . "\n");
 }
 
 $pdf->chapterBody($bodyContentFortalezas6);
@@ -488,7 +488,7 @@ if ($_SESSION['respuesta_s6p5'] == '1' || $_SESSION['respuesta_s6p5'] == '2') {
 }
 // Verifica si hay alguna debilidad
 if ($hayDebilidades6 == false) {
-    $bodyContentDebilidades6 = utf8_decode('No hay debilidades relevantes.' . "\n");
+    $bodyContentDebilidades6 .= utf8_decode('No hay debilidades relevantes.' . "\n");
 }
 $pdf->chapterBody($bodyContentDebilidades6);
 ////////////////
@@ -528,7 +528,7 @@ if ($_SESSION['respuesta_s7p7'] == '4' || $_SESSION['respuesta_s7p7'] == '5') {
 }
 // Verifica si hay alguna fortaleza
 if (!$hayFortalezas7) {
-    $bodyContentFortalezas7 = utf8_decode('No hay fortalezas relevantes.' . "\n");
+    $bodyContentFortalezas7 .= utf8_decode('No hay fortalezas relevantes.' . "\n");
 }
 
 $pdf->chapterBody($bodyContentFortalezas7);
@@ -565,7 +565,7 @@ if ($_SESSION['respuesta_s7p7'] == '1' || $_SESSION['respuesta_s7p7'] == '2') {
 }
 // Verifica si hay alguna debilidad
 if ($hayDebilidades7 == false) {
-    $bodyContentDebilidades7 = utf8_decode('No hay debilidades relevantes.' . "\n");
+    $bodyContentDebilidades7 .= utf8_decode('No hay debilidades relevantes.' . "\n");
 }
 $pdf->chapterBody($bodyContentDebilidades7);
 ////////////////
@@ -629,7 +629,7 @@ if ($_SESSION['respuesta_s8p14'] == '4' || $_SESSION['respuesta_s8p13'] == '5') 
 }
 // Verifica si hay alguna fortaleza
 if (!$hayFortalezas8) {
-    $bodyContentFortalezas8 = utf8_decode('No hay fortalezas relevantes.' . "\n");
+    $bodyContentFortalezas8 .= utf8_decode('No hay fortalezas relevantes.' . "\n");
 }
 
 $pdf->chapterBody($bodyContentFortalezas8);
@@ -690,7 +690,7 @@ if ($_SESSION['respuesta_s8p14'] == '1' || $_SESSION['respuesta_s8p113'] == '2')
 }
 // Verifica si hay alguna debilidad
 if ($hayDebilidades8 == false) {
-    $bodyContentDebilidades8 = utf8_decode('No hay debilidades relevantes.' . "\n");
+    $bodyContentDebilidades8 .= utf8_decode('No hay debilidades relevantes.' . "\n");
 }
 $pdf->chapterBody($bodyContentDebilidades8);
 ////////////////
@@ -722,7 +722,7 @@ if ($_SESSION['respuesta_s9p5'] == '4' || $_SESSION['respuesta_s9p5'] == '5') {
 }
 // Verifica si hay alguna fortaleza
 if (!$hayFortalezas9) {
-    $bodyContentFortalezas9 = utf8_decode('No hay fortalezas relevantes.' . "\n");
+    $bodyContentFortalezas9 .= utf8_decode('No hay fortalezas relevantes.' . "\n");
 }
 
 $pdf->chapterBody($bodyContentFortalezas9);
@@ -751,7 +751,7 @@ if ($_SESSION['respuesta_s9p5'] == '1' || $_SESSION['respuesta_s9p5'] == '2') {
 }
 // Verifica si hay alguna debilidad
 if ($hayDebilidades9 == false) {
-    $bodyContentDebilidades9 = utf8_decode('No hay debilidades relevantes.' . "\n");
+    $bodyContentDebilidades9 .= utf8_decode('No hay debilidades relevantes.' . "\n");
 }
 $pdf->chapterBody($bodyContentDebilidades9);
 ////////////////
@@ -811,7 +811,7 @@ if ($_SESSION['respuesta_s10p12'] == '4' || $_SESSION['respuesta_s10p12'] == '5'
 }
 // Verifica si hay alguna fortaleza
 if (!$hayFortalezas10) {
-    $bodyContentFortalezas10 = utf8_decode('No hay fortalezas relevantes.' . "\n");
+    $bodyContentFortalezas10 .= utf8_decode('No hay fortalezas relevantes.' . "\n");
 }
 
 $pdf->chapterBody($bodyContentFortalezas10);
@@ -868,7 +868,7 @@ if ($_SESSION['respuesta_s10p12'] == '1' || $_SESSION['respuesta_s10p12'] == '2'
 }
 // Verifica si hay alguna debilidad
 if ($hayDebilidades10 == false) {
-    $bodyContentDebilidades10 = utf8_decode('No hay debilidades relevantes.' . "\n");
+    $bodyContentDebilidades10 .= utf8_decode('No hay debilidades relevantes.' . "\n");
 }
 $pdf->chapterBody($bodyContentDebilidades10);
 
@@ -916,8 +916,8 @@ if ($mail->send()) {
 
     $pdf->Output($nombreArchivo, 'D');
 
-} else {
-    echo 'Error al enviar el correo: ' . $mail->ErrorInfo;
+} //else {
+    //echo 'Error al enviar el correo: ' . $mail->ErrorInfo;
 
     // $mail->setFrom('diagnostico@dnafactorymedicos.com', 'DNA Factory Medicos'); // Cambia con tu dirección de correo y nombre
     // $mail->addAddress('diagnostico@dnafactorymedicos.com');
@@ -928,8 +928,8 @@ if ($mail->send()) {
     // $mail->send();
     // Salida del PDF al navegador
 
-    $pdf->Output($nombreArchivo, 'D');
-}
+    //$pdf->Output($nombreArchivo, 'D');
+//}
 /////
 
 

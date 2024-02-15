@@ -409,6 +409,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             <h4 class=" mb-4 ">Comunicación y alineación</h4>
 
+            <div class="col-md-1"></div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p10" value="1">
                 <label class="form-check-label">
@@ -440,6 +441,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     de consejo.
                 </label>
             </div>
+            <div class="col-md-1"></div>
+
         </div>
 
         <!-- PREGUNTA 11 -->
