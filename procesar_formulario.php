@@ -113,7 +113,7 @@ if ($_SESSION['respuesta_s1p9'] == '4' || $_SESSION['respuesta_s1p9'] == '5') {
     $hayFortalezas1 = true;
 }
 // Verifica si hay alguna fortaleza
-if (!$hayFortalezas1) {
+if ($hayFortalezas1 == false) {
     $bodyContentFortalezas1 .= utf8_decode('- No hay fortalezas relevantes.' . "\n");
 }
 
@@ -211,7 +211,7 @@ if ($_SESSION['respuesta_s2p4'] == '1' || $_SESSION['respuesta_s2p4'] == '2') {
     $hayDebilidades2 = true;
 }
 // Verifica si hay alguna debilidad
-if (!$hayDebilidades2) {
+if ($hayDebilidades2 == false) {
     $bodyContentDebilidades2 .= utf8_decode('No hay debilidades relevantes' . "\n");
 }
 $pdf->chapterBody($bodyContentDebilidades2);
@@ -259,7 +259,7 @@ if ($_SESSION['respuesta_s3p9'] == '4' || $_SESSION['respuesta_s3p9'] == '5') {
     $hayFortalezas3 = true;
 }
 // Verifica si hay alguna fortaleza
-if (!$hayFortalezas3) {
+if ($hayFortalezas3 == false) {
     $bodyContentFortalezas3 .= utf8_decode('No hay fortalezas relevantes.' . "\n");
 }
 
@@ -344,7 +344,7 @@ if ($_SESSION['respuesta_s4p7'] == '4' || $_SESSION['respuesta_s4p7'] == '5') {
     $hayFortalezas4 = true;
 }
 // Verifica si hay alguna fortaleza
-if (!$hayFortalezas4) {
+if ($hayFortalezas4 == false) {
     $bodyContentFortalezas4 .= utf8_decode('No hay fortalezas relevantes.' . "\n");
 }
 
@@ -405,7 +405,7 @@ if ($_SESSION['respuesta_s5p3'] == '4' || $_SESSION['respuesta_s5p3'] == '5') {
     $hayFortalezas5 = true;
 }
 // Verifica si hay alguna fortaleza
-if (!$hayFortalezas5) {
+if ($hayFortalezas5 == false) {
     $bodyContentFortalezas5 .= utf8_decode('No hay fortalezas relevantes.' . "\n");
 }
 
@@ -458,7 +458,7 @@ if ($_SESSION['respuesta_s6p5'] == '4' || $_SESSION['respuesta_s6p5'] == '5') {
     $hayFortalezas6 = true;
 }
 // Verifica si hay alguna fortaleza
-if (!$hayFortalezas6) {
+if ($hayFortalezas6 == false) {
     $bodyContentFortalezas6 .= utf8_decode('No hay fortalezas relevantes.' . "\n");
 }
 
@@ -527,7 +527,7 @@ if ($_SESSION['respuesta_s7p7'] == '4' || $_SESSION['respuesta_s7p7'] == '5') {
     $hayFortalezas7 = true;
 }
 // Verifica si hay alguna fortaleza
-if (!$hayFortalezas7) {
+if ($hayFortalezas7 == false) {
     $bodyContentFortalezas7 .= utf8_decode('No hay fortalezas relevantes.' . "\n");
 }
 
@@ -628,7 +628,7 @@ if ($_SESSION['respuesta_s8p14'] == '4' || $_SESSION['respuesta_s8p13'] == '5') 
     $hayFortalezas8 = true;
 }
 // Verifica si hay alguna fortaleza
-if (!$hayFortalezas8) {
+if ($hayFortalezas8 == false) {
     $bodyContentFortalezas8 .= utf8_decode('No hay fortalezas relevantes.' . "\n");
 }
 
@@ -721,7 +721,7 @@ if ($_SESSION['respuesta_s9p5'] == '4' || $_SESSION['respuesta_s9p5'] == '5') {
     $hayFortalezas9 = true;
 }
 // Verifica si hay alguna fortaleza
-if (!$hayFortalezas9) {
+if ($hayFortalezas9 == false) {
     $bodyContentFortalezas9 .= utf8_decode('No hay fortalezas relevantes.' . "\n");
 }
 
@@ -810,7 +810,7 @@ if ($_SESSION['respuesta_s10p12'] == '4' || $_SESSION['respuesta_s10p12'] == '5'
     $hayFortalezas10 = true;
 }
 // Verifica si hay alguna fortaleza
-if (!$hayFortalezas10) {
+if ($hayFortalezas10 == false) {
     $bodyContentFortalezas10 .= utf8_decode('No hay fortalezas relevantes.' . "\n");
 }
 
@@ -900,7 +900,7 @@ $mail->Subject = 'Resultado del Diagnostico';
 $mail->Body = 'Adjunto encontrarás tus respuestas en formato PDF.     Datos de usuario:   Nuevo test de: ' . $_POST['nombre'] . ' Especialidad: ' . $_POST['especialidad'] . ' Correo: ' . $_POST['email'];
 $mail->addAttachment($rutaGuardado, 'RespuestasDNAFactory.pdf'); // Adjunta el PDF generado
 
-if ($mail->send()) {
+$mail->send();
 
     echo 'Correo enviado correctamente';
 
@@ -914,9 +914,9 @@ if ($mail->send()) {
 
     // Salida del PDF al navegador
 
-    $pdf->Output($nombreArchivo, 'D');
+   // $pdf->Output($nombreArchivo, 'D');
 
-} //else {
+ //else {
     //echo 'Error al enviar el correo: ' . $mail->ErrorInfo;
 
     // $mail->setFrom('diagnostico@dnafactorymedicos.com', 'DNA Factory Medicos'); // Cambia con tu dirección de correo y nombre
@@ -936,27 +936,27 @@ if ($mail->send()) {
 // Redirige al usuario a la página actualcen caso de error
 // header('Location: nombre_de_tu_pagina.php');
 
-// echo($_SESSION['respuesta_s1p3']);
-// echo($_SESSION['respuesta_s2p2']);
-// echo($_SESSION['respuesta_s3p3']);
-// echo($_SESSION['respuesta_s4p1']);
-// echo($_SESSION['respuesta_s5p3']);
-// echo($_SESSION['respuesta_s6p2']);
-// echo($_SESSION['respuesta_s7p1']);
-// echo($_SESSION['respuesta_s8p1']);
-// echo($_SESSION['respuesta_s9p2']);
-// echo($_SESSION['respuesta_s10p3']);
-// echo($_SESSION['respuesta_s1p2']);
-// echo($_SESSION['respuesta_s8p5']);
-// echo($_SESSION['respuesta_s7p4']);
-// echo($_SESSION['respuesta_s9p1']);
-// echo($_SESSION['respuesta_s9p2']);
-// echo($_SESSION['respuesta_s1p1']);
-// echo($_SESSION['respuesta_s6p1']);
-// echo($_SESSION['respuesta_s5p1']);
-// echo($_SESSION['respuesta_s4p1']);
-// echo($_SESSION['respuesta_s3p1']);
-// echo($_SESSION['respuesta_s4p5']);
+ echo($_SESSION['respuesta_s1p3']);
+ echo($_SESSION['respuesta_s2p2']);
+ echo($_SESSION['respuesta_s3p3']);
+ echo($_SESSION['respuesta_s4p1']);
+ echo($_SESSION['respuesta_s5p3']);
+ echo($_SESSION['respuesta_s6p2']);
+ echo($_SESSION['respuesta_s7p1']);
+ echo($_SESSION['respuesta_s8p1']);
+ echo($_SESSION['respuesta_s9p2']);
+ echo($_SESSION['respuesta_s10p3']);
+ echo($_SESSION['respuesta_s1p2']);
+ echo($_SESSION['respuesta_s8p5']);
+ echo($_SESSION['respuesta_s7p4']);
+ echo($_SESSION['respuesta_s9p1']);
+ echo($_SESSION['respuesta_s9p2']);
+ echo($_SESSION['respuesta_s1p1']);
+ echo($_SESSION['respuesta_s6p1']);
+ echo($_SESSION['respuesta_s5p1']);
+ echo($_SESSION['respuesta_s4p1']);
+ echo($_SESSION['respuesta_s3p1']);
+ echo($_SESSION['respuesta_s4p5']);
 
 exit();
 ?>
