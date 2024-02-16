@@ -21,44 +21,55 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <body>
     <div class=" row mx-5 mt-5">
-        <div class="col-8">
-            <!-- <h4>SECCIÓN 8</h4> -->
-            <h1 class="section-title">RECURSOS HUMANOS</h1>
+        <div class="col-md-1">
+            <img src="img/secciones/rh.jpg" alt="" style="display:block; margin:auto; width:100%">
+        </div>
+        <div class="col-md-7">
+            <h2 class="section-title">RECURSOS HUMANOS</h2>
         </div>
 
-        <div class="col-4">
+        <div class="col-md-4">
             <img src="img/logo-01.png" alt="" style="display:block; margin:auto; width:40%">
         </div>
     </div>
 
-    <div id="myProgress" class="w3-light-grey m-4">
-        <div id="myBar" class="w3-container w3-green w3-center" style="width:57.2%">58%</div>
-    </div>
-
-    <div class="row p-4" style="background-color:rgb(36, 55, 124)">
-        <div class="col-md-1"></div>
-        <div class="col-md-2 centerrr">
-            <h4>1<br>Capacidad Nula</h4>
+    <div class="row m-0">
+        <div class="col-1" style="display:block; margin:auto">
+            <img src="img/tuavance.jpg" alt="" style="width:100%; display:block; margin:auto">
         </div>
-        <div class="col-md-2 centerrr">
-            <h4>2<br>Capacidad básica</h4>
+        <div class="col-11">
+            <div id="myProgress" class="w3-light-grey m-4" style="border-radius:20px">
+                <div id="myBar" class="w3-container w3-green w3-center" style="width:57.2%; border-radius:20px">58%
+                </div>
+            </div>
         </div>
-        <div class="col-md-2 centerrr">
-            <h4>3<br>Capacidad mediana</h4>
-        </div>
-        <div class="col-md-2 centerrr">
-            <h4>4<br>Capacidad alta</h4>
-        </div>
-        <div class="col-md-2 centerrr">
-            <h4>5<br>Lo mejor del mercado</h4>
-        </div>
-        <div class="col-md-1"></div>
     </div>
 
     <form action="9_instalaciones.php" method="POST" class="m-4 bordesito" id="form1">
 
+        <div class="row p-3"
+            style="background-color:rgb(36, 55, 124); border-top-right-radius:20px; border-top-left-radius:20px">
+            <div class="col-md-1"></div>
+            <div class="col-md-2 centerrr">
+                <h4>1<br>Capacidad Nula</h4>
+            </div>
+            <div class="col-md-2 centerrr">
+                <h4>2<br>Capacidad básica</h4>
+            </div>
+            <div class="col-md-2 centerrr">
+                <h4>3<br>Capacidad mediana</h4>
+            </div>
+            <div class="col-md-2 centerrr">
+                <h4>4<br>Capacidad alta</h4>
+            </div>
+            <div class="col-md-2 centerrr">
+                <h4>5<br>Lo mejor del mercado</h4>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+
         <!-- PREGUNTA 1 -->
-        <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="row p-4 m-0" style="background-color:rgba(25, 47, 89, 0.1)">
 
             <h4 class="mb-4">Cantidad de empleados en general</h4>
 
@@ -97,7 +108,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 2 -->
-        <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="row p-4 m-0" style="background-color:rgba(61, 177, 102, 0.1)">
 
             <h4 Class="mb-4">Equipo de personas suficiente y asignado a labores especificas</h4>
 
@@ -136,7 +147,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 3 -->
-        <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="row p-4 m-0" style="background-color:rgba(25, 47, 89, 0.1)">
 
             <h4 class="mb-4">Administración de nómina</h4>
 
@@ -174,7 +185,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 4 -->
-        <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="row p-4 m-0" style="background-color:rgba(61, 177, 102, 0.1)">
 
             <h4 class="mb-4">Perfiles de puestos / Descripción de responsabilidades</h4>
 
@@ -213,7 +224,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 5 -->
-        <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="row p-4 m-0" style="background-color:rgba(25, 47, 89, 0.1)">
 
             <h4 Class="mb-4">Metas y objetivos claros por posiciones</h4>
 
@@ -251,7 +262,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 6 -->
-        <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="row p-4 m-0" style="background-color:rgba(61, 177, 102, 0.1)">
 
             <h4 class="mb-4">Incentivos / Bonos y Comisiones</h4>
 
@@ -290,7 +301,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 7 -->
-        <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="row p-4 m-0" style="background-color:rgba(25, 47, 89, 0.1)">
 
             <h4 Class="mb-4">Competitividad laboral</h4>
 
@@ -329,7 +340,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 8 -->
-        <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="row p-4 m-0" style="background-color:rgba(61, 177, 102, 0.1)">
             <h4 class="mb-4">Rotación</h4>
 
             <div class="col-md-1"></div>
@@ -367,7 +378,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 9 -->
-        <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="row p-4 m-0" style="background-color:rgba(25, 47, 89, 0.1)">
 
             <h4 class="mb-4">Reclutamiento</h4>
 
@@ -406,7 +417,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 10 -->
-        <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="row p-4 m-0" style="background-color:rgba(61, 177, 102, 0.1)">
 
             <h4 class=" mb-4 ">Comunicación y alineación</h4>
 
@@ -447,7 +458,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 11 -->
-        <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="row p-4 m-0" style="background-color:rgba(25, 47, 89, 0.1)">
 
             <h4 Class="mb-4">Reconocimiento / Premios</h4>
 
@@ -486,8 +497,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 12 -->
-        <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
-        
+        <div class="row p-4 m-0" style="background-color:rgba(61, 177, 102, 0.1)">
+
             <h4 class="mb-4">Liderazgo y desarrollo de otros</h4>
 
             <div class="col-md-1"></div>
@@ -525,7 +536,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 13 -->
-        <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="row p-4 m-0" style="background-color:rgba(25, 47, 89, 0.1)">
 
             <h4 class="mb-4">Capacitación y Entrenamiento</h4>
 

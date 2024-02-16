@@ -1,11 +1,12 @@
 <?php
-session_start();
-
-// Establecer el tiempo de vida de la cookie de sesión a 1 hora (3600 segundos)
 ini_set('session.cookie_lifetime', 3600);
 
 // Establecer el tiempo de vida de la sesión a 2 horas (7200 segundos)
 ini_set('session.gc_maxlifetime', 7200);
+
+session_start();
+
+// Establecer el tiempo de vida de la cookie de sesión a 1 hora (3600 segundos)
 
 include_once('header.php');
 
@@ -15,44 +16,54 @@ include_once('header.php');
 <body>
 
     <div class="row mx-5 mt-5">
-        <div class="col-8">
-            <!-- <h4>SECCIÓN 1</h4> -->
-            <h1 class="section-title">VENTAS Y MERCADOTECNIA</h1>
+        <div class="col-md-1">
+            <img src="img/secciones/ventas.jpg" alt="" style="display:block; margin:auto; width:100%">
         </div>
-
-        <div class="col-4">
+        <div class="col-md-7">
+            <h2 class="section-title">VENTAS Y MERCADOTECNIA</h2>
+        </div>
+        <div class="col-md-4">
             <img src="img/logo-01.png" alt="" style="display:block; margin:auto; width:40%">
         </div>
     </div>
 
-    <div id="myProgress" class="w3-light-grey m-4">
-        <div id="myBar" class="w3-container w3-green w3-center" style="width:0%">0%</div>
+    <div class="row m-0">
+        <div class="col-1 col-sm-0" style="display:block; margin:auto">
+            <img src="img/tuavance.jpg" alt="" style="width:100%; display:block; margin:auto">
+        </div>
+        <div class="col-11 ">
+            <div id="myProgress" class="w3-light-grey m-4" style="border-radius:20px">
+                <div id="myBar" class="w3-container w3-green w3-center" style="width:0%; border-radius:20px">0%</div>
+            </div>
+        </div>
     </div>
 
-    <div class="row p-4" style="background-color:rgb(36, 55, 124)">
-        <div class="col-md-1"></div>
-        <div class="col-md-2 centerrr">
-            <h4>1<br>Capacidad Nula</h4>
-        </div>
-        <div class="col-md-2 centerrr">
-            <h4>2<br>Capacidad básica</h4>
-        </div>
-        <div class="col-md-2 centerrr">
-            <h4>3<br>Capacidad mediana</h4>
-        </div>
-        <div class="col-md-2 centerrr">
-            <h4>4<br>Capacidad alta</h4>
-        </div>
-        <div class="col-md-2 centerrr">
-            <h4>5<br>Lo mejor del mercado</h4>
-        </div>
-        <div class="col-md-1"></div>
-    </div>
 
     <form action="2_recepciones.php" method="POST" class="m-4 bordesito" id="form1">
 
+        <div class="row p-3"
+            style="background-color:rgb(36, 55, 124); border-top-right-radius:20px; border-top-left-radius:20px">
+            <div class="col-md-1"></div>
+            <div class="col-md-2 centerrr">
+                <h4>1<br>Capacidad Nula</h4>
+            </div>
+            <div class="col-md-2 centerrr">
+                <h4>2<br>Capacidad básica</h4>
+            </div>
+            <div class="col-md-2 centerrr">
+                <h4>3<br>Capacidad mediana</h4>
+            </div>
+            <div class="col-md-2 centerrr">
+                <h4>4<br>Capacidad alta</h4>
+            </div>
+            <div class="col-md-2 centerrr">
+                <h4>5<br>Lo mejor del mercado</h4>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+
         <!-- PREGUNTA 1 -->
-        <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="row p-4 m-0" style="background-color:rgba(25, 47, 89, 0.1)">
 
             <h4 class="mb-4">Gestión de venta</h4>
             <div class="col-md-1"></div>
@@ -93,7 +104,7 @@ include_once('header.php');
         </div>
 
         <!-- PREGUNTA 2 -->
-        <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="row p-4 m-0" style="background-color:rgba(61, 177, 102, 0.1)">
 
             <h4 Class="mb-4">Frecuencia de actividad promocional</h4>
             <div class="col-md-1"></div>
@@ -132,7 +143,7 @@ include_once('header.php');
         </div>
 
         <!-- PREGUNTA 3 -->
-        <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="row p-4 m-0" style="background-color:rgba(25, 47, 89, 0.1)">
 
 
             <h4 class="mb-4">Configuración y venta de paquetes</h4>
@@ -172,7 +183,7 @@ include_once('header.php');
         </div>
 
         <!-- PREGUNTA 4 -->
-        <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="row p-4 m-0" style="background-color:rgba(61, 177, 102, 0.1)">
 
             <h4 class="mb-4">Redes sociales</h4>
             <div class="col-md-1"></div>
@@ -211,7 +222,7 @@ include_once('header.php');
         </div>
 
         <!-- PREGUNTA 5 -->
-        <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="row p-4 m-0" style="background-color:rgba(25, 47, 89, 0.1)">
 
             <h4 Class="mb-4">Poder de marca</h4>
             <div class="col-md-1"></div>
@@ -250,7 +261,7 @@ include_once('header.php');
         </div>
 
         <!-- PREGUNTA 6 -->
-        <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="row p-4 m-0" style="background-color:rgba(61, 177, 102, 0.1)">
 
             <h4 class="mb-4">Página WEB del negocio</h4>
             <div class="col-md-1"></div>
@@ -290,7 +301,7 @@ include_once('header.php');
         </div>
 
         <!-- PREGUNTA 7 -->
-        <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="row p-4 m-0" style="background-color:rgba(25, 47, 89, 0.1)">
 
             <h4 class="mb-4">Publicidad en medios tradicionales</h4>
             <div class="col-md-1"></div>
@@ -329,7 +340,7 @@ include_once('header.php');
         </div>
 
         <!-- PREGUNTA 8 -->
-        <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="row p-4 m-0" style="background-color:rgba(61, 177, 102, 0.1)">
 
             <h4 Class="mb-4">Plan de Lealtad e incentivos con pacientes frecuentes</h4>
             <div class="col-md-1"></div>
@@ -368,7 +379,7 @@ include_once('header.php');
         </div>
 
         <!-- PREGUNTA 9 -->
-        <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="row p-4 m-0" style="background-color:rgba(25, 47, 89, 0.1)">
 
 
             <h4 class="mb-4">Soporte para comunicación y mercadotecnia (Agencia o profesionales)</h4>

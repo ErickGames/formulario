@@ -17,44 +17,55 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <body>
     <div class=" row mx-5 mt-5">
-        <div class="col-8">
-            <!-- <h4>SECCIÓN 10</h4> -->
-            <h1 class="section-title">PROYECTO PERSONAL / ESTATUS DEL NEGOCIO</h1>
+        <div class="col-md-1">
+            <img src="img/secciones/proyecto.jpg" alt="" style="display:block; margin:auto; width:100%">
+        </div>
+        <div class="col-md-7">
+            <h2 class="section-title">PROYECTO PERSONAL / ESTATUS DEL NEGOCIO</h2>
         </div>
 
-        <div class="col-4">
+        <div class="col-md-4">
             <img src="img/logo-01.png" alt="" style="display:block; margin:auto; width:40%">
         </div>
     </div>
 
-    <div id="myProgress" class="w3-light-grey m-4">
-        <div id="myBar" class="w3-container w3-green w3-center" style="width:81.9%">83%</div>
-    </div>
-
-    <div class="row p-4 mb-0 mbbb" style="background-color:rgb(36, 55, 124)">
-        <div class="col-md-1"></div>
-        <div class="col-md-2 centerrr">
-            <h4>1<br>Capacidad Nula</h4>
+    <div class="row m-0">
+        <div class="col-1" style="display:block; margin:auto">
+            <img src="img/tuavance.jpg" alt="" style="width:100%; display:block; margin:auto">
         </div>
-        <div class="col-md-2 centerrr">
-            <h4>2<br>Capacidad básica</h4>
+        <div class="col-11">
+            <div id="myProgress" class="w3-light-grey m-4" style="border-radius:20px">
+                <div id="myBar" class="w3-container w3-green w3-center" style="width:81.9%; border-radius:20px">83%
+                </div>
+            </div>
         </div>
-        <div class="col-md-2 centerrr">
-            <h4>3<br>Capacidad mediana</h4>
-        </div>
-        <div class="col-md-2 centerrr">
-            <h4>4<br>Capacidad alta</h4>
-        </div>
-        <div class="col-md-2 centerrr">
-            <h4>5<br>Lo mejor del mercado</h4>
-        </div>
-        <div class="col-md-1"></div>
     </div>
 
     <form action="Finalizar.php" method="POST" class="m-4 bordesito" id="form1">
 
+        <div class="row p-3"
+            style="background-color:rgb(36, 55, 124); border-top-right-radius:20px; border-top-left-radius:20px">
+            <div class="col-md-1"></div>
+            <div class="col-md-2 centerrr">
+                <h4>1<br>Capacidad Nula</h4>
+            </div>
+            <div class="col-md-2 centerrr">
+                <h4>2<br>Capacidad básica</h4>
+            </div>
+            <div class="col-md-2 centerrr">
+                <h4>3<br>Capacidad mediana</h4>
+            </div>
+            <div class="col-md-2 centerrr">
+                <h4>4<br>Capacidad alta</h4>
+            </div>
+            <div class="col-md-2 centerrr">
+                <h4>5<br>Lo mejor del mercado</h4>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+
         <!-- PREGUNTA 1 -->
-        <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="row p-4 m-0" style="background-color:rgba(25, 47, 89, 0.1)">
 
             <h4 class="mb-4">Tiempo dedicado a la clínica / consultorio propio</h4>
 
@@ -62,38 +73,38 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p1" value="1">
                 <label class="form-check-label">
-                Considero que no le he dedicado mucho tiempo a mi consultorio.
+                    Considero que no le he dedicado mucho tiempo a mi consultorio.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p1" value="2">
                 <label class="form-check-label">
-                Trabajo en otra institucion y eso me resta tiempo para atender mi consultorio.
+                    Trabajo en otra institucion y eso me resta tiempo para atender mi consultorio.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p1" value="3">
                 <label class="form-check-label">
-                Le dedico al menos el 50% de mi tiempo a mi consultorio.
+                    Le dedico al menos el 50% de mi tiempo a mi consultorio.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p1" value="4">
                 <label class="form-check-label">
-                Le dedico la mayoría de mi tiempo a mi consultorio y en tiempos libres estoy en otra institución.
+                    Le dedico la mayoría de mi tiempo a mi consultorio y en tiempos libres estoy en otra institución.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p1" value="5">
                 <label class="form-check-label">
-                Trabajo de tiempo completo en mi consultorio.
+                    Trabajo de tiempo completo en mi consultorio.
                 </label>
             </div>
             <div class="col-md-1"></div>
         </div>
 
         <!-- PREGUNTA 2 -->
-        <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="row p-4 m-0" style="background-color:rgba(61, 177, 102, 0.1)">
 
             <h4 Class="mb-4">Agenda en su propio consultorio</h4>
 
@@ -101,38 +112,38 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p2" value="1">
                 <label class="form-check-label">
-                Mis citas ocupan al menos el 20% de mi agenda.
+                    Mis citas ocupan al menos el 20% de mi agenda.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p2" value="2">
                 <label class="form-check-label">
-                Mis citas representan entre un 20% y 40% de mi agenda.
+                    Mis citas representan entre un 20% y 40% de mi agenda.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p2" value="3">
                 <label class="form-check-label">
-                Mi agenda está llena de citas al menos al 50%.
+                    Mi agenda está llena de citas al menos al 50%.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p2" value="4">
                 <label class="form-check-label">
-                Mi agenda está llena de citas al 60%-80%.
+                    Mi agenda está llena de citas al 60%-80%.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p2" value="5">
                 <label class="form-check-label">
-                Tengo una agenda muy ocupada con menos del 20% de espacios disponibles.
+                    Tengo una agenda muy ocupada con menos del 20% de espacios disponibles.
                 </label>
             </div>
             <div class="col-md-1"></div>
         </div>
 
         <!-- PREGUNTA 3 -->
-        <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="row p-4 m-0" style="background-color:rgba(25, 47, 89, 0.1)">
 
             <h4 class="mb-4">Madurez del negocio</h4>
 
@@ -140,38 +151,38 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p3" value="1">
                 <label class="form-check-label">
-                No considero que mi negocio se encuentre maduro.
+                    No considero que mi negocio se encuentre maduro.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p3" value="2">
                 <label class="form-check-label">
-                Tengo menos de 5 años con mi consultorio y aún tengo áreas de oportunidad.
+                    Tengo menos de 5 años con mi consultorio y aún tengo áreas de oportunidad.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p3" value="3">
                 <label class="form-check-label">
-                Tengo de 5 a 7 años con el consultorio pero no tengo definido hacia dónde vamos.
+                    Tengo de 5 a 7 años con el consultorio pero no tengo definido hacia dónde vamos.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p3" value="4">
                 <label class="form-check-label">
-                Tengo mas de 10 años en el negocio y considero que puedo renovarme.
+                    Tengo mas de 10 años en el negocio y considero que puedo renovarme.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p3" value="5">
                 <label class="form-check-label">
-                Tengo más de 10 años con el consultorio, alcanzamos la madurez pero quiero evolucionar.
+                    Tengo más de 10 años con el consultorio, alcanzamos la madurez pero quiero evolucionar.
                 </label>
             </div>
             <div class="col-md-1"></div>
         </div>
 
         <!-- PREGUNTA 4 -->
-        <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="row p-4 m-0" style="background-color:rgba(61, 177, 102, 0.1)">
 
             <h4 class="mb-4">Conformidad profesional</h4>
 
@@ -179,38 +190,39 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p4" value="1">
                 <label class="form-check-label">
-                No estoy conforme con mi negocio.
+                    No estoy conforme con mi negocio.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p4" value="2">
                 <label class="form-check-label">
-                Me gustaría no ser todólogo en el trabajo y enfocarme en lo que más me gusta.
+                    Me gustaría no ser todólogo en el trabajo y enfocarme en lo que más me gusta.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p4" value="3">
                 <label class="form-check-label">
-                Estoy conforme pero quisiera fortalecer mi negocio.
+                    Estoy conforme pero quisiera fortalecer mi negocio.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p4" value="4">
                 <label class="form-check-label">
-                Estoy conforme porque me enfoco en los servicios que se venden más y le dan valor al cliente.
+                    Estoy conforme porque me enfoco en los servicios que se venden más y le dan valor al cliente.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p4" value="5">
                 <label class="form-check-label">
-                Estoy conforme, me enfoco en lo que me gusta y soy muy bueno en lo que hago. Considero que puedo expandirme.
+                    Estoy conforme, me enfoco en lo que me gusta y soy muy bueno en lo que hago. Considero que puedo
+                    expandirme.
                 </label>
             </div>
             <div class="col-md-1"></div>
         </div>
 
         <!-- PREGUNTA 5 -->
-        <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="row p-4 m-0" style="background-color:rgba(25, 47, 89, 0.1)">
 
             <h4 Class="mb-4">Conformidad personal</h4>
 
@@ -218,38 +230,39 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p5" value="1">
                 <label class="form-check-label">
-                No siento tanta  ambición por crecer personalmente ni en mi patrimonio.
+                    No siento tanta ambición por crecer personalmente ni en mi patrimonio.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p5" value="2">
                 <label class="form-check-label">
-                Siento poca conformidad personal o familiar pero no encuentro las maneras de cambiar eso.
+                    Siento poca conformidad personal o familiar pero no encuentro las maneras de cambiar eso.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p5" value="3">
                 <label class="form-check-label">
-                Dedico mi tiempo a lo que más quiero pero me gustaría dedicar mas tiempo a mi familia y compromisos personales.
+                    Dedico mi tiempo a lo que más quiero pero me gustaría dedicar mas tiempo a mi familia y compromisos
+                    personales.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p5" value="4">
                 <label class="form-check-label">
-                Me reto permanentemente para no estancarme y busco mejorar mis hábitos.
+                    Me reto permanentemente para no estancarme y busco mejorar mis hábitos.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p5" value="5">
                 <label class="form-check-label">
-                Me reto permanentemente para crecer personalmente y tengo buenos hábitos para lograrlo.
+                    Me reto permanentemente para crecer personalmente y tengo buenos hábitos para lograrlo.
                 </label>
             </div>
             <div class="col-md-1"></div>
         </div>
 
         <!-- PREGUNTA 6 -->
-        <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="row p-4 m-0" style="background-color:rgba(61, 177, 102, 0.1)">
 
             <h4 Class="mb-4">Balance Vida-Trabajo</h4>
 
@@ -257,38 +270,40 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p6" value="1">
                 <label class="form-check-label">
-                Todo el día estoy trabajando, no he encontrado un balance.
+                    Todo el día estoy trabajando, no he encontrado un balance.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p6" value="2">
                 <label class="form-check-label">
-                Hago pequeños cambios en mi vida para empezar a balancear mis actividades.
+                    Hago pequeños cambios en mi vida para empezar a balancear mis actividades.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p6" value="3">
                 <label class="form-check-label">
-                Tengo un moderado balance de vida y trabajo, aunque quisiera mejorarlo.
+                    Tengo un moderado balance de vida y trabajo, aunque quisiera mejorarlo.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p6" value="4">
                 <label class="form-check-label">
-                Considero que tengo un buen balance entre mi trabajo y mi persona gracias a mi equipo que me respalda.
+                    Considero que tengo un buen balance entre mi trabajo y mi persona gracias a mi equipo que me
+                    respalda.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p6" value="5">
                 <label class="form-check-label">
-                Tengo un buen balance de vida y trabajo, lo reflejo con mis pacientes y esto me ayuda a incrementar ventas.
+                    Tengo un buen balance de vida y trabajo, lo reflejo con mis pacientes y esto me ayuda a incrementar
+                    ventas.
                 </label>
             </div>
             <div class="col-md-1"></div>
         </div>
 
         <!-- PREGUNTA 7 -->
-        <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="row p-4 m-0" style="background-color:rgba(25, 47, 89, 0.1)">
 
             <h4 Class="mb-4">Pasión</h4>
 
@@ -296,38 +311,38 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p7" value="1">
                 <label class="form-check-label">
-                No soy persistente con las estrategias que defino.
+                    No soy persistente con las estrategias que defino.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p7" value="2">
                 <label class="form-check-label">
-                No soy constante y desisto de las estrategias que defino para alcanzar los objetivos.
+                    No soy constante y desisto de las estrategias que defino para alcanzar los objetivos.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p7" value="3">
                 <label class="form-check-label">
-                Trato de mantenerme constante con las acciones para lograr mis objetivos.
+                    Trato de mantenerme constante con las acciones para lograr mis objetivos.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p7" value="4">
                 <label class="form-check-label">
-                La mayoría de las veces me mantengo constante en las estrategias que definí.
+                    La mayoría de las veces me mantengo constante en las estrategias que definí.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p7" value="5">
                 <label class="form-check-label">
-                Siempre me mantengo constante con los objetivos y las estrategias definidas.
+                    Siempre me mantengo constante con los objetivos y las estrategias definidas.
                 </label>
             </div>
             <div class="col-md-1"></div>
         </div>
 
         <!-- PREGUNTA 8 -->
-        <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="row p-4 m-0" style="background-color:rgba(61, 177, 102, 0.1)">
 
             <h4 class="mb-4">Creatividad</h4>
 
@@ -335,38 +350,38 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p8" value="1">
                 <label class="form-check-label">
-                No me considero creativo para innovar en mi consultorio..
+                    No me considero creativo para innovar en mi consultorio..
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p8" value="2">
                 <label class="form-check-label">
-                Identifico algunas áreas de oportunidad para innovar pero no sé aplicarlas.
+                    Identifico algunas áreas de oportunidad para innovar pero no sé aplicarlas.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p8" value="3">
                 <label class="form-check-label">
-                A veces implemento cambios innovadores que me distinguen en el mercado.
+                    A veces implemento cambios innovadores que me distinguen en el mercado.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p8" value="4">
                 <label class="form-check-label">
-                Regularmente identifico innovaciones y las adapto a mi negocio para volverlo único en el mercado.
+                    Regularmente identifico innovaciones y las adapto a mi negocio para volverlo único en el mercado.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p8" value="5">
                 <label class="form-check-label">
-                Siempre busco innovar en mi consultorio para que mis clientes me prefieran.
+                    Siempre busco innovar en mi consultorio para que mis clientes me prefieran.
                 </label>
             </div>
             <div class="col-md-1"></div>
         </div>
 
         <!-- PREGUNTA 9 -->
-        <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="row p-4 m-0" style="background-color:rgba(25, 47, 89, 0.1)">
 
             <h4 Class="mb-4">Persistencia</h4>
 
@@ -374,38 +389,38 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p9" value="1">
                 <label class="form-check-label">
-                No soy persistente con los caminos y estrategias que defino.
+                    No soy persistente con los caminos y estrategias que defino.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p9" value="2">
                 <label class="form-check-label">
-                No soy constante y desisto de las estrategias que defino para alcanzar los objetivos.
+                    No soy constante y desisto de las estrategias que defino para alcanzar los objetivos.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p9" value="3">
                 <label class="form-check-label">
-                Trato de mantenerme constante con las acciones para lograr mis objetivos.
+                    Trato de mantenerme constante con las acciones para lograr mis objetivos.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p9" value="4">
                 <label class="form-check-label">
-                La mayoría de las veces me mantengo constante en las estrategias que definí.
+                    La mayoría de las veces me mantengo constante en las estrategias que definí.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p9" value="5">
                 <label class="form-check-label">
-                Siempre me mantengo constante con los objetivos y las estrategias definidas.
+                    Siempre me mantengo constante con los objetivos y las estrategias definidas.
                 </label>
             </div>
             <div class="col-md-1"></div>
         </div>
 
         <!-- PREGUNTA 10 -->
-        <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="row p-4 m-0" style="background-color:rgba(61, 177, 102, 0.1)">
 
             <h4 Class="mb-4">Autonomía</h4>
 
@@ -413,38 +428,38 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p10" value="1">
                 <label class="form-check-label">
-                No tengo el control de mi consultorio y no puedo tomar decisiones.
+                    No tengo el control de mi consultorio y no puedo tomar decisiones.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p10" value="2">
                 <label class="form-check-label">
-                No tengo el control total del consultorio, solo puedo tomar algunas decisiones.
+                    No tengo el control total del consultorio, solo puedo tomar algunas decisiones.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p10" value="3">
                 <label class="form-check-label">
-                Solo tengo el 50% del control del consultorio y de las decisiones importantes.
+                    Solo tengo el 50% del control del consultorio y de las decisiones importantes.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p10" value="4">
                 <label class="form-check-label">
-                Tengo el control de mi consultorio y puedo tomar decisiones e implementarlas.
+                    Tengo el control de mi consultorio y puedo tomar decisiones e implementarlas.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p10" value="5">
                 <label class="form-check-label">
-                Tengo el control de mi consultorio y las decisiones que tomo son muy buenas. 
+                    Tengo el control de mi consultorio y las decisiones que tomo son muy buenas.
                 </label>
             </div>
             <div class="col-md-1"></div>
         </div>
 
         <!-- PREGUNTA 11 -->
-        <div class="row p-4" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="row p-4 m-0" style="background-color:rgba(25, 47, 89, 0.1)">
 
             <h4 Class="mb-4">Autoestima</h4>
 
@@ -452,38 +467,38 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p11" value="1">
                 <label class="form-check-label">
-                No soy optimista cuando se presentan situaciones adversas.
+                    No soy optimista cuando se presentan situaciones adversas.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p11" value="2">
                 <label class="form-check-label">
-                Suelo ser optimista pero en situaciones adversas no siempre lo logro.
+                    Suelo ser optimista pero en situaciones adversas no siempre lo logro.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p11" value="3">
                 <label class="form-check-label">
-                Solo en situaciones adversas me motivo para salir adelante.
+                    Solo en situaciones adversas me motivo para salir adelante.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p11" value="4">
                 <label class="form-check-label">
-                La mayoría del tiempo soy optimista, ya sea en situaciones benéficas o adversas.
+                    La mayoría del tiempo soy optimista, ya sea en situaciones benéficas o adversas.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p11" value="5">
                 <label class="form-check-label">
-                Siempre soy optimista y me motiva mi orgullo por salir adelante y crecer.
+                    Siempre soy optimista y me motiva mi orgullo por salir adelante y crecer.
                 </label>
             </div>
             <div class="col-md-1"></div>
         </div>
 
         <!-- PREGUNTA 12 -->
-        <div class="row p-4" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="row p-4 m-0" style="background-color:rgba(61, 177, 102, 0.1)">
 
             <h4 Class="mb-4">Es oportuno</h4>
 
@@ -491,31 +506,32 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p12" value="1">
                 <label class="form-check-label">
-                No detecto oportunidades a tiempo.
+                    No detecto oportunidades a tiempo.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p12" value="2">
                 <label class="form-check-label">
-                En algunas ocasiones he identificado necesidades pero no ejecuto acciones a tiempo.
+                    En algunas ocasiones he identificado necesidades pero no ejecuto acciones a tiempo.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p12" value="3">
                 <label class="form-check-label">
-                A veces identifico oportunidades y las ejecuto de manera oportuna.
+                    A veces identifico oportunidades y las ejecuto de manera oportuna.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p12" value="4">
                 <label class="form-check-label">
-                La mayoría del tiempo estoy buscando áreas de oportunidad y busco mejorarlas rápido.
+                    La mayoría del tiempo estoy buscando áreas de oportunidad y busco mejorarlas rápido.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p12" value="5">
                 <label class="form-check-label">
-                Siempre identifico tendencias y oportunidades, que se atacan con acciones oportunas que incrementan ventas.
+                    Siempre identifico tendencias y oportunidades, que se atacan con acciones oportunas que incrementan
+                    ventas.
                 </label>
             </div>
             <div class="col-md-1"></div>

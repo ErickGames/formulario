@@ -24,23 +24,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <body>
 
-    <div class="row mx-5 mt-5 mb-5">
+    <div class="row ">
         <div class="col-8">
-            <h2 style="color:rgba(25, 47, 89)">¡Listo!</h2> <br>
-            <h5>Estás en el camino de mejorar tu negocio</h5><br>
         </div>
 
         <div class="col-4">
             <img src="img/logo-01.png" alt="" style="display:block; margin:auto; width:40%">
         </div>
-        <h5>Nos interesa que conozcas tus resultados, completa la información a continuación y da click en "Enviar" para obtener un PDF con la retroalimentación que tenemos para ti.</h5>
-    </div>
     </div>
 
-    <div class="row">
+    <div class="m-5 p-5">
+        <img src="img/finalizar/final.jpg" alt="" style="width:50%; display:block; margin:auto">
+
+        <h5 class="mt-4" style="text-align:center">Nos interesa que conozcas tus resultados, completa la información a
+            continuación y
+            da
+            click en "Enviar" para
+            obtener un PDF con la retroalimentación que tenemos para ti.</h5>
+    </div>
+
+    <div class="row m-1">
         <div class="col-md-3">
-            
-
         </div>
         <div class="col-md-6">
             <form id="miFormulario">
@@ -56,14 +60,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <!-- <label class="form-label" for="city">Ciudad:</label>
                 <input class="form-control" type="text" name="ciudad" required> -->
 
-                <div style="display: flex; justify-content: center;">
+                <div class="mt-4 mb-4" style="display: flex; justify-content: center;">
                     <button type="submit" class="btn btn-primary mt-1">Enviar</button>
                 </div>
 
             </form>
         </div>
         <div class="col-md-3">
-
         </div>
     </div>
 

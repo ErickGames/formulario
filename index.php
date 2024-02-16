@@ -23,12 +23,17 @@
 
 <body>
 
-    <div class="row mt-4">
-        <div class="col-10">
+    <div class="row ">
+        <div class="col-1">
         </div>
-        <div class="col-2">
-            <button name="" id="" class="btn btn-primary" onclick="administrador()" role="button" >Portal del
+        <div class="col-2 p-3">
+            <button name="btn1" id="btn1" class="btn btn-primary" role="button">Portal del
                 Administrador</button>
+        </div>
+        <div class="col-6">
+        </div>
+        <div class="col-3">
+            <img src="img/logo-01.png" alt="" style="display:block; margin:auto; width:40%">
         </div>
     </div>
 
@@ -36,89 +41,71 @@
     <div class="row">
         <div class="col-md-2"></div>
         <div class="col-md-8">
-            <h1 class="title">Bienvenido al Diágnostio DNA Factory</h1>
+
             <div class="description">
-                <p>Este formulario está diseñado para brindarte la oportunidad de realiar una autoevaluación en relación con 
-                    diez aspectos cuciales para tu consultorio o negocio médico. Tu opinión es fundamental para identificar 
+
+                <img src="img/index/bienvenido.jpg" alt="" style="width:70%">
+
+                <p class="mt-4">Este formulario está diseñado para brindarte la oportunidad de realiar una
+                    autoevaluación en relación con
+                    diez aspectos cuciales para tu consultorio o negocio médico. Tu opinión es fundamental para
+                    identificar
                     áreas de mejora y fortaleza en tu practica profesional.
                 </p>
 
-                <!-- <p><b>Modo de Evaluación:</b></p>
-                <p>Utilizaremos una escala del 1 al 5 para evaluar cada aspecto. Siendo la primera respuesta el nivel
-                    más
-                    bajo en relación a la pregunta planteada, mientras que la última
-                    denota el nivel más alto.</p>
-                <p> Duración del formulario: 15 minutos.</p>-->
-                
-                <img src="../img/intro.jpg" alt="">
+                <img class="mt-4" src="img/index/intro.jpg" alt="" style="width:100%">
 
-                <!--<p><b>Instrucciones:</b></p>
-                <p>Responde cada pregunta honestamente según tu percepción sobre la situación actual en tu práctica
-                    médica.
-                    No hay respuestas
-                    correctas o incorrectas, simplemente marca la opción que mejor refleje tu situación.</p> -->
-
-                <p>Tu participación es invaluable y nos ayudará a ofrecerte información personalizada para mejorar tu
+                <p class="mt-4">Tu participación es invaluable y nos ayudará a ofrecerte información personalizada para
+                    mejorar tu
                     desempeño y la calidad de tu servicio.</p>
 
-                <p>¡Gracias por dedicar tiempo a esta autoevaluación!
+                <p class="mt-4" style="font-weight:bold">¡Gracias por dedicar tiempo a esta autoevaluación!
             </div>
-            <a href="1_venta_merca.php" class="start-button">Comenzar</a>
+
+            <div class="row mb-5">
+                <div class="col-md-5"></div>
+                <div class="col-md-2">
+                    <a href="1_venta_merca.php" class="start-button">Comenzar</a>
+                </div>
+                <div class="col-md-5"></div>
+            </div>
+
         </div>
         <div class="col-md-2"></div>
     </div>
 
     <script>
-        import Swal from 'sweetalert2'
+        document.getElementById("btn1").addEventListener("click", administrador1, false);
 
-        function administrador() {
-            validar().then(({ username, password }) => {
-                if (username === "diagnostico@dnafactorymedicos.com" && password === "p4ssw0rd_dna") {
-                    window.location = 'administrador.php';
-                } else {
-                    window.location.reload();
+        function administrador1() {
+            Swal.fire({
+                title: 'Iniciar sesión',
+                html:
+                    '<input id="swal-input1" class="swal2-input" placeholder="Usuario">' +
+                    '<input type="password" id="swal-input2" class="swal2-input" placeholder="Contraseña">',
+                focusConfirm: false,
+                preConfirm: () => {
+                    const usuario = document.getElementById('swal-input1').value;
+                    const contraseña = document.getElementById('swal-input2').value;
+
+                    // Validación de credenciales (en este caso, hardcodeada)
+                    if (usuario === 'diagnostico@dnafactorymedicos.com' && contraseña === 'p4ssw0rd_dna') {
+                        return true; // Credenciales válidas
+                    } else {
+                        Swal.showValidationMessage('Usuario o contraseña incorrectos');
+                        return false; // Credenciales inválidas
+                    }
+                }
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    //Swal.fire('¡Bienvenido!', 'Inicio de sesión exitoso', 'success');
+                    window.location = "administrador.php";
                 }
             });
         }
 
-        function validar() {
-
-            type LoginFormResult = {
-                username: string
-                password: string
-            }
-
-            let usernameInput: HTMLInputElement
-            let passwordInput: HTMLInputElement
-
-            Swal.fire < LoginFormResult > ({
-                title: 'Login',
-                html: `
-                    <input type="text" id="username" class="swal2-input" placeholder="E-Mail">
-                    <input type="password" id="password" class="swal2-input" placeholder="Contraseña">
-                `,
-                confirmButtonText: 'Entrar',
-                focusConfirm: false,
-                didOpen: () => {
-                    const popup = Swal.getPopup()!
-                    usernameInput = popup.querySelector('#username') as HTMLInputElement
-                    passwordInput = popup.querySelector('#password') as HTMLInputElement
-                    usernameInput.onkeyup = (event) => event.key === 'Enter' && Swal.clickConfirm()
-                    passwordInput.onkeyup = (event) => event.key === 'Enter' && Swal.clickConfirm()
-                },
-                preConfirm: () => {
-                    const username = usernameInput.value
-                    const password = passwordInput.value
-                    if (!username || !password) {
-                        Swal.showValidationMessage(`Debes llenar todos los campos.`)
-                    }
-                    resolve({ username, password });
-                },
-            })
-
-        }
-
     </script>
+
 
 </body>
 
