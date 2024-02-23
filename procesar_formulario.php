@@ -1190,7 +1190,7 @@ $pdf->SpiderChart();
 $rutaGuardado = 'PDFS/RespuestasUsuario' . $_POST['nombre'] . '.pdf';
 
 $pdf->Output($rutaGuardado, 'F'); // 'F' indica que se guardará en el servidor
-$pdf->Output('I'); // 'F' indica que se guardará en el servidor
+//$pdf->Output('I'); // 'F' indica que se guardará en el servidor
 
 
 // Nombre del archivo PDF
@@ -1216,11 +1216,11 @@ $mail->Subject = 'Resultado del Diagnostico';
 $mail->Body = 'Adjunto encontrarás tus respuestas en formato PDF.     Datos de usuario:   Nuevo test de: ' . $_POST['nombre'] . ' Especialidad: ' . $_POST['especialidad'] . ' Correo: ' . $_POST['email'];
 $mail->addAttachment($rutaGuardado, 'RespuestasDNAFactory.pdf'); // Adjunta el PDF generado
 
-//$mail->send();
+$mail->send();
 
 //echo 'Correo enviado correctamente';
 
-//header('Location: salida.php');
+header('Location: salida.php');
 
 //$mail->setFrom('diagnostico@dnafactorymedicos.com', 'DNA Factory Medicos'); // Cambia con tu dirección de correo y nombre
 //$mail->addAddress('diagnostico@dnafactorymedicos.com');
