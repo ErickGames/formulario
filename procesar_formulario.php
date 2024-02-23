@@ -1,5 +1,7 @@
 <?php
 // Genera y descarga el PDF
+ini_set('memory_limit', '1024M'); // Establece el límite de memoria en 1024 megabytes
+
 session_start();
 
 require('fpdf/fpdf.php');
@@ -38,13 +40,147 @@ class PDF extends FPDF
         $this->SetFont('Arial', '', 11);
         $this->MultiCell(0, 5, $body);
     }
+    private $data;
+    private $maxValue;
+    private $xcenter;
+    private $ycenter;
+    private $angle;
+    private $radius;
+
+    function __construct($data, $maxValue, $xcenter, $ycenter)
+    {
+        parent::__construct();
+        $this->data = $data;
+        $this->maxValue = $maxValue;
+        $this->xcenter = $xcenter;
+        $this->ycenter = $ycenter;
+        $this->angle = 360 / count($data); // Calculamos el ángulo
+        $this->radius = 40; // Valor predeterminado del radio
+    }
+
+
+    function SpiderChart() {
+        // Dibujar las líneas del gráfico de araña
+        $this->SetDrawColor(0,0,0);
+        $this->SetLineWidth(0.2);
+        $nbData = count($this->data);
+        $this->angle = 360 / $nbData;
+        $this->radius = 40;
+        for($i = 0; $i < $nbData; $i++) {
+            $angle_rad = deg2rad($i * $this->angle - 90);
+            $this->Line(
+                $this->xcenter,
+                $this->ycenter,
+                $this->xcenter + cos($angle_rad) * $this->radius,
+                $this->ycenter + sin($angle_rad) * $this->radius
+            );
+        }
+    
+        // Mostrar los puntos azules en el gráfico
+        $this->SetDrawColor(0, 0, 255); // Color azul
+        $this->SetLineWidth(0.5); // Grosor de la línea
+        for($i = 0; $i < $nbData; $i++) {
+            $angle_rad = deg2rad($i * $this->angle - 90);
+            $value = $this->data[$i];
+            $x = $this->xcenter + cos($angle_rad) * $value * $this->radius / $this->maxValue;
+            $y = $this->ycenter + sin($angle_rad) * $value * $this->radius / $this->maxValue;
+    
+            // Dibujar punto azul
+            $this->Circle($x, $y, 1);
+        }
+    
+        // Conectar los puntos con líneas delgadas
+        for($i = 0; $i < $nbData; $i++) {
+            $angle_rad = deg2rad($i * $this->angle - 90);
+            $value = $this->data[$i];
+            $x = $this->xcenter + cos($angle_rad) * $value * $this->radius / $this->maxValue;
+            $y = $this->ycenter + sin($angle_rad) * $value * $this->radius / $this->maxValue;
+    
+            // Conectar el punto actual con el siguiente punto
+            $next_index = ($i + 1) % $nbData;
+            $next_x = $this->xcenter + cos(deg2rad($next_index * $this->angle - 90)) * $this->data[$next_index] * $this->radius / $this->maxValue;
+            $next_y = $this->ycenter + sin(deg2rad($next_index * $this->angle - 90)) * $this->data[$next_index] * $this->radius / $this->maxValue;
+            $this->Line($x, $y, $next_x, $next_y);
+        }
+    
+        // Rellenar el área interior con un color claro
+        $this->SetFillColor(255, 255, 255); // Color blanco
+        $this->Polygon();
+
+    }
+
+    function Circle($x, $y, $r) {
+        $this->Ellipse($x, $y, $r, $r);
+    }
+
+    function Ellipse($x, $y, $rx, $ry, $style='D') {
+        if ($style == 'F') {
+            $op = 'f';
+        } elseif ($style == 'FD' || $style == 'DF') {
+            $op = 'B';
+        } else {
+            $op = 'S';
+        }
+        $lx = 4/3*(M_SQRT2-1)*$rx;
+        $ly = 4/3*(M_SQRT2-1)*$ry;
+        $k = $this->k;
+        $h = $this->h;
+        $this->_out(sprintf('%.2F %.2F m %.2F %.2F %.2F %.2F %.2F %.2F c',
+            ($x+$rx)*$k,($h-$y)*$k,
+            ($x+$rx)*$k,($h-($y-$ly))*$k,
+            ($x+$lx)*$k,($h-($y-$ry))*$k,
+            $x*$k,($h-($y-$ry))*$k));
+        $this->_out(sprintf('%.2F %.2F %.2F %.2F %.2F %.2F c',
+            ($x-$lx)*$k,($h-($y-$ry))*$k,
+            ($x-$rx)*$k,($h-($y-$ly))*$k,
+            ($x-$rx)*$k,($h-$y)*$k));
+        $this->_out(sprintf('%.2F %.2F %.2F %.2F %.2F %.2F c',
+            ($x-$rx)*$k,($h-($y+$ly))*$k,
+            ($x-$lx)*$k,($h-($y+$ry))*$k,
+            $x*$k,($h-($y+$ry))*$k));
+        $this->_out(sprintf('%.2F %.2F %.2F %.2F %.2F %.2F c %s',
+            ($x+$lx)*$k,($h-($y+$ry))*$k,
+            ($x+$rx)*$k,($h-($y+$ly))*$k,
+            ($x+$rx)*$k,($h-$y)*$k,
+            $op));
+    }
+    
+
+    function Polygon()
+    {
+        $nbData = count($this->data);
+        $angle = 360 / $nbData;
+        $radius = 40;
+        $points = array();
+        for ($i = 0; $i < $nbData; $i++) {
+            $value = isset($this->data[$i]) ? $this->data[$i] : 0;
+            $percent = $value / $this->maxValue;
+            $angle_rad = deg2rad($i * $angle - 90);
+            $points[] = $this->xcenter + cos($angle_rad) * $radius * $percent;
+            $points[] = $this->ycenter + sin($angle_rad) * $radius * $percent;
+        }
+        $this->PolygonCurve($points);
+    }
+
+    function PolygonCurve($points)
+    {
+        $nbPoints = count($points) / 2;
+        $this->SetXY($points[0], $points[1]);
+        for ($i = 1; $i < $nbPoints; $i++) {
+            $this->Line($points[2 * $i], $points[2 * $i + 1], $points[2 * $i], $points[2 * $i + 1]);
+        }
+        $this->Line($points[0], $points[1], $points[0], $points[1]);
+    }
 }
 
-$pdf = new PDF();
+$data = array(3, 4, 6, 8, 7, 5, 4, 3, 2, 1); // Your 10 inputs
+$maxValue = 10; // Adjust as needed
+$xcenter = 100; // Adjust as needed
+$ycenter = 100; // Adjust as needed
+
+$pdf = new PDF($data, $maxValue, $xcenter, $ycenter);
 $pdf->SetMargins(25, 25, 25);
 $pdf->AddPage();
-
-
 
 $hayFortalezas1 = false;
 $hayDebilidades1 = false;
@@ -871,10 +1007,21 @@ if ($hayDebilidades10 == false) {
 }
 $pdf->chapterBody($bodyContentDebilidades10);
 
+
+
+
+$pdf->AddPage();
+$pdf->SetFillColor(255, 255, 255);
+$pdf->SpiderChart();
+
+
+
 // Ruta donde se guardará el PDF automáticamente
-$rutaGuardado = 'PDFS/RespuestasUsuario'.$_POST['nombre'].'.pdf';
+$rutaGuardado = 'PDFS/RespuestasUsuario' . $_POST['nombre'] . '.pdf';
 
 $pdf->Output($rutaGuardado, 'F'); // 'F' indica que se guardará en el servidor
+$pdf->Output('I'); // 'F' indica que se guardará en el servidor
+
 
 // Nombre del archivo PDF
 //$nombreArchivo = 'RespuestasUsuario'.$_POST['nombre'].'.pdf';
@@ -899,37 +1046,37 @@ $mail->Subject = 'Resultado del Diagnostico';
 $mail->Body = 'Adjunto encontrarás tus respuestas en formato PDF.     Datos de usuario:   Nuevo test de: ' . $_POST['nombre'] . ' Especialidad: ' . $_POST['especialidad'] . ' Correo: ' . $_POST['email'];
 $mail->addAttachment($rutaGuardado, 'RespuestasDNAFactory.pdf'); // Adjunta el PDF generado
 
-$mail->send();
+//$mail->send();
 
 //echo 'Correo enviado correctamente';
 
-header('Location: salida.php');
+//header('Location: salida.php');
 
-    //$mail->setFrom('diagnostico@dnafactorymedicos.com', 'DNA Factory Medicos'); // Cambia con tu dirección de correo y nombre
-    //$mail->addAddress('diagnostico@dnafactorymedicos.com');
-    //$mail->Subject = 'RESULTADO: ' . $_POST['nombre'];
-    //$mail->Body = 'Nuevo test de: ' . $_POST['nombre'] . ' Especialidad: ' . $_POST['especialidad'] . ' Correo: ' . $_POST['email'];
-    //$mail->addAttachment($rutaGuardado, 'RespuestasDNAFactory.pdf'); // Adjunta el PDF generado
+//$mail->setFrom('diagnostico@dnafactorymedicos.com', 'DNA Factory Medicos'); // Cambia con tu dirección de correo y nombre
+//$mail->addAddress('diagnostico@dnafactorymedicos.com');
+//$mail->Subject = 'RESULTADO: ' . $_POST['nombre'];
+//$mail->Body = 'Nuevo test de: ' . $_POST['nombre'] . ' Especialidad: ' . $_POST['especialidad'] . ' Correo: ' . $_POST['email'];
+//$mail->addAttachment($rutaGuardado, 'RespuestasDNAFactory.pdf'); // Adjunta el PDF generado
 
-    //$mail->send();
+//$mail->send();
 
-    // Salida del PDF al navegador
+// Salida del PDF al navegador
 
-   // $pdf->Output($nombreArchivo, 'D');
+// $pdf->Output($nombreArchivo, 'D');
 
- //else {
-    //echo 'Error al enviar el correo: ' . $mail->ErrorInfo;
+//else {
+//echo 'Error al enviar el correo: ' . $mail->ErrorInfo;
 
-    // $mail->setFrom('diagnostico@dnafactorymedicos.com', 'DNA Factory Medicos'); // Cambia con tu dirección de correo y nombre
-    // $mail->addAddress('diagnostico@dnafactorymedicos.com');
-    // $mail->Subject = 'RESULTADO: ' . $_POST['nombre'];
-    // $mail->Body = '(Debido a un error este correo no le ha llegado al usuario, favor de compartir este PDF por otro medio.)   Nuevo test de: ' . $_POST['nombre'] . ' Especialidad: ' . $_POST['especialidad'] . ' Correo: ' . $_POST['email'];
-    // $mail->addAttachment($rutaGuardado, 'RespuestasDNAFactory.pdf'); // Adjunta el PDF generado
+// $mail->setFrom('diagnostico@dnafactorymedicos.com', 'DNA Factory Medicos'); // Cambia con tu dirección de correo y nombre
+// $mail->addAddress('diagnostico@dnafactorymedicos.com');
+// $mail->Subject = 'RESULTADO: ' . $_POST['nombre'];
+// $mail->Body = '(Debido a un error este correo no le ha llegado al usuario, favor de compartir este PDF por otro medio.)   Nuevo test de: ' . $_POST['nombre'] . ' Especialidad: ' . $_POST['especialidad'] . ' Correo: ' . $_POST['email'];
+// $mail->addAttachment($rutaGuardado, 'RespuestasDNAFactory.pdf'); // Adjunta el PDF generado
 
-    // $mail->send();
-    // Salida del PDF al navegador
+// $mail->send();
+// Salida del PDF al navegador
 
-    //$pdf->Output($nombreArchivo, 'D');
+//$pdf->Output($nombreArchivo, 'D');
 //}
 /////
 

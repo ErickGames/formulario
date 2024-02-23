@@ -46,7 +46,7 @@
 
                 <img src="img/index/bienvenido.jpg" alt="" style="width:70%">
 
-                <p class="mt-4">Este formulario está diseñado para brindarte la oportunidad de realiar una
+                <p class="mt-4">Este formulario está diseñado para brindarte la oportunidad de realizar una
                     autoevaluación en relación con
                     diez aspectos cuciales para tu consultorio o negocio médico. Tu opinión es fundamental para
                     identificar
