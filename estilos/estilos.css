@@ -79,6 +79,21 @@ body {
   background-color: #ffffff;
 }
 
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 65%;
+  max-width: 400px; /* ajusta el tamaño máximo según sea necesario */
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  z-index: 9999;
+}
+
+
 .title {
   font-size: 2.5em;
   color: rgba(25, 47, 89);

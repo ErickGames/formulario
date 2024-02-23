@@ -283,38 +283,41 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <script>
         document.getElementById("miBoton").addEventListener("click", function () {
-            var form = document.getElementById("form1");
-            var allQuestionsAnswered = true;
+    var form = document.getElementById("form1");
+    var allQuestionsAnswered = true;
 
-            // Iterar sobre todas las preguntas
-            form.querySelectorAll('div.p-4').forEach(function (question) {
-                var radios = question.querySelectorAll('input[type="radio"]:checked');
+    // Iterar sobre todas las preguntas
+    form.querySelectorAll('div.p-4').forEach(function (question) {
+        var radios = question.querySelectorAll('input[type="radio"]:checked');
 
-                if (radios.length !== 1) {
-                    // Si no se ha seleccionado exactamente una opción por pregunta, establecer allQuestionsAnswered en falso
-                    allQuestionsAnswered = false;
-                }
-            });
+        if (radios.length !== 1) {
+            // Si no se ha seleccionado exactamente una opción por pregunta, establecer allQuestionsAnswered en falso
+            allQuestionsAnswered = false;
+        }
+    });
 
-            if (allQuestionsAnswered) {
-                // Todas las preguntas tienen exactamente una opción seleccionada, envía el formulario
-                form.submit();
-            } else {
-                // Falta seleccionar alguna opción, muestra un mensaje de error o realiza la acción que desees
-                alert("Por favor, selecciona una opción para cada pregunta.");
-            }
-            mostrarPopup();
-        });
+    if (allQuestionsAnswered) {
+        // Todas las preguntas tienen exactamente una opción seleccionada, mostrar la ventana emergente
+        document.getElementById("popup").style.display = "block";
+
+        // Establecer un temporizador para ocultar la ventana emergente después de 7 segundos
+        setTimeout(function () {
+            document.getElementById("popup").style.display = "none";
+
+            // Una vez que se oculta la ventana emergente, envía el formulario
+            form.submit();
+        }, 5000); // 5000 milisegundos = 5 segundos
+    } else {
+        // Falta seleccionar alguna opción, muestra un mensaje de error o realiza la acción que desees
+        alert("Por favor, selecciona una opción para cada pregunta.");
+    }
+});
+
 
         // Función para mostrar la ventana emergente
     function mostrarPopup() {
         var popup = document.getElementById('popup');
         popup.style.display = 'block';
-        setTimeout(function(){
-            popup.style.display = 'none';
-            // Redirigir al usuario a otra página después de 7 segundos
-            window.location.href = '7_activos.php';
-        }, 7000); // 7 segundos
     }
 
         function move() {
