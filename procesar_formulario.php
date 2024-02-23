@@ -41,32 +41,36 @@ class PDF extends FPDF
         $this->MultiCell(0, 5, $body);
     }
     private $data;
+    private $data_user;
     private $maxValue;
     private $xcenter;
     private $ycenter;
     private $angle;
     private $radius;
 
-    function __construct($data, $maxValue, $xcenter, $ycenter)
+    function __construct($data, $data_user, $maxValue, $xcenter, $ycenter, $nombres)
     {
         parent::__construct();
         $this->data = $data;
+        $this->data_user = $data_user;
         $this->maxValue = $maxValue;
         $this->xcenter = $xcenter;
         $this->ycenter = $ycenter;
         $this->angle = 360 / count($data); // Calculamos el ángulo
         $this->radius = 40; // Valor predeterminado del radio
+        $this->nombres = $nombres;
     }
 
 
-    function SpiderChart() {
+    function SpiderChart()
+    {
         // Dibujar las líneas del gráfico de araña
-        $this->SetDrawColor(0,0,0);
+        $this->SetDrawColor(0, 0, 0);
         $this->SetLineWidth(0.2);
         $nbData = count($this->data);
         $this->angle = 360 / $nbData;
         $this->radius = 40;
-        for($i = 0; $i < $nbData; $i++) {
+        for ($i = 0; $i < $nbData; $i++) {
             $angle_rad = deg2rad($i * $this->angle - 90);
             $this->Line(
                 $this->xcenter,
@@ -75,45 +79,110 @@ class PDF extends FPDF
                 $this->ycenter + sin($angle_rad) * $this->radius
             );
         }
-    
+
+        // Dibujar marcas en la base del gráfico para indicar los valores
+        $this->SetDrawColor(0, 0, 0); // Color de las marcas
+        $this->SetLineWidth(0.1); // Grosor de las marcas
+        $valores = array(2, 4, 6, 8, 10); // Valores que queremos marcar
+        $markLength = 1; // Longitud de las marcas (ajusta según sea necesario)
+        foreach ($valores as $valor) {
+            $valor_rel = $valor / $this->maxValue; // Relación del valor respecto al valor máximo
+            for ($i = 0; $i < count($this->data); $i++) {
+                $angle_rad = deg2rad($i * $this->angle - 90);
+                $x = $this->xcenter + cos($angle_rad) * $this->radius * $valor_rel;
+                $y = $this->ycenter + sin($angle_rad) * $this->radius * $valor_rel;
+                
+                // Dibujar la marca como una pequeña línea
+                $this->Line($x - $markLength, $y, $x + $markLength, $y);
+            }
+        }
+
         // Mostrar los puntos azules en el gráfico
         $this->SetDrawColor(0, 0, 255); // Color azul
         $this->SetLineWidth(0.5); // Grosor de la línea
-        for($i = 0; $i < $nbData; $i++) {
+        for ($i = 0; $i < $nbData; $i++) {
             $angle_rad = deg2rad($i * $this->angle - 90);
             $value = $this->data[$i];
             $x = $this->xcenter + cos($angle_rad) * $value * $this->radius / $this->maxValue;
             $y = $this->ycenter + sin($angle_rad) * $value * $this->radius / $this->maxValue;
-    
+
             // Dibujar punto azul
             $this->Circle($x, $y, 1);
         }
-    
+
         // Conectar los puntos con líneas delgadas
-        for($i = 0; $i < $nbData; $i++) {
+        for ($i = 0; $i < $nbData; $i++) {
             $angle_rad = deg2rad($i * $this->angle - 90);
             $value = $this->data[$i];
             $x = $this->xcenter + cos($angle_rad) * $value * $this->radius / $this->maxValue;
             $y = $this->ycenter + sin($angle_rad) * $value * $this->radius / $this->maxValue;
-    
+
             // Conectar el punto actual con el siguiente punto
             $next_index = ($i + 1) % $nbData;
             $next_x = $this->xcenter + cos(deg2rad($next_index * $this->angle - 90)) * $this->data[$next_index] * $this->radius / $this->maxValue;
             $next_y = $this->ycenter + sin(deg2rad($next_index * $this->angle - 90)) * $this->data[$next_index] * $this->radius / $this->maxValue;
             $this->Line($x, $y, $next_x, $next_y);
         }
-    
+
         // Rellenar el área interior con un color claro
         $this->SetFillColor(255, 255, 255); // Color blanco
         $this->Polygon();
 
+        // Dibujar el segundo conjunto de datos (puntos naranjas)
+        $this->SetDrawColor(255, 165, 0); // Color naranja
+        $this->SetLineWidth(0.5); // Grosor de la línea
+        // Asumiendo que tienes otro conjunto de datos $this->data_naranja
+        for ($i = 0; $i < $nbData; $i++) {
+            $angle_rad = deg2rad($i * $this->angle - 90);
+            $value = $this->data_user[$i];
+            $x = $this->xcenter + cos($angle_rad) * $value * $this->radius / $this->maxValue;
+            $y = $this->ycenter + sin($angle_rad) * $value * $this->radius / $this->maxValue;
+
+            // Dibujar punto azul
+            $this->Circle($x, $y, 1);
+        }
+
+        // Conectar los puntos con líneas delgadas
+        for ($i = 0; $i < $nbData; $i++) {
+            $angle_rad = deg2rad($i * $this->angle - 90);
+            $value = $this->data_user[$i];
+            $x = $this->xcenter + cos($angle_rad) * $value * $this->radius / $this->maxValue;
+            $y = $this->ycenter + sin($angle_rad) * $value * $this->radius / $this->maxValue;
+
+            // Conectar el punto actual con el siguiente punto
+            $next_index = ($i + 1) % $nbData;
+            $next_x = $this->xcenter + cos(deg2rad($next_index * $this->angle - 90)) * $this->data_user[$next_index] * $this->radius / $this->maxValue;
+            $next_y = $this->ycenter + sin(deg2rad($next_index * $this->angle - 90)) * $this->data_user[$next_index] * $this->radius / $this->maxValue;
+            $this->Line($x, $y, $next_x, $next_y);
+        }
+
+        // textos
+        $this->SetFont('Arial', '', 8);
+        for ($i = 0; $i < count($this->data); $i++) {
+            $angle_rad = deg2rad($i * $this->angle - 90);
+            $value = $this->data[$i];
+            $x = $this->xcenter + cos($angle_rad) * $this->radius;
+            $y = $this->ycenter + sin($angle_rad) * $this->radius;
+
+            // Desplazar el texto para que esté más lejos del centro del gráfico
+            $x_offset = 5 * cos($angle_rad);
+            $y_offset = 7 * sin($angle_rad);
+
+            // Colocar el nombre al lado del pico
+            $this->Text($x + $x_offset, $y + $y_offset, $this->nombres[$i]);
+        }
+
+
+
     }
 
-    function Circle($x, $y, $r) {
+    function Circle($x, $y, $r)
+    {
         $this->Ellipse($x, $y, $r, $r);
     }
 
-    function Ellipse($x, $y, $rx, $ry, $style='D') {
+    function Ellipse($x, $y, $rx, $ry, $style = 'D')
+    {
         if ($style == 'F') {
             $op = 'f';
         } elseif ($style == 'FD' || $style == 'DF') {
@@ -121,30 +190,59 @@ class PDF extends FPDF
         } else {
             $op = 'S';
         }
-        $lx = 4/3*(M_SQRT2-1)*$rx;
-        $ly = 4/3*(M_SQRT2-1)*$ry;
+        $lx = 4 / 3 * (M_SQRT2 - 1) * $rx;
+        $ly = 4 / 3 * (M_SQRT2 - 1) * $ry;
         $k = $this->k;
         $h = $this->h;
-        $this->_out(sprintf('%.2F %.2F m %.2F %.2F %.2F %.2F %.2F %.2F c',
-            ($x+$rx)*$k,($h-$y)*$k,
-            ($x+$rx)*$k,($h-($y-$ly))*$k,
-            ($x+$lx)*$k,($h-($y-$ry))*$k,
-            $x*$k,($h-($y-$ry))*$k));
-        $this->_out(sprintf('%.2F %.2F %.2F %.2F %.2F %.2F c',
-            ($x-$lx)*$k,($h-($y-$ry))*$k,
-            ($x-$rx)*$k,($h-($y-$ly))*$k,
-            ($x-$rx)*$k,($h-$y)*$k));
-        $this->_out(sprintf('%.2F %.2F %.2F %.2F %.2F %.2F c',
-            ($x-$rx)*$k,($h-($y+$ly))*$k,
-            ($x-$lx)*$k,($h-($y+$ry))*$k,
-            $x*$k,($h-($y+$ry))*$k));
-        $this->_out(sprintf('%.2F %.2F %.2F %.2F %.2F %.2F c %s',
-            ($x+$lx)*$k,($h-($y+$ry))*$k,
-            ($x+$rx)*$k,($h-($y+$ly))*$k,
-            ($x+$rx)*$k,($h-$y)*$k,
-            $op));
+        $this->_out(
+            sprintf(
+                '%.2F %.2F m %.2F %.2F %.2F %.2F %.2F %.2F c',
+                ($x + $rx) * $k,
+                ($h - $y) * $k,
+                ($x + $rx) * $k,
+                ($h - ($y - $ly)) * $k,
+                ($x + $lx) * $k,
+                ($h - ($y - $ry)) * $k,
+                $x * $k,
+                ($h - ($y - $ry)) * $k
+            )
+        );
+        $this->_out(
+            sprintf(
+                '%.2F %.2F %.2F %.2F %.2F %.2F c',
+                ($x - $lx) * $k,
+                ($h - ($y - $ry)) * $k,
+                ($x - $rx) * $k,
+                ($h - ($y - $ly)) * $k,
+                ($x - $rx) * $k,
+                ($h - $y) * $k
+            )
+        );
+        $this->_out(
+            sprintf(
+                '%.2F %.2F %.2F %.2F %.2F %.2F c',
+                ($x - $rx) * $k,
+                ($h - ($y + $ly)) * $k,
+                ($x - $lx) * $k,
+                ($h - ($y + $ry)) * $k,
+                $x * $k,
+                ($h - ($y + $ry)) * $k
+            )
+        );
+        $this->_out(
+            sprintf(
+                '%.2F %.2F %.2F %.2F %.2F %.2F c %s',
+                ($x + $lx) * $k,
+                ($h - ($y + $ry)) * $k,
+                ($x + $rx) * $k,
+                ($h - ($y + $ly)) * $k,
+                ($x + $rx) * $k,
+                ($h - $y) * $k,
+                $op
+            )
+        );
     }
-    
+
 
     function Polygon()
     {
@@ -171,14 +269,19 @@ class PDF extends FPDF
         }
         $this->Line($points[0], $points[1], $points[0], $points[1]);
     }
+
 }
 
-$data = array(3, 4, 6, 8, 7, 5, 4, 3, 2, 1); // Your 10 inputs
+
+
+$data = array(4, 5.58, 3.56, 4.1, 3.78, 4.14, 3.14, 3.42, 5.34, 5.34); // Inputs promedio
+$data_user = array(10, 9, 6, 2, 8, 9, 1, 2, 4, 5); // Imputs del usuario
+$nombres = array("Ventas", "Recepcion de Citas", "Administracion", "Planeacion y Estrategia", "Farmacia", "Fiscal y Legal", "Activos", "RRHH", "Instalaciones", "Proyecto personal");
 $maxValue = 10; // Adjust as needed
 $xcenter = 100; // Adjust as needed
 $ycenter = 100; // Adjust as needed
 
-$pdf = new PDF($data, $maxValue, $xcenter, $ycenter);
+$pdf = new PDF($data, $data_user, $maxValue, $xcenter, $ycenter, $nombres);
 $pdf->SetMargins(25, 25, 25);
 $pdf->AddPage();
 
@@ -1008,9 +1111,8 @@ if ($hayDebilidades10 == false) {
 $pdf->chapterBody($bodyContentDebilidades10);
 
 
-
-
 $pdf->AddPage();
+$pdf->chapterSub(utf8_decode('Graficación:'));
 $pdf->SetFillColor(255, 255, 255);
 $pdf->SpiderChart();
 
