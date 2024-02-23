@@ -286,6 +286,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </button>
     </div>
 
+    <!-- Agrega este elemento div al final de tu HTML -->
+<div id="popup" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 65%; z-index: 9999; background-color: white; padding: 20px; border: 1px solid black; text-align: center;">
+    <!-- Aquí puedes insertar la imagen que deseas mostrar -->
+    <img src="img/separador/separador_3.jpg" alt="Imagen Emergente" style="max-width: 100%; max-height: 100%;">
+</div>
+
     <script>
         document.getElementById("miBoton").addEventListener("click", function () {
             var form = document.getElementById("form1");
@@ -308,7 +314,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 // Falta seleccionar alguna opción, muestra un mensaje de error o realiza la acción que desees
                 alert("Por favor, selecciona una opción para cada pregunta.");
             }
+            mostrarPopup();
         });
+
+        // Función para mostrar la ventana emergente
+        function mostrarPopup() {
+            var popup = document.getElementById('popup');
+            popup.style.display = 'block';
+            setTimeout(function(){
+                popup.style.display = 'none';
+            // Redirigir al usuario a otra página después de 7 segundos
+            window.location.href = '10_proyecto_personal.php';
+            }, 7000); // 7 segundos
+        }
 
         function move() {
             var elem = document.getElementById("myBar");
