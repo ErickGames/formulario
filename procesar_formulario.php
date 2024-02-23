@@ -14,14 +14,41 @@ use PHPMailer\PHPMailer\Exception;
 
 class PDF extends FPDF
 {
-    function header()
-    {
-        // Agregar el logo al inicio del PDF (cordenadas y tamaño)
-        $this->Image('img/logo-01.png', 10, 0, 40);
+    function Header()
+{
+    // Agregar el logo al inicio del PDF (coordenadas y tamaño)
+    $this->Image('img/logo-01.png', 10, 0, 40);
 
-        $this->SetFont('Arial', 'B', 13);
-        $this->Cell(0, 10, utf8_decode('Respuestas del Usuario'), 0, 1, 'C');
-    }
+    // Establecer la fuente y tamaño del texto
+    $this->SetFont('Arial', 'B', 15);
+
+    // Establecer el color del texto a azul rgb(0,96,147)
+    $this->SetTextColor(23, 52, 127);
+
+    // Texto en el centro
+    $this->Cell(0, 10, utf8_decode('Dr. ' . $_POST['nombre']), 0, 1, 'C');
+
+    // Texto a la izquierda
+    $this->Cell(0, 10, utf8_decode('Especialidad: ' . $_POST['especialidad']), 0, 0, 'L');
+
+    // Mover el cursor a la derecha
+    $this->Cell(0);
+
+    // Texto a la derecha
+    $this->Cell(0, 10, utf8_decode('Ciudad: ' . $_POST['ciudad']), 0, 1, 'R');
+
+    // Salto de línea para evitar superposición de texto
+    $this->Ln(10);
+}
+
+    // function header()
+    // {
+    //     // Agregar el logo al inicio del PDF (cordenadas y tamaño)
+    //     $this->Image('img/logo-01.png', 10, 0, 40);
+
+    //     $this->SetFont('Arial', 'B', 13);
+    //     $this->Cell(0, 10, utf8_decode('Dr. ' . $_POST['nombre']), 0, 1, 'C');
+    // }
 
     function chapterTitle($num, $label)
     {
