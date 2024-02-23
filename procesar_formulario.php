@@ -1178,6 +1178,66 @@ if ($hayDebilidades10 == false) {
 }
 $pdf->chapterBody($bodyContentDebilidades10);
 
+//PAGINA DE DEBILIDADES CRITICAS
+$pdf->chapterTitle(11, utf8_decode('Debilidades Críticas'));
+$pdf->chapterSub('Enfoque especial por peso.');
+$bodyContentCriticas = '';
+$hayCriticas = false;
+
+if ($_SESSION['respuesta_s1p1'] == '1') {
+    $bodyContentCriticas .= utf8_decode('-Gestión de Venta.' . "\n");
+    $hayCriticas = true;
+}
+if ($_SESSION['respuesta_s1p4'] == '1') {
+    $bodyContentCriticas .= utf8_decode('-Redes Sociales.' . "\n");
+    $hayCriticas = true;
+}
+if ($_SESSION['respuesta_s2p1'] == '1') {
+    $bodyContentCriticas .= utf8_decode('-Sistema para la administración de citas.' . "\n");
+    $hayCriticas = true;
+}
+if ($_SESSION['respuesta_s2p2'] == '1') {
+    $bodyContentCriticas .= utf8_decode('-Área de recepción.' . "\n");
+    $hayCriticas = true;
+}
+if ($_SESSION['respuesta_s2p4'] == '1') {
+    $bodyContentCriticas .= utf8_decode('-Administración de expedientes.' . "\n");
+    $hayCriticas = true;
+}
+if ($_SESSION['respuesta_s3p1'] == '1') {
+    $bodyContentCriticas .= utf8_decode('-Registro contable.' . "\n");
+    $hayCriticas = true;
+}
+if ($_SESSION['respuesta_s3p4'] == '1') {
+    $bodyContentCriticas .= utf8_decode('-Registro de transacciónes.' . "\n");
+    $hayCriticas = true;
+}
+if ($_SESSION['respuesta_s3p8'] == '1') {
+    $bodyContentCriticas .= utf8_decode('-Soporte de un contador.' . "\n");
+    $hayCriticas = true;
+}
+if ($_SESSION['respuesta_s4p7'] == '1') {
+    $bodyContentCriticas .= utf8_decode('-Fijación de precios.' . "\n");
+    $hayCriticas = true;
+}
+if ($_SESSION['respuesta_s6p4'] == '1') {
+    $bodyContentCriticas .= utf8_decode('-Certificaciones' . "\n");
+    $hayCriticas = true;
+}
+if ($_SESSION['respuesta_s9p1'] == '1') {
+    $bodyContentCriticas .= utf8_decode('-Área de estacionamiento.' . "\n");
+    $hayCriticas = true;
+}
+if ($_SESSION['respuesta_s10p1'] == '1') {
+    $bodyContentCriticas .= utf8_decode('-Consultorios.' . "\n");
+    $hayCriticas = true;
+}
+// Verifica si hay alguna debilidad critica
+if ($hayDebilidades10 == false) {
+    $bodyContentDebilidades10 .= utf8_decode('!Felicidades!, no cuentas con debilidades críticas :).' . "\n");
+}
+
+//GRAFICACION Y GUARDAR PDF
 
 $pdf->AddPage();
 $pdf->chapterSub(utf8_decode('Graficación:'));
