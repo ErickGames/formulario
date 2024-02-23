@@ -299,10 +299,51 @@ class PDF extends FPDF
 
 }
 
+//SACAR PROMEDIO DE RESPUESTAS DEL USUARIO
+//SECCION 1
+$prom1 = doubleval($_SESSION['respuesta_s1p1']) + doubleval($_SESSION['respuesta_s1p2'] ) + doubleval($_SESSION['respuesta_s1p3'] ) + doubleval($_SESSION['respuesta_s1p4'] ) + doubleval($_SESSION['respuesta_s1p5'] ) + doubleval($_SESSION['respuesta_s1p6'] ) + doubleval($_SESSION['respuesta_s1p7'] ) + doubleval($_SESSION['respuesta_s1p8'] ) + doubleval($_SESSION['respuesta_s1p9'] );
+$prom1 = $prom1 / 9;
+$prom1 = $prom1 * 2;
+//SECCION 2
+$prom2 = doubleval($_SESSION['respuesta_s2p1']) + doubleval($_SESSION['respuesta_s2p2'] ) + doubleval($_SESSION['respuesta_s2p3'] ) + doubleval($_SESSION['respuesta_s2p4'] ) ;
+$prom2 = $prom2 / 4;
+$prom2 = $prom2 * 2;
+//SECCION 3
+$prom3 = doubleval($_SESSION['respuesta_s3p1']) + doubleval($_SESSION['respuesta_s3p2'] ) + doubleval($_SESSION['respuesta_s3p3'] ) + doubleval($_SESSION['respuesta_s3p4'] ) + doubleval($_SESSION['respuesta_s3p5'] ) + doubleval($_SESSION['respuesta_s3p6'] ) + doubleval($_SESSION['respuesta_s3p7'] ) + doubleval($_SESSION['respuesta_s3p8'] ) + doubleval($_SESSION['respuesta_s3p9'] );
+$prom3 = $prom3 / 9;
+$prom3 = $prom3 * 2;
+//SECCION 4
+$prom4 = doubleval($_SESSION['respuesta_s4p1']) + doubleval($_SESSION['respuesta_s4p2'] ) + doubleval($_SESSION['respuesta_s4p3'] ) + doubleval($_SESSION['respuesta_s4p4'] ) + doubleval($_SESSION['respuesta_s4p5'] ) + doubleval($_SESSION['respuesta_s4p6'] ) + doubleval($_SESSION['respuesta_s4p7'] );
+$prom4 = $prom4 / 7;
+$prom4 = $prom4 * 2;
+//SECCION 5
+$prom5 = doubleval($_SESSION['respuesta_s5p1']) + doubleval($_SESSION['respuesta_s5p2'] ) + doubleval($_SESSION['respuesta_s5p3'] );
+$prom5 = $prom5 / 3;
+$prom5 = $prom5 * 2;
+//SECCION 6
+$prom6 = doubleval($_SESSION['respuesta_s6p1']) + doubleval($_SESSION['respuesta_s6p2'] ) + doubleval($_SESSION['respuesta_s6p3'] ) + doubleval($_SESSION['respuesta_s6p4'] ) + doubleval($_SESSION['respuesta_s6p5'] );
+$prom6 = $prom6 / 5;
+$prom6 = $prom6 * 2;
+//SECCION 7
+$prom7 = doubleval($_SESSION['respuesta_s7p1']) + doubleval($_SESSION['respuesta_s7p2'] ) + doubleval($_SESSION['respuesta_s7p3'] ) + doubleval($_SESSION['respuesta_s7p4'] ) + doubleval($_SESSION['respuesta_s7p5'] ) + doubleval($_SESSION['respuesta_s7p6'] ) + doubleval($_SESSION['respuesta_s7p7'] );
+$prom7 = $prom7 / 7;
+$prom7 = $prom7 * 2;
+//SECCION 8
+$prom8 = doubleval($_SESSION['respuesta_s8p1']) + doubleval($_SESSION['respuesta_s8p2'] ) + doubleval($_SESSION['respuesta_s8p3'] ) + doubleval($_SESSION['respuesta_s8p4'] ) + doubleval($_SESSION['respuesta_s8p5'] ) + doubleval($_SESSION['respuesta_s8p6'] ) + doubleval($_SESSION['respuesta_s8p7'] ) + doubleval($_SESSION['respuesta_s8p8'] ) + doubleval($_SESSION['respuesta_s8p9'] ) + doubleval($_SESSION['respuesta_s8p10'] ) + doubleval($_SESSION['respuesta_s8p11'] ) + doubleval($_SESSION['respuesta_s8p12'] ) + doubleval($_SESSION['respuesta_s8p13'] );
+$prom8 = $prom8 / 13;
+$prom8 = $prom8 * 2;
+//SECCION 9
+$prom9 = doubleval($_SESSION['respuesta_s9p1']) + doubleval($_SESSION['respuesta_s9p2'] ) + doubleval($_SESSION['respuesta_s9p3'] ) + doubleval($_SESSION['respuesta_s9p4'] ) + doubleval($_SESSION['respuesta_s9p5'] );
+$prom9 = $prom9 / 5;
+$prom9 = $prom9 * 2;
+//SECCION 10
+$prom10 = doubleval($_SESSION['respuesta_s10p1']) + doubleval($_SESSION['respuesta_s10p2'] ) + doubleval($_SESSION['respuesta_s10p3'] ) + doubleval($_SESSION['respuesta_s10p4'] ) + doubleval($_SESSION['respuesta_s10p5'] ) + doubleval($_SESSION['respuesta_s10p6'] ) + doubleval($_SESSION['respuesta_s10p7'] ) + doubleval($_SESSION['respuesta_s10p8'] ) + doubleval($_SESSION['respuesta_s10p9'] ) + doubleval($_SESSION['respuesta_s10p10'] ) + doubleval($_SESSION['respuesta_s10p11'] ) + doubleval($_SESSION['respuesta_s10p12'] );
+$prom10 = $prom10 / 12;
+$prom10 = $prom10 * 2;
 
 
 $data = array(4, 5.58, 3.56, 4.1, 3.78, 4.14, 3.14, 3.42, 5.34, 5.34); // Inputs promedio
-$data_user = array(10, 9, 6, 2, 8, 9, 1, 2, 4, 5); // Imputs del usuario
+$data_user = array($prom1, $prom2, $prom3, $prom4, $prom5, $prom6, $prom7, $prom8, $prom9, $prom10); // Imputs del usuario
 $nombres = array("Ventas", "Recepcion de Citas", "Administracion", "Planeacion y Estrategia", "Farmacia", "Fiscal y Legal", "Activos", "RRHH", "Instalaciones", "Proyecto personal");
 $maxValue = 10; // Adjust as needed
 $xcenter = 100; // Adjust as needed
