@@ -15,31 +15,31 @@ use PHPMailer\PHPMailer\Exception;
 class PDF extends FPDF
 {
     function Header()
-{
-    // Agregar el logo al inicio del PDF (coordenadas y tamaño)
-    $this->Image('img/logo-01.png', 10, 0, 40);
+    {
+        // Agregar el logo al inicio del PDF (coordenadas y tamaño)
+        $this->Image('img/logo-01.png', 10, 0, 40);
 
-    // Establecer la fuente y tamaño del texto
-    $this->SetFont('Arial', 'B', 15);
+        // Establecer la fuente y tamaño del texto
+        $this->SetFont('Arial', 'B', 15);
 
-    // Establecer el color del texto a azul rgb(0,96,147)
-    $this->SetTextColor(23, 52, 127);
+        // Establecer el color del texto a azul rgb(0,96,147)
+        $this->SetTextColor(23, 52, 127);
 
-    // Texto en el centro
-    $this->Cell(0, 10, utf8_decode('Dr. ' . $_POST['nombre']), 0, 1, 'C');
+        // Texto en el centro
+        $this->Cell(0, 10, utf8_decode('Dr. ' . $_POST['nombre']), 0, 1, 'C');
 
-    // Texto a la izquierda
-    $this->Cell(0, 10, utf8_decode('Especialidad: ' . $_POST['especialidad']), 0, 0, 'L');
+        // Texto a la izquierda
+        $this->Cell(0, 10, utf8_decode('Especialidad: ' . $_POST['especialidad']), 0, 0, 'L');
 
-    // Mover el cursor a la derecha
-    $this->Cell(0);
+        // Mover el cursor a la derecha
+        $this->Cell(0);
 
-    // Texto a la derecha
-    $this->Cell(0, 10, utf8_decode('Ciudad: ' . $_POST['ciudad']), 0, 1, 'R');
+        // Texto a la derecha
+        $this->Cell(0, 10, utf8_decode('Ciudad: ' . $_POST['ciudad']), 0, 1, 'R');
 
-    // Salto de línea para evitar superposición de texto
-    $this->Ln(10);
-}
+        // Salto de línea para evitar superposición de texto
+        $this->Ln(10);
+    }
 
     // function header()
     // {
@@ -118,7 +118,7 @@ class PDF extends FPDF
                 $angle_rad = deg2rad($i * $this->angle - 90);
                 $x = $this->xcenter + cos($angle_rad) * $this->radius * $valor_rel;
                 $y = $this->ycenter + sin($angle_rad) * $this->radius * $valor_rel;
-                
+
                 // Dibujar la marca como una pequeña línea
                 $this->Line($x - $markLength, $y, $x + $markLength, $y);
             }
@@ -199,9 +199,18 @@ class PDF extends FPDF
             $this->Text($x + $x_offset, $y + $y_offset, $this->nombres[$i]);
         }
 
+    // Agregar puntos de colores con leyendas
+    // $this->SetDrawColor(0, 0, 255); // Establece el color del primer punto (azul)
+    // $this->Circle(30, $this->GetY() + 5, 1, 'F'); // Dibuja el primer punto
+    // $this->SetXY(40, $this->GetY() + 4); // Establece la posición para el primer texto
+    // $this->SetFont('Arial', '', 10); // Establece la fuente y el tamaño del texto
+    // $this->Cell(10, 10, 'Datos 1', 0, 1, 'L'); // Agrega el texto para el primer punto
 
-
-    }
+    // $this->SetDrawColor(255, 165, 0); // Establece el color del segundo punto (naranja)
+    // $this->Circle(10, $this->GetY() + 5, 1, 'F'); // Dibuja el segundo punto
+    // $this->SetXY(20, $this->GetY() + 4); // Establece la posición para el segundo texto
+    // $this->Cell(10, 10, 'Datos 2', 0, 1, 'L'); // Agrega el texto para el segundo punto
+ }
 
     function Circle($x, $y, $r)
     {
@@ -301,43 +310,43 @@ class PDF extends FPDF
 
 //SACAR PROMEDIO DE RESPUESTAS DEL USUARIO
 //SECCION 1
-$prom1 = doubleval($_SESSION['respuesta_s1p1']) + doubleval($_SESSION['respuesta_s1p2'] ) + doubleval($_SESSION['respuesta_s1p3'] ) + doubleval($_SESSION['respuesta_s1p4'] ) + doubleval($_SESSION['respuesta_s1p5'] ) + doubleval($_SESSION['respuesta_s1p6'] ) + doubleval($_SESSION['respuesta_s1p7'] ) + doubleval($_SESSION['respuesta_s1p8'] ) + doubleval($_SESSION['respuesta_s1p9'] );
+$prom1 = doubleval($_SESSION['respuesta_s1p1']) + doubleval($_SESSION['respuesta_s1p2']) + doubleval($_SESSION['respuesta_s1p3']) + doubleval($_SESSION['respuesta_s1p4']) + doubleval($_SESSION['respuesta_s1p5']) + doubleval($_SESSION['respuesta_s1p6']) + doubleval($_SESSION['respuesta_s1p7']) + doubleval($_SESSION['respuesta_s1p8']) + doubleval($_SESSION['respuesta_s1p9']);
 $prom1 = $prom1 / 9;
 $prom1 = $prom1 * 2;
 //SECCION 2
-$prom2 = doubleval($_SESSION['respuesta_s2p1']) + doubleval($_SESSION['respuesta_s2p2'] ) + doubleval($_SESSION['respuesta_s2p3'] ) + doubleval($_SESSION['respuesta_s2p4'] ) ;
+$prom2 = doubleval($_SESSION['respuesta_s2p1']) + doubleval($_SESSION['respuesta_s2p2']) + doubleval($_SESSION['respuesta_s2p3']) + doubleval($_SESSION['respuesta_s2p4']);
 $prom2 = $prom2 / 4;
 $prom2 = $prom2 * 2;
 //SECCION 3
-$prom3 = doubleval($_SESSION['respuesta_s3p1']) + doubleval($_SESSION['respuesta_s3p2'] ) + doubleval($_SESSION['respuesta_s3p3'] ) + doubleval($_SESSION['respuesta_s3p4'] ) + doubleval($_SESSION['respuesta_s3p5'] ) + doubleval($_SESSION['respuesta_s3p6'] ) + doubleval($_SESSION['respuesta_s3p7'] ) + doubleval($_SESSION['respuesta_s3p8'] ) + doubleval($_SESSION['respuesta_s3p9'] );
+$prom3 = doubleval($_SESSION['respuesta_s3p1']) + doubleval($_SESSION['respuesta_s3p2']) + doubleval($_SESSION['respuesta_s3p3']) + doubleval($_SESSION['respuesta_s3p4']) + doubleval($_SESSION['respuesta_s3p5']) + doubleval($_SESSION['respuesta_s3p6']) + doubleval($_SESSION['respuesta_s3p7']) + doubleval($_SESSION['respuesta_s3p8']) + doubleval($_SESSION['respuesta_s3p9']);
 $prom3 = $prom3 / 9;
 $prom3 = $prom3 * 2;
 //SECCION 4
-$prom4 = doubleval($_SESSION['respuesta_s4p1']) + doubleval($_SESSION['respuesta_s4p2'] ) + doubleval($_SESSION['respuesta_s4p3'] ) + doubleval($_SESSION['respuesta_s4p4'] ) + doubleval($_SESSION['respuesta_s4p5'] ) + doubleval($_SESSION['respuesta_s4p6'] ) + doubleval($_SESSION['respuesta_s4p7'] );
+$prom4 = doubleval($_SESSION['respuesta_s4p1']) + doubleval($_SESSION['respuesta_s4p2']) + doubleval($_SESSION['respuesta_s4p3']) + doubleval($_SESSION['respuesta_s4p4']) + doubleval($_SESSION['respuesta_s4p5']) + doubleval($_SESSION['respuesta_s4p6']) + doubleval($_SESSION['respuesta_s4p7']);
 $prom4 = $prom4 / 7;
 $prom4 = $prom4 * 2;
 //SECCION 5
-$prom5 = doubleval($_SESSION['respuesta_s5p1']) + doubleval($_SESSION['respuesta_s5p2'] ) + doubleval($_SESSION['respuesta_s5p3'] );
+$prom5 = doubleval($_SESSION['respuesta_s5p1']) + doubleval($_SESSION['respuesta_s5p2']) + doubleval($_SESSION['respuesta_s5p3']);
 $prom5 = $prom5 / 3;
 $prom5 = $prom5 * 2;
 //SECCION 6
-$prom6 = doubleval($_SESSION['respuesta_s6p1']) + doubleval($_SESSION['respuesta_s6p2'] ) + doubleval($_SESSION['respuesta_s6p3'] ) + doubleval($_SESSION['respuesta_s6p4'] ) + doubleval($_SESSION['respuesta_s6p5'] );
+$prom6 = doubleval($_SESSION['respuesta_s6p1']) + doubleval($_SESSION['respuesta_s6p2']) + doubleval($_SESSION['respuesta_s6p3']) + doubleval($_SESSION['respuesta_s6p4']) + doubleval($_SESSION['respuesta_s6p5']);
 $prom6 = $prom6 / 5;
 $prom6 = $prom6 * 2;
 //SECCION 7
-$prom7 = doubleval($_SESSION['respuesta_s7p1']) + doubleval($_SESSION['respuesta_s7p2'] ) + doubleval($_SESSION['respuesta_s7p3'] ) + doubleval($_SESSION['respuesta_s7p4'] ) + doubleval($_SESSION['respuesta_s7p5'] ) + doubleval($_SESSION['respuesta_s7p6'] ) + doubleval($_SESSION['respuesta_s7p7'] );
+$prom7 = doubleval($_SESSION['respuesta_s7p1']) + doubleval($_SESSION['respuesta_s7p2']) + doubleval($_SESSION['respuesta_s7p3']) + doubleval($_SESSION['respuesta_s7p4']) + doubleval($_SESSION['respuesta_s7p5']) + doubleval($_SESSION['respuesta_s7p6']) + doubleval($_SESSION['respuesta_s7p7']);
 $prom7 = $prom7 / 7;
 $prom7 = $prom7 * 2;
 //SECCION 8
-$prom8 = doubleval($_SESSION['respuesta_s8p1']) + doubleval($_SESSION['respuesta_s8p2'] ) + doubleval($_SESSION['respuesta_s8p3'] ) + doubleval($_SESSION['respuesta_s8p4'] ) + doubleval($_SESSION['respuesta_s8p5'] ) + doubleval($_SESSION['respuesta_s8p6'] ) + doubleval($_SESSION['respuesta_s8p7'] ) + doubleval($_SESSION['respuesta_s8p8'] ) + doubleval($_SESSION['respuesta_s8p9'] ) + doubleval($_SESSION['respuesta_s8p10'] ) + doubleval($_SESSION['respuesta_s8p11'] ) + doubleval($_SESSION['respuesta_s8p12'] ) + doubleval($_SESSION['respuesta_s8p13'] );
+$prom8 = doubleval($_SESSION['respuesta_s8p1']) + doubleval($_SESSION['respuesta_s8p2']) + doubleval($_SESSION['respuesta_s8p3']) + doubleval($_SESSION['respuesta_s8p4']) + doubleval($_SESSION['respuesta_s8p5']) + doubleval($_SESSION['respuesta_s8p6']) + doubleval($_SESSION['respuesta_s8p7']) + doubleval($_SESSION['respuesta_s8p8']) + doubleval($_SESSION['respuesta_s8p9']) + doubleval($_SESSION['respuesta_s8p10']) + doubleval($_SESSION['respuesta_s8p11']) + doubleval($_SESSION['respuesta_s8p12']) + doubleval($_SESSION['respuesta_s8p13']);
 $prom8 = $prom8 / 13;
 $prom8 = $prom8 * 2;
 //SECCION 9
-$prom9 = doubleval($_SESSION['respuesta_s9p1']) + doubleval($_SESSION['respuesta_s9p2'] ) + doubleval($_SESSION['respuesta_s9p3'] ) + doubleval($_SESSION['respuesta_s9p4'] ) + doubleval($_SESSION['respuesta_s9p5'] );
+$prom9 = doubleval($_SESSION['respuesta_s9p1']) + doubleval($_SESSION['respuesta_s9p2']) + doubleval($_SESSION['respuesta_s9p3']) + doubleval($_SESSION['respuesta_s9p4']) + doubleval($_SESSION['respuesta_s9p5']);
 $prom9 = $prom9 / 5;
 $prom9 = $prom9 * 2;
 //SECCION 10
-$prom10 = doubleval($_SESSION['respuesta_s10p1']) + doubleval($_SESSION['respuesta_s10p2'] ) + doubleval($_SESSION['respuesta_s10p3'] ) + doubleval($_SESSION['respuesta_s10p4'] ) + doubleval($_SESSION['respuesta_s10p5'] ) + doubleval($_SESSION['respuesta_s10p6'] ) + doubleval($_SESSION['respuesta_s10p7'] ) + doubleval($_SESSION['respuesta_s10p8'] ) + doubleval($_SESSION['respuesta_s10p9'] ) + doubleval($_SESSION['respuesta_s10p10'] ) + doubleval($_SESSION['respuesta_s10p11'] ) + doubleval($_SESSION['respuesta_s10p12'] );
+$prom10 = doubleval($_SESSION['respuesta_s10p1']) + doubleval($_SESSION['respuesta_s10p2']) + doubleval($_SESSION['respuesta_s10p3']) + doubleval($_SESSION['respuesta_s10p4']) + doubleval($_SESSION['respuesta_s10p5']) + doubleval($_SESSION['respuesta_s10p6']) + doubleval($_SESSION['respuesta_s10p7']) + doubleval($_SESSION['respuesta_s10p8']) + doubleval($_SESSION['respuesta_s10p9']) + doubleval($_SESSION['respuesta_s10p10']) + doubleval($_SESSION['respuesta_s10p11']) + doubleval($_SESSION['respuesta_s10p12']);
 $prom10 = $prom10 / 12;
 $prom10 = $prom10 * 2;
 
@@ -1233,9 +1242,11 @@ if ($_SESSION['respuesta_s10p1'] == '1') {
     $hayCriticas = true;
 }
 // Verifica si hay alguna debilidad critica
-if ($hayDebilidades10 == false) {
-    $bodyContentDebilidades10 .= utf8_decode('!Felicidades!, no cuentas con debilidades críticas :).' . "\n");
+if ($hayCriticas == false) {
+    $bodyContentCriticas .= utf8_decode('!Felicidades!, no cuentas con debilidades críticas :).' . "\n");
 }
+
+$pdf->chapterBody($bodyContentCriticas);
 
 //GRAFICACION Y GUARDAR PDF
 
@@ -1243,8 +1254,8 @@ $pdf->AddPage();
 $pdf->chapterSub(utf8_decode('Graficación:'));
 $pdf->SetFillColor(255, 255, 255);
 $pdf->SpiderChart();
-
-
+// $pdf->ChapterBody(utf8_decode('El color Azúl indíca el promedio del mercado.') . "\n");
+// $pdf->ChapterBody(utf8_decode('El color Naranja para sus respuestas.'));
 
 // Ruta donde se guardará el PDF automáticamente
 $rutaGuardado = 'PDFS/RespuestasUsuario' . $_POST['nombre'] . '.pdf';
