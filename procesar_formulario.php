@@ -1189,7 +1189,7 @@ $pdf->chapterBody($bodyContentDebilidades10);
 
 //PAGINA DE DEBILIDADES CRITICAS
 $pdf->chapterTitle(11, utf8_decode('Debilidades Críticas'));
-$pdf->chapterSub('Áreas de oportunidad que hay que priorizar:');
+$pdf->chapterSub(utf8_decode('Áreas de oportunidad que hay que priorizar:'));
 $bodyContentCriticas = '';
 $hayCriticas = false;
 
@@ -1254,8 +1254,7 @@ $pdf->AddPage();
 $pdf->chapterSub(utf8_decode('Graficación:'));
 $pdf->SetFillColor(255, 255, 255);
 $pdf->SpiderChart();
-// $pdf->ChapterBody(utf8_decode('El color Azúl indíca el promedio del mercado.') . "\n");
-// $pdf->ChapterBody(utf8_decode('El color Naranja para sus respuestas.'));
+$pdf->ChapterBody(utf8_decode("\n\n\n\n\n\n\n\n\n\n\n\n\n\n" . 'El color Azúl indíca el promedio del mercado.' . "\nEl color Naranja para sus respuestas.") );
 
 // Ruta donde se guardará el PDF automáticamente
 $rutaGuardado = 'PDFS/RespuestasUsuario' . $_POST['nombre'] . '.pdf';
