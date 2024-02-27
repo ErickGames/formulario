@@ -33,12 +33,12 @@
 
                 <p class="mt-4">Este formulario está diseñado para brindarte la oportunidad de realizar una
                     autoevaluación en relación con
-                    diez aspectos cuciales para tu consultorio o negocio médico. Tu opinión es fundamental para
+                    dos aspectos cuciales para tu consultorio o negocio médico. Tu opinión es fundamental para
                     identificar
                     áreas de mejora y fortaleza en tu practica profesional.
                 </p>
 
-                <img class="mt-4" src="../img/index/intro.jpg" alt="" style="width:100%">
+                <img class="mt-4" src="../img/index/intro_10.jpg" alt="" style="width:100%">
 
                 <p class="mt-4">Tu participación es invaluable y nos ayudará a ofrecerte información personalizada para
                     mejorar tu

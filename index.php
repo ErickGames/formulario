@@ -53,7 +53,7 @@
                     áreas de mejora y fortaleza en tu practica profesional.
                 </p>
 
-                <img class="mt-4" src="img/index/intro.jpg" alt="" style="width:100%">
+                <img class="mt-4" src="img/index/intro_25.jpg" alt="" style="width:100%">
 
                 <p class="mt-4">Tu participación es invaluable y nos ayudará a ofrecerte información personalizada para
                     mejorar tu
