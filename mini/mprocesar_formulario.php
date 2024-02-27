@@ -308,6 +308,8 @@ class PDF extends FPDF
 
 }
 
+
+
 //SECCION 9
 $prom9 = doubleval($_SESSION['respuesta_s9p1']) + doubleval($_SESSION['respuesta_s9p2']) + doubleval($_SESSION['respuesta_s9p3']) + doubleval($_SESSION['respuesta_s9p4']) + doubleval($_SESSION['respuesta_s9p5']);
 $prom9 = $prom9 / 5;

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+        ['Categoria', 'Valor', { role: 'style' }, { role: 'tooltip', p: { html: true } }], // Agregar el rol de tooltip
+        ['Instalaciones promedio mercado', 2.67, 'blue', 'Promedio Mercado: 2.67'], // Color azul y tooltip
+        ['Instalaciones promedio usuario', Math.floor(Math.random() * 5) + 1, 'orange', 'Promedio Usuario: ' + (Math.floor(Math.random() * 5) + 1)], // Color naranja y tooltip
+        ['Proyecto Personal promedio mercado', 2.67, 'blue', 'Promedio Mercado: 2.67'], // Color azul y tooltip
+        ['Proyecto Personal promedio usuario', Math.floor(Math.random() * 5) + 1, 'orange', 'Promedio Usuario: ' + (Math.floor(Math.random() * 5) + 1)], // Color naranja y tooltip
+        // Agregar las demás comparaciones aquí
+    ]);
+
+    var options = {
+        title: 'Comparación con el mercado',
+        width: 600,
+        height: 400,
+        bar: {groupWidth: '50%'},
+        legend: { position: 'none', alignment: 'start' }, // Ubica la leyenda en la parte superior y alineada a la izquierda
+        vAxis: { minValue: 0, maxValue: 5 }, // Asegura que el eje y vaya de 0 a 5
+        hAxis: { textPosition: 'under' } // Coloca el texto de las columnas
+    };
+
+    var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+    chart.draw(data, options);
+}
+
+
+    </script>
+
+</head>
+<body>
+
+    <div id="chart_div"></div>
+    
+</body>
+</html>
