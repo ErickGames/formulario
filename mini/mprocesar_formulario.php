@@ -322,7 +322,7 @@ $prom10 = $prom10 * 2;
 
 $data = array(4, 5.58, 3.56, 4.1, 3.78, 4.14, 3.14, 3.42, 5.34, 5.34); // Inputs promedio
 $data_user = array(0, 0, 0, 0, 0, 0, 0, 0, $prom9, $prom10); // Imputs del usuario
-$nombres = array("Ventas", "Recepcion de Citas", "Administracion", "Planeacion y Estrategia", "Farmacia", "Fiscal y Legal", "Activos", "RRHH", "Instalaciones", "Proyecto personal");
+$nombres = array("Ventas", "Recepción de Citas", "Administración", "Planeación y Estrategia", "Farmacia", "Fiscal y Legal", "Activos", "RRHH", "Instalaciones", "Proyecto personal");
 $maxValue = 10; // Adjust as needed
 $xcenter = 100; // Adjust as needed
 $ycenter = 100; // Adjust as needed
@@ -568,9 +568,9 @@ $mail->Password = 'diag.dna01'; // Cambia esto con tu contraseña SMTP
 $mail->SMTPSecure = 'tls'; // Puede ser 'ssl' o 'tls'
 $mail->Port = 587; // Puerto SMTP
 
-$mail->setFrom('diagnostico@dnafactorymedicos.com', 'DNA Factory Medicos'); // Cambia con tu dirección de correo y nombre
+$mail->setFrom('diagnostico@dnafactorymedicos.com', 'DNA Factory Médicos'); // Cambia con tu dirección de correo y nombre
 $mail->addAddress($destinatario);
-$mail->Subject = 'Resultado del Diagnostico';
+$mail->Subject = 'Resultado del Diagnóstico';
 $mail->Body = 'Adjunto encontrarás tus respuestas en formato PDF.     Datos de usuario:   Nuevo test de: ' . $_POST['nombre'] . ' Especialidad: ' . $_POST['especialidad'] . ' Correo: ' . $_POST['email'];
 $mail->addAttachment($rutaGuardado, 'RespuestasDNAFactory.pdf'); // Adjunta el PDF generado
 
