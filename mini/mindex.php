@@ -33,9 +33,9 @@
 
                 <p class="mt-4">Este formulario está diseñado para brindarte la oportunidad de realizar una
                     autoevaluación en relación con
-                    dos aspectos cuciales para tu consultorio o negocio médico. Tu opinión es fundamental para
+                    dos aspectos cruciales para tu consultorio o negocio médico. Tu opinión es fundamental para
                     identificar
-                    áreas de mejora y fortaleza en tu practica profesional.
+                    áreas de mejora y fortaleza en tu práctica profesional.
                 </p>
 
                 <img class="mt-4" src="../img/index/intro_10.jpg" alt="" style="width:100%">

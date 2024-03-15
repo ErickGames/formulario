@@ -380,7 +380,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s4p8" value="5">
                 <label class="form-check-label">
-                    Tengo más de 3 certificaciones. spolo medicos, n clinica.
+                    Tengo más de 3 certificaciones.
                 </label>
             </div>
             <div class="col-md-1"></div>

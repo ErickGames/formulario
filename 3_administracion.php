@@ -240,7 +240,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p5" value="2">
                 <label class="form-check-label">
-                    No tengo reigstro pero recuerdo quiénes son los pacientes con crédito.
+                    No tengo registro pero recuerdo quiénes son los pacientes con crédito.
                 </label>
             </div>
             <div class="form-check col-md-2">
@@ -306,7 +306,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <!-- PREGUNTA 7 -->
         <div class="row p-4 m-0" style="background-color:rgba(25, 47, 89, 0.1)">
 
-            <h4 class="mb-4">Reportes se desempeño y seguimiento</h4>
+            <h4 class="mb-4">Reportes de desempeño y seguimiento</h4>
 
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
@@ -390,7 +390,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s3p9" value="1">
                 <label class="form-check-label">
-                    No tengo ningun convenio con mis proveedores.
+                    No tengo ningún convenio con mis proveedores.
                 </label>
             </div>
             <div class="form-check col-md-2">

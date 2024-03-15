@@ -125,7 +125,7 @@ include_once('mheader.php');
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s9p2" value="4">
                 <label class="form-check-label">
-                    Tengo 4 consultorios. Y URGENCIAS +
+                    Tengo 4 consultorios y atiendo en urgencias.
                 </label>
             </div>
             <div class="form-check col-md-2">

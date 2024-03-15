@@ -101,7 +101,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p1" value="5">
                 <label class="form-check-label">
-                    De 10 o mas empleados.
+                    De 10 o más empleados.
                 </label>
             </div>
             <div class="col-md-1"></div>
@@ -110,7 +110,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <!-- PREGUNTA 2 -->
         <div class="row p-4 m-0" style="background-color:rgba(61, 177, 102, 0.1)">
 
-            <h4 Class="mb-4">Equipo de personas suficiente y asignado a labores especificas</h4>
+            <h4 Class="mb-4">Equipo de personas suficiente y asignado a labores específicas</h4>
 
             <div class="col-md-1"></div>
             <div class="form-check col-md-2">
@@ -179,7 +179,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s8p3" value="5">
                 <label class="form-check-label">
-                    Tengo un sistema especial para llevar la nómina aprovado por la Secretaría del Trabajo.
+                    Tengo un sistema especial para llevar la nómina aprobado por la Secretaría del Trabajo.
             </div>
             <div class="col-md-1"></div>
         </div>

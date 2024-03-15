@@ -38,9 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         <h5 class="mt-4" style="text-align:center">Nos interesa que conozcas tus resultados, completa la información a
             continuación y
-            da
-            click en "Enviar" para
-            obtener un PDF con la retroalimentación que tenemos para ti.</h5>
+            da click en "Enviar" para obtener un PDF con la retroalimentación que tenemos para ti.</h5>
     </div>
 
     <div class="row m-1">

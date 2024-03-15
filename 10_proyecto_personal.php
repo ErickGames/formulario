@@ -79,7 +79,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p1" value="2">
                 <label class="form-check-label">
-                    Trabajo en otra institucion y eso me resta tiempo para atender mi consultorio.
+                    Trabajo en otra institución y eso me resta tiempo para atender mi consultorio.
                 </label>
             </div>
             <div class="form-check col-md-2">
@@ -169,7 +169,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p3" value="4">
                 <label class="form-check-label">
-                    Tengo mas de 10 años en el negocio y considero que puedo renovarme.
+                    Tengo más de 10 años en el negocio y considero que puedo renovarme.
                 </label>
             </div>
             <div class="form-check col-md-2">
@@ -242,7 +242,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p5" value="3">
                 <label class="form-check-label">
-                    Dedico mi tiempo a lo que más quiero pero me gustaría dedicar mas tiempo a mi familia y compromisos
+                    Dedico mi tiempo a lo que más quiero pero me gustaría dedicar más tiempo a mi familia y compromisos
                     personales.
                 </label>
             </div>
@@ -311,31 +311,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p7" value="1">
                 <label class="form-check-label">
-                    No soy persistente con las estrategias que defino.
+                Me hace falta dedicación y ánimo para alcanzar objetivos y metas.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p7" value="2">
                 <label class="form-check-label">
-                    No soy constante y desisto de las estrategias que defino para alcanzar los objetivos.
+                Me enfoco solo ocasionalmente en alcanzar las metas y objetivos que me propongo.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p7" value="3">
                 <label class="form-check-label">
-                    Trato de mantenerme constante con las acciones para lograr mis objetivos.
+                Me entrego parcialmente en alcanzar las metas y objetivos que me propongo.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p7" value="4">
                 <label class="form-check-label">
-                    La mayoría de las veces me mantengo constante en las estrategias que definí.
+                Me enfoco en alcanzar las metas y objetivos que me propongo.
                 </label>
             </div>
             <div class="form-check col-md-2">
                 <input class="form-check-input" type="radio" name="s10p7" value="5">
                 <label class="form-check-label">
-                    Siempre me mantengo constante con los objetivos y las estrategias definidas.
+                Me entrego por completo para alcanzar las metas y objetivos que me propongo.
                 </label>
             </div>
             <div class="col-md-1"></div>
