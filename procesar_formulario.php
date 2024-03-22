@@ -330,8 +330,8 @@ $prom5 = doubleval($_SESSION['respuesta_s5p1']) + doubleval($_SESSION['respuesta
 $prom5 = $prom5 / 3;
 $prom5 = $prom5 * 2;
 //SECCION 6
-$prom6 = doubleval($_SESSION['respuesta_s6p1']) + doubleval($_SESSION['respuesta_s6p2']) + doubleval($_SESSION['respuesta_s6p3'])  + doubleval($_SESSION['respuesta_s6p5']); //s6p4
-$prom6 = $prom6 / 4;
+$prom6 = doubleval($_SESSION['respuesta_s6p1']) + doubleval($_SESSION['respuesta_s6p2']) + doubleval($_SESSION['respuesta_s6p3']) + doubleval($_SESSION['respuesta_s6p4']) + doubleval($_SESSION['respuesta_s6p5']); 
+$prom6 = $prom6 / 5;
 $prom6 = $prom6 * 2;
 //SECCION 7
 $prom7 = doubleval($_SESSION['respuesta_s7p1']) + doubleval($_SESSION['respuesta_s7p2']) + doubleval($_SESSION['respuesta_s7p3']) + doubleval($_SESSION['respuesta_s7p4']) + doubleval($_SESSION['respuesta_s7p5']) + doubleval($_SESSION['respuesta_s7p6']) + doubleval($_SESSION['respuesta_s7p7']);
@@ -764,10 +764,10 @@ if ($_SESSION['respuesta_s6p3'] == '4' || $_SESSION['respuesta_s6p3'] == '5') {
     $bodyContentFortalezas6 .= utf8_decode('- Permisos COFEPRIS: El estar en orden con permisos de Cofepris disminuye riesgos innecesarios.' . "\n");
     $hayFortalezas6 = true;
 }
-// if ($_SESSION['respuesta_s6p4'] == '4' || $_SESSION['respuesta_s6p4'] == '5') {
-//     $bodyContentFortalezas6 .= utf8_decode('- Certificaciones: Contar con certificaciones y permisos varios da formalidad y certeza al negocio. Incrementa la confianza y el valor de los clientes.' . "\n");
-//     $hayFortalezas6 = true;
-// }
+if ($_SESSION['respuesta_s6p4'] == '4' || $_SESSION['respuesta_s6p4'] == '5') {
+    $bodyContentFortalezas6 .= utf8_decode('- Certificaciones: Contar con certificaciones y permisos varios da formalidad y certeza al negocio. Incrementa la confianza y el valor de los clientes.' . "\n");
+    $hayFortalezas6 = true;
+}
 if ($_SESSION['respuesta_s6p5'] == '4' || $_SESSION['respuesta_s6p5'] == '5') {
     $bodyContentFortalezas6 .= utf8_decode('- Sistema de facturación: El contar con un sistema de facturación permite un mejor uso del tiempo y la integración de información con otras herramientas de la clínica.' . "\n");
     $hayFortalezas6 = true;
@@ -793,10 +793,10 @@ if ($_SESSION['respuesta_s6p3'] == '1' || $_SESSION['respuesta_s6p3'] == '2') {
     $bodyContentDebilidades6 .= utf8_decode('- Permisos COFEPRIS: El no contar con permisos de COFEPRIS genera un riesgo de clausura.' . "\n");
     $hayDebilidades6 = true;
 }
-// if ($_SESSION['respuesta_s6p4'] == '1' || $_SESSION['respuesta_s6p4'] == '2') {
-//     $bodyContentDebilidades6 .= utf8_decode('- Certificaciones y otros permisos: La falta de certificaciones y permisos varios genera riesgo de clausura, además de que genera menos confianza en el paciente.' . "\n");
-//     $hayDebilidades6 = true;
-// }
+if ($_SESSION['respuesta_s6p4'] == '1' || $_SESSION['respuesta_s6p4'] == '2') {
+    $bodyContentDebilidades6 .= utf8_decode('- Certificaciones y otros permisos: La falta de certificaciones y permisos varios genera riesgo de clausura, además de que genera menos confianza en el paciente.' . "\n");
+    $hayDebilidades6 = true;
+}
 if ($_SESSION['respuesta_s6p5'] == '1' || $_SESSION['respuesta_s6p5'] == '2') {
     $bodyContentDebilidades6 .= utf8_decode('- Sistema de facturación: El no tener sistema de facturación puede generar pérdida de tiempo y falta de un buen servicio a los clientes que necesitan factura.' . "\n");
     $hayDebilidades6 = true;
@@ -1229,10 +1229,10 @@ if ($_SESSION['respuesta_s4p7'] == '1') {
     $bodyContentCriticas .= utf8_decode('- Fijación de precios.' . "\n");
     $hayCriticas = true;
 }
-// if ($_SESSION['respuesta_s6p4'] == '1') {
-//     $bodyContentCriticas .= utf8_decode('- Certificaciones' . "\n");
-//     $hayCriticas = true;
-// }
+if ($_SESSION['respuesta_s6p4'] == '1') {
+    $bodyContentCriticas .= utf8_decode('- Certificaciones' . "\n");
+    $hayCriticas = true;
+}
 if ($_SESSION['respuesta_s9p1'] == '1') {
     $bodyContentCriticas .= utf8_decode('- Área de estacionamiento.' . "\n");
     $hayCriticas = true;

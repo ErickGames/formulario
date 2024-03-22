@@ -348,7 +348,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 8 -->
-        <div class="row p-4 m-0" style="background-color:rgba(61, 177, 102, 0.1)">
+        <!-- <div class="row p-4 m-0" style="background-color:rgba(61, 177, 102, 0.1)">
 
             <h4 Class="mb-4">Certificaciones</h4>
 
@@ -384,7 +384,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </label>
             </div>
             <div class="col-md-1"></div>
-        </div>
+        </div> -->
     </form>
 
     <div style="display: flex; justify-content: flex-end; margin: 0px 15px 5px 0px">
