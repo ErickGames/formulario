@@ -330,8 +330,8 @@ $prom5 = doubleval($_SESSION['respuesta_s5p1']) + doubleval($_SESSION['respuesta
 $prom5 = $prom5 / 3;
 $prom5 = $prom5 * 2;
 //SECCION 6
-$prom6 = doubleval($_SESSION['respuesta_s6p1']) + doubleval($_SESSION['respuesta_s6p2']) + doubleval($_SESSION['respuesta_s6p3']) + doubleval($_SESSION['respuesta_s6p4']) + doubleval($_SESSION['respuesta_s6p5']);
-$prom6 = $prom6 / 5;
+$prom6 = doubleval($_SESSION['respuesta_s6p1']) + doubleval($_SESSION['respuesta_s6p2']) + doubleval($_SESSION['respuesta_s6p3'])  + doubleval($_SESSION['respuesta_s6p5']); //s6p4
+$prom6 = $prom6 / 4;
 $prom6 = $prom6 * 2;
 //SECCION 7
 $prom7 = doubleval($_SESSION['respuesta_s7p1']) + doubleval($_SESSION['respuesta_s7p2']) + doubleval($_SESSION['respuesta_s7p3']) + doubleval($_SESSION['respuesta_s7p4']) + doubleval($_SESSION['respuesta_s7p5']) + doubleval($_SESSION['respuesta_s7p6']) + doubleval($_SESSION['respuesta_s7p7']);
@@ -353,7 +353,7 @@ $prom10 = $prom10 * 2;
 
 $data = array(4, 5.58, 3.56, 4.1, 3.78, 4.14, 3.14, 3.42, 5.34, 5.34); // Inputs promedio
 $data_user = array($prom1, $prom2, $prom3, $prom4, $prom5, $prom6, $prom7, $prom8, $prom9, $prom10); // Imputs del usuario
-$nombres = array("Ventas", "Recepción de Citas", "Administración", "Planeación y Estrategia", "Farmacia", "Fiscal y Legal", "Activos", "RRHH", "Instalaciones", "Proyecto personal");
+$nombres = array("Ventas", utf8_decode("Recepción de Citas"), utf8_decode("Administración"), utf8_decode("Planeación y Estrategia"), "Farmacia", "Fiscal y Legal", "Activos", "RRHH", "Instalaciones", "Proyecto personal");
 $maxValue = 10; // Adjust as needed
 $xcenter = 100; // Adjust as needed
 $ycenter = 100; // Adjust as needed
@@ -764,10 +764,10 @@ if ($_SESSION['respuesta_s6p3'] == '4' || $_SESSION['respuesta_s6p3'] == '5') {
     $bodyContentFortalezas6 .= utf8_decode('- Permisos COFEPRIS: El estar en orden con permisos de Cofepris disminuye riesgos innecesarios.' . "\n");
     $hayFortalezas6 = true;
 }
-if ($_SESSION['respuesta_s6p4'] == '4' || $_SESSION['respuesta_s6p4'] == '5') {
-    $bodyContentFortalezas6 .= utf8_decode('- Certificaciones: Contar con certificaciones y permisos varios da formalidad y certeza al negocio. Incrementa la confianza y el valor de los clientes.' . "\n");
-    $hayFortalezas6 = true;
-}
+// if ($_SESSION['respuesta_s6p4'] == '4' || $_SESSION['respuesta_s6p4'] == '5') {
+//     $bodyContentFortalezas6 .= utf8_decode('- Certificaciones: Contar con certificaciones y permisos varios da formalidad y certeza al negocio. Incrementa la confianza y el valor de los clientes.' . "\n");
+//     $hayFortalezas6 = true;
+// }
 if ($_SESSION['respuesta_s6p5'] == '4' || $_SESSION['respuesta_s6p5'] == '5') {
     $bodyContentFortalezas6 .= utf8_decode('- Sistema de facturación: El contar con un sistema de facturación permite un mejor uso del tiempo y la integración de información con otras herramientas de la clínica.' . "\n");
     $hayFortalezas6 = true;
@@ -793,10 +793,10 @@ if ($_SESSION['respuesta_s6p3'] == '1' || $_SESSION['respuesta_s6p3'] == '2') {
     $bodyContentDebilidades6 .= utf8_decode('- Permisos COFEPRIS: El no contar con permisos de COFEPRIS genera un riesgo de clausura.' . "\n");
     $hayDebilidades6 = true;
 }
-if ($_SESSION['respuesta_s6p4'] == '1' || $_SESSION['respuesta_s6p4'] == '2') {
-    $bodyContentDebilidades6 .= utf8_decode('- Certificaciones y otros permisos: La falta de certificaciones y permisos varios genera riesgo de clausura, además de que genera menos confianza en el paciente.' . "\n");
-    $hayDebilidades6 = true;
-}
+// if ($_SESSION['respuesta_s6p4'] == '1' || $_SESSION['respuesta_s6p4'] == '2') {
+//     $bodyContentDebilidades6 .= utf8_decode('- Certificaciones y otros permisos: La falta de certificaciones y permisos varios genera riesgo de clausura, además de que genera menos confianza en el paciente.' . "\n");
+//     $hayDebilidades6 = true;
+// }
 if ($_SESSION['respuesta_s6p5'] == '1' || $_SESSION['respuesta_s6p5'] == '2') {
     $bodyContentDebilidades6 .= utf8_decode('- Sistema de facturación: El no tener sistema de facturación puede generar pérdida de tiempo y falta de un buen servicio a los clientes que necesitan factura.' . "\n");
     $hayDebilidades6 = true;
@@ -1170,7 +1170,7 @@ if ($_SESSION['respuesta_s10p9'] == '1' || $_SESSION['respuesta_s10p9'] == '2') 
     $hayDebilidades10 = true;
 }
 if ($_SESSION['respuesta_s10p10'] == '1' || $_SESSION['respuesta_s10p10'] == '2') {
-    $bodyContentDebilidades10 .= utf8_decode('- Autonomía: Falta de autonomía y liberta para tomar decisiones y tomar riesgos representa un freno en el desarrollo del negocio.' . "\n");
+    $bodyContentDebilidades10 .= utf8_decode('- Autonomía: Falta de autonomía y libertad para tomar decisiones y tomar riesgos representa un freno en el desarrollo del negocio.' . "\n");
     $hayDebilidades10 = true;
 }
 if ($_SESSION['respuesta_s10p11'] == '1' || $_SESSION['respuesta_s10p11'] == '2') {
@@ -1229,10 +1229,10 @@ if ($_SESSION['respuesta_s4p7'] == '1') {
     $bodyContentCriticas .= utf8_decode('- Fijación de precios.' . "\n");
     $hayCriticas = true;
 }
-if ($_SESSION['respuesta_s6p4'] == '1') {
-    $bodyContentCriticas .= utf8_decode('- Certificaciones' . "\n");
-    $hayCriticas = true;
-}
+// if ($_SESSION['respuesta_s6p4'] == '1') {
+//     $bodyContentCriticas .= utf8_decode('- Certificaciones' . "\n");
+//     $hayCriticas = true;
+// }
 if ($_SESSION['respuesta_s9p1'] == '1') {
     $bodyContentCriticas .= utf8_decode('- Área de estacionamiento.' . "\n");
     $hayCriticas = true;
@@ -1280,10 +1280,10 @@ $mail->Password = 'diag.dna01'; // Cambia esto con tu contraseña SMTP
 $mail->SMTPSecure = 'tls'; // Puede ser 'ssl' o 'tls'
 $mail->Port = 587; // Puerto SMTP
 
-$mail->setFrom('diagnostico@dnafactorymedicos.com', 'DNA Factory Médicos'); // Cambia con tu dirección de correo y nombre
+$mail->setFrom('diagnostico@dnafactorymedicos.com', utf8_decode('DNA Factory Médicos')); // Cambia con tu dirección de correo y nombre
 $mail->addAddress($destinatario);
-$mail->Subject = 'Resultado del Diagnóstico';
-$mail->Body = 'Adjunto encontrarás tus respuestas en formato PDF.     Datos de usuario:   Nuevo test de: ' . $_POST['nombre'] . ' Especialidad: ' . $_POST['especialidad'] . ' Correo: ' . $_POST['email'];
+$mail->Subject = utf8_decode('Resultado del Diagnóstico');
+$mail->Body = utf8_decode('Adjunto encontrarás tus respuestas en formato PDF.     Datos de usuario:   Nuevo test de: ' . $_POST['nombre'] . ' Especialidad: ' . $_POST['especialidad'] . ' Correo: ' . $_POST['email']);
 $mail->addAttachment($rutaGuardado, 'RespuestasDNAFactory.pdf'); // Adjunta el PDF generado
 
 $mail->send();

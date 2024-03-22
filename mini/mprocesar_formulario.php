@@ -498,7 +498,7 @@ if ($_SESSION['respuesta_s10p9'] == '1' || $_SESSION['respuesta_s10p9'] == '2') 
     $hayDebilidades10 = true;
 }
 if ($_SESSION['respuesta_s10p10'] == '1' || $_SESSION['respuesta_s10p10'] == '2') {
-    $bodyContentDebilidades10 .= utf8_decode('- Autonomía: Falta de autonomía y liberta para tomar decisiones y tomar riesgos representa un freno en el desarrollo del negocio.' . "\n");
+    $bodyContentFortalezas10 .= utf8_decode('- Autonomía: Una autonomía y libertad para la toma de decisiones y/o inversiones, conlleva a una reinvención recurrente de aprendizaje y superación.' . "\n");
     $hayDebilidades10 = true;
 }
 if ($_SESSION['respuesta_s10p11'] == '1' || $_SESSION['respuesta_s10p11'] == '2') {
@@ -531,7 +531,7 @@ if ($_SESSION['respuesta_s10p1'] == '1') {
 }
 // Verifica si hay alguna debilidad critica
 if ($hayCriticas == false) {
-    $bodyContentCriticas .= utf8_decode('!Felicidades!, no cuentas con debilidades críticas :).' . "\n");
+    $bodyContentCriticas .= utf8_decode('¡Felicidades! No cuentas con debilidades críticas 😊.' . "\n");
 }
 
 $pdf->chapterBody($bodyContentCriticas);
@@ -568,10 +568,10 @@ $mail->Password = 'diag.dna01'; // Cambia esto con tu contraseña SMTP
 $mail->SMTPSecure = 'tls'; // Puede ser 'ssl' o 'tls'
 $mail->Port = 587; // Puerto SMTP
 
-$mail->setFrom('diagnostico@dnafactorymedicos.com', 'DNA Factory Médicos'); // Cambia con tu dirección de correo y nombre
+$mail->setFrom('diagnostico@dnafactorymedicos.com', utf8_decode('DNA Factory Médicos')); // Cambia con tu dirección de correo y nombre
 $mail->addAddress($destinatario);
-$mail->Subject = 'Resultado del Diagnóstico';
-$mail->Body = 'Adjunto encontrarás tus respuestas en formato PDF.     Datos de usuario:   Nuevo test de: ' . $_POST['nombre'] . ' Especialidad: ' . $_POST['especialidad'] . ' Correo: ' . $_POST['email'];
+$mail->Subject = utf8_decode('Resultado del Diagnóstico');
+$mail->Body = utf8_decode('Adjunto encontrarás tus respuestas en formato PDF.     Datos de usuario:   Nuevo test de: ' . $_POST['nombre'] . ' Especialidad: ' . $_POST['especialidad'] . ' Correo: ' . $_POST['email']);
 $mail->addAttachment($rutaGuardado, 'RespuestasDNAFactory.pdf'); // Adjunta el PDF generado
 
 $mail->send();

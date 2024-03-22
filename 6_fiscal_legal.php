@@ -184,7 +184,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 4 -->
-        <div class="row p-4 m-0" style="background-color:rgba(61, 177, 102, 0.1)">
+        <!-- <div class="row p-4 m-0" style="background-color:rgba(61, 177, 102, 0.1)">
 
             <h4 class="mb-4">Certificaciones</h4>
 
@@ -220,10 +220,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </label>
             </div>
             <div class="col-md-1"></div>
-        </div>
+        </div> -->
 
         <!-- PREGUNTA 5 -->
-        <div class="row p-4 m-0" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="row p-4 m-0" style="background-color:rgba(61, 177, 102, 0.1)">
 
             <h4 Class="mb-4">Sistema de facturación</h4>
 
