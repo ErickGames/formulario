@@ -190,7 +190,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 4 -->
-        <div class="row p-4 m-0" style="background-color:rgba(25, 47, 89, 0.1)">
+        <div class="row p-4 m-0" style="background-color:rgba(61, 177, 102, 0.1)">
 
             <h4 class="mb-4">Competitividad en el mercado</h4>
 
@@ -229,7 +229,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <!-- PREGUNTA 5 -->
-        <div class="row p-4 m-0" style="background-color:rgba(61, 177, 102, 0.1)">
+        <div class="row p-4 m-0" style="background-color:rgba(25, 47, 89, 0.1)">
 
             <h4 Class="mb-4">Optimización de servicios (Generación y eliminación)</h4>
 
