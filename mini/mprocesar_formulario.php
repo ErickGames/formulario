@@ -141,9 +141,9 @@ $prom10 = round($prom10, 2);
 
 $data = array(
     'Prom. Instalaciones' => 5.34,
-    'Usted' => $prom9,
+    'Prom. Usuario' => $prom9,
     'Prom. Proyecto Personal' => 5.34,
-    'Usted ' => $prom10
+    'Prom. Usuario ' => $prom10
 );
 
 $pdf = new PDF($data);
