@@ -101,7 +101,7 @@ class PDF extends FPDF
             $barHeight = $value * 10; // Escalar el valor para ajustar la altura
 
             // Determinar el color de la barra y el texto
-            $color = $i % 2 == 0 ? array(23, 52, 127) : array(255, 128, 0); // Azul para las barras pares, naranja para las impares
+            $color = $i % 2 == 0 ? array(28, 96, 145) : array(110, 188, 52); // Azul para las barras pares, naranja para las impares
             $this->SetFillColor($color[0], $color[1], $color[2]);
             $this->SetTextColor($color[0], $color[1], $color[2]);
 
@@ -350,7 +350,7 @@ if ($_SESSION['respuesta_s10p1'] == '1') {
 }
 // Verifica si hay alguna debilidad critica
 if ($hayCriticas == false) {
-    $bodyContentCriticas .= utf8_decode('¡Felicidades! No cuentas con debilidades críticas 😊.' . "\n");
+    $bodyContentCriticas .= utf8_decode('¡Felicidades! No cuentas con debilidades críticas.' . "\n");
 }
 
 $pdf->chapterBody($bodyContentCriticas);
@@ -361,6 +361,14 @@ $pdf->chapterBody($bodyContentCriticas);
 $pdf->AddPage();
 $pdf->chapterSub(utf8_decode('Graficación:'));
 $pdf->BarChart();
+$pdf->SetTextColor(0);
+$pdf->ChapterBody(utf8_decode("\n"));
+$pdf->ChapterBody(utf8_decode("\n\n\n" . 'El color azul indíca el promedio del mercado.' . "\nEl color naranja indica el promedio de tus respuestas.") );
+$pdf->ChapterBody(utf8_decode("\n\n\n\n\n". 'Te recomendamos que visualices tus oportunidades. En DNA FACTORY MÉDICOS, tenemos las herramientas para tus siguientes pasos. Encuentra más información dando') );
+$pdf->SetTextColor(0, 0, 255); // Cambia el color del texto a azul para indicar un enlace
+$pdf->Write(5, utf8_decode('click aquí'), 'https://dnafactorymedicos.com/cursos.html');
+$pdf->SetTextColor(0); // Restaura el color del texto a negro
+$pdf->ChapterBody(utf8_decode('.'));
 
 
 // Ruta donde se guardará el PDF automáticamente
