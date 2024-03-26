@@ -58,6 +58,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <label class="form-label" for="city">Ciudad:</label>
                 <input class="form-control" type="text" name="ciudad" required>
 
+                <label class="form-label" for="cel">Teléfono:</label>
+                <input class="form-control" type="number" name="cel">
+
                 <div class="mt-4 mb-4" style="display: flex; justify-content: center;">
                     <button type="submit" class="btn btn-primary mt-1">Enviar</button>
                 </div>
