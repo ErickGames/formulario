@@ -22,14 +22,5 @@ CONTACT:
 
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-    <script src="https://www.gstatic.com/charts/loader.js"></script>
-    
-    <script>
-    google.charts.load('current', {packages: ['corechart']});
-    google.charts.setOnLoadCallback(drawChart);
-    ...
-    </script>
-
-
     <title>Test</title>
 </head>
