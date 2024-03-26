@@ -215,7 +215,7 @@ if ($_SESSION['respuesta_s9p5'] == '1' || $_SESSION['respuesta_s9p5'] == '2') {
 if ($hayDebilidades9 == false) {
     $bodyContentDebilidades9 .= utf8_decode('No hay debilidades relevantes.' . "\n");
 }
-$pdf->chapterBody($bodyContentDebilidades9);
+$pdf->chapterBody($bodyContentDebilidades9 . "\n\n");
 ////////////////
 // Sección 10 //
 //////////////
@@ -332,7 +332,7 @@ if ($_SESSION['respuesta_s10p12'] == '1' || $_SESSION['respuesta_s10p12'] == '2'
 if ($hayDebilidades10 == false) {
     $bodyContentDebilidades10 .= utf8_decode('No hay debilidades relevantes.' . "\n");
 }
-$pdf->chapterBody($bodyContentDebilidades10);
+$pdf->chapterBody($bodyContentDebilidades10  . "\n\n");
 
 //PAGINA DE DEBILIDADES CRITICAS
 $pdf->chapterTitle(3, utf8_decode('Debilidades Críticas'));

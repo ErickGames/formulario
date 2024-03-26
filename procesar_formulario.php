@@ -476,7 +476,7 @@ if ($_SESSION['respuesta_s1p9'] == '1' || $_SESSION['respuesta_s1p9'] == '2') {
 if ($hayDebilidades1 == false) {
     $bodyContentDebilidades1 .= utf8_decode('No hay debilidades relevantes.' . "\n");
 }
-$pdf->chapterBody($bodyContentDebilidades1);
+$pdf->chapterBody($bodyContentDebilidades1 . "\n\n");
 ////////////////
 // Sección 2 //
 //////////////
@@ -529,7 +529,7 @@ if ($_SESSION['respuesta_s2p4'] == '1' || $_SESSION['respuesta_s2p4'] == '2') {
 if ($hayDebilidades2 == false) {
     $bodyContentDebilidades2 .= utf8_decode('No hay debilidades relevantes' . "\n");
 }
-$pdf->chapterBody($bodyContentDebilidades2);
+$pdf->chapterBody($bodyContentDebilidades2 . "\n\n");
 ////////////////
 // Sección 3 //
 //////////////
@@ -622,7 +622,7 @@ if ($_SESSION['respuesta_s3p9'] == '1' || $_SESSION['respuesta_s3p9'] == '2') {
 if ($hayDebilidades3 == false) {
     $bodyContentDebilidades3 .= utf8_decode('No hay debilidades relevantes.' . "\n");
 }
-$pdf->chapterBody($bodyContentDebilidades3);
+$pdf->chapterBody($bodyContentDebilidades3 . "\n\n");
 ////////////////
 // Sección 4 //
 //////////////
@@ -699,7 +699,7 @@ if ($_SESSION['respuesta_s4p7'] == '1' || $_SESSION['respuesta_s4p7'] == '2') {
 if ($hayDebilidades4 == false) {
     $bodyContentDebilidades4 .= utf8_decode('No hay debilidades relevantes.' . "\n");
 }
-$pdf->chapterBody($bodyContentDebilidades4);
+$pdf->chapterBody($bodyContentDebilidades4 . "\n\n");
 ////////////////
 // Sección 5 //
 //////////////
@@ -744,7 +744,7 @@ if ($_SESSION['respuesta_s5p3'] == '1' || $_SESSION['respuesta_s5p3'] == '2') {
 if ($hayDebilidades5 == false) {
     $bodyContentDebilidades5 .= utf8_decode('No hay debilidades relevantes.' . "\n");
 }
-$pdf->chapterBody($bodyContentDebilidades5);
+$pdf->chapterBody($bodyContentDebilidades5 . "\n\n");
 ////////////////
 // Sección 6 //
 //////////////
@@ -805,7 +805,7 @@ if ($_SESSION['respuesta_s6p5'] == '1' || $_SESSION['respuesta_s6p5'] == '2') {
 if ($hayDebilidades6 == false) {
     $bodyContentDebilidades6 .= utf8_decode('No hay debilidades relevantes.' . "\n");
 }
-$pdf->chapterBody($bodyContentDebilidades6);
+$pdf->chapterBody($bodyContentDebilidades6 . "\n\n");
 ////////////////
 // Sección 7 //
 //////////////
@@ -882,7 +882,7 @@ if ($_SESSION['respuesta_s7p7'] == '1' || $_SESSION['respuesta_s7p7'] == '2') {
 if ($hayDebilidades7 == false) {
     $bodyContentDebilidades7 .= utf8_decode('No hay debilidades relevantes.' . "\n");
 }
-$pdf->chapterBody($bodyContentDebilidades7);
+$pdf->chapterBody($bodyContentDebilidades7 . "\n\n");
 ////////////////
 // Sección 8 //
 //////////////
@@ -1007,7 +1007,7 @@ if ($_SESSION['respuesta_s8p14'] == '1' || $_SESSION['respuesta_s8p113'] == '2')
 if ($hayDebilidades8 == false) {
     $bodyContentDebilidades8 .= utf8_decode('No hay debilidades relevantes.' . "\n");
 }
-$pdf->chapterBody($bodyContentDebilidades8);
+$pdf->chapterBody($bodyContentDebilidades8 . "\n\n");
 ////////////////
 // Sección 9 //
 //////////////
@@ -1068,7 +1068,7 @@ if ($_SESSION['respuesta_s9p5'] == '1' || $_SESSION['respuesta_s9p5'] == '2') {
 if ($hayDebilidades9 == false) {
     $bodyContentDebilidades9 .= utf8_decode('No hay debilidades relevantes.' . "\n");
 }
-$pdf->chapterBody($bodyContentDebilidades9);
+$pdf->chapterBody($bodyContentDebilidades9 . "\n\n");
 ////////////////
 // Sección 10 //
 //////////////
@@ -1185,7 +1185,7 @@ if ($_SESSION['respuesta_s10p12'] == '1' || $_SESSION['respuesta_s10p12'] == '2'
 if ($hayDebilidades10 == false) {
     $bodyContentDebilidades10 .= utf8_decode('No hay debilidades relevantes.' . "\n");
 }
-$pdf->chapterBody($bodyContentDebilidades10);
+$pdf->chapterBody($bodyContentDebilidades10 . "\n\n");
 
 //PAGINA DE DEBILIDADES CRITICAS
 $pdf->chapterTitle(11, utf8_decode('Debilidades Críticas'));
