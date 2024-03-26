@@ -90,7 +90,7 @@ class PDF extends FPDF
         $startX = ($this->GetPageWidth() - $totalWidth) / 2;
 
         // Establecer la posición inicial en el eje Y
-        $startY = 180;
+        $startY = 110;
 
         // Dibujar las barras
         $this->SetLineWidth(0.1);
@@ -130,19 +130,19 @@ class PDF extends FPDF
 //SECCION 9
 $prom9 = doubleval($_SESSION['respuesta_s9p1']) + doubleval($_SESSION['respuesta_s9p2']) + doubleval($_SESSION['respuesta_s9p3']) + doubleval($_SESSION['respuesta_s9p4']) + doubleval($_SESSION['respuesta_s9p5']);
 $prom9 = $prom9 / 5;
-$prom9 = $prom9 * 2;
+//$prom9 = $prom9 * 2;
 //SECCION 10
 $prom10 = doubleval($_SESSION['respuesta_s10p1']) + doubleval($_SESSION['respuesta_s10p2']) + doubleval($_SESSION['respuesta_s10p3']) + doubleval($_SESSION['respuesta_s10p4']) + doubleval($_SESSION['respuesta_s10p5']) + doubleval($_SESSION['respuesta_s10p6']) + doubleval($_SESSION['respuesta_s10p7']) + doubleval($_SESSION['respuesta_s10p8']) + doubleval($_SESSION['respuesta_s10p9']) + doubleval($_SESSION['respuesta_s10p10']) + doubleval($_SESSION['respuesta_s10p11']) + doubleval($_SESSION['respuesta_s10p12']);
 $prom10 = $prom10 / 12;
-$prom10 = $prom10 * 2;
+//$prom10 = $prom10 * 2;
 
 $prom9 = round($prom9, 2);
 $prom10 = round($prom10, 2);
 
 $data = array(
-    'Prom. Instalaciones' => 5.34,
+    'Prom. Instalaciones' => 2.67,
     'Usted' => $prom9,
-    'Prom. Proyecto Personal' => 5.34,
+    'Prom. Proyecto Personal' => 2.67,
     'Usted ' => $prom10
 );
 
