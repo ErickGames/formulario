@@ -364,11 +364,11 @@ $pdf->BarChart();
 $pdf->SetTextColor(0);
 $pdf->ChapterBody(utf8_decode("\n"));
 $pdf->ChapterBody(utf8_decode("\n\n\n" . 'El color azul indíca el promedio del mercado.' . "\nEl color naranja indica el promedio de tus respuestas.") );
-$pdf->ChapterBody(utf8_decode("\n\n\n\n\n". 'Te recomendamos que visualices tus oportunidades. En DNA FACTORY MÉDICOS, tenemos las herramientas para tus siguientes pasos. Encuentra más información dando') );
-$pdf->SetTextColor(0, 0, 255); // Cambia el color del texto a azul para indicar un enlace
-$pdf->Write(5, utf8_decode('click aquí'), 'https://dnafactorymedicos.com/cursos.html');
-$pdf->SetTextColor(0); // Restaura el color del texto a negro
-$pdf->ChapterBody(utf8_decode('.'));
+$pdf->ChapterBody(utf8_decode("\n\n\n". 'Te recomendamos que visualices tus oportunidades. En DNA FACTORY MÉDICOS, tenemos las herramientas para tus siguientes pasos. Encuentra más información dando click en la imagen a continuación.') );
+//$pdf->SetTextColor(0, 0, 255); // Cambia el color del texto a azul para indicar un enlace
+//$pdf->Write(5, utf8_decode('click aquí'), 'https://dnafactorymedicos.com/cursos.html');
+//$pdf->SetTextColor(0); // Restaura el color del texto a negro
+$pdf->Image('../img/md_business.png', 16, 180, 180, 50, '', 'https://dnafactorymedicos.com/cursos.html');
 
 
 // Ruta donde se guardará el PDF automáticamente
