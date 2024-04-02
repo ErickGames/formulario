@@ -89,7 +89,10 @@
                     const contraseña = document.getElementById('swal-input2').value;
 
                     // Validación de credenciales (en este caso, hardcodeada)
-                    if (usuario === 'diagnostico@dnafactorymedicos.com' && contraseña === 'p4ssw0rd_dna') {
+                    if ((usuario === 'diagnostico@dnafactorymedicos.com' && contraseña === 'p4ssw0rd_dna0') ||
+                        (usuario === 'vflores@dnafactorymedicos.com' && contraseña === 'vfl0res_dna3') ||
+                        (usuario === 'marissa@dnafactorymedicos.com' && contraseña === 'm4rissa_dna1') ||
+                        (usuario === 'draluna@dnafactorymedicos.com' && contraseña === 'dralun4_dna2')) {
                         return true; // Credenciales válidas
                     } else {
                         Swal.showValidationMessage('Usuario o contraseña incorrectos');
