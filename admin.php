@@ -43,8 +43,7 @@ include_once('header.php');
                         echo "<td>" . $registro['correo'] . "</td>";
                         echo "<td>" . $registro['ciudad'] . "</td>";
                         echo "<td>" . $registro['celular'] . "</td>";
-                        echo "<td><a class='btn btn-primary' href='" . $registro['celular'] . "'>Descargar</a></td>";
-                        echo "<td>" . $registro['docu'] . "</td>";
+                        echo "<td><a class='btn btn-primary' href='" . $registro['docu'] . "'>Descargar</a></td>";
                         /*
                             */
 
