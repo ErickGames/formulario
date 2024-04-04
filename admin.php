@@ -15,8 +15,10 @@ include_once('header.php');
 </head>
 
 <body>
-    <h2>Administrador de archivos</h2>
+    <!-- <h2>Administrador de archivos</h2> --> 
+    <p><p>&nbsp;&nbsp;&nbsp;
     <a name="" id="" class="btn btn-primary" href="index.php" role="button">Regresar</a>
+    <p><p>
     <div class="container-fluid ">
         <div class="col-lg-12">
             <table id="grid" class="table table-condensed table-hover table-striped" data-selection="true" data-multi-select="true" data-row-select="true" data-keep-selection="true">
