@@ -1279,7 +1279,7 @@ $celular = $_POST["celular"];
 $docu = $rutaGuardado;
 
 
-$sql = "INSERT INTO dna_admin(nombre, espec, correo, ciudad, celular)VALUES('" . $nombre . "','" . $espec . "','" . $correo . "',
+$sql = "INSERT INTO dna_admin(nombre, espec, correo, ciudad, celular, docu)VALUES('" . $nombre . "','" . $espec . "','" . $correo . "',
     '" . $ciudad . "','" . $celular . "','" . $docu . "')";
 
 if (!$mysqli->query($sql)) {
