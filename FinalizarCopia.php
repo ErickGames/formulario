@@ -45,15 +45,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="col-md-3">
         </div>
         <div class="col-md-6">
-            <form id="miFormulario">
+            <form action="usuarios.php" method="POST" id="miFormulario">
                 <label class="form-label" for="nombre">Nombre Completo:</label>
                 <input class="form-control" type="text" name="nombre" required>
 
                 <label class="form-label" for="especialidad">Especialidad:</label>
-                <input class="form-control" type="text" name="especialidad" required>
+                <input class="form-control" type="text" name="espec" required>
 
                 <label class="form-label" for="email">Correo Electrónico:</label>
-                <input class="form-control" type="email" name="email" required>
+                <input class="form-control" type="email" name="correo" required>
 
                 <label class="form-label" for="city">Ciudad:</label>
                 <input class="form-control" type="text" name="ciudad" required>
@@ -91,6 +91,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Realiza una solicitud asíncrona con los datos del formulario
         var xhr = new XMLHttpRequest();
+        xhr.open('POST', 'usuarios.php', true);
         xhr.open('POST', 'procesar_formulario.php', true);
         xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
         xhr.onreadystatechange = function () {
