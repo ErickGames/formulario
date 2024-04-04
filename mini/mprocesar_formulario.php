@@ -381,6 +381,24 @@ $pdf->Output($rutaGuardado, 'F'); // 'F' indica que se guardará en el servidor
 // Nombre del archivo PDF
 //$nombreArchivo = 'RespuestasUsuario'.$_POST['nombre'].'.pdf';
 
+include_once ("cnx.php");
+
+
+$nombre = $_POST["nombre"];
+$espec = $_POST["especialidad"];
+$correo = $_POST["email"];
+$ciudad = $_POST["ciudad"];
+$celular = $_POST["celular"];
+$docu = $rutaGuardado;
+
+
+$sql = "INSERT INTO dna_admin(nombre, espec, correo, ciudad, celular)VALUES('" . $nombre . "','" . $espec . "','" . $correo . "',
+    '" . $ciudad . "','" . $celular . "','" . $docu . "')";
+
+if (!$mysqli->query($sql)) {
+    echo "Problemas al registrar su información, intente de nueva cuenta. (" . $mysqli->errno . ") " . $mysqli->error;
+}
+//echo $query;
 
 ///// enviar por correo
 

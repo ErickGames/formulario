@@ -4,7 +4,7 @@ ini_set('memory_limit', '1024M'); // Establece el límite de memoria en 1024 meg
 
 session_start();
 
-require('fpdf/fpdf.php');
+require ('fpdf/fpdf.php');
 require 'vendor/autoload.php'; // Incluye el autoloader de Composer
 
 use PHPMailer\PHPMailer\PHPMailer;
@@ -199,18 +199,18 @@ class PDF extends FPDF
             $this->Text($x + $x_offset, $y + $y_offset, $this->nombres[$i]);
         }
 
-    // Agregar puntos de colores con leyendas
-    // $this->SetDrawColor(0, 0, 255); // Establece el color del primer punto (azul)
-    // $this->Circle(30, $this->GetY() + 5, 1, 'F'); // Dibuja el primer punto
-    // $this->SetXY(40, $this->GetY() + 4); // Establece la posición para el primer texto
-    // $this->SetFont('Arial', '', 10); // Establece la fuente y el tamaño del texto
-    // $this->Cell(10, 10, 'Datos 1', 0, 1, 'L'); // Agrega el texto para el primer punto
+        // Agregar puntos de colores con leyendas
+        // $this->SetDrawColor(0, 0, 255); // Establece el color del primer punto (azul)
+        // $this->Circle(30, $this->GetY() + 5, 1, 'F'); // Dibuja el primer punto
+        // $this->SetXY(40, $this->GetY() + 4); // Establece la posición para el primer texto
+        // $this->SetFont('Arial', '', 10); // Establece la fuente y el tamaño del texto
+        // $this->Cell(10, 10, 'Datos 1', 0, 1, 'L'); // Agrega el texto para el primer punto
 
-    // $this->SetDrawColor(255, 165, 0); // Establece el color del segundo punto (naranja)
-    // $this->Circle(10, $this->GetY() + 5, 1, 'F'); // Dibuja el segundo punto
-    // $this->SetXY(20, $this->GetY() + 4); // Establece la posición para el segundo texto
-    // $this->Cell(10, 10, 'Datos 2', 0, 1, 'L'); // Agrega el texto para el segundo punto
- }
+        // $this->SetDrawColor(255, 165, 0); // Establece el color del segundo punto (naranja)
+        // $this->Circle(10, $this->GetY() + 5, 1, 'F'); // Dibuja el segundo punto
+        // $this->SetXY(20, $this->GetY() + 4); // Establece la posición para el segundo texto
+        // $this->Cell(10, 10, 'Datos 2', 0, 1, 'L'); // Agrega el texto para el segundo punto
+    }
 
     function Circle($x, $y, $r)
     {
@@ -287,7 +287,7 @@ class PDF extends FPDF
         $radius = 40;
         $points = array();
         for ($i = 0; $i < $nbData; $i++) {
-            $value = isset($this->data[$i]) ? $this->data[$i] : 0;
+            $value = isset ($this->data[$i]) ? $this->data[$i] : 0;
             $percent = $value / $this->maxValue;
             $angle_rad = deg2rad($i * $angle - 90);
             $points[] = $this->xcenter + cos($angle_rad) * $radius * $percent;
@@ -330,7 +330,7 @@ $prom5 = doubleval($_SESSION['respuesta_s5p1']) + doubleval($_SESSION['respuesta
 $prom5 = $prom5 / 3;
 $prom5 = $prom5 * 2;
 //SECCION 6
-$prom6 = doubleval($_SESSION['respuesta_s6p1']) + doubleval($_SESSION['respuesta_s6p2']) + doubleval($_SESSION['respuesta_s6p3']) + doubleval($_SESSION['respuesta_s6p4']) + doubleval($_SESSION['respuesta_s6p5']); 
+$prom6 = doubleval($_SESSION['respuesta_s6p1']) + doubleval($_SESSION['respuesta_s6p2']) + doubleval($_SESSION['respuesta_s6p3']) + doubleval($_SESSION['respuesta_s6p4']) + doubleval($_SESSION['respuesta_s6p5']);
 $prom6 = $prom6 / 5;
 $prom6 = $prom6 * 2;
 //SECCION 7
@@ -1254,7 +1254,7 @@ $pdf->AddPage();
 $pdf->chapterSub(utf8_decode('Graficación:'));
 $pdf->SetFillColor(255, 255, 255);
 $pdf->SpiderChart();
-$pdf->ChapterBody(utf8_decode("\n\n\n\n\n\n\n\n\n\n\n\n\n\n" . 'El color azul indíca el promedio del mercado.' . "\nEl color naranja indica el promedio de tus respuestas.") );
+$pdf->ChapterBody(utf8_decode("\n\n\n\n\n\n\n\n\n\n\n\n\n\n" . 'El color azul indíca el promedio del mercado.' . "\nEl color naranja indica el promedio de tus respuestas."));
 
 // Ruta donde se guardará el PDF automáticamente
 $rutaGuardado = 'PDFS/RespuestasUsuario' . $_POST['nombre'] . '.pdf';
@@ -1266,6 +1266,26 @@ $pdf->Output($rutaGuardado, 'F'); // 'F' indica que se guardará en el servidor
 // Nombre del archivo PDF
 //$nombreArchivo = 'RespuestasUsuario'.$_POST['nombre'].'.pdf';
 
+// guardar en bd
+
+include_once ("cnx.php");
+
+
+$nombre = $_POST["nombre"];
+$espec = $_POST["especialidad"];
+$correo = $_POST["email"];
+$ciudad = $_POST["ciudad"];
+$celular = $_POST["celular"];
+$docu = $rutaGuardado;
+
+
+$sql = "INSERT INTO dna_admin(nombre, espec, correo, ciudad, celular)VALUES('" . $nombre . "','" . $espec . "','" . $correo . "',
+    '" . $ciudad . "','" . $celular . "','" . $docu . "')";
+
+if (!$mysqli->query($sql)) {
+    echo "Problemas al registrar su información, intente de nueva cuenta. (" . $mysqli->errno . ") " . $mysqli->error;
+}
+//echo $query;
 
 ///// enviar por correo
 
