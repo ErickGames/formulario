@@ -49,19 +49,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="col-md-6">
             <form id="miFormulario">
                 <label class="form-label" for="nombre">Nombre Completo:</label>
-                <input class="form-control" type="text" name="nombre" required>
+                <input class="form-control" type="text" placeholder="Nombre" name="nombre" required>
 
                 <label class="form-label" for="especialidad">Especialidad:</label>
-                <input class="form-control" type="text" name="especialidad" required>
+                <input class="form-control" type="text" placeholder="Especialidad" name="especialidad" required>
 
                 <label class="form-label" for="email">Correo Electrónico:</label>
-                <input class="form-control" type="email" name="email" required>
+                <input class="form-control" type="email" placeholder="Correo electrónico" name="email" required>
 
                 <label class="form-label" for="ciudad">Ciudad:</label>
-                <input class="form-control" type="text" name="ciudad" required>
+                <input class="form-control" type="text" placeholder="Ciudad" name="ciudad" required>
 
                 <label class="form-label" for="celular">Celular:</label>
-                <input class="form-control" type="text" name="celular">
+                <input class="form-control" type="text" placeholder="Celular (Opcional)" name="celular">
 
                 <div class="mt-4 mb-4" style="display: flex; justify-content: center;">
                     <button type="submit" class="btn btn-primary mt-1">Enviar</button>
