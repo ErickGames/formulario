@@ -102,7 +102,7 @@
             }).then((result) => {
                 if (result.isConfirmed) {
                     //Swal.fire('¡Bienvenido!', 'Inicio de sesión exitoso', 'success');
-                    window.location = "administrador.php";
+                    window.location = "admin.php";
                 }
             });
         }
