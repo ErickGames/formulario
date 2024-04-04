@@ -35,7 +35,7 @@
                 <p>Nos pondremos en contacto contigo próximamente.</p>
                 <p>¡Gracias por dedicar tiempo a esta autoevaluación!</p>
             </div>
-            <a href="index.php" class="start-button">Regresar al inicio</a>
+            <a href="https://dnafactorymedicos.com/" class="start-button">Visitar la web de DNA Factory</a>
         </div>
         <div class="col-md-2"></div>
     </div>
